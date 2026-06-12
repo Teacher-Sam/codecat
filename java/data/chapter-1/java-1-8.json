@@ -19,12 +19,37 @@
       "output": "3661"
     },
     {
-      "input": "0\n0\n0\n0\n1\n0",
-      "output": "60"
+      "input": "6\n1\n30\n6\n2\n10",
+      "output": "40"
     },
     {
-      "input": "0\n0\n0\n1\n0\n0",
-      "output": "3600"
+      "input": "10\n8\n2\n10\n8\n2",
+      "output": "0"
+    },
+    {
+      "input": "2\n3\n4\n4\n7\n28",
+      "output": "7464"
+    },
+    {
+      "input": "5\n50\n48\n10\n20\n35",
+      "output": "16187"
+    },
+    {
+      "input": "1\n15\n39\n6\n15\n39",
+      "output": "18000"
+    },
+    {
+      "input": "11\n7\n29\n11\n30\n29",
+      "output": "1380"
+    },
+    {
+      "input": "5\n34\n4\n5\n34\n50",
+      "output": "46"
+    },
+    {
+      "input": "4\n19\n21\n7\n39\n45",
+      "output": "12024"
     }
-  ]
+  ],
+  "source": "snakify.org tests"
 }

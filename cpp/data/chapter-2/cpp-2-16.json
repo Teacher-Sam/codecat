@@ -15,17 +15,109 @@
   "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
   "tests": [
     {
-      "input": "2017",
-      "output": "21"
+      "input": "1899",
+      "output": "19"
     },
     {
       "input": "1900",
+      "output": "19"
+    },
+    {
+      "input": "1901",
       "output": "20"
     },
     {
       "input": "2000",
       "output": "20"
+    },
+    {
+      "input": "2001",
+      "output": "21"
+    },
+    {
+      "input": "1895",
+      "output": "19"
+    },
+    {
+      "input": "1905",
+      "output": "20"
+    },
+    {
+      "input": "2017",
+      "output": "21"
+    },
+    {
+      "input": "1699",
+      "output": "17"
+    },
+    {
+      "input": "1700",
+      "output": "17"
+    },
+    {
+      "input": "1701",
+      "output": "18"
+    },
+    {
+      "input": "1800",
+      "output": "18"
+    },
+    {
+      "input": "1801",
+      "output": "19"
+    },
+    {
+      "input": "1812",
+      "output": "19"
+    },
+    {
+      "input": "1848",
+      "output": "19"
+    },
+    {
+      "input": "1797",
+      "output": "18"
+    },
+    {
+      "input": "498",
+      "output": "5"
+    },
+    {
+      "input": "499",
+      "output": "5"
+    },
+    {
+      "input": "500",
+      "output": "5"
+    },
+    {
+      "input": "501",
+      "output": "6"
+    },
+    {
+      "input": "600",
+      "output": "6"
+    },
+    {
+      "input": "601",
+      "output": "7"
+    },
+    {
+      "input": "1201",
+      "output": "13"
+    },
+    {
+      "input": "1",
+      "output": "1"
+    },
+    {
+      "input": "100",
+      "output": "1"
+    },
+    {
+      "input": "101",
+      "output": "2"
     }
   ],
-  "source": null
+  "source": "snakify.org tests"
 }

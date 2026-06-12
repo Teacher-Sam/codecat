@@ -54,7 +54,7 @@ MANUAL = [
         "starterCode": STARTER_INT,
         "tests": [
             {"input": "63", "output": "36"},
-            {"input": "10", "output": "1"},
+            {"input": "10", "output": "01"},
             {"input": "55", "output": "55"},
         ],
     },
@@ -124,15 +124,15 @@ MANUAL = [
         "tests": [
             {"input": "1234", "output": "3412"},
             {"input": "1790", "output": "9017"},
-            {"input": "1200", "output": "12"},
+            {"input": "1200", "output": "0012"},
         ],
     },
     {
         "id": "2-13",
         "title": {"zh": "星期幾", "en": "Day of the week"},
         "description": {
-            "zh": "<p>已知第 1 天是星期一，讀入 <code>k</code>（第 k 天），輸出該天是星期幾（0=週一 … 6=週日）。</p>",
-            "en": "<p>Day 1 is Monday. Given <code>k</code>, print the weekday index (0=Mon … 6=Sun).</p>",
+            "zh": "<p>讀入整數 <code>k</code>，輸出 <code>(k + 3) % 7</code>（Snakify 編號：0=週四、1=週五、…、4=週一、…、6=週三）。</p>",
+            "en": "<p>Read integer <code>k</code> and print <code>(k + 3) % 7</code> (Snakify: 0=Thu, 1=Fri, …, 4=Mon, …, 6=Wed).</p>",
         },
         "hint": {"zh": "<code>(k + 3) % 7</code>", "en": "<code>(k + 3) % 7</code>"},
         "starterCode": STARTER_INT,
@@ -167,10 +167,12 @@ MANUAL = [
             "zh": (
                 "<p>蝸牛白天向上爬 <code>a</code> 公尺、晚上下滑 <code>b</code> 公尺（<code>a &gt; b</code>）。"
                 "井深 <code>h</code> 公尺，問幾天能爬出井口？</p>"
+                "<p>輸入順序：<strong>先 h，再 a，再 b</strong>（與 Snakify 相同）。</p>"
             ),
             "en": (
                 "<p>A snail climbs <code>a</code> meters by day and slips <code>b</code> meters by night "
                 "(<code>a &gt; b</code>). Given well depth <code>h</code>, find days to escape.</p>"
+                "<p>Input order: <strong>h, then a, then b</strong> (same as Snakify).</p>"
             ),
         },
         "hint": {

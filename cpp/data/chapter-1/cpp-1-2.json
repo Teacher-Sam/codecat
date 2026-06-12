@@ -19,13 +19,21 @@
       "output": "Hi John"
     },
     {
-      "input": "Jack",
-      "output": "Hi Jack"
+      "input": "Alice",
+      "output": "Hi Alice"
     },
     {
-      "input": "Santa Claus",
-      "output": "Hi Santa Claus"
+      "input": "Bob",
+      "output": "Hi Bob"
+    },
+    {
+      "input": "Tanner",
+      "output": "Hi Tanner"
+    },
+    {
+      "input": "Jake",
+      "output": "Hi Jake"
     }
   ],
-  "source": null
+  "source": "snakify.org tests"
 }
