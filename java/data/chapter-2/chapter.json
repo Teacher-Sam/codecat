@@ -10,6 +10,7 @@
   "source": "https://github.com/vpavlenko/content",
   "id": "2",
   "problemIds": [
+    "java-2-0",
     "java-2-1",
     "java-2-2",
     "java-2-3",

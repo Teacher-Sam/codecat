@@ -9,6 +9,7 @@
     "en": "Digit manipulation, decimals, time, and clock angle problems."
   },
   "problemIds": [
+    "cpp-2-0",
     "cpp-2-1",
     "cpp-2-2",
     "cpp-2-3",

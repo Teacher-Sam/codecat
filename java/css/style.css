@@ -287,6 +287,34 @@ body:has(#view-problem:not(.hidden)) .header-inner {
   overflow-x: auto;
   font-family: var(--mono);
   font-size: 0.88rem;
+  white-space: pre-wrap;
+}
+
+.problem-description h3 {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.problem-description h3:first-child {
+  margin-top: 0;
+}
+
+.problem-description ul {
+  margin: 0.5rem 0 1rem;
+  padding-left: 1.25rem;
+}
+
+.problem-description li {
+  margin: 0.35rem 0;
+}
+
+.problem-description pre.example-io {
+  border-left: 3px solid var(--accent);
+  background: var(--surface-2);
+  margin: 0.35rem 0 1rem;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.86rem;
 }
 
 .problem-description code {
@@ -782,6 +810,29 @@ body:has(#view-problem:not(.hidden)) .header-inner {
 .status-badge.todo {
   background: var(--surface-2);
   color: var(--text-muted);
+}
+
+.status-badge.intro {
+  background: #1e3a5f;
+  color: #93c5fd;
+}
+
+.problem-layout.intro-only {
+  grid-template-columns: 1fr;
+}
+
+.problem-layout.intro-only .problem-panel {
+  max-height: none;
+}
+
+.card-intro {
+  border-color: #2563eb55;
+}
+
+.intro-nav {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
 }
 
 .title-en {
