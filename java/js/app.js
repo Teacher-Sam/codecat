@@ -137,6 +137,9 @@ const App = {
   showView(name) {
     document.querySelectorAll(".view").forEach((el) => el.classList.add("hidden"));
     document.getElementById(`view-${name}`).classList.remove("hidden");
+    window.scrollTo(0, 0);
+    document.querySelector(".problem-panel")?.scrollTo(0, 0);
+    document.querySelector(".editor-wrap")?.scrollTo(0, 0);
   },
 
   renderHome() {
