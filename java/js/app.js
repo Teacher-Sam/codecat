@@ -21,8 +21,19 @@ const App = {
     return `${value.zh} <span class="title-en">/ ${value.en}</span>`;
   },
 
-  /** @param {{ id: string, title: unknown }} problem */
+  /** @param {{ type?: string } | null | undefined} problem */
+  isIntro(problem) {
+    return problem?.type === "intro";
+  },
+
+  /** @param {{ problems: Array<{ type?: string }> }} chapter */
+  codingProblems(chapter) {
+    return chapter.problems.filter((p) => !this.isIntro(p));
+  },
+
+  /** @param {{ id: string, title: unknown, type?: string }} problem */
   problemNo(problem) {
+    if (this.isIntro(problem)) return "Intro";
     const prefix = CONFIG.PROBLEM_ID_PREFIX || "";
     if (prefix && problem.id.startsWith(prefix)) {
       return problem.id.slice(prefix.length);
@@ -142,8 +153,9 @@ const App = {
     const container = document.getElementById("chapter-list");
     container.innerHTML = this.data.chapters
       .map((chapter) => {
-        const total = chapter.problems.length;
-        const solved = chapter.problems.filter((p) => this.isSolved(p.id)).length;
+        const coding = this.codingProblems(chapter);
+        const total = coding.length;
+        const solved = coding.filter((p) => this.isSolved(p.id)).length;
         return `
           <div class="card" data-chapter="${chapter.id}">
             <h3>第 ${chapter.id} 章 · ${this.bilingualTitle(chapter.title)}</h3>
@@ -174,6 +186,19 @@ const App = {
     const container = document.getElementById("problem-list");
     container.innerHTML = chapter.problems
       .map((problem, index) => {
+        if (this.isIntro(problem)) {
+          return `
+          <div class="card card-intro" data-problem="${problem.id}">
+            <h3>
+              ${this.bilingualProblemTitle(problem)}
+              <span class="status-badge intro">閱讀</span>
+            </h3>
+            <p class="problem-meta">章節介紹 · 先閱讀再開始寫程式</p>
+          </div>
+        `;
+        }
+
+        const codingIndex = chapter.problems.slice(0, index).filter((p) => !this.isIntro(p)).length + 1;
         const done = this.isSolved(problem.id);
         return `
           <div class="card" data-problem="${problem.id}">
@@ -181,7 +206,7 @@ const App = {
               ${this.bilingualProblemTitle(problem)}
               <span class="status-badge ${done ? "done" : "todo"}">${done ? "已完成" : "未完成"}</span>
             </h3>
-            <p class="problem-meta">第 ${index + 1} 題 · ${problem.tests.length} 個測試案例</p>
+            <p class="problem-meta">第 ${codingIndex} 題 · ${problem.tests.length} 個測試案例</p>
           </div>
         `;
       })
@@ -539,6 +564,13 @@ const App = {
     this.currentChapter = chapter;
     this.currentProblem = problem;
 
+    const isIntro = this.isIntro(problem);
+    const layout = document.querySelector(".problem-layout");
+    const editorPanel = document.querySelector(".editor-panel");
+    const hintBox = document.querySelector(".hint-box");
+    const introNav = document.getElementById("intro-nav");
+    const btnNext = document.getElementById("btn-next-problem");
+
     document.getElementById("problem-title").innerHTML = this.bilingualProblemTitle(problem);
     document.getElementById("problem-heading").innerHTML = this.bilingualProblemTitle(problem);
     document.getElementById("breadcrumb-chapter").innerHTML = this.bilingualTitle(chapter.title);
@@ -547,6 +579,32 @@ const App = {
       location.hash = `#/chapter/${chapterId}`;
     };
     document.getElementById("problem-description").innerHTML = this.bilingualHtml(problem.description);
+
+    if (isIntro) {
+      layout?.classList.add("intro-only");
+      editorPanel?.classList.add("hidden");
+      hintBox?.classList.add("hidden");
+      introNav?.classList.remove("hidden");
+
+      const nextProblem = chapter.problems.find((p) => !this.isIntro(p));
+      if (btnNext) {
+        btnNext.onclick = () => {
+          if (nextProblem) {
+            location.hash = `#/problem/${chapterId}/${nextProblem.id}`;
+          }
+        };
+        btnNext.disabled = !nextProblem;
+      }
+
+      this.showView("problem");
+      return;
+    }
+
+    layout?.classList.remove("intro-only");
+    editorPanel?.classList.remove("hidden");
+    hintBox?.classList.remove("hidden");
+    introNav?.classList.add("hidden");
+
     document.getElementById("problem-hint").innerHTML = this.bilingualHtml(problem.hint);
 
     this.showView("problem");

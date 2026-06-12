@@ -108,6 +108,10 @@ def write_chapter(chapter_id: str, chapter_meta: dict, problems: list[dict]) -> 
             encoding="utf-8",
         )
 
+    intro_id = f"{ID_PREFIX}{chapter_id}-0"
+    if (chapter_dir / f"{intro_id}.json").exists():
+        problem_ids.insert(0, intro_id)
+
     meta = {**chapter_meta, "id": chapter_id, "problemIds": problem_ids}
     (chapter_dir / "chapter.json").write_text(
         json.dumps(meta, ensure_ascii=False, indent=2) + "\n",

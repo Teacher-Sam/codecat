@@ -320,8 +320,13 @@ def convert_chapter(chapter_num: str) -> None:
 
         java_path = java_ch_dir / f"{java_id}.json"
         java_problem = json.loads(java_path.read_text(encoding="utf-8"))
+        cpp_path = cpp_ch_dir / f"{cpp_id}.json"
+
+        if java_problem.get("type") == "intro" and cpp_path.exists():
+            continue
+
         cpp_problem = convert_problem(java_problem, bare)
-        (cpp_ch_dir / f"{cpp_id}.json").write_text(
+        cpp_path.write_text(
             json.dumps(cpp_problem, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
         )
