@@ -1,0 +1,51 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create config.local.js from secret
+        env:
+          ACCESS_PASSWORD: ${{ secrets.ACCESS_PASSWORD }}
+        run: |
+          if [ -n "$ACCESS_PASSWORD" ]; then
+            printf '%s\n' '/** Generated at deploy — do not commit */' \
+              "CONFIG.ACCESS_PASSWORD = \"$ACCESS_PASSWORD\";" \
+              > java/js/config.local.js
+            cp java/js/config.local.js cpp/js/config.local.js
+            echo "config.local.js created for Java and C++"
+          else
+            echo "ACCESS_PASSWORD secret not set — site gate disabled on production"
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

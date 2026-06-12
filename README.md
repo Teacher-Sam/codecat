@@ -51,13 +51,29 @@ python -m http.server 8080
 
 ## 部署 GitHub Pages
 
-1. 建立 **Public** 倉庫（建議名稱 `snakify_practice_platform`）
-2. Push 整個專案根目錄
-3. **Settings → Pages** → Branch: `main` → Folder: `/ (root)`
-4. 網址範例：
-   - 入口：`https://你的帳號.github.io/snakify_practice_platform/`
-   - Java：`https://你的帳號.github.io/snakify_practice_platform/java/`
-   - C++：`https://你的帳號.github.io/snakify_practice_platform/cpp/`
+1. Push 到 `main` 分支（見下方指令）
+2. **Settings → Secrets and variables → Actions** → 新增 Secret：
+   - Name: `ACCESS_PASSWORD`
+   - Value: 你的全站密碼（例如 `codecat`）
+3. **Settings → Pages** → **Source** 選 **GitHub Actions**（不要選 Deploy from branch）
+4. 每次 push 到 `main` 會自動部署；也可在 **Actions** 分頁手動執行 **Deploy GitHub Pages**
+
+網址範例：
+
+| 頁面 | 網址 |
+|------|------|
+| 入口 | `https://你的帳號.github.io/snakify_practice_platform/` |
+| Java | `https://你的帳號.github.io/snakify_practice_platform/java/` |
+| C++ | `https://你的帳號.github.io/snakify_practice_platform/cpp/` |
+
+部署時 workflow 會用 Secret 產生 `config.local.js`（不進 git），線上版也會有全站密碼。若未設定 Secret，線上版僅靠 Supabase 登入。
+
+```powershell
+cd d:\Project\snakify_java
+git add .
+git commit -m "你的提交訊息"
+git push -u origin main
+```
 
 ### Supabase 網址設定
 
