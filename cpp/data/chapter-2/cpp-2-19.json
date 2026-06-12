@@ -1,0 +1,143 @@
+{
+  "id": "cpp-2-19",
+  "title": {
+    "zh": "時鐘角度 - 2",
+    "en": "Clock face - 2"
+  },
+  "description": {
+    "zh": "<p>時針已轉過 α 度，求分針在當前這一小時內轉過的角度。</p>",
+    "en": "<p>Hour hand turned by &alpha; degrees since the midnight. Determine the angle by which minute hand turned since the start of the current hour. Input and output in this problems are floating-point numbers.</p>"
+  },
+  "hint": {
+    "zh": "分針角度：<code>fmod(alpha, 30.0) * 12</code>（或等價寫法），注意小數輸出格式。",
+    "en": "Minute hand angle: <code>fmod(alpha, 30.0) * 12</code> (or equivalent); match decimal output format."
+  },
+  "starterCode": "#include <iostream>\n#include <iomanip>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "190",
+      "output": "120"
+    },
+    {
+      "input": "0",
+      "output": "0"
+    },
+    {
+      "input": "5",
+      "output": "60"
+    },
+    {
+      "input": "10",
+      "output": "120"
+    },
+    {
+      "input": "15",
+      "output": "180"
+    },
+    {
+      "input": "20",
+      "output": "240"
+    },
+    {
+      "input": "25",
+      "output": "300"
+    },
+    {
+      "input": "29",
+      "output": "348"
+    },
+    {
+      "input": "30",
+      "output": "0"
+    },
+    {
+      "input": "31",
+      "output": "12"
+    },
+    {
+      "input": "40",
+      "output": "120"
+    },
+    {
+      "input": "59",
+      "output": "348"
+    },
+    {
+      "input": "60",
+      "output": "0"
+    },
+    {
+      "input": "61",
+      "output": "12"
+    },
+    {
+      "input": "70",
+      "output": "120"
+    },
+    {
+      "input": "89",
+      "output": "348"
+    },
+    {
+      "input": "90",
+      "output": "0"
+    },
+    {
+      "input": "95",
+      "output": "60"
+    },
+    {
+      "input": "179",
+      "output": "348"
+    },
+    {
+      "input": "190",
+      "output": "120"
+    },
+    {
+      "input": "192",
+      "output": "144"
+    },
+    {
+      "input": "300",
+      "output": "0"
+    },
+    {
+      "input": "359",
+      "output": "348"
+    },
+    {
+      "input": "1",
+      "output": "12"
+    },
+    {
+      "input": "132",
+      "output": "144"
+    },
+    {
+      "input": "0.5",
+      "output": "6"
+    },
+    {
+      "input": "0.0001",
+      "output": "0.0012"
+    },
+    {
+      "input": "73.2938",
+      "output": "159.526"
+    },
+    {
+      "input": "119.994",
+      "output": "359.928"
+    },
+    {
+      "input": "120.005",
+      "output": "0.06"
+    },
+    {
+      "input": "231.3452",
+      "output": "256.142"
+    }
+  ],
+  "source": "vpavlenko/content/int_and_float/watch_2.txt"
+}

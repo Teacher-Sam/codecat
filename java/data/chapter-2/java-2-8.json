@@ -1,0 +1,30 @@
+{
+  "id": "java-2-8",
+  "title": {
+    "zh": "合併兩數",
+    "en": "Merge two numbers"
+  },
+  "description": {
+    "zh": "<p>讀入兩個兩位整數，依序交替取出它們的十位、個位並串接輸出（共四位字元）。</p>",
+    "en": "<p>Read two two-digit integers and merge their digits alternately.</p>"
+  },
+  "hint": {
+    "zh": "例如 12 與 34 → <code>1324</code>。",
+    "en": "Example: 12 and 34 → <code>1324</code>."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "12\n34",
+      "output": "1324"
+    },
+    {
+      "input": "56\n78",
+      "output": "5768"
+    },
+    {
+      "input": "90\n12",
+      "output": "9102"
+    }
+  ]
+}

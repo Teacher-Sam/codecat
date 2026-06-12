@@ -1,0 +1,31 @@
+{
+  "id": "cpp-2-2",
+  "title": {
+    "zh": "兩個位數",
+    "en": "Two digits"
+  },
+  "description": {
+    "zh": "<p>讀入一個整數（至少兩位），輸出十位數與個位數，中間以空格分隔。</p>",
+    "en": "<p>Read an integer and print its tens and units digits separated by a space.</p>"
+  },
+  "hint": {
+    "zh": "十位：<code>n / 10</code>，個位：<code>n % 10</code>。",
+    "en": "Tens: <code>n / 10</code>, units: <code>n % 10</code>."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "179",
+      "output": "17 9"
+    },
+    {
+      "input": "40",
+      "output": "4 0"
+    },
+    {
+      "input": "5",
+      "output": "0 5"
+    }
+  ],
+  "source": null
+}

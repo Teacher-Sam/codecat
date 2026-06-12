@@ -1,0 +1,35 @@
+{
+  "id": "cpp-1-4",
+  "title": {
+    "zh": "直角三角形面積",
+    "en": "Area of right-angled triangle"
+  },
+  "description": {
+    "zh": "<p>讀入直角三角形的底邊長與高（各佔一行），輸出面積。</p>",
+    "en": "<p>Write a program that reads the length of the base and the height of a right-angled triangle and prints the area. Every number is given on a separate line.</p>"
+  },
+  "hint": {
+    "zh": "面積 = 底 × 高 ÷ 2。請用 <code>double</code> 或除以 <code>2.0</code>，讓小數輸出正確。",
+    "en": "Area = base × height ÷ 2. Use <code>double</code> or divide by <code>2.0</code> for correct decimal output."
+  },
+  "starterCode": "#include <iostream>\n#include <iomanip>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "3\n5",
+      "output": "7.5"
+    },
+    {
+      "input": "10\n2",
+      "output": "10.0"
+    },
+    {
+      "input": "179\n1534",
+      "output": "137293.0"
+    },
+    {
+      "input": "1543\n57",
+      "output": "43975.5"
+    }
+  ],
+  "source": "vpavlenko/content/area_of_right_triangle.txt"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "java-1-5",
+  "title": {
+    "zh": "Hello, Harry!",
+    "en": "Hello, Harry!"
+  },
+  "description": {
+    "zh": "<p>讀入一個名字，輸出問候語：先印 <code>Hello, </code>，接著名字，最後印 <code>!</code>。名字與驚嘆號之間<strong>不能</strong>有空格。輸出必須與範例完全一致。</p>",
+    "en": "<p>Write a program that greets the user by printing the word \"Hello\", a comma, the name of the user and an exclamation mark after it. See the examples below. <p> <b>Warning.</b> Your program's output should strictly match the desired one, character by character. There shouldn't be any space between the name and the exclamation mark. You can use <code>+</code> operator to concatenate two strings. See the lesson for details.</p>"
+  },
+  "hint": {
+    "zh": "可用字串連接：<code>\"Hello, \" + name + \"!\"</code>",
+    "en": "Concatenate strings: <code>\"Hello, \" + name + \"!\"</code>"
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "Harry",
+      "output": "Hello, Harry!"
+    },
+    {
+      "input": "Mr. Potter",
+      "output": "Hello, Mr. Potter!"
+    },
+    {
+      "input": "Lord Voldemort",
+      "output": "Hello, Lord Voldemort!"
+    }
+  ],
+  "source": "vpavlenko/content/hello_harry.txt"
+}

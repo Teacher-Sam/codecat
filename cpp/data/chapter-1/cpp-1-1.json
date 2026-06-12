@@ -1,0 +1,31 @@
+{
+  "id": "cpp-1-1",
+  "title": {
+    "zh": "三數相加",
+    "en": "Sum of three numbers"
+  },
+  "description": {
+    "zh": "<p>寫一個程式，讀入三個整數（各佔一行），輸出它們的和。</p>",
+    "en": "<p>Write a program that takes three numbers and prints their sum. Every number is given on a separate line.</p>"
+  },
+  "hint": {
+    "zh": "使用 <code>cin >> a >> b >> c;</code> 讀取三個整數，相加後用 <code>cout</code> 輸出。",
+    "en": "Read three integers with <code>cin >> a >> b >> c;</code>, add them, and print the sum with <code>cout</code>."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a, b, c;\n    cin >> a >> b >> c;\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "2\n3\n6",
+      "output": "11"
+    },
+    {
+      "input": "0\n20\n300",
+      "output": "320"
+    },
+    {
+      "input": "-5\n180\n-17",
+      "output": "158"
+    }
+  ],
+  "source": "vpavlenko/content/aplusbplusc.txt"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "cpp-1-8",
+  "title": {
+    "zh": "兩個時間戳",
+    "en": "Two timestamps"
+  },
+  "description": {
+    "zh": "<p>時間戳由三個數字組成：時、分、秒。給定兩個時間戳（各三行），計算兩者相差多少秒。第一個時間一定早於第二個。</p>",
+    "en": "<p>A timestamp has three numbers: hours, minutes and seconds. Given two timestamps (three lines each), calculate how many seconds are between them. The first moment occurs before the second.</p>"
+  },
+  "hint": {
+    "zh": "先把每個時間戳換算成秒，再相減：<code>h×3600 + m×60 + s</code>",
+    "en": "Convert each timestamp to seconds, then subtract: <code>h×3600 + m×60 + s</code>"
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "1\n1\n1\n2\n2\n2",
+      "output": "3661"
+    },
+    {
+      "input": "0\n0\n0\n0\n1\n0",
+      "output": "60"
+    },
+    {
+      "input": "0\n0\n0\n1\n0\n0",
+      "output": "3600"
+    }
+  ],
+  "source": null
+}

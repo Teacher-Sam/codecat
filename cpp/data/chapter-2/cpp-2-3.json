@@ -1,0 +1,31 @@
+{
+  "id": "cpp-2-3",
+  "title": {
+    "zh": "交換位數",
+    "en": "Swap digits"
+  },
+  "description": {
+    "zh": "<p>讀入一個兩位整數，輸出十位與個位交換後的數字。</p>",
+    "en": "<p>Read a two-digit integer and print the number with its digits swapped.</p>"
+  },
+  "hint": {
+    "zh": "<code>units * 10 + tens</code>",
+    "en": "<code>units * 10 + tens</code>"
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "63",
+      "output": "36"
+    },
+    {
+      "input": "10",
+      "output": "1"
+    },
+    {
+      "input": "55",
+      "output": "55"
+    }
+  ],
+  "source": null
+}

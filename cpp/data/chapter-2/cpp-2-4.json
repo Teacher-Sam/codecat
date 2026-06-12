@@ -1,0 +1,31 @@
+{
+  "id": "cpp-2-4",
+  "title": {
+    "zh": "最後兩位數",
+    "en": "Last two digits"
+  },
+  "description": {
+    "zh": "<p>讀入一個整數，輸出它的最後兩位數（對 100 取餘）。</p>",
+    "en": "<p>Read an integer and print its last two digits.</p>"
+  },
+  "hint": {
+    "zh": "使用 <code>n % 100</code>。",
+    "en": "Use <code>n % 100</code>."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "179",
+      "output": "79"
+    },
+    {
+      "input": "100",
+      "output": "0"
+    },
+    {
+      "input": "1234",
+      "output": "34"
+    }
+  ],
+  "source": null
+}

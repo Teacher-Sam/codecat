@@ -1,0 +1,30 @@
+{
+  "id": "java-1-3",
+  "title": {
+    "zh": "平方",
+    "en": "Square"
+  },
+  "description": {
+    "zh": "<p>讀入一個整數，輸出它的平方。</p>",
+    "en": "<p>Read an integer and print its square.</p>"
+  },
+  "hint": {
+    "zh": "輸出 <code>n * n</code> 即可。",
+    "en": "Print <code>n * n</code>."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "5",
+      "output": "25"
+    },
+    {
+      "input": "12",
+      "output": "144"
+    },
+    {
+      "input": "0",
+      "output": "0"
+    }
+  ]
+}

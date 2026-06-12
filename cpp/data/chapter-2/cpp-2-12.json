@@ -1,0 +1,75 @@
+{
+  "id": "cpp-2-12",
+  "title": {
+    "zh": "開車路程",
+    "en": "Car route"
+  },
+  "description": {
+    "zh": "<p>汽車每天可開 N 公里，路程長 M 公里，問至少要幾天？（無法整除要加一天）</p>",
+    "en": "<p>A car can cover distance of N kilometers per day. How many days will it take to cover a route of length M kilometers?</p><p>The program gets two numbers: N and M.</p>"
+  },
+  "hint": {
+    "zh": "無條件進位：<code>(M + N - 1) / N</code>。",
+    "en": "Ceiling division: <code>(M + N - 1) / N</code>."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "700\n750",
+      "output": "2"
+    },
+    {
+      "input": "700\n2100",
+      "output": "3"
+    },
+    {
+      "input": "10\n15",
+      "output": "2"
+    },
+    {
+      "input": "10\n16",
+      "output": "2"
+    },
+    {
+      "input": "10\n19",
+      "output": "2"
+    },
+    {
+      "input": "10\n70",
+      "output": "7"
+    },
+    {
+      "input": "10\n81",
+      "output": "9"
+    },
+    {
+      "input": "10\n1000",
+      "output": "100"
+    },
+    {
+      "input": "10\n1001",
+      "output": "101"
+    },
+    {
+      "input": "10\n999",
+      "output": "100"
+    },
+    {
+      "input": "10\n1",
+      "output": "1"
+    },
+    {
+      "input": "10\n9",
+      "output": "1"
+    },
+    {
+      "input": "483\n9382",
+      "output": "20"
+    },
+    {
+      "input": "123\n234234",
+      "output": "1905"
+    }
+  ],
+  "source": "vpavlenko/content/int_and_float/motor_rally.txt"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "cpp-1-9",
+  "title": {
+    "zh": "學校課桌",
+    "en": "School desks"
+  },
+  "description": {
+    "zh": "<p>三個班級各有 <code>a</code>、<code>b</code>、<code>c</code> 位學生，每張課桌坐 2 人。讀入三個整數，輸出至少要買幾張課桌。</p>",
+    "en": "<p>A school decided to replace the desks in three classrooms. Each desk sits two students. Given the number of students in each class, print the smallest possible number of desks that can be purchased. <p> The program should read three integers: the number of students in each of the three classes, <code>a</code>, <code>b</code> and <code>c</code> respectively.</p><p><p>In the first test there are three groups. The first group has 20 students and thus needs 10 desks. The second group has 21 students, so they can get by with no fewer than 11 desks. 11 desks is also enough for the third group of 22 students. So we need 32 desks in total.</p>"
+  },
+  "hint": {
+    "zh": "每班所需課桌 = <code>(人數 + 1) / 2</code>（整數運算），再把三班相加。",
+    "en": "Desks per class = <code>(students + 1) / 2</code> (integer math), then sum all three."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "20\n21\n22",
+      "output": "32"
+    },
+    {
+      "input": "1\n1\n1",
+      "output": "3"
+    },
+    {
+      "input": "26\n20\n16",
+      "output": "31"
+    },
+    {
+      "input": "25\n21\n23",
+      "output": "36"
+    },
+    {
+      "input": "17\n19\n18",
+      "output": "28"
+    }
+  ],
+  "source": "vpavlenko/content/desks.txt"
+}

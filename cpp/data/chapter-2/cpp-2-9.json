@@ -1,0 +1,31 @@
+{
+  "id": "cpp-2-9",
+  "title": {
+    "zh": "循環移位",
+    "en": "Cyclic rotation"
+  },
+  "description": {
+    "zh": "<p>讀入一個四位整數，將最後兩位移到最前面，輸出新的四位數。</p>",
+    "en": "<p>Read a four-digit integer and cyclically shift its last two digits to the front.</p>"
+  },
+  "hint": {
+    "zh": "<code>n % 100 * 100 + n / 100</code>（整數運算）",
+    "en": "<code>n % 100 * 100 + n / 100</code> (integer arithmetic)"
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "1234",
+      "output": "3412"
+    },
+    {
+      "input": "1790",
+      "output": "9017"
+    },
+    {
+      "input": "1200",
+      "output": "12"
+    }
+  ],
+  "source": null
+}

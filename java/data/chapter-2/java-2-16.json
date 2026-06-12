@@ -1,0 +1,30 @@
+{
+  "id": "java-2-16",
+  "title": {
+    "zh": "世紀",
+    "en": "Century"
+  },
+  "description": {
+    "zh": "<p>讀入年份，輸出該年屬於第幾世紀。</p>",
+    "en": "<p>Read a year and print its century number.</p>"
+  },
+  "hint": {
+    "zh": "<code>(year - 1) / 100 + 1</code>",
+    "en": "<code>(year - 1) / 100 + 1</code>"
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "2017",
+      "output": "21"
+    },
+    {
+      "input": "1900",
+      "output": "20"
+    },
+    {
+      "input": "2000",
+      "output": "20"
+    }
+  ]
+}

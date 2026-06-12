@@ -1,0 +1,31 @@
+{
+  "id": "java-1-7",
+  "title": {
+    "zh": "前一個與下一個",
+    "en": "Previous and next"
+  },
+  "description": {
+    "zh": "<p>讀入一個整數，依照範例格式輸出它的下一個數與上一個數。句號前不要多餘空格。</p>",
+    "en": "<p>Write a program that reads an integer number and prints its previous and next numbers. See the examples below for the exact format your answers should take. There shouldn't be a space before the period.</p><p><p>Remember that you can convert the numbers to strings using the function <code>str</code>.</p>"
+  },
+  "hint": {
+    "zh": "格式：<code>The next number for the number X is Y.</code>（上一行同理）",
+    "en": "Format: <code>The next number for the number X is Y.</code> (same pattern for previous)."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "179",
+      "output": "The next number for the number 179 is 180.\nThe previous number for the number 179 is 178."
+    },
+    {
+      "input": "0",
+      "output": "The next number for the number 0 is 1.\nThe previous number for the number 0 is -1."
+    },
+    {
+      "input": "2718281828904590",
+      "output": "The next number for the number 2718281828904590 is 2718281828904591.\nThe previous number for the number 2718281828904590 is 2718281828904589."
+    }
+  ],
+  "source": "vpavlenko/content/next_and_previous.txt"
+}

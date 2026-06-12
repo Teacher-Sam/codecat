@@ -1,0 +1,35 @@
+{
+  "id": "java-1-6",
+  "title": {
+    "zh": "分蘋果",
+    "en": "Apple sharing"
+  },
+  "description": {
+    "zh": "<p><code>N</code> 位學生分 <code>K</code> 顆蘋果，盡量平均分給每位學生，無法整除的剩餘蘋果留在籃子裡。讀入 <code>N</code> 和 <code>K</code>，輸出兩行：每位學生拿到幾顆、籃子裡剩幾顆。</p>",
+    "en": "<p><code>N</code> students take <code>K</code> apples and distribute them among each other evenly. The remaining (the undivisible) part remains in the basket. How many apples will each single student get? How many apples will remain in the basket? <p> The program reads the numbers <code>N</code> and <code>K</code>. It should print the two answers for the questions above.</p>"
+  },
+  "hint": {
+    "zh": "整除用 <code>/</code>，餘數用 <code>%</code>。",
+    "en": "Use <code>/</code> for integer division and <code>%</code> for remainder."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "6\n50",
+      "output": "8\n2"
+    },
+    {
+      "input": "1\n10",
+      "output": "10\n0"
+    },
+    {
+      "input": "5\n25",
+      "output": "5\n0"
+    },
+    {
+      "input": "4\n2",
+      "output": "0\n2"
+    }
+  ],
+  "source": "vpavlenko/content/apples.txt"
+}

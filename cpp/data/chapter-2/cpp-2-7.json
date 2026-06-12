@@ -1,0 +1,31 @@
+{
+  "id": "cpp-2-7",
+  "title": {
+    "zh": "反轉三位數",
+    "en": "Reverse three digits"
+  },
+  "description": {
+    "zh": "<p>讀入一個三位整數，輸出數字順序反轉後的結果（保留前導零）。</p>",
+    "en": "<p>Read a three-digit integer and print its digits in reverse order.</p>"
+  },
+  "hint": {
+    "zh": "反轉各位數後，用 <code>cout << setfill('0') << setw(3) << ans;</code> 保留前導零。",
+    "en": "Reverse the digits, then print with <code>setfill('0') << setw(3)</code> to keep leading zeros."
+  },
+  "starterCode": "#include <iostream>\n#include <iomanip>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "179",
+      "output": "971"
+    },
+    {
+      "input": "100",
+      "output": "001"
+    },
+    {
+      "input": "530",
+      "output": "035"
+    }
+  ],
+  "source": null
+}

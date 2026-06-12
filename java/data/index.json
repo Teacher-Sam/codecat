@@ -1,0 +1,12 @@
+{
+  "chapters": [
+    {
+      "id": "1",
+      "dir": "chapter-1"
+    },
+    {
+      "id": "2",
+      "dir": "chapter-2"
+    }
+  ]
+}

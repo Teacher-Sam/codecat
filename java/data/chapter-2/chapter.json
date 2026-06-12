@@ -1,0 +1,33 @@
+{
+  "title": {
+    "zh": "整數與浮點數",
+    "en": "Integer and float numbers"
+  },
+  "description": {
+    "zh": "位數處理、小數運算、時間與時鐘角度等題型。",
+    "en": "Digit manipulation, decimals, time, and clock angle problems."
+  },
+  "source": "https://github.com/vpavlenko/content",
+  "id": "2",
+  "problemIds": [
+    "java-2-1",
+    "java-2-2",
+    "java-2-3",
+    "java-2-4",
+    "java-2-5",
+    "java-2-6",
+    "java-2-7",
+    "java-2-8",
+    "java-2-9",
+    "java-2-10",
+    "java-2-11",
+    "java-2-12",
+    "java-2-13",
+    "java-2-14",
+    "java-2-15",
+    "java-2-16",
+    "java-2-17",
+    "java-2-18",
+    "java-2-19"
+  ]
+}

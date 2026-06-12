@@ -1,0 +1,30 @@
+{
+  "id": "java-2-7",
+  "title": {
+    "zh": "反轉三位數",
+    "en": "Reverse three digits"
+  },
+  "description": {
+    "zh": "<p>讀入一個三位整數，輸出數字順序反轉後的結果（保留前導零）。</p>",
+    "en": "<p>Read a three-digit integer and print its digits in reverse order.</p>"
+  },
+  "hint": {
+    "zh": "可將數字轉成字串後反轉，或逐位取出再組合。",
+    "en": "Convert to string and reverse, or extract digits mathematically."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "179",
+      "output": "971"
+    },
+    {
+      "input": "100",
+      "output": "001"
+    },
+    {
+      "input": "530",
+      "output": "035"
+    }
+  ]
+}

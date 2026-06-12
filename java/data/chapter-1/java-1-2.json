@@ -1,0 +1,30 @@
+{
+  "id": "java-1-2",
+  "title": {
+    "zh": "Hi John",
+    "en": "Hi John"
+  },
+  "description": {
+    "zh": "<p>讀入一個名字，輸出 <code>Hi</code> 與名字，中間以一個空格分隔。請參考範例。</p>",
+    "en": "<p>Read a name and print the word <code>Hi</code> followed by the name, separated by a single space.</p>"
+  },
+  "hint": {
+    "zh": "使用 <code>System.out.println(\"Hi \" + name);</code> 或 <code>System.out.println(\"Hi \" + scanner.nextLine());</code>",
+    "en": "Use <code>System.out.println(\"Hi \" + name);</code> or similar string concatenation."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "John",
+      "output": "Hi John"
+    },
+    {
+      "input": "Jack",
+      "output": "Hi Jack"
+    },
+    {
+      "input": "Santa Claus",
+      "output": "Hi Santa Claus"
+    }
+  ]
+}

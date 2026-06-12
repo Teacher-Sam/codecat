@@ -1,0 +1,115 @@
+{
+  "id": "java-2-11",
+  "title": {
+    "zh": "小數點後第一位",
+    "en": "First digit after decimal point"
+  },
+  "description": {
+    "zh": "<p>讀入一個正實數，輸出小數點右側第一位數字。</p>",
+    "en": "<p>Given a positive real number, print its first digit to the right of the decimal point.</p>"
+  },
+  "hint": {
+    "zh": "可用字串找 <code>.</code> 後的字元，或數學運算。",
+    "en": "Parse as string after <code>.</code>, or use math."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "1.79",
+      "output": "7"
+    },
+    {
+      "input": "10.34",
+      "output": "3"
+    },
+    {
+      "input": "0.001",
+      "output": "0"
+    },
+    {
+      "input": "179",
+      "output": "0"
+    },
+    {
+      "input": "19.99",
+      "output": "9"
+    },
+    {
+      "input": "179.12",
+      "output": "1"
+    },
+    {
+      "input": "5.29",
+      "output": "2"
+    },
+    {
+      "input": "0.31",
+      "output": "3"
+    },
+    {
+      "input": "12.45",
+      "output": "4"
+    },
+    {
+      "input": "18.58",
+      "output": "5"
+    },
+    {
+      "input": "0.83",
+      "output": "8"
+    },
+    {
+      "input": "999.99",
+      "output": "9"
+    },
+    {
+      "input": "146.67",
+      "output": "6"
+    },
+    {
+      "input": "1293.73",
+      "output": "7"
+    },
+    {
+      "input": "0.09999",
+      "output": "0"
+    },
+    {
+      "input": "312.19999",
+      "output": "1"
+    },
+    {
+      "input": "901.29999",
+      "output": "2"
+    },
+    {
+      "input": "3.39999",
+      "output": "3"
+    },
+    {
+      "input": "2371.49999",
+      "output": "4"
+    },
+    {
+      "input": "290.59999",
+      "output": "5"
+    },
+    {
+      "input": "90291.69999",
+      "output": "6"
+    },
+    {
+      "input": "412.79999",
+      "output": "7"
+    },
+    {
+      "input": "1.89999",
+      "output": "8"
+    },
+    {
+      "input": "0.999999",
+      "output": "9"
+    }
+  ],
+  "source": "vpavlenko/content/int_and_float/digit_after_separator.txt"
+}

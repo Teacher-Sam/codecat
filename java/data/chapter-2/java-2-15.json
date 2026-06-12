@@ -1,0 +1,59 @@
+{
+  "id": "java-2-15",
+  "title": {
+    "zh": "總價",
+    "en": "Total cost"
+  },
+  "description": {
+    "zh": "<p>杯子蛋糕單價 A 元 B 分，買 N 個，輸出總價的元與分（兩個整數）。</p>",
+    "en": "<p>A cupcake costs A dollars and B cents. Determine, how many dollars and cents should one pay for N cupcakes.</p><p>A program gets three numbers: A, B, N. It should print two numbers: total cost in dollars and cents.</p>"
+  },
+  "hint": {
+    "zh": "先換算成總分：<code>N * (100*A + B)</code>，再除以 100 與取餘。",
+    "en": "Total cents = <code>N * (100*A + B)</code>, then split dollars and cents."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "2\n50\n4",
+      "output": "10 0"
+    },
+    {
+      "input": "10\n15\n2",
+      "output": "20 30"
+    },
+    {
+      "input": "3000\n99\n3000",
+      "output": "9002970 0"
+    },
+    {
+      "input": "2029\n34\n1848",
+      "output": "3750220 32"
+    },
+    {
+      "input": "1886\n73\n295",
+      "output": "556585 35"
+    },
+    {
+      "input": "1069\n40\n1967",
+      "output": "2103509 80"
+    },
+    {
+      "input": "905\n79\n496",
+      "output": "449271 84"
+    },
+    {
+      "input": "1967\n91\n926",
+      "output": "1822284 66"
+    },
+    {
+      "input": "2255\n76\n1090",
+      "output": "2458778 40"
+    },
+    {
+      "input": "2435\n6\n1965",
+      "output": "4784892 90"
+    }
+  ],
+  "source": "vpavlenko/content/int_and_float/purchase_price.txt"
+}

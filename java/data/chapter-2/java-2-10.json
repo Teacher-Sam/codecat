@@ -1,0 +1,39 @@
+{
+  "id": "java-2-10",
+  "title": {
+    "zh": "小數部分",
+    "en": "Fractional part"
+  },
+  "description": {
+    "zh": "<p>讀入一個正實數，輸出它的小數部分。</p>",
+    "en": "<p>Given a positive real number, print its fractional part.</p>"
+  },
+  "hint": {
+    "zh": "可用 <code>x - (int)x</code>；注意浮點精度，必要時用字串處理。",
+    "en": "Use <code>x - (int)x</code>; watch floating-point precision."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "17.9",
+      "output": "0.9"
+    },
+    {
+      "input": "10.34",
+      "output": "0.34"
+    },
+    {
+      "input": "0.001",
+      "output": "0.001"
+    },
+    {
+      "input": "179",
+      "output": "0"
+    },
+    {
+      "input": "19.99",
+      "output": "0.99"
+    }
+  ],
+  "source": "vpavlenko/content/int_and_float/fractional_part.txt"
+}

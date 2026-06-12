@@ -1,0 +1,33 @@
+{
+  "id": "2",
+  "title": {
+    "zh": "整數與浮點數",
+    "en": "Integer and float numbers"
+  },
+  "description": {
+    "zh": "位數處理、小數運算、時間與時鐘角度等題型。",
+    "en": "Digit manipulation, decimals, time, and clock angle problems."
+  },
+  "problemIds": [
+    "cpp-2-1",
+    "cpp-2-2",
+    "cpp-2-3",
+    "cpp-2-4",
+    "cpp-2-5",
+    "cpp-2-6",
+    "cpp-2-7",
+    "cpp-2-8",
+    "cpp-2-9",
+    "cpp-2-10",
+    "cpp-2-11",
+    "cpp-2-12",
+    "cpp-2-13",
+    "cpp-2-14",
+    "cpp-2-15",
+    "cpp-2-16",
+    "cpp-2-17",
+    "cpp-2-18",
+    "cpp-2-19"
+  ],
+  "source": "https://github.com/vpavlenko/content"
+}

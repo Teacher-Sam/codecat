@@ -1,0 +1,30 @@
+{
+  "id": "java-2-13",
+  "title": {
+    "zh": "星期幾",
+    "en": "Day of the week"
+  },
+  "description": {
+    "zh": "<p>已知第 1 天是星期一，讀入 <code>k</code>（第 k 天），輸出該天是星期幾（0=週一 … 6=週日）。</p>",
+    "en": "<p>Day 1 is Monday. Given <code>k</code>, print the weekday index (0=Mon … 6=Sun).</p>"
+  },
+  "hint": {
+    "zh": "<code>(k + 3) % 7</code>",
+    "en": "<code>(k + 3) % 7</code>"
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "1",
+      "output": "4"
+    },
+    {
+      "input": "2",
+      "output": "5"
+    },
+    {
+      "input": "7",
+      "output": "3"
+    }
+  ]
+}

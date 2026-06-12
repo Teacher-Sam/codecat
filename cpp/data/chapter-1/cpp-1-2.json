@@ -1,0 +1,31 @@
+{
+  "id": "cpp-1-2",
+  "title": {
+    "zh": "Hi John",
+    "en": "Hi John"
+  },
+  "description": {
+    "zh": "<p>讀入一個名字，輸出 <code>Hi</code> 與名字，中間以一個空格分隔。請參考範例。</p>",
+    "en": "<p>Read a name and print the word <code>Hi</code> followed by the name, separated by a single space.</p>"
+  },
+  "hint": {
+    "zh": "整行讀名字：<code>getline(cin, name);</code>，輸出：<code>cout << \"Hi \" << name;</code>",
+    "en": "Read the full line with <code>getline(cin, name);</code>, then <code>cout << \"Hi \" << name;</code>"
+  },
+  "starterCode": "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "John",
+      "output": "Hi John"
+    },
+    {
+      "input": "Jack",
+      "output": "Hi Jack"
+    },
+    {
+      "input": "Santa Claus",
+      "output": "Hi Santa Claus"
+    }
+  ],
+  "source": null
+}

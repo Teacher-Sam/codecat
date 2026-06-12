@@ -1,0 +1,31 @@
+{
+  "id": "cpp-2-17",
+  "title": {
+    "zh": "蝸牛",
+    "en": "Snail"
+  },
+  "description": {
+    "zh": "<p>蝸牛白天向上爬 <code>a</code> 公尺、晚上下滑 <code>b</code> 公尺（<code>a &gt; b</code>）。井深 <code>h</code> 公尺，問幾天能爬出井口？</p>",
+    "en": "<p>A snail climbs <code>a</code> meters by day and slips <code>b</code> meters by night (<code>a &gt; b</code>). Given well depth <code>h</code>, find days to escape.</p>"
+  },
+  "hint": {
+    "zh": "第一天結束已在 <code>a</code> 公尺；之後每天淨增 <code>a - b</code>。",
+    "en": "After day 1 the snail is at <code>a</code>; each later day net gain is <code>a - b</code>."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "10\n2\n1",
+      "output": "9"
+    },
+    {
+      "input": "20\n3\n2",
+      "output": "18"
+    },
+    {
+      "input": "100\n5\n4",
+      "output": "96"
+    }
+  ],
+  "source": null
+}

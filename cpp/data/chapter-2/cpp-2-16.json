@@ -1,0 +1,31 @@
+{
+  "id": "cpp-2-16",
+  "title": {
+    "zh": "世紀",
+    "en": "Century"
+  },
+  "description": {
+    "zh": "<p>讀入年份，輸出該年屬於第幾世紀。</p>",
+    "en": "<p>Read a year and print its century number.</p>"
+  },
+  "hint": {
+    "zh": "<code>(year - 1) / 100 + 1</code>",
+    "en": "<code>(year - 1) / 100 + 1</code>"
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "2017",
+      "output": "21"
+    },
+    {
+      "input": "1900",
+      "output": "20"
+    },
+    {
+      "input": "2000",
+      "output": "20"
+    }
+  ],
+  "source": null
+}

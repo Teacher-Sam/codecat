@@ -1,0 +1,39 @@
+{
+  "id": "java-2-14",
+  "title": {
+    "zh": "數位時鐘",
+    "en": "Digital clock"
+  },
+  "description": {
+    "zh": "<p>午夜過後經過 N 分鐘，輸出 24 小時制的小時與分鐘（兩個整數，空格分隔）。</p>",
+    "en": "<p>Given the integer N - the number of minutes that is passed since midnight - how many hours and minutes are displayed on the 24h digital clock? <p> The program should print two numbers: the number of hours (between 0 and 23) and the number of minutes (between 0 and 59). <p> For example, if N = 150, then 150 minutes have passed since midnight - i.e. now is 2:30 am. So the program should print <code>2 30</code>.</p>"
+  },
+  "hint": {
+    "zh": "<code>hours = N / 60</code>，<code>minutes = N % 60</code>。",
+    "en": "<code>hours = N / 60</code>, <code>minutes = N % 60</code>."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "150",
+      "output": "2 30"
+    },
+    {
+      "input": "180",
+      "output": "3 0"
+    },
+    {
+      "input": "444",
+      "output": "7 24"
+    },
+    {
+      "input": "1111",
+      "output": "18 31"
+    },
+    {
+      "input": "1439",
+      "output": "23 59"
+    }
+  ],
+  "source": "vpavlenko/content/electronic_watch.txt"
+}

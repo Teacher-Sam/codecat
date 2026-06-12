@@ -1,0 +1,31 @@
+{
+  "id": "cpp-2-8",
+  "title": {
+    "zh": "合併兩數",
+    "en": "Merge two numbers"
+  },
+  "description": {
+    "zh": "<p>讀入兩個兩位整數，依序交替取出它們的十位、個位並串接輸出（共四位字元）。</p>",
+    "en": "<p>Read two two-digit integers and merge their digits alternately.</p>"
+  },
+  "hint": {
+    "zh": "例如 12 與 34 → 輸出 <code>1324</code>（交替取十位、個位）。",
+    "en": "Example: 12 and 34 → output <code>1324</code> (alternate tens and units)."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "12\n34",
+      "output": "1324"
+    },
+    {
+      "input": "56\n78",
+      "output": "5768"
+    },
+    {
+      "input": "90\n12",
+      "output": "9102"
+    }
+  ],
+  "source": null
+}

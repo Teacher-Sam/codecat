@@ -1,0 +1,23 @@
+{
+  "id": "1",
+  "title": {
+    "zh": "輸入、輸出與數字",
+    "en": "Input, print and numbers"
+  },
+  "description": {
+    "zh": "學習 Java 的基本輸出、變數與 Scanner 讀取輸入。",
+    "en": "Learn basic output, variables, and reading input with Scanner in Java."
+  },
+  "problemIds": [
+    "java-1-1",
+    "java-1-2",
+    "java-1-3",
+    "java-1-4",
+    "java-1-5",
+    "java-1-6",
+    "java-1-7",
+    "java-1-8",
+    "java-1-9"
+  ],
+  "source": "https://github.com/vpavlenko/content"
+}
