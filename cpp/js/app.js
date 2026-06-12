@@ -6,7 +6,6 @@ const App = {
   testStates: [],
   activeTestIndex: null,
   isRunningTests: false,
-  saveCodeTimer: null,
 
   /** @param {{zh?: string, en?: string} | string | null | undefined} value */
   text(value) {
@@ -135,15 +134,6 @@ const App = {
     return Progress.isSolved(problemId);
   },
 
-  scheduleSaveCode(problemId) {
-    if (!this.editor || this._suppressCodeSave) return;
-    clearTimeout(this.saveCodeTimer);
-    this.saveCodeTimer = setTimeout(() => {
-      if (this._suppressCodeSave) return;
-      Progress.saveCode(problemId, this.editor.getValue());
-    }, 1500);
-  },
-
   showView(name) {
     document.querySelectorAll(".view").forEach((el) => el.classList.add("hidden"));
     document.getElementById(`view-${name}`).classList.remove("hidden");
@@ -225,8 +215,6 @@ const App = {
     const wrapper = document.getElementById("editor");
     wrapper.innerHTML = "";
 
-    this._suppressCodeSave = false;
-
     this.editor = CodeMirror(wrapper, {
       value: code,
       mode: CONFIG.EDITOR_MODE || "text/x-c++src",
@@ -246,13 +234,7 @@ const App = {
       window.addEventListener("resize", () => this.fitEditorHeight());
     }
 
-    this.editor.on("change", (_, change) => {
-      if (change.origin !== "setValue") {
-        this._suppressCodeSave = false;
-      }
-      if (this.currentProblem && !this._suppressCodeSave) {
-        this.scheduleSaveCode(this.currentProblem.id);
-      }
+    this.editor.on("change", () => {
       this.scheduleEditorResize();
     });
   },
@@ -649,11 +631,9 @@ const App = {
     btnReset.onclick = () => {
       const solved = this.isSolved(problem.id);
       const msg = solved
-        ? "確定要重設為初始程式碼嗎？\n\n僅影響目前畫面，不會覆蓋已儲存的答對程式。重新整理或再次進入此題會還原。"
-        : "確定要重設為初始程式碼嗎？\n\n僅影響目前畫面，重新整理或再次進入此題會還原已儲存的程式。";
+        ? "確定要重設為初始程式碼嗎？\n\n僅影響目前畫面；重新整理或再次進入此題會還原為已 Save all 通過的程式。"
+        : "確定要重設為初始程式碼嗎？\n\n僅影響目前畫面，不會儲存。";
       if (confirm(msg)) {
-        clearTimeout(this.saveCodeTimer);
-        this._suppressCodeSave = true;
         this.editor.setValue(problem.starterCode);
         this.initTestStates(problem.tests.length);
         this.renderTestList(problem);

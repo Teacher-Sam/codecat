@@ -91,7 +91,9 @@ const Progress = {
   },
 
   getCode(problemId) {
-    return this.cache[problemId]?.code ?? null;
+    const row = this.cache[problemId];
+    if (!row?.solved) return null;
+    return row.code ?? null;
   },
 
   async markSolved(problemId, code) {

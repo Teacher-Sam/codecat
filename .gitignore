@@ -7,3 +7,6 @@ __pycache__/
 # 全站密碼等本機私密設定
 java/js/config.local.js
 cpp/js/config.local.js
+
+# 本機備忘（不上傳）
+LOCAL_GITHUB_COMMANDS.md
