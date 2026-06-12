@@ -5,7 +5,8 @@ const CONFIG = {
   PROBLEM_ID_PREFIX: "cpp-",
   EDITOR_MODE: "text/x-c++src",
 
-  ACCESS_PASSWORD: "codecat",
+  // 實際密碼寫在 config.local.js（勿 commit）
+  ACCESS_PASSWORD: "",
 
   SUPABASE_URL: "https://fqxbrnvmehickumytzhc.supabase.co",
   SUPABASE_ANON_KEY: "sb_publishable_91q0wbRqEbSohKFzAE56Mw_LqFnxKof",

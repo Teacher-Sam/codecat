@@ -86,6 +86,8 @@ python -m http.server 8080
 | `PROGRESS_KEY` | `snakify_practice_platform_java_progress` / `_cpp_progress` |
 | `AUTH_KEY` | `snakify_practice_platform_site_gate`（Java/C++ 共用全站密碼） |
 
+**全站密碼**（`ACCESS_PASSWORD`）請寫在 `js/config.local.js`（從 `config.local.example.js` 複製），此檔已在 `.gitignore`，不會 push 到 GitHub。
+
 ---
 
 ## 匯入 / 轉換題目

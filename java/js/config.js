@@ -5,8 +5,8 @@ const CONFIG = {
   PROBLEM_ID_PREFIX: "java-",
   EDITOR_MODE: "text/x-java",
 
-  // 選用：全站密碼（有帳號系統時建議設為 ""）
-  ACCESS_PASSWORD: "codecat",
+  // 選用：全站密碼（實際值請寫在 config.local.js，勿 commit）
+  ACCESS_PASSWORD: "",
 
   // Supabase：填入後啟用帳號與雲端儲存（見 README）
   SUPABASE_URL: "https://fqxbrnvmehickumytzhc.supabase.co",

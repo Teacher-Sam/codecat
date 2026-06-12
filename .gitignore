@@ -3,3 +3,7 @@ Thumbs.db
 *.log
 __pycache__/
 *.pyc
+
+# 全站密碼等本機私密設定
+java/js/config.local.js
+cpp/js/config.local.js
