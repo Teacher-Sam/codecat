@@ -16,7 +16,9 @@
   --font: "Segoe UI", "Microsoft JhengHei", "PingFang TC", sans-serif;
   --mono: "Cascadia Code", "Consolas", monospace;
   --editor-min-height: 260px;
-  --editor-max-height: min(50vh, 600px);
+  --editor-default-height: 320px;
+  --output-min-height: 3rem;
+  --output-default-height: 140px;
 }
 
 * {
@@ -195,10 +197,6 @@ body:has(#view-problem:not(.hidden)) .header-inner {
   .problem-layout {
     grid-template-columns: 1fr;
   }
-
-  :root {
-    --editor-max-height: min(45vh, 480px);
-  }
 }
 
 .problem-panel,
@@ -222,58 +220,14 @@ body:has(#view-problem:not(.hidden)) .header-inner {
 
 .editor-wrap {
   flex-shrink: 0;
+  height: var(--editor-default-height);
   min-height: var(--editor-min-height);
-  max-height: var(--editor-max-height);
-  overflow: auto;
+  max-height: 80vh;
+  resize: vertical;
+  overflow: hidden;
   margin-bottom: 0.5rem;
   border: 1px solid var(--border);
   border-radius: 6px;
-  scrollbar-gutter: stable;
-  scrollbar-width: thin;
-  scrollbar-color: #4a5d78 var(--bg);
-}
-
-.editor-wrap::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-.editor-wrap::-webkit-scrollbar-track {
-  background: var(--bg);
-}
-
-.editor-wrap::-webkit-scrollbar-thumb {
-  background: #4a5d78;
-  border-radius: 5px;
-  border: 2px solid var(--bg);
-}
-
-.editor-wrap::-webkit-scrollbar-thumb:hover {
-  background: var(--text-muted);
-}
-
-/* CodeMirror 展開至完整內容高度，由 .editor-wrap 負責捲動 */
-.editor-wrap .CodeMirror {
-  height: auto !important;
-  overflow: visible !important;
-}
-
-.editor-wrap .CodeMirror-scroll {
-  overflow: visible !important;
-  height: auto !important;
-  margin-bottom: 0 !important;
-  margin-right: 0 !important;
-  padding-bottom: 0 !important;
-  padding-right: 0 !important;
-}
-
-.editor-wrap .CodeMirror-sizer {
-  border-right: 0 solid transparent !important;
-  margin-bottom: 0 !important;
-}
-
-.editor-wrap .CodeMirror-gutter {
-  margin-bottom: 0 !important;
 }
 
 .problem-panel h2 {
@@ -338,6 +292,17 @@ body:has(#view-problem:not(.hidden)) .header-inner {
   cursor: pointer;
   color: var(--text);
   font-weight: 600;
+}
+
+.editor-wrap .CodeMirror {
+  height: 100% !important;
+  font-family: var(--mono);
+  font-size: 0.9rem;
+}
+
+.editor-wrap .CodeMirror-scroll {
+  overflow: auto !important;
+  height: 100% !important;
 }
 
 .editor-toolbar {
@@ -416,7 +381,6 @@ body:has(#view-problem:not(.hidden)) .header-inner {
   margin-top: 0.75rem;
   border: 1px solid var(--border);
   border-radius: 6px;
-  overflow: hidden;
 }
 
 .output-header {
@@ -425,18 +389,23 @@ body:has(#view-problem:not(.hidden)) .header-inner {
   font-size: 0.8rem;
   color: var(--text-muted);
   border-bottom: 1px solid var(--border);
+  border-radius: 6px 6px 0 0;
 }
 
 .output-content {
   margin: 0;
   padding: 0.75rem;
-  min-height: 3rem;
-  max-height: 140px;
+  min-height: var(--output-min-height);
+  height: var(--output-default-height);
+  max-height: 60vh;
+  resize: vertical;
   overflow: auto;
   font-family: var(--mono);
   font-size: 0.88rem;
   white-space: pre-wrap;
   word-break: break-word;
+  border-radius: 0 0 6px 6px;
+  box-sizing: border-box;
 }
 
 .output-content.error {

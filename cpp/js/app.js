@@ -139,7 +139,7 @@ const App = {
     document.getElementById(`view-${name}`).classList.remove("hidden");
     window.scrollTo(0, 0);
     document.querySelector(".problem-panel")?.scrollTo(0, 0);
-    document.querySelector(".editor-wrap")?.scrollTo(0, 0);
+    this.getEditorScroller()?.scrollTo(0, 0);
   },
 
   renderHome() {
@@ -230,16 +230,24 @@ const App = {
 
     this.editor.on("cursorActivity", () => this.scrollEditorCursorIntoView());
     this.bindEditorWheelScroll();
+    this.bindEditorWrapResize();
 
     this.fitEditorHeight();
     if (!this._editorResizeBound) {
       this._editorResizeBound = true;
       window.addEventListener("resize", () => this.fitEditorHeight());
     }
+  },
 
-    this.editor.on("change", () => {
-      this.scheduleEditorResize();
-    });
+  bindEditorWrapResize() {
+    const wrap = document.querySelector(".editor-wrap");
+    if (!wrap || this._editorWrapObserver) return;
+    this._editorWrapObserver = new ResizeObserver(() => this.fitEditorHeight());
+    this._editorWrapObserver.observe(wrap);
+  },
+
+  getEditorScroller() {
+    return this.editor?.getScrollerElement?.() || null;
   },
 
   bindEditorWheelScroll() {
@@ -250,9 +258,11 @@ const App = {
       "wheel",
       (e) => {
         const wrap = e.target.closest?.(".editor-wrap");
-        if (!wrap || wrap.scrollHeight <= wrap.clientHeight) return;
+        if (!wrap) return;
+        const scroll = wrap.querySelector(".CodeMirror-scroll");
+        if (!scroll || scroll.scrollHeight <= scroll.clientHeight) return;
 
-        wrap.scrollTop += e.deltaY;
+        scroll.scrollTop += e.deltaY;
         e.preventDefault();
       },
       { passive: false, capture: true }
@@ -261,18 +271,18 @@ const App = {
 
   scrollEditorCursorIntoView() {
     if (!this.editor) return;
-    const wrap = document.querySelector(".editor-wrap");
-    if (!wrap || wrap.scrollHeight <= wrap.clientHeight) return;
+    const scroll = this.getEditorScroller();
+    if (!scroll || scroll.scrollHeight <= scroll.clientHeight) return;
 
     const coords = this.editor.charCoords(this.editor.getCursor(), "local");
     const padding = 28;
-    const viewTop = wrap.scrollTop;
-    const viewBottom = viewTop + wrap.clientHeight;
+    const viewTop = scroll.scrollTop;
+    const viewBottom = viewTop + scroll.clientHeight;
 
     if (coords.top < viewTop + padding) {
-      wrap.scrollTop = Math.max(0, coords.top - padding);
+      scroll.scrollTop = Math.max(0, coords.top - padding);
     } else if (coords.bottom > viewBottom - padding) {
-      wrap.scrollTop = coords.bottom - wrap.clientHeight + padding;
+      scroll.scrollTop = coords.bottom - scroll.clientHeight + padding;
     }
   },
 
@@ -281,23 +291,9 @@ const App = {
     const wrap = document.querySelector(".editor-wrap");
     if (!wrap) return;
 
-    const prevScrollTop = wrap.scrollTop;
-
-    const rootStyles = getComputedStyle(document.documentElement);
-    const minH = parseInt(rootStyles.getPropertyValue("--editor-min-height"), 10) || 260;
-    const maxH = parseInt(getComputedStyle(wrap).maxHeight, 10) || Math.min(window.innerHeight * 0.5, 600);
-
-    this.editor.setSize("100%", maxH);
+    const h = Math.max(wrap.clientHeight, 1);
+    this.editor.setSize("100%", h);
     this.editor.refresh();
-    const contentH = this.editor.getScrollInfo().height;
-    const viewportH = Math.min(maxH, Math.max(minH, contentH));
-
-    this.editor.setSize("100%", contentH);
-    wrap.style.height = `${viewportH}px`;
-    this.editor.refresh();
-
-    const maxScroll = Math.max(0, wrap.scrollHeight - wrap.clientHeight);
-    wrap.scrollTop = Math.min(prevScrollTop, maxScroll);
   },
 
   /** 等版面完成後再量一次（載入已存程式碼、切換題目時需要） */
@@ -306,14 +302,6 @@ const App = {
     requestAnimationFrame(() => {
       requestAnimationFrame(() => this.fitEditorHeight());
     });
-  },
-
-  scheduleEditorResize() {
-    clearTimeout(this.editorResizeTimer);
-    this.editorResizeTimer = setTimeout(() => {
-      this.fitEditorHeight();
-      this.scrollEditorCursorIntoView();
-    }, 50);
   },
 
   setOutput(text, type) {
