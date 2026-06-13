@@ -14,7 +14,7 @@ const CONFIG = {
 
   PASSWORD_RESET_REDIRECT: "",
 
-  JUDGE0_URL: "https://ce.judge0.com/submissions?base64_encoded=false&wait=true",
+  JUDGE0_URL: "https://ce.judge0.com/submissions?base64_encoded=true&wait=true",
   CPP_LANGUAGE_ID: 54,
   PISTON_URL: "https://emkc.org/api/v2/piston/execute",
   PISTON_CPP_VERSION: "10.2.0",

@@ -14,7 +14,7 @@ const CONFIG = {
   REQUIRE_LOGIN: true,
   PASSWORD_RESET_REDIRECT: "",
 
-  JUDGE0_URL: "https://ce.judge0.com/submissions?base64_encoded=false&wait=true",
+  JUDGE0_URL: "https://ce.judge0.com/submissions?base64_encoded=true&wait=true",
   JAVA_LANGUAGE_ID: 62,
   PISTON_URL: "https://emkc.org/api/v2/piston/execute",
   PISTON_JAVA_VERSION: "15.0.2",
