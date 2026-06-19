@@ -1,39 +1,51 @@
 {
   "id": "java-3-2",
   "title": {
-    "zh": "符號函數",
-    "en": "Sign function"
+    "zh": "是否為奇數",
+    "en": "Is odd"
   },
   "description": {
-    "zh": "<p>讀入整數 x，輸出 1（正）、0（零）或 -1（負）。</p>",
-    "en": "<p><p> For the given integer X print <code>1</code> if it's positive, <code>-1</code> if it's negative, or <code>0</code> if it's equal to zero.</p><p><p> Try to use the cascade <code>if-elif-else</code> for it.</p>"
+    "zh": "<p>讀入整數，若為奇數輸出 YES，否則輸出 NO。</p>",
+    "en": "<p>Is odd.</p>"
   },
   "hint": {
-    "zh": "依 x 的正負零分三支 <code>if</code>。",
-    "en": "Three branches for positive, zero, negative."
+    "zh": "奇數：<code>a % 2 != 0</code>。",
+    "en": "Odd: <code>a % 2 != 0</code>."
   },
   "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
   "tests": [
     {
-      "input": "179",
-      "output": "1"
+      "input": "1",
+      "output": "YES"
     },
     {
-      "input": "-42",
-      "output": "-1"
+      "input": "2",
+      "output": "NO"
     },
     {
-      "input": "0",
-      "output": "0"
+      "input": "5",
+      "output": "YES"
+    },
+    {
+      "input": "-6",
+      "output": "NO"
+    },
+    {
+      "input": "79",
+      "output": "YES"
+    },
+    {
+      "input": "-10",
+      "output": "NO"
     },
     {
       "input": "17",
-      "output": "1"
+      "output": "YES"
     },
     {
-      "input": "-100",
-      "output": "-1"
+      "input": "100",
+      "output": "NO"
     }
   ],
-  "source": "vpavlenko/content/ifelse/signum.txt"
+  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/is_odd/"
 }

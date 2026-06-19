@@ -4,8 +4,8 @@
     "en": "Conditions: if, then, else"
   },
   "description": {
-    "zh": "if / else、比較運算、邏輯運算，以及西洋棋與閏年等題型。",
-    "en": "if/else, comparisons, logical operators, chess moves, and leap year."
+    "zh": "if / else、比較與邏輯運算、西洋棋走法、閏年等（共 27 題）。",
+    "en": "if/else, comparisons, logic, chess moves, leap year, and more (27 problems)."
   },
   "source": "https://github.com/vpavlenko/content",
   "id": "3",
@@ -22,6 +22,21 @@
     "java-3-9",
     "java-3-10",
     "java-3-11",
-    "java-3-12"
+    "java-3-12",
+    "java-3-13",
+    "java-3-14",
+    "java-3-15",
+    "java-3-16",
+    "java-3-17",
+    "java-3-18",
+    "java-3-19",
+    "java-3-20",
+    "java-3-21",
+    "java-3-22",
+    "java-3-23",
+    "java-3-24",
+    "java-3-25",
+    "java-3-26",
+    "java-3-27"
   ]
 }

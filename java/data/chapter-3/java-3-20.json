@@ -1,0 +1,55 @@
+{
+  "id": "java-3-20",
+  "title": {
+    "zh": "閏年",
+    "en": "Leap year"
+  },
+  "description": {
+    "zh": "<p>讀入年份，依格里曆規則輸出 LEAP 或 COMMON（全大寫）。</p>",
+    "en": "<p><p> Given the year number. You need to check if this year is a leap year. If it is, print <code>LEAP</code>, otherwise print <code>COMMON</code>.</p><p><p> The rules in Gregorian calendar are as follows: <ul>     <li>a year is a leap year if its number is exactly divisible by 4 and is not exactly divisible by 100     <li>a year is always a leap year if its number is exactly divisible by 400 </ul></p><p><p> <b>Warning.</b> The words <code>LEAP</code> and <code>COMMON</code> should be printed all caps.</p>"
+  },
+  "hint": {
+    "zh": "能被 400 整除 → LEAP；能被 100 整除 → COMMON；能被 4 整除 → LEAP。",
+    "en": "Divisible by 400 → LEAP; by 100 → COMMON; by 4 → LEAP."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "2012",
+      "output": "LEAP"
+    },
+    {
+      "input": "2011",
+      "output": "COMMON"
+    },
+    {
+      "input": "1492",
+      "output": "LEAP"
+    },
+    {
+      "input": "1861",
+      "output": "COMMON"
+    },
+    {
+      "input": "1600",
+      "output": "LEAP"
+    },
+    {
+      "input": "1700",
+      "output": "COMMON"
+    },
+    {
+      "input": "1800",
+      "output": "COMMON"
+    },
+    {
+      "input": "1900",
+      "output": "COMMON"
+    },
+    {
+      "input": "2000",
+      "output": "LEAP"
+    }
+  ],
+  "source": "vpavlenko/content/ifelse/leap_year.txt"
+}

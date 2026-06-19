@@ -1,71 +1,75 @@
 {
   "id": "java-3-10",
   "title": {
-    "zh": "馬的走法",
-    "en": "Knight move"
+    "zh": "是否三位數",
+    "en": "Is three digit"
   },
   "description": {
-    "zh": "<p>判斷馬能否一步 L 形走到 (x2,y2)，輸出 YES/NO。</p>",
-    "en": "<p>Chess knight moves like the letter L. It can move two cells horizontally and one cell vertically, or two cells vertically and one cells horizontally. Given two different cells of the chessboard, determine whether a knight can go from the first cell to the second in one move.</p><p><p> The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output <code>YES</code> if a knight can go from the first cell to the second in one move, or <code>NO</code> otherwise.</p><p><p><img src=\"/static/images/problems/knight_move.png\" width=\"500\"></p></p>"
+    "zh": "<p>讀入整數，若為三位數（100～999）輸出 YES，否則 NO。</p>",
+    "en": "<p>Is three digit.</p>"
   },
   "hint": {
-    "zh": "一軸差 2、另一軸差 1。",
-    "en": "One axis diff 2, other diff 1."
+    "zh": "<code>100 &lt;= a &amp;&amp; a &lt;= 999</code>",
+    "en": "Check the range 100–999."
   },
   "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
   "tests": [
     {
-      "input": "1\n1\n1\n4",
-      "output": "NO"
-    },
-    {
-      "input": "1\n1\n8\n8",
-      "output": "NO"
-    },
-    {
-      "input": "2\n4\n3\n2",
+      "input": "123",
       "output": "YES"
     },
     {
-      "input": "5\n2\n4\n4",
+      "input": "1233",
+      "output": "NO"
+    },
+    {
+      "input": "5",
+      "output": "NO"
+    },
+    {
+      "input": "360",
       "output": "YES"
     },
     {
-      "input": "2\n8\n3\n7",
+      "input": "79",
       "output": "NO"
     },
     {
-      "input": "2\n8\n3\n5",
-      "output": "NO"
-    },
-    {
-      "input": "5\n5\n3\n7",
-      "output": "NO"
-    },
-    {
-      "input": "2\n4\n2\n5",
-      "output": "NO"
-    },
-    {
-      "input": "4\n7\n6\n6",
+      "input": "900",
       "output": "YES"
     },
     {
-      "input": "4\n5\n2\n4",
-      "output": "YES"
-    },
-    {
-      "input": "2\n3\n3\n2",
+      "input": "1712",
       "output": "NO"
     },
     {
-      "input": "5\n1\n4\n3",
+      "input": "100",
       "output": "YES"
     },
     {
-      "input": "6\n2\n8\n3",
+      "input": "8",
+      "output": "NO"
+    },
+    {
+      "input": "176",
+      "output": "YES"
+    },
+    {
+      "input": "1023",
+      "output": "NO"
+    },
+    {
+      "input": "999",
+      "output": "YES"
+    },
+    {
+      "input": "99",
+      "output": "NO"
+    },
+    {
+      "input": "404",
       "output": "YES"
     }
   ],
-  "source": "vpavlenko/content/ifelse/knight_move.txt"
+  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/is_three_digit/"
 }

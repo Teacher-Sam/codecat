@@ -1,0 +1,83 @@
+{
+  "id": "java-3-22",
+  "title": {
+    "zh": "四位回文數",
+    "en": "Four-digit palindrome"
+  },
+  "description": {
+    "zh": "<p>讀入四位整數，判斷是否回文（正讀反讀相同），輸出 YES/NO。</p>",
+    "en": "<p>Four-digit palindrome.</p>"
+  },
+  "hint": {
+    "zh": "比較千位與個位、百位與十位。",
+    "en": "Compare first/last and middle digits."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "1221",
+      "output": "YES"
+    },
+    {
+      "input": "1231",
+      "output": "NO"
+    },
+    {
+      "input": "5775",
+      "output": "YES"
+    },
+    {
+      "input": "5777",
+      "output": "NO"
+    },
+    {
+      "input": "5776",
+      "output": "NO"
+    },
+    {
+      "input": "9999",
+      "output": "YES"
+    },
+    {
+      "input": "9899",
+      "output": "NO"
+    },
+    {
+      "input": "9992",
+      "output": "NO"
+    },
+    {
+      "input": "9949",
+      "output": "NO"
+    },
+    {
+      "input": "3003",
+      "output": "YES"
+    },
+    {
+      "input": "3006",
+      "output": "NO"
+    },
+    {
+      "input": "6003",
+      "output": "NO"
+    },
+    {
+      "input": "8808",
+      "output": "NO"
+    },
+    {
+      "input": "8888",
+      "output": "YES"
+    },
+    {
+      "input": "8228",
+      "output": "YES"
+    },
+    {
+      "input": "8989",
+      "output": "NO"
+    }
+  ],
+  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/four_digit_palindrome/"
+}

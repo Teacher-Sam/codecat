@@ -1,63 +1,55 @@
 {
   "id": "java-3-6",
   "title": {
-    "zh": "棋盤同色",
-    "en": "Chess board - same color"
+    "zh": "兩數皆奇",
+    "en": "Are both odd"
   },
   "description": {
-    "zh": "<p>讀入兩格座標，判斷是否同色，輸出 YES/NO。</p>",
-    "en": "<p>Given two cells of a chessboard. If they are painted in one color, print the word <code>YES</code>, and if in a different color - <code>NO</code>.</p><p><p> The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell.</p><p><p><img src=\"/static/images/problems/chess_board.png\" width=\"500\"></p></p>"
+    "zh": "<p>讀入兩個整數，若兩者都是奇數輸出 YES，否則 NO。</p>",
+    "en": "<p>Are both odd.</p>"
   },
   "hint": {
-    "zh": "同色 ⟺ 兩格 (x+y) 的奇偶性相同。",
-    "en": "Same color iff <code>(x1+y1)%2 == (x2+y2)%2</code>."
+    "zh": "<code>a % 2 != 0 &amp;&amp; b % 2 != 0</code>",
+    "en": "Both odd with <code>&amp;&amp;</code>."
   },
   "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
   "tests": [
     {
-      "input": "1\n1\n2\n6",
+      "input": "1\n3",
       "output": "YES"
     },
     {
-      "input": "2\n2\n2\n5",
+      "input": "1\n2",
       "output": "NO"
     },
     {
-      "input": "2\n2\n2\n4",
+      "input": "5\n3",
       "output": "YES"
     },
     {
-      "input": "2\n3\n3\n2",
-      "output": "YES"
-    },
-    {
-      "input": "2\n3\n7\n8",
-      "output": "YES"
-    },
-    {
-      "input": "2\n3\n8\n8",
+      "input": "10\n11",
       "output": "NO"
     },
     {
-      "input": "5\n7\n5\n7",
+      "input": "79\n81",
       "output": "YES"
     },
     {
-      "input": "2\n6\n3\n1",
+      "input": "79\n100",
+      "output": "NO"
+    },
+    {
+      "input": "17\n-5",
       "output": "YES"
     },
     {
-      "input": "2\n3\n4\n5",
-      "output": "YES"
+      "input": "100\n200",
+      "output": "NO"
     },
     {
-      "input": "7\n2\n2\n3",
-      "output": "YES"
-    },
-    {
-      "input": "1\n6\n7\n2",
-      "output": "YES"
+      "input": "40\n20",
+      "output": "NO"
     }
   ],
-  "source": "vpavlenko/content/ifelse/chess_board.txt"
+  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/are_both_odd/"
 }

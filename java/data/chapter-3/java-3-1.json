@@ -1,35 +1,43 @@
 {
   "id": "java-3-1",
   "title": {
-    "zh": "兩數取小",
-    "en": "Minimum of two numbers"
+    "zh": "是否為正數",
+    "en": "Is positive"
   },
   "description": {
-    "zh": "<p>讀入兩個整數，輸出較小的那一個。</p>",
-    "en": "<p>Given two integers, print the smaller value.</p>"
+    "zh": "<p>讀入整數，若為正數輸出 YES，否則輸出 NO。</p>",
+    "en": "<p>Is positive.</p>"
   },
   "hint": {
-    "zh": "若 <code>a &lt; b</code> 輸出 a，否則輸出 b。",
-    "en": "Compare with <code>&lt;</code> or use <code>Math.min</code>."
+    "zh": "使用 <code>if (a &gt; 0)</code>。",
+    "en": "Use <code>if (a &gt; 0)</code>."
   },
   "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
   "tests": [
     {
-      "input": "3\n7",
-      "output": "3"
+      "input": "12",
+      "output": "YES"
     },
     {
-      "input": "2\n2",
-      "output": "2"
+      "input": "-34",
+      "output": "NO"
     },
     {
-      "input": "15\n-8",
-      "output": "-8"
+      "input": "5",
+      "output": "YES"
     },
     {
-      "input": "-15\n-8",
-      "output": "-15"
+      "input": "-6",
+      "output": "NO"
+    },
+    {
+      "input": "79",
+      "output": "YES"
+    },
+    {
+      "input": "-1",
+      "output": "NO"
     }
   ],
-  "source": "vpavlenko/content/ifelse/minimum.txt"
+  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/is_positive/"
 }
