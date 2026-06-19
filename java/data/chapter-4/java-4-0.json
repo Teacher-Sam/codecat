@@ -1,0 +1,19 @@
+{
+  "id": "java-4-0",
+  "type": "intro",
+  "title": {
+    "zh": "章節介紹",
+    "en": "Chapter introduction"
+  },
+  "description": {
+    "zh": "<h3>for 迴圈</h3><p>前面的程式多半逐行依序執行；當同一段程式需要重複多次時，就要用到<strong>迴圈</strong>。Java 有 <code>for</code> 與 <code>while</code>，本章先學 <code>for</code>。</p><p>最基本的 <code>for</code> 由三部分組成：初始值、條件、每次迭代後的更新：</p><pre><code>for (int i = 0; i &lt; 3; i++) {\n    System.out.println(i);\n}\n// 0\n// 1\n// 2</code></pre><p>若要讓 <code>i</code> 從 5 跑到 7（不含 8），可寫：</p><pre><code>for (int i = 5; i &lt; 8; i++) {\n    System.out.println(i + \" \" + (i * i));\n}\n// 5 25\n// 6 36\n// 7 49</code></pre><p>上界常寫成 <code>i &lt; n + 1</code> 或 <code>i &lt;= n</code>，才能包含 <code>n</code> 本身。例如求 1 到 n 的和：</p><pre><code>int result = 0;\nint n = 5;\nfor (int i = 1; i &lt;= n; i++) {\n    result += i;\n}\nSystem.out.println(result);  // 15</code></pre><h3>遞減迴圈</h3><p>需要由大到小迭代時，可在更新步驟減去固定值：</p><pre><code>for (int i = 10; i &gt; 0; i -= 2) {\n    System.out.println(i);\n}\n// 10\n// 8\n// 6\n// 4\n// 2</code></pre><p>若起始條件一開始就不成立（例如 <code>i &lt; -5</code> 且初值為 0），迴圈本體一次都不會執行。</p><h3>輸出格式</h3><p>預設 <code>System.out.println(x)</code> 會在末尾換行。若要在同一行連續輸出多個值，可用 <code>System.out.print</code>：</p><pre><code>System.out.print(1);\nSystem.out.print(\" \");\nSystem.out.println(2);  // 1 2 然後換行</code></pre><p>本章題目包含階乘、累加、階梯輸出與數列列印等，請善用 <code>for</code> 控制重複次數與迭代變數。閱讀完畢後，點選「下一題」開始練習。</p>",
+    "en": "<h3>The for loop</h3><p>Earlier programs ran line by line. When a block must run many times, use a <strong>loop</strong>. Java has <code>for</code> and <code>while</code>; this chapter covers <code>for</code>.</p><p>A basic <code>for</code> has three parts: initialization, condition, and update:</p><pre><code>for (int i = 0; i &lt; 3; i++) {\n    System.out.println(i);\n}\n// 0\n// 1\n// 2</code></pre><p>To iterate from 5 to 7 inclusive of 5 but stop before 8:</p><pre><code>for (int i = 5; i &lt; 8; i++) {\n    System.out.println(i + \" \" + (i * i));\n}\n// 5 25\n// 6 36\n// 7 49</code></pre><p>Often write the bound as <code>i &lt;= n</code> to include <code>n</code>. Sum from 1 to n:</p><pre><code>int result = 0;\nint n = 5;\nfor (int i = 1; i &lt;= n; i++) {\n    result += i;\n}\nSystem.out.println(result);  // 15</code></pre><h3>Descending loops</h3><pre><code>for (int i = 10; i &gt; 0; i -= 2) {\n    System.out.println(i);\n}\n// 10\n// 8\n// 6\n// 4\n// 2</code></pre><p>If the condition is false at the start, the loop body never runs.</p><h3>Output formatting</h3><p><code>System.out.println</code> adds a newline. To print several values on one line, use <code>System.out.print</code>:</p><pre><code>System.out.print(1);\nSystem.out.print(\" \");\nSystem.out.println(2);</code></pre><p>Problems include factorials, sums, ladder output, and printing sequences—use <code>for</code> to control repetition. When ready, click <strong>Next</strong> below.</p>"
+  },
+  "hint": {
+    "zh": "",
+    "en": ""
+  },
+  "starterCode": "",
+  "tests": [],
+  "source": "vpavlenko/content/lessons/40_for.html (adapted for Java)"
+}

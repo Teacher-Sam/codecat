@@ -1,0 +1,47 @@
+{
+  "id": "java-4-1",
+  "title": {
+    "zh": "數到 N",
+    "en": "Count to N"
+  },
+  "description": {
+    "zh": "<p>讀入整數 n，依序輸出 1 到 n，每個數字一行。</p>",
+    "en": "<p>Count to N.</p>"
+  },
+  "hint": {
+    "zh": "<code>for (int i = 1; i &lt;= n; i++)</code>",
+    "en": "Loop from 1 to n inclusive."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "5",
+      "output": "1\n2\n3\n4\n5"
+    },
+    {
+      "input": "3",
+      "output": "1\n2\n3"
+    },
+    {
+      "input": "1",
+      "output": "1"
+    },
+    {
+      "input": "2",
+      "output": "1\n2"
+    },
+    {
+      "input": "4",
+      "output": "1\n2\n3\n4"
+    },
+    {
+      "input": "9",
+      "output": "1\n2\n3\n4\n5\n6\n7\n8\n9"
+    },
+    {
+      "input": "7",
+      "output": "1\n2\n3\n4\n5\n6\n7"
+    }
+  ],
+  "source": "snakify.org/en/lessons/for_loop_range/problems/count_to_n/"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "java-4-4",
+  "title": {
+    "zh": "數列 - 2",
+    "en": "Series - 2"
+  },
+  "description": {
+    "zh": "<p>讀入 A、B：若 A &lt; B 由小到大；若 A ≥ B 由大到小。數字間以空格分隔（末尾保留一空格）。</p>",
+    "en": "<p>Given two integers A and B. Print all numbers from A to B inclusively, in ascending order, if A &lt; B, or in descending order, if A &ge; B.</p>"
+  },
+  "hint": {
+    "zh": "依 A、B 大小選 <code>i++</code> 或 <code>i--</code>。",
+    "en": "Ascending or descending loop."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "1\n10",
+      "output": "1 2 3 4 5 6 7 8 9 10 "
+    },
+    {
+      "input": "10\n1",
+      "output": "10 9 8 7 6 5 4 3 2 1 "
+    },
+    {
+      "input": "179\n179",
+      "output": "179 "
+    },
+    {
+      "input": "-14\n7",
+      "output": "-14 -13 -12 -11 -10 -9 -8 -7 -6 -5 -4 -3 -2 -1 0 1 2 3 4 5 6 7"
+    },
+    {
+      "input": "12\n-5",
+      "output": "12 11 10 9 8 7 6 5 4 3 2 1 0 -1 -2 -3 -4 -5 "
+    },
+    {
+      "input": "-3\n-7",
+      "output": "-3 -4 -5 -6 -7 "
+    }
+  ],
+  "source": "vpavlenko/content/for/series_2.txt"
+}

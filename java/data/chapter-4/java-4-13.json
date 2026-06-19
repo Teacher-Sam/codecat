@@ -1,0 +1,51 @@
+{
+  "id": "java-4-13",
+  "title": {
+    "zh": "範圍內平方",
+    "en": "Squares in range"
+  },
+  "description": {
+    "zh": "<p>讀入 A、B，對每個 i（A ≤ i ≤ B）輸出一行 <code>i*i=結果</code>（格式如 <code>3*3=9</code>）。</p>",
+    "en": "<p>Squares in range.</p>"
+  },
+  "hint": {
+    "zh": "外層 <code>for</code> 從 A 到 B，每行 <code>System.out.println(i + \"*\" + i + \"=\" + (i*i));</code>",
+    "en": "Print i*i=… for each i in range."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "4\n5",
+      "output": "4*4=16\n5*5=25"
+    },
+    {
+      "input": "5\n8",
+      "output": "5*5=25\n6*6=36\n7*7=49\n8*8=64"
+    },
+    {
+      "input": "0\n3",
+      "output": "0*0=0\n1*1=1\n2*2=4\n3*3=9"
+    },
+    {
+      "input": "3\n7",
+      "output": "3*3=9\n4*4=16\n5*5=25\n6*6=36\n7*7=49"
+    },
+    {
+      "input": "10\n13",
+      "output": "10*10=100\n11*11=121\n12*12=144\n13*13=169"
+    },
+    {
+      "input": "20\n20",
+      "output": "20*20=400"
+    },
+    {
+      "input": "100\n104",
+      "output": "100*100=10000\n101*101=10201\n102*102=10404\n103*103=10609\n104*104=10816"
+    },
+    {
+      "input": "0\n10",
+      "output": "0*0=0\n1*1=1\n2*2=4\n3*3=9\n4*4=16\n5*5=25\n6*6=36\n7*7=49\n8*8=64\n9*9=81\n10*10=100"
+    }
+  ],
+  "source": "snakify.org/en/lessons/for_loop_range/problems/squares_in_range/"
+}

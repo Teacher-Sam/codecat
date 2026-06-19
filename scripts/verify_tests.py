@@ -36,12 +36,22 @@ OFFICIAL = {
     "java-3-13": "ifelse/num_equal.txt",
     "java-3-14": "ifelse/rook_move.txt",
     "java-3-16": "ifelse/chess_board.txt",
-    "java-3-17": "ifelse/king_move.txt",
-    "java-3-18": "ifelse/bishop_move.txt",
-    "java-3-19": "ifelse/queen_move.txt",
-    "java-3-20": "ifelse/knight_move.txt",
-    "java-3-26": "ifelse/chocolate.txt",
-    "java-3-27": "ifelse/leap_year.txt",
+    "java-3-20": "ifelse/king_move.txt",
+    "java-3-21": "ifelse/bishop_move.txt",
+    "java-3-22": "ifelse/queen_move.txt",
+    "java-3-24": "ifelse/knight_move.txt",
+    "java-3-25": "ifelse/chocolate.txt",
+    "java-3-26": "ifelse/leap_year.txt",
+    "java-4-2": "for/series_1.txt",
+    "java-4-4": "for/series_2.txt",
+    "java-4-6": "for/sum_of_ten_numbers.txt",
+    "java-4-7": "for/sum_of_n_numbers.txt",
+    "java-4-9": "for/sum_of_cubes.txt",
+    "java-4-10": "for/factorial.txt",
+    "java-4-11": "for/how_many_zeroes.txt",
+    "java-4-12": "for/sum_of_factorials.txt",
+    "java-4-14": "for/ladder.txt",
+    "java-4-18": "for/lost_card.txt",
 }
 
 
@@ -63,7 +73,7 @@ def main() -> int:
     issues: list[str] = []
     manual: list[str] = []
 
-    for ch in ("1", "2", "3"):
+    for ch in ("1", "2", "3", "4"):
         chdir = JAVA / f"chapter-{ch}"
         chapter = json.loads((chdir / "chapter.json").read_text(encoding="utf-8"))
         for pid in chapter["problemIds"]:

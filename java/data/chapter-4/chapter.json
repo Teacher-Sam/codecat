@@ -1,0 +1,33 @@
+{
+  "title": {
+    "zh": "for 迴圈",
+    "en": "For loop with range"
+  },
+  "description": {
+    "zh": "重複執行、累加、階乘、質數與數列輸出（共 18 題，含加碼題）。",
+    "en": "Repetition, sums, factorials, primes, and sequences (18 problems, incl. bonus)."
+  },
+  "source": "https://github.com/vpavlenko/content",
+  "id": "4",
+  "problemIds": [
+    "java-4-0",
+    "java-4-1",
+    "java-4-2",
+    "java-4-3",
+    "java-4-4",
+    "java-4-5",
+    "java-4-6",
+    "java-4-7",
+    "java-4-8",
+    "java-4-9",
+    "java-4-10",
+    "java-4-11",
+    "java-4-12",
+    "java-4-13",
+    "java-4-14",
+    "java-4-15",
+    "java-4-16",
+    "java-4-17",
+    "java-4-18"
+  ]
+}
