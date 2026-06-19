@@ -14,6 +14,9 @@ from snakify_import import (
     STARTER_INT,
     build_from_official,
     build_manual,
+    download_problem_images,
+    enrich_description_html,
+    image_file_for_slug,
     write_chapter,
 )
 
@@ -351,12 +354,13 @@ def build_snakify(slug: str, pid: str) -> dict:
     zh = META[slug][1]
     en_title, tests = fetch_snakify(slug)
     title = {**title, "en": en_title}
+    image_file = image_file_for_slug(slug)
     return {
         "id": pid,
         "title": title,
         "description": {
-            "zh": f"<p>{zh}</p>",
-            "en": f"<p>{en_title}.</p>",
+            "zh": enrich_description_html(f"<p>{zh}</p>", image_file),
+            "en": enrich_description_html(f"<p>{en_title}.</p>", image_file),
         },
         "hint": hint,
         "starterCode": STARTER_INT,
@@ -373,6 +377,7 @@ def cleanup_orphans(chapter_dir: Path, keep_ids: set[str]) -> None:
 
 
 def main() -> None:
+    download_problem_images()
     problems = []
     keep_ids = {"java-3-0"}
 
@@ -383,6 +388,11 @@ def main() -> None:
 
         if source == "manual":
             item = {**MANUAL[slug], "id": pid}
+            image_file = image_file_for_slug(slug)
+            item["description"] = {
+                "zh": enrich_description_html(item["description"]["zh"], image_file),
+                "en": enrich_description_html(item["description"]["en"], image_file),
+            }
             problems.append(build_manual(item))
         elif source:
             problems.append(build_from_official(source, pid, title, zh, hint, STARTER_INT))

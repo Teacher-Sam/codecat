@@ -9,8 +9,24 @@ import urllib.request
 from pathlib import Path
 
 BASE_URL = "https://raw.githubusercontent.com/vpavlenko/content/master/problems"
+SNAKIFY_IMAGE_URL = "https://snakify.org/static/images/problems"
 DATA = Path(__file__).resolve().parent.parent / "java" / "data"
+JAVA_ROOT = DATA.parent
+IMAGE_DIR = JAVA_ROOT / "images" / "problems"
+IMAGE_WEB_PREFIX = "images/problems"
 ID_PREFIX = "java-"
+
+# Snakify chess-diagram assets (vpavlenko txt has no images; snakify.org serves PNGs).
+PROBLEM_IMAGE_FILES = frozenset(
+    {
+        "rook_move.png",
+        "chess_board.png",
+        "king_move.png",
+        "bishop_move.png",
+        "queen_move.png",
+        "knight_move.png",
+    }
+)
 
 STARTER_INT = (
     "import java.util.Scanner;\n\n"
@@ -66,6 +82,58 @@ def stmt_html_en(text: str) -> str:
     return "".join(parts)
 
 
+def download_problem_images() -> None:
+    """Cache Snakify problem diagram PNGs under java/images/problems/."""
+    IMAGE_DIR.mkdir(parents=True, exist_ok=True)
+    headers = {"User-Agent": "Mozilla/5.0"}
+    for filename in sorted(PROBLEM_IMAGE_FILES):
+        dest = IMAGE_DIR / filename
+        if dest.exists() and dest.stat().st_size > 0:
+            continue
+        url = f"{SNAKIFY_IMAGE_URL}/{filename}"
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            dest.write_bytes(resp.read())
+        print(f"Downloaded {dest.relative_to(JAVA_ROOT.parent)}")
+
+
+def image_file_for_slug(slug: str | None, relpath: str | None = None) -> str | None:
+    if slug:
+        candidate = f"{slug}.png"
+        if candidate in PROBLEM_IMAGE_FILES:
+            return candidate
+    if relpath:
+        candidate = f"{Path(relpath).stem}.png"
+        if candidate in PROBLEM_IMAGE_FILES:
+            return candidate
+    return None
+
+
+def problem_image_html(filename: str) -> str:
+    return f'<p><img src="{IMAGE_WEB_PREFIX}/{filename}" alt="" width="500"></p>'
+
+
+def rewrite_snakify_html(html: str) -> str:
+    html = re.sub(
+        r'src="/static/images/problems/([^"]+)"',
+        rf'src="{IMAGE_WEB_PREFIX}/\1"',
+        html,
+    )
+    html = re.sub(
+        r"src='https://snakify\.org/static/images/problems/([^']+)'",
+        rf'src="{IMAGE_WEB_PREFIX}/\1"',
+        html,
+    )
+    return html
+
+
+def enrich_description_html(html: str, image_file: str | None) -> str:
+    html = rewrite_snakify_html(html)
+    if image_file and f"{IMAGE_WEB_PREFIX}/{image_file}" not in html:
+        html += problem_image_html(image_file)
+    return html
+
+
 def build_from_official(
     relpath: str,
     pid: str,
@@ -75,10 +143,13 @@ def build_from_official(
     starter: str = STARTER_INT,
 ) -> dict:
     official = parse_official_txt(fetch_txt(relpath))
+    image_file = image_file_for_slug(None, relpath)
+    zh_html = enrich_description_html(f"<p>{zh}</p>", image_file)
+    en_html = enrich_description_html(stmt_html_en(official["statement"]), image_file)
     return {
         "id": pid,
         "title": title,
-        "description": {"zh": f"<p>{zh}</p>", "en": stmt_html_en(official["statement"])},
+        "description": {"zh": zh_html, "en": en_html},
         "hint": hint,
         "starterCode": starter,
         "tests": official["tests"],

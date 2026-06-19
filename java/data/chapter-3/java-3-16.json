@@ -5,8 +5,8 @@
     "en": "Chess board - same color"
   },
   "description": {
-    "zh": "<p>讀入兩格座標，判斷是否同色，輸出 YES/NO。</p>",
-    "en": "<p>Given two cells of a chessboard. If they are painted in one color, print the word <code>YES</code>, and if in a different color - <code>NO</code>.</p><p><p> The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell.</p><p><p><img src=\"/static/images/problems/chess_board.png\" width=\"500\"></p></p>"
+    "zh": "<p>讀入兩格座標，判斷是否同色，輸出 YES/NO。</p><p><img src=\"images/problems/chess_board.png\" alt=\"\" width=\"500\"></p>",
+    "en": "<p>Given two cells of a chessboard. If they are painted in one color, print the word <code>YES</code>, and if in a different color - <code>NO</code>.</p><p><p> The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell.</p><p><p><img src=\"images/problems/chess_board.png\" width=\"500\"></p></p>"
   },
   "hint": {
     "zh": "同色 ⟺ 兩格 (x+y) 的奇偶性相同。",

@@ -5,8 +5,8 @@
     "en": "King move"
   },
   "description": {
-    "zh": "<p>判斷王能否從 (x1,y1) 一步走到 (x2,y2)，輸出 YES/NO。</p>",
-    "en": "<p>Chess king moves horizontally, vertically or diagonally to any adjacent cell. Given two different cells of the chessboard, determine whether a king can go from the first cell to the second in one move.</p><p><p> The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output <code>YES</code> if a king can go from the first cell to the second in one move, or <code>NO</code> otherwise.</p><p><p><img src=\"/static/images/problems/king_move.png\" width=\"500\"></p></p>"
+    "zh": "<p>判斷王能否從 (x1,y1) 一步走到 (x2,y2)，輸出 YES/NO。</p><p><img src=\"images/problems/king_move.png\" alt=\"\" width=\"500\"></p>",
+    "en": "<p>Chess king moves horizontally, vertically or diagonally to any adjacent cell. Given two different cells of the chessboard, determine whether a king can go from the first cell to the second in one move.</p><p><p> The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output <code>YES</code> if a king can go from the first cell to the second in one move, or <code>NO</code> otherwise.</p><p><p><img src=\"images/problems/king_move.png\" width=\"500\"></p></p>"
   },
   "hint": {
     "zh": "兩座標差均 ≤ 1 且不全相同。",

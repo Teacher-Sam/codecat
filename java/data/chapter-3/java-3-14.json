@@ -5,8 +5,8 @@
     "en": "Rook move"
   },
   "description": {
-    "zh": "<p>棋盤上兩格 (x1,y1)、(x2,y2)，判斷車能否一步走到（同一行或同一列），輸出 YES/NO。</p>",
-    "en": "<p>Chess rook moves horizontally or vertically. Given two different cells of the chessboard, determine whether a rook can go from the first cell to the second in one move.</p><p><p> The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output <code>YES</code> if a rook can go from the first cell to the second in one move, or <code>NO</code> otherwise.</p><p><p><img src=\"/static/images/problems/rook_move.png\" width=\"500\"></p></p>"
+    "zh": "<p>棋盤上兩格 (x1,y1)、(x2,y2)，判斷車能否一步走到（同一行或同一列），輸出 YES/NO。</p><p><img src=\"images/problems/rook_move.png\" alt=\"\" width=\"500\"></p>",
+    "en": "<p>Chess rook moves horizontally or vertically. Given two different cells of the chessboard, determine whether a rook can go from the first cell to the second in one move.</p><p><p> The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output <code>YES</code> if a rook can go from the first cell to the second in one move, or <code>NO</code> otherwise.</p><p><p><img src=\"images/problems/rook_move.png\" width=\"500\"></p></p>"
   },
   "hint": {
     "zh": "同一行：<code>x1==x2</code>；同一列：<code>y1==y2</code>。",
