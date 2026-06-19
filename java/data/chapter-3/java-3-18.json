@@ -1,71 +1,147 @@
 {
   "id": "java-3-18",
   "title": {
-    "zh": "馬的走法",
-    "en": "Knight move"
+    "zh": "象的走法",
+    "en": "Bishop move"
   },
   "description": {
-    "zh": "<p>判斷馬能否一步 L 形走到 (x2,y2)，輸出 YES/NO。</p>",
-    "en": "<p>Chess knight moves like the letter L. It can move two cells horizontally and one cell vertically, or two cells vertically and one cells horizontally. Given two different cells of the chessboard, determine whether a knight can go from the first cell to the second in one move.</p><p><p> The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output <code>YES</code> if a knight can go from the first cell to the second in one move, or <code>NO</code> otherwise.</p><p><p><img src=\"/static/images/problems/knight_move.png\" width=\"500\"></p></p>"
+    "zh": "<p>判斷象能否一步斜走至 (x2,y2)，輸出 YES/NO。</p>",
+    "en": "<p>In chess, the bishop moves diagonally, any number of squares. Given two different squares of the chessboard, determine whether a bishop can go from the first to the second in one move.</p><p><p> The program receives as input four numbers from 1 to 8, specifying the column and row numbers of the starting square and the column and row numbers of the ending square. The program should output <code>YES</code> if a Bishop can go from the first square to the second in one move, or <code>NO</code> otherwise.</p><p><p><img src=\"/static/images/problems/bishop_move.png\" width=\"500\"></p></p>"
   },
   "hint": {
-    "zh": "一軸差 2、另一軸差 1。",
-    "en": "One axis diff 2, other diff 1."
+    "zh": "斜線：<code>|x1-x2| == |y1-y2|</code> 且不同格。",
+    "en": "Same diagonal, different cells."
   },
   "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
   "tests": [
     {
-      "input": "1\n1\n1\n4",
+      "input": "4\n4\n5\n5",
+      "output": "YES"
+    },
+    {
+      "input": "4\n4\n5\n4",
+      "output": "NO"
+    },
+    {
+      "input": "4\n4\n5\n3",
+      "output": "YES"
+    },
+    {
+      "input": "4\n4\n4\n5",
+      "output": "NO"
+    },
+    {
+      "input": "4\n4\n3\n5",
+      "output": "YES"
+    },
+    {
+      "input": "4\n4\n4\n3",
+      "output": "NO"
+    },
+    {
+      "input": "4\n4\n3\n4",
+      "output": "NO"
+    },
+    {
+      "input": "4\n4\n3\n3",
+      "output": "YES"
+    },
+    {
+      "input": "1\n1\n1\n8",
       "output": "NO"
     },
     {
       "input": "1\n1\n8\n8",
-      "output": "NO"
-    },
-    {
-      "input": "2\n4\n3\n2",
       "output": "YES"
     },
     {
-      "input": "5\n2\n4\n4",
-      "output": "YES"
-    },
-    {
-      "input": "2\n8\n3\n7",
+      "input": "1\n1\n8\n1",
       "output": "NO"
     },
     {
-      "input": "2\n8\n3\n5",
+      "input": "1\n8\n8\n8",
       "output": "NO"
     },
     {
-      "input": "5\n5\n3\n7",
+      "input": "1\n8\n8\n1",
+      "output": "YES"
+    },
+    {
+      "input": "1\n8\n1\n1",
       "output": "NO"
     },
     {
-      "input": "2\n4\n2\n5",
+      "input": "8\n8\n8\n1",
       "output": "NO"
     },
     {
-      "input": "4\n7\n6\n6",
+      "input": "8\n8\n1\n1",
       "output": "YES"
     },
     {
-      "input": "4\n5\n2\n4",
-      "output": "YES"
-    },
-    {
-      "input": "2\n3\n3\n2",
+      "input": "8\n8\n1\n8",
       "output": "NO"
     },
     {
-      "input": "5\n1\n4\n3",
+      "input": "8\n1\n1\n1",
+      "output": "NO"
+    },
+    {
+      "input": "8\n1\n1\n8",
       "output": "YES"
     },
     {
-      "input": "6\n2\n8\n3",
+      "input": "8\n1\n8\n8",
+      "output": "NO"
+    },
+    {
+      "input": "1\n1\n1\n2",
+      "output": "NO"
+    },
+    {
+      "input": "1\n1\n2\n2",
       "output": "YES"
+    },
+    {
+      "input": "1\n1\n2\n1",
+      "output": "NO"
+    },
+    {
+      "input": "4\n4\n6\n6",
+      "output": "YES"
+    },
+    {
+      "input": "4\n4\n2\n2",
+      "output": "YES"
+    },
+    {
+      "input": "4\n4\n6\n2",
+      "output": "YES"
+    },
+    {
+      "input": "4\n4\n2\n6",
+      "output": "YES"
+    },
+    {
+      "input": "4\n4\n2\n7",
+      "output": "NO"
+    },
+    {
+      "input": "4\n4\n4\n6",
+      "output": "NO"
+    },
+    {
+      "input": "4\n4\n2\n4",
+      "output": "NO"
+    },
+    {
+      "input": "7\n4\n2\n5",
+      "output": "NO"
+    },
+    {
+      "input": "7\n5\n1\n1",
+      "output": "NO"
     }
   ],
-  "source": "vpavlenko/content/ifelse/knight_move.txt"
+  "source": "vpavlenko/content/ifelse/bishop_move.txt"
 }

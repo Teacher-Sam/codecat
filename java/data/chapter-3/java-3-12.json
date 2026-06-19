@@ -1,43 +1,43 @@
 {
   "id": "java-3-12",
   "title": {
-    "zh": "相等個數",
-    "en": "Equal numbers"
+    "zh": "三數取小",
+    "en": "Minimum of three numbers"
   },
   "description": {
-    "zh": "<p>讀入三個整數，輸出有幾對數字相等（0、1 或 3）。</p>",
-    "en": "<p>Given three integers, determine how many of them are equal to each other. The program must print one of these numbers: 3 (if all are the same), 2 (if two of them are equal to each other and the third is different) or 0 (if all numbers are different).</p>"
+    "zh": "<p>讀入三個整數，輸出最小值。</p>",
+    "en": "<p>Given three integers, print the smallest value.</p>"
   },
   "hint": {
-    "zh": "檢查 <code>a==b</code>、<code>a==c</code>、<code>b==c</code>。",
-    "en": "Count how many pairs are equal."
+    "zh": "可先比較兩個，再與第三個比。",
+    "en": "Compare pairs, or use nested <code>if</code>."
   },
   "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
   "tests": [
     {
-      "input": "10\n5\n10",
-      "output": "2"
-    },
-    {
-      "input": "17\n17\n-9",
-      "output": "2"
-    },
-    {
-      "input": "4\n-82\n-82",
-      "output": "2"
-    },
-    {
-      "input": "5\n2\n4",
-      "output": "0"
-    },
-    {
-      "input": "-149\n-146\n-142",
-      "output": "0"
-    },
-    {
-      "input": "666\n666\n666",
+      "input": "5\n3\n7",
       "output": "3"
+    },
+    {
+      "input": "10\n30\n4",
+      "output": "4"
+    },
+    {
+      "input": "-5\n-3\n-3",
+      "output": "-5"
+    },
+    {
+      "input": "1\n10\n20",
+      "output": "1"
+    },
+    {
+      "input": "74\n32\n11",
+      "output": "11"
+    },
+    {
+      "input": "50\n80\n25",
+      "output": "25"
     }
   ],
-  "source": "vpavlenko/content/ifelse/num_equal.txt"
+  "source": "vpavlenko/content/ifelse/minimum3.txt"
 }

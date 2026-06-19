@@ -1,55 +1,71 @@
 {
   "id": "java-3-20",
   "title": {
-    "zh": "閏年",
-    "en": "Leap year"
+    "zh": "馬的走法",
+    "en": "Knight move"
   },
   "description": {
-    "zh": "<p>讀入年份，依格里曆規則輸出 LEAP 或 COMMON（全大寫）。</p>",
-    "en": "<p><p> Given the year number. You need to check if this year is a leap year. If it is, print <code>LEAP</code>, otherwise print <code>COMMON</code>.</p><p><p> The rules in Gregorian calendar are as follows: <ul>     <li>a year is a leap year if its number is exactly divisible by 4 and is not exactly divisible by 100     <li>a year is always a leap year if its number is exactly divisible by 400 </ul></p><p><p> <b>Warning.</b> The words <code>LEAP</code> and <code>COMMON</code> should be printed all caps.</p>"
+    "zh": "<p>判斷馬能否一步 L 形走到 (x2,y2)，輸出 YES/NO。</p>",
+    "en": "<p>Chess knight moves like the letter L. It can move two cells horizontally and one cell vertically, or two cells vertically and one cells horizontally. Given two different cells of the chessboard, determine whether a knight can go from the first cell to the second in one move.</p><p><p> The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output <code>YES</code> if a knight can go from the first cell to the second in one move, or <code>NO</code> otherwise.</p><p><p><img src=\"/static/images/problems/knight_move.png\" width=\"500\"></p></p>"
   },
   "hint": {
-    "zh": "能被 400 整除 → LEAP；能被 100 整除 → COMMON；能被 4 整除 → LEAP。",
-    "en": "Divisible by 400 → LEAP; by 100 → COMMON; by 4 → LEAP."
+    "zh": "一軸差 2、另一軸差 1。",
+    "en": "One axis diff 2, other diff 1."
   },
   "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
   "tests": [
     {
-      "input": "2012",
-      "output": "LEAP"
+      "input": "1\n1\n1\n4",
+      "output": "NO"
     },
     {
-      "input": "2011",
-      "output": "COMMON"
+      "input": "1\n1\n8\n8",
+      "output": "NO"
     },
     {
-      "input": "1492",
-      "output": "LEAP"
+      "input": "2\n4\n3\n2",
+      "output": "YES"
     },
     {
-      "input": "1861",
-      "output": "COMMON"
+      "input": "5\n2\n4\n4",
+      "output": "YES"
     },
     {
-      "input": "1600",
-      "output": "LEAP"
+      "input": "2\n8\n3\n7",
+      "output": "NO"
     },
     {
-      "input": "1700",
-      "output": "COMMON"
+      "input": "2\n8\n3\n5",
+      "output": "NO"
     },
     {
-      "input": "1800",
-      "output": "COMMON"
+      "input": "5\n5\n3\n7",
+      "output": "NO"
     },
     {
-      "input": "1900",
-      "output": "COMMON"
+      "input": "2\n4\n2\n5",
+      "output": "NO"
     },
     {
-      "input": "2000",
-      "output": "LEAP"
+      "input": "4\n7\n6\n6",
+      "output": "YES"
+    },
+    {
+      "input": "4\n5\n2\n4",
+      "output": "YES"
+    },
+    {
+      "input": "2\n3\n3\n2",
+      "output": "NO"
+    },
+    {
+      "input": "5\n1\n4\n3",
+      "output": "YES"
+    },
+    {
+      "input": "6\n2\n8\n3",
+      "output": "YES"
     }
   ],
-  "source": "vpavlenko/content/ifelse/leap_year.txt"
+  "source": "vpavlenko/content/ifelse/knight_move.txt"
 }

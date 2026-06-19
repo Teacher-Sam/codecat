@@ -32,7 +32,7 @@ CHAPTER_META = {
     "source": "https://github.com/vpavlenko/content",
 }
 
-# Snakify lesson order (includes problems not listed on the lesson index page).
+# Snakify Lesson 3 order (bonus problems interleaved; matches snakify.org curriculum).
 ORDER: list[tuple[str, str | None]] = [
     ("is_positive", None),
     ("is_odd", None),
@@ -43,30 +43,29 @@ ORDER: list[tuple[str, str | None]] = [
     ("at_least_one_odd", None),
     ("exactly_one_odd", None),
     ("signum", "ifelse/signum.txt"),
+    ("numbers_in_ascending_order", "manual"),
     ("is_three_digit", None),
     ("minimum3", "ifelse/minimum3.txt"),
     ("num_equal", "ifelse/num_equal.txt"),
     ("rook_move", "ifelse/rook_move.txt"),
+    ("chess_board_black", "manual"),
     ("chess_board", "ifelse/chess_board.txt"),
     ("king_move", "ifelse/king_move.txt"),
     ("bishop_move", "ifelse/bishop_move.txt"),
     ("queen_move", "ifelse/queen_move.txt"),
     ("knight_move", "ifelse/knight_move.txt"),
-    ("chocolate", "ifelse/chocolate.txt"),
-    ("leap_year", "ifelse/leap_year.txt"),
-    ("sort_three_numbers", None),
+    ("pawn_move", None),
+    ("distance_to_closest_point", "manual"),
+    ("digits_in_ascending_order", "manual"),
     ("four_digit_palindrome", None),
     ("index_of_outlier", None),
+    ("chocolate", "ifelse/chocolate.txt"),
+    ("leap_year", "ifelse/leap_year.txt"),
     ("days_in_month", None),
     ("next_day", None),
     ("linear_equation", None),
     ("vertices_of_rectangle", None),
-    # Snakify Lesson 3 bonus problems (iT 邦幫忙 Day7–9; not on lesson index page)
-    ("numbers_in_ascending_order", "manual"),
-    ("chess_board_black", "manual"),
-    ("pawn_move", None),
-    ("distance_to_closest_point", "manual"),
-    ("digits_in_ascending_order", "manual"),
+    ("sort_three_numbers", None),
 ]
 
 MANUAL: dict[str, dict] = {

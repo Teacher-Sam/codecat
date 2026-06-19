@@ -1,67 +1,55 @@
 {
   "id": "java-3-27",
   "title": {
-    "zh": "矩形第四頂點",
-    "en": "Vertices of rectangle"
+    "zh": "閏年",
+    "en": "Leap year"
   },
   "description": {
-    "zh": "<p>給定矩形三個頂點座標 (x,y)，輸出第四個頂點。</p>",
-    "en": "<p>Vertices of rectangle.</p>"
+    "zh": "<p>讀入年份，依格里曆規則輸出 LEAP 或 COMMON（全大寫）。</p>",
+    "en": "<p><p> Given the year number. You need to check if this year is a leap year. If it is, print <code>LEAP</code>, otherwise print <code>COMMON</code>.</p><p><p> The rules in Gregorian calendar are as follows: <ul>     <li>a year is a leap year if its number is exactly divisible by 4 and is not exactly divisible by 100     <li>a year is always a leap year if its number is exactly divisible by 400 </ul></p><p><p> <b>Warning.</b> The words <code>LEAP</code> and <code>COMMON</code> should be printed all caps.</p>"
   },
   "hint": {
-    "zh": "矩形對邊平行；找出缺少的角點。",
-    "en": "Use parallelogram / rectangle geometry."
+    "zh": "能被 400 整除 → LEAP；能被 100 整除 → COMMON；能被 4 整除 → LEAP。",
+    "en": "Divisible by 400 → LEAP; by 100 → COMMON; by 4 → LEAP."
   },
   "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
   "tests": [
     {
-      "input": "1\n4\n1\n6\n7\n4",
-      "output": "7\n6"
+      "input": "2012",
+      "output": "LEAP"
     },
     {
-      "input": "7\n6\n1\n4\n1\n6",
-      "output": "7\n4"
+      "input": "2011",
+      "output": "COMMON"
     },
     {
-      "input": "1\n4\n7\n6\n7\n4",
-      "output": "1\n6"
+      "input": "1492",
+      "output": "LEAP"
     },
     {
-      "input": "7\n4\n1\n6\n7\n6",
-      "output": "1\n4"
+      "input": "1861",
+      "output": "COMMON"
     },
     {
-      "input": "3\n7\n3\n15\n10\n7",
-      "output": "10\n15"
+      "input": "1600",
+      "output": "LEAP"
     },
     {
-      "input": "3\n7\n3\n15\n10\n15",
-      "output": "10\n7"
+      "input": "1700",
+      "output": "COMMON"
     },
     {
-      "input": "3\n15\n10\n7\n10\n15",
-      "output": "3\n7"
+      "input": "1800",
+      "output": "COMMON"
     },
     {
-      "input": "10\n7\n10\n15\n3\n7",
-      "output": "3\n15"
+      "input": "1900",
+      "output": "COMMON"
     },
     {
-      "input": "5\n20\n100\n20\n100\n30",
-      "output": "5\n30"
-    },
-    {
-      "input": "100\n20\n5\n30\n100\n30",
-      "output": "5\n20"
-    },
-    {
-      "input": "5\n20\n100\n20\n5\n30",
-      "output": "100\n30"
-    },
-    {
-      "input": "100\n30\n5\n20\n5\n30",
-      "output": "100\n20"
+      "input": "2000",
+      "output": "LEAP"
     }
   ],
-  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/vertices_of_rectangle/"
+  "source": "vpavlenko/content/ifelse/leap_year.txt"
 }

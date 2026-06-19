@@ -1,139 +1,43 @@
 {
   "id": "java-3-13",
   "title": {
-    "zh": "車的走法",
-    "en": "Rook move"
+    "zh": "相等個數",
+    "en": "Equal numbers"
   },
   "description": {
-    "zh": "<p>棋盤上兩格 (x1,y1)、(x2,y2)，判斷車能否一步走到（同一行或同一列），輸出 YES/NO。</p>",
-    "en": "<p>Chess rook moves horizontally or vertically. Given two different cells of the chessboard, determine whether a rook can go from the first cell to the second in one move.</p><p><p> The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output <code>YES</code> if a rook can go from the first cell to the second in one move, or <code>NO</code> otherwise.</p><p><p><img src=\"/static/images/problems/rook_move.png\" width=\"500\"></p></p>"
+    "zh": "<p>讀入三個整數，輸出有幾對數字相等（0、1 或 3）。</p>",
+    "en": "<p>Given three integers, determine how many of them are equal to each other. The program must print one of these numbers: 3 (if all are the same), 2 (if two of them are equal to each other and the third is different) or 0 (if all numbers are different).</p>"
   },
   "hint": {
-    "zh": "同一行：<code>x1==x2</code>；同一列：<code>y1==y2</code>。",
-    "en": "Same row or same column."
+    "zh": "檢查 <code>a==b</code>、<code>a==c</code>、<code>b==c</code>。",
+    "en": "Count how many pairs are equal."
   },
   "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
   "tests": [
     {
-      "input": "4\n4\n5\n5",
-      "output": "NO"
+      "input": "10\n5\n10",
+      "output": "2"
     },
     {
-      "input": "4\n4\n5\n4",
-      "output": "YES"
+      "input": "17\n17\n-9",
+      "output": "2"
     },
     {
-      "input": "4\n4\n5\n3",
-      "output": "NO"
+      "input": "4\n-82\n-82",
+      "output": "2"
     },
     {
-      "input": "4\n4\n4\n5",
-      "output": "YES"
+      "input": "5\n2\n4",
+      "output": "0"
     },
     {
-      "input": "4\n4\n3\n5",
-      "output": "NO"
+      "input": "-149\n-146\n-142",
+      "output": "0"
     },
     {
-      "input": "4\n4\n4\n3",
-      "output": "YES"
-    },
-    {
-      "input": "4\n4\n3\n4",
-      "output": "YES"
-    },
-    {
-      "input": "4\n4\n3\n3",
-      "output": "NO"
-    },
-    {
-      "input": "1\n1\n1\n8",
-      "output": "YES"
-    },
-    {
-      "input": "1\n1\n8\n8",
-      "output": "NO"
-    },
-    {
-      "input": "1\n1\n8\n1",
-      "output": "YES"
-    },
-    {
-      "input": "1\n8\n8\n8",
-      "output": "YES"
-    },
-    {
-      "input": "1\n8\n8\n1",
-      "output": "NO"
-    },
-    {
-      "input": "1\n8\n1\n1",
-      "output": "YES"
-    },
-    {
-      "input": "8\n8\n8\n1",
-      "output": "YES"
-    },
-    {
-      "input": "8\n8\n1\n1",
-      "output": "NO"
-    },
-    {
-      "input": "8\n8\n1\n8",
-      "output": "YES"
-    },
-    {
-      "input": "8\n1\n1\n1",
-      "output": "YES"
-    },
-    {
-      "input": "8\n1\n1\n8",
-      "output": "NO"
-    },
-    {
-      "input": "8\n1\n8\n8",
-      "output": "YES"
-    },
-    {
-      "input": "1\n1\n1\n2",
-      "output": "YES"
-    },
-    {
-      "input": "1\n1\n2\n2",
-      "output": "NO"
-    },
-    {
-      "input": "1\n1\n2\n1",
-      "output": "YES"
-    },
-    {
-      "input": "4\n4\n6\n6",
-      "output": "NO"
-    },
-    {
-      "input": "4\n4\n2\n2",
-      "output": "NO"
-    },
-    {
-      "input": "4\n4\n6\n2",
-      "output": "NO"
-    },
-    {
-      "input": "4\n4\n2\n6",
-      "output": "NO"
-    },
-    {
-      "input": "4\n4\n2\n7",
-      "output": "NO"
-    },
-    {
-      "input": "4\n4\n4\n6",
-      "output": "YES"
-    },
-    {
-      "input": "4\n4\n2\n4",
-      "output": "YES"
+      "input": "666\n666\n666",
+      "output": "3"
     }
   ],
-  "source": "vpavlenko/content/ifelse/rook_move.txt"
+  "source": "vpavlenko/content/ifelse/num_equal.txt"
 }

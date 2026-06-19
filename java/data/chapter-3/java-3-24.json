@@ -1,67 +1,83 @@
 {
   "id": "java-3-24",
   "title": {
-    "zh": "月份天數",
-    "en": "Days in month"
+    "zh": "四位回文數",
+    "en": "Four-digit palindrome"
   },
   "description": {
-    "zh": "<p>讀入月份（1～12），輸出該月天數（不考慮閏年 2 月）。</p>",
-    "en": "<p>Days in month.</p>"
+    "zh": "<p>讀入四位整數，判斷是否回文（正讀反讀相同），輸出 YES/NO。</p>",
+    "en": "<p>Four-digit palindrome.</p>"
   },
   "hint": {
-    "zh": "2 月 28 天；4、6、9、11 月 30 天；其餘 31 天。",
-    "en": "Use <code>if</code> / <code>else if</code> by month."
+    "zh": "比較千位與個位、百位與十位。",
+    "en": "Compare first/last and middle digits."
   },
   "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
   "tests": [
     {
-      "input": "1",
-      "output": "31"
+      "input": "1221",
+      "output": "YES"
     },
     {
-      "input": "2",
-      "output": "28"
+      "input": "1231",
+      "output": "NO"
     },
     {
-      "input": "3",
-      "output": "31"
+      "input": "5775",
+      "output": "YES"
     },
     {
-      "input": "4",
-      "output": "30"
+      "input": "5777",
+      "output": "NO"
     },
     {
-      "input": "5",
-      "output": "31"
+      "input": "5776",
+      "output": "NO"
     },
     {
-      "input": "6",
-      "output": "30"
+      "input": "9999",
+      "output": "YES"
     },
     {
-      "input": "7",
-      "output": "31"
+      "input": "9899",
+      "output": "NO"
     },
     {
-      "input": "8",
-      "output": "31"
+      "input": "9992",
+      "output": "NO"
     },
     {
-      "input": "9",
-      "output": "30"
+      "input": "9949",
+      "output": "NO"
     },
     {
-      "input": "10",
-      "output": "31"
+      "input": "3003",
+      "output": "YES"
     },
     {
-      "input": "11",
-      "output": "30"
+      "input": "3006",
+      "output": "NO"
     },
     {
-      "input": "12",
-      "output": "31"
+      "input": "6003",
+      "output": "NO"
+    },
+    {
+      "input": "8808",
+      "output": "NO"
+    },
+    {
+      "input": "8888",
+      "output": "YES"
+    },
+    {
+      "input": "8228",
+      "output": "YES"
+    },
+    {
+      "input": "8989",
+      "output": "NO"
     }
   ],
-  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/days_in_month/"
+  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/four_digit_palindrome/"
 }
