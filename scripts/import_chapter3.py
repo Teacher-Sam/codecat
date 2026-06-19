@@ -13,6 +13,7 @@ from snakify_import import (
     DATA,
     STARTER_INT,
     build_from_official,
+    build_manual,
     write_chapter,
 )
 
@@ -60,12 +61,108 @@ ORDER: list[tuple[str, str | None]] = [
     ("next_day", None),
     ("linear_equation", None),
     ("vertices_of_rectangle", None),
-    ("square", None),
-    ("swap_digits", None),
-    ("last_digit", None),
-    ("century", None),
-    ("day_of_week", None),
+    # Snakify Lesson 3 bonus problems (iT 邦幫忙 Day7–9; not on lesson index page)
+    ("numbers_in_ascending_order", "manual"),
+    ("chess_board_black", "manual"),
+    ("pawn_move", None),
+    ("distance_to_closest_point", "manual"),
+    ("digits_in_ascending_order", "manual"),
 ]
+
+MANUAL: dict[str, dict] = {
+    "numbers_in_ascending_order": {
+        "title": {"zh": "三數遞增", "en": "Numbers in ascending order"},
+        "description": {
+            "zh": "<p>讀入三個整數，若嚴格遞增（a &lt; b &lt; c）輸出 YES，否則 NO。</p>",
+            "en": "<p>Given three integers, print <code>YES</code> if they are strictly in ascending order, otherwise <code>NO</code>.</p>",
+        },
+        "hint": {
+            "zh": "<code>a &lt; b &amp;&amp; b &lt; c</code>",
+            "en": "<code>a &lt; b and b &lt; c</code>",
+        },
+        "starterCode": STARTER_INT,
+        "tests": [
+            {"input": "1\n2\n3", "output": "YES"},
+            {"input": "3\n2\n1", "output": "NO"},
+            {"input": "1\n2\n2", "output": "NO"},
+            {"input": "5\n6\n7", "output": "YES"},
+            {"input": "-1\n0\n1", "output": "YES"},
+            {"input": "10\n5\n20", "output": "NO"},
+            {"input": "2\n2\n2", "output": "NO"},
+            {"input": "100\n101\n102", "output": "YES"},
+        ],
+        "source": "snakify.org Lesson 3 bonus (iT 邦幫忙 Day7)",
+    },
+    "chess_board_black": {
+        "title": {"zh": "棋格顏色", "en": "Chess board - black square"},
+        "description": {
+            "zh": "<p>讀入棋盤一格的欄、列座標（1～8），輸出該格顏色 <code>BLACK</code> 或 <code>WHITE</code>。</p>",
+            "en": "<p>Given a chessboard cell column and row (1–8), print <code>BLACK</code> or <code>WHITE</code>.</p>",
+        },
+        "hint": {
+            "zh": "同色 ⟺ <code>row % 2 == column % 2</code> → BLACK。",
+            "en": "Same parity of row and column → <code>BLACK</code>.",
+        },
+        "starterCode": STARTER_INT,
+        "tests": [
+            {"input": "1\n1", "output": "BLACK"},
+            {"input": "1\n2", "output": "WHITE"},
+            {"input": "2\n1", "output": "WHITE"},
+            {"input": "2\n2", "output": "BLACK"},
+            {"input": "7\n8", "output": "WHITE"},
+            {"input": "8\n8", "output": "BLACK"},
+            {"input": "3\n5", "output": "BLACK"},
+            {"input": "4\n7", "output": "WHITE"},
+        ],
+        "source": "snakify.org Lesson 3 bonus (iT 邦幫忙 Day8)",
+    },
+    "distance_to_closest_point": {
+        "title": {"zh": "最近點距離", "en": "Distance to closest point"},
+        "description": {
+            "zh": "<p>讀入直線上三個整數座標 a、b、c，輸出 a 到 b、c 中較近者的距離。</p>",
+            "en": "<p>Given three integers a, b, c on a line, print the distance from a to whichever of b or c is closer.</p>",
+        },
+        "hint": {
+            "zh": "<code>min(|a-b|, |a-c|)</code>，相等時輸出 <code>|a-b|</code>。",
+            "en": "<code>min(abs(a-b), abs(a-c))</code>; if equal, print <code>abs(a-b)</code>.",
+        },
+        "starterCode": STARTER_INT,
+        "tests": [
+            {"input": "1\n5\n3", "output": "2"},
+            {"input": "0\n10\n0", "output": "0"},
+            {"input": "5\n5\n9", "output": "0"},
+            {"input": "-1\n3\n-5", "output": "4"},
+            {"input": "10\n2\n15", "output": "5"},
+            {"input": "7\n7\n7", "output": "0"},
+            {"input": "3\n8\n1", "output": "2"},
+            {"input": "-10\n-5\n-20", "output": "5"},
+        ],
+        "source": "snakify.org Lesson 3 bonus (iT 邦幫忙 Day9)",
+    },
+    "digits_in_ascending_order": {
+        "title": {"zh": "數字遞增", "en": "Digits in ascending order"},
+        "description": {
+            "zh": "<p>讀入三位整數，若各位數字由左到右嚴格遞增輸出 YES，否則 NO。</p>",
+            "en": "<p>Given a three-digit integer, print <code>YES</code> if its digits are strictly ascending left to right, otherwise <code>NO</code>.</p>",
+        },
+        "hint": {
+            "zh": "百位 &lt; 十位 &lt; 個位。",
+            "en": "Hundreds &lt; tens &lt; units digit.",
+        },
+        "starterCode": STARTER_INT,
+        "tests": [
+            {"input": "123", "output": "YES"},
+            {"input": "321", "output": "NO"},
+            {"input": "159", "output": "YES"},
+            {"input": "135", "output": "YES"},
+            {"input": "132", "output": "NO"},
+            {"input": "111", "output": "NO"},
+            {"input": "100", "output": "NO"},
+            {"input": "579", "output": "YES"},
+        ],
+        "source": "snakify.org Lesson 3 bonus (iT 邦幫忙 Day9)",
+    },
+}
 
 # zh title, zh description, hint zh, hint en
 META: dict[str, tuple[dict, str, dict]] = {
@@ -207,30 +304,30 @@ META: dict[str, tuple[dict, str, dict]] = {
         "給定矩形三個頂點座標 (x,y)，輸出第四個頂點。",
         {"zh": "矩形對邊平行；找出缺少的角點。", "en": "Use parallelogram / rectangle geometry."},
     ),
-    "square": (
-        {"zh": "平方", "en": "Square"},
-        "讀入整數，輸出其平方。",
-        {"zh": "<code>a * a</code> 或 <code>Math.pow</code>。", "en": "<code>a * a</code>."},
+    "numbers_in_ascending_order": (
+        {"zh": "三數遞增", "en": "Numbers in ascending order"},
+        "讀入三個整數，若嚴格遞增輸出 YES，否則 NO。",
+        {"zh": "<code>a &lt; b &amp;&amp; b &lt; c</code>", "en": "<code>a &lt; b and b &lt; c</code>"},
     ),
-    "swap_digits": (
-        {"zh": "交換位數", "en": "Swap digits"},
-        "讀入兩位整數，交換十位與個位後輸出。",
-        {"zh": "十位 <code>a / 10</code>，個位 <code>a % 10</code>，再組合。", "en": "Use <code>/</code> and <code>%</code> to swap digits."},
+    "chess_board_black": (
+        {"zh": "棋格顏色", "en": "Chess board - black square"},
+        "讀入棋盤一格座標，輸出 BLACK 或 WHITE。",
+        {"zh": "<code>row % 2 == column % 2</code> → BLACK。", "en": "Same row/column parity → BLACK."},
     ),
-    "last_digit": (
-        {"zh": "個位數字", "en": "Last digit of integer"},
-        "讀入整數，輸出其個位數字。",
-        {"zh": "<code>a % 10</code>", "en": "<code>a % 10</code>."},
+    "pawn_move": (
+        {"zh": "白兵走法", "en": "White pawn move"},
+        "判斷白兵能否從 (x1,y1) 一步走到 (x2,y2)，輸出 YES/NO。",
+        {"zh": "直走一格、起點 y=2 可直走兩格、斜走吃子。", "en": "Forward 1, from row 2 forward 2, diagonal capture."},
     ),
-    "century": (
-        {"zh": "世紀", "en": "Century"},
-        "讀入年份，輸出該年所屬的世紀數（例如 1899 → 19）。",
-        {"zh": "整數除法：<code>(year - 1) / 100 + 1</code> 或依題意調整。", "en": "Integer division on the year."},
+    "distance_to_closest_point": (
+        {"zh": "最近點距離", "en": "Distance to closest point"},
+        "讀入直線上三點 a、b、c，輸出 a 到 b、c 中較近者的距離。",
+        {"zh": "<code>min(|a-b|, |a-c|)</code>", "en": "<code>min(abs(a-b), abs(a-c))</code>"},
     ),
-    "day_of_week": (
-        {"zh": "星期幾", "en": "Day of week"},
-        "讀入距基準日的天數，輸出星期編號（0～6）。",
-        {"zh": "<code>(days + 3) % 7</code>（基準日為星期三）。", "en": "<code>(days + 3) % 7</code> with Wednesday as day 0."},
+    "digits_in_ascending_order": (
+        {"zh": "數字遞增", "en": "Digits in ascending order"},
+        "讀入三位整數，若各位由左到右嚴格遞增輸出 YES，否則 NO。",
+        {"zh": "百位 &lt; 十位 &lt; 個位。", "en": "Hundreds &lt; tens &lt; units."},
     ),
 }
 
@@ -280,13 +377,16 @@ def main() -> None:
     problems = []
     keep_ids = {"java-3-0"}
 
-    for index, (slug, txt_path) in enumerate(ORDER, start=1):
+    for index, (slug, source) in enumerate(ORDER, start=1):
         pid = f"3-{index}"
         keep_ids.add(f"java-{pid}")
         title, zh, hint = META[slug][0], META[slug][1], META[slug][2]
 
-        if txt_path:
-            problems.append(build_from_official(txt_path, pid, title, zh, hint, STARTER_INT))
+        if source == "manual":
+            item = {**MANUAL[slug], "id": pid}
+            problems.append(build_manual(item))
+        elif source:
+            problems.append(build_from_official(source, pid, title, zh, hint, STARTER_INT))
         else:
             problems.append(build_snakify(slug, pid))
 
