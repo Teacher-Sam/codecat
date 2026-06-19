@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Import Snakify Chapter 3 (Conditions: if, then, else) — full 27 problems."""
+"""Import Snakify Chapter 3 (Conditions: if, then, else) — full 32 problems."""
 
 from __future__ import annotations
 
@@ -25,8 +25,8 @@ CHAPTER_META = {
         "en": "Conditions: if, then, else",
     },
     "description": {
-        "zh": "if / else、比較與邏輯運算、西洋棋走法、閏年等（共 27 題）。",
-        "en": "if/else, comparisons, logic, chess moves, leap year, and more (27 problems).",
+        "zh": "if / else、比較與邏輯運算、西洋棋走法、閏年等（共 32 題）。",
+        "en": "if/else, comparisons, logic, chess moves, leap year, and more (32 problems).",
     },
     "source": "https://github.com/vpavlenko/content",
 }
@@ -60,6 +60,11 @@ ORDER: list[tuple[str, str | None]] = [
     ("next_day", None),
     ("linear_equation", None),
     ("vertices_of_rectangle", None),
+    ("square", None),
+    ("swap_digits", None),
+    ("last_digit", None),
+    ("century", None),
+    ("day_of_week", None),
 ]
 
 # zh title, zh description, hint zh, hint en
@@ -201,6 +206,31 @@ META: dict[str, tuple[dict, str, dict]] = {
         {"zh": "矩形第四頂點", "en": "Vertices of rectangle"},
         "給定矩形三個頂點座標 (x,y)，輸出第四個頂點。",
         {"zh": "矩形對邊平行；找出缺少的角點。", "en": "Use parallelogram / rectangle geometry."},
+    ),
+    "square": (
+        {"zh": "平方", "en": "Square"},
+        "讀入整數，輸出其平方。",
+        {"zh": "<code>a * a</code> 或 <code>Math.pow</code>。", "en": "<code>a * a</code>."},
+    ),
+    "swap_digits": (
+        {"zh": "交換位數", "en": "Swap digits"},
+        "讀入兩位整數，交換十位與個位後輸出。",
+        {"zh": "十位 <code>a / 10</code>，個位 <code>a % 10</code>，再組合。", "en": "Use <code>/</code> and <code>%</code> to swap digits."},
+    ),
+    "last_digit": (
+        {"zh": "個位數字", "en": "Last digit of integer"},
+        "讀入整數，輸出其個位數字。",
+        {"zh": "<code>a % 10</code>", "en": "<code>a % 10</code>."},
+    ),
+    "century": (
+        {"zh": "世紀", "en": "Century"},
+        "讀入年份，輸出該年所屬的世紀數（例如 1899 → 19）。",
+        {"zh": "整數除法：<code>(year - 1) / 100 + 1</code> 或依題意調整。", "en": "Integer division on the year."},
+    ),
+    "day_of_week": (
+        {"zh": "星期幾", "en": "Day of week"},
+        "讀入距基準日的天數，輸出星期編號（0～6）。",
+        {"zh": "<code>(days + 3) % 7</code>（基準日為星期三）。", "en": "<code>(days + 3) % 7</code> with Wednesday as day 0."},
     ),
 }
 

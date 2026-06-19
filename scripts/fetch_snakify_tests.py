@@ -91,6 +91,11 @@ SNAKIFY_SLUG_TO_ID: dict[str, str] = {
     "next_day": "3-25",
     "linear_equation": "3-26",
     "vertices_of_rectangle": "3-27",
+    "square": "3-28",
+    "swap_digits": "3-29",
+    "last_digit": "3-30",
+    "century": "3-31",
+    "day_of_week": "3-32",
 }
 
 # Problems we already import from vpavlenko/content .txt — skip unless --all
@@ -156,6 +161,11 @@ MANUAL_ONLY_IDS = frozenset(
         "3-25",
         "3-26",
         "3-27",
+        "3-28",
+        "3-29",
+        "3-30",
+        "3-31",
+        "3-32",
     }
 )
 

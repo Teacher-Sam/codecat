@@ -1,0 +1,83 @@
+{
+  "id": "java-3-29",
+  "title": {
+    "zh": "交換位數",
+    "en": "Swap digits"
+  },
+  "description": {
+    "zh": "<p>讀入兩位整數，交換十位與個位後輸出。</p>",
+    "en": "<p>Swap digits.</p>"
+  },
+  "hint": {
+    "zh": "十位 <code>a / 10</code>，個位 <code>a % 10</code>，再組合。",
+    "en": "Use <code>/</code> and <code>%</code> to swap digits."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "17",
+      "output": "71"
+    },
+    {
+      "input": "33",
+      "output": "33"
+    },
+    {
+      "input": "29",
+      "output": "92"
+    },
+    {
+      "input": "19",
+      "output": "91"
+    },
+    {
+      "input": "74",
+      "output": "47"
+    },
+    {
+      "input": "99",
+      "output": "99"
+    },
+    {
+      "input": "34",
+      "output": "43"
+    },
+    {
+      "input": "36",
+      "output": "63"
+    },
+    {
+      "input": "12",
+      "output": "21"
+    },
+    {
+      "input": "24",
+      "output": "42"
+    },
+    {
+      "input": "38",
+      "output": "83"
+    },
+    {
+      "input": "47",
+      "output": "74"
+    },
+    {
+      "input": "52",
+      "output": "25"
+    },
+    {
+      "input": "65",
+      "output": "56"
+    },
+    {
+      "input": "71",
+      "output": "17"
+    },
+    {
+      "input": "92",
+      "output": "29"
+    }
+  ],
+  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/swap_digits/"
+}
