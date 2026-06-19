@@ -92,8 +92,18 @@ const Progress = {
 
   getCode(problemId) {
     const row = this.cache[problemId];
-    if (!row?.solved) return null;
+    if (!row) return null;
     return row.code ?? null;
+  },
+
+  saveDraft(problemId, code) {
+    const existing = this.cache[problemId] || { solved: false, code: null };
+    this.cache[problemId] = {
+      solved: existing.solved,
+      code,
+      _localUpdatedAt: Date.now(),
+    };
+    this.saveLocal();
   },
 
   async markSolved(problemId, code) {
@@ -107,12 +117,7 @@ const Progress = {
   },
 
   async saveCode(problemId, code) {
-    const existing = this.cache[problemId] || { solved: false, code: null };
-    this.cache[problemId] = {
-      solved: existing.solved,
-      code,
-    };
-    this.saveLocal();
+    this.saveDraft(problemId, code);
     await this.syncToRemote(problemId);
   },
 
@@ -141,13 +146,15 @@ const Progress = {
 
       const local = this.cache[problemId];
       const remoteTime = row.updated_at ? new Date(row.updated_at).getTime() : 0;
-      const useRemote = !local || remoteTime >= (local._updatedAt || 0);
+      const localTime = local?._localUpdatedAt || local?._updatedAt || 0;
+      const useRemote = !local || remoteTime >= localTime;
 
       if (useRemote) {
         this.cache[problemId] = {
           solved: row.solved,
-          code: row.code,
+          code: row.code ?? local?.code ?? null,
           _updatedAt: remoteTime,
+          _localUpdatedAt: local?._localUpdatedAt,
         };
       }
     });

@@ -101,6 +101,7 @@ const App = {
     this.data = await this.loadData();
 
     this.bindNavigation();
+    this.bindDraftPersistence();
     this.renderHome();
     this.handleRoute();
     window.addEventListener("hashchange", () => this.handleRoute());
@@ -126,6 +127,29 @@ const App = {
 
   isSolved(problemId) {
     return Progress.isSolved(problemId);
+  },
+
+  saveCurrentDraft() {
+    if (!this.editor || !this.currentProblem || this.isIntro(this.currentProblem)) return;
+    Progress.saveDraft(this.currentProblem.id, this.editor.getValue());
+  },
+
+  scheduleDraftSave() {
+    clearTimeout(this._draftSaveTimer);
+    this._draftSaveTimer = setTimeout(() => this.saveCurrentDraft(), 400);
+  },
+
+  bindDraftPersistence() {
+    if (this._draftPersistenceBound) return;
+    this._draftPersistenceBound = true;
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "hidden") {
+        this.saveCurrentDraft();
+      }
+    });
+
+    window.addEventListener("pagehide", () => this.saveCurrentDraft());
   },
 
   showView(name) {
@@ -223,6 +247,7 @@ const App = {
     });
 
     this.editor.on("cursorActivity", () => this.scrollEditorCursorIntoView());
+    this.editor.on("change", () => this.scheduleDraftSave());
     this.bindEditorWheelScroll();
     this.bindEditorWrapResize();
 
@@ -649,20 +674,24 @@ const App = {
     btnReset.onclick = () => {
       const solved = this.isSolved(problem.id);
       const msg = solved
-        ? "確定要重設為初始程式碼嗎？\n\n僅影響目前畫面；重新整理或再次進入此題會還原為已 Save all 通過的程式。"
-        : "確定要重設為初始程式碼嗎？\n\n僅影響目前畫面，不會儲存。";
+        ? "確定要重設為初始程式碼嗎？\n\n重設後草稿也會更新為初始程式碼。"
+        : "確定要重設為初始程式碼嗎？\n\n重設後草稿也會更新為初始程式碼。";
       if (confirm(msg)) {
         this.editor.setValue(problem.starterCode);
+        Progress.saveDraft(problem.id, problem.starterCode);
+        Progress.saveDraft(problem.id, problem.starterCode);
         this.initTestStates(problem.tests.length);
         this.renderTestList(problem);
         this.fitEditorHeight();
-        this.setOutput("已重設為初始程式碼（僅本次編輯）");
+        this.setOutput("已重設為初始程式碼");
       }
     };
 
   },
 
   handleRoute() {
+    this.saveCurrentDraft();
+
     const hash = location.hash.slice(1);
 
     if (!hash || hash === "/") {
