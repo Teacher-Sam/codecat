@@ -62,28 +62,22 @@ const App = {
   },
 
   async loadData() {
-    const indexResponse = await fetch("data/index.json");
-    if (!indexResponse.ok) {
-      throw new Error("無法載入 data/index.json");
-    }
-    const index = await indexResponse.json();
+    const fetchJson = (url) =>
+      fetch(url, { cache: "no-store" }).then((r) => {
+        if (!r.ok) throw new Error(`無法載入 ${url} (${r.status})`);
+        return r.json();
+      });
+
+    const index = await fetchJson("data/index.json");
     const chapters = [];
 
     for (const entry of index.chapters) {
       const base = `data/${entry.dir}`;
-      const chapterResponse = await fetch(`${base}/chapter.json`);
-      if (!chapterResponse.ok) {
-        throw new Error(`無法載入 ${base}/chapter.json`);
-      }
-      const chapterMeta = await chapterResponse.json();
+      const chapterMeta = await fetchJson(`${base}/chapter.json`);
       const problems = [];
 
       for (const problemId of chapterMeta.problemIds) {
-        const problemResponse = await fetch(`${base}/${problemId}.json`);
-        if (!problemResponse.ok) {
-          throw new Error(`無法載入 ${base}/${problemId}.json`);
-        }
-        problems.push(await problemResponse.json());
+        problems.push(await fetchJson(`${base}/${problemId}.json`));
       }
 
       chapters.push({ ...chapterMeta, problems });
