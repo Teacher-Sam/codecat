@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>課程資源連結 — Snakify Practice Platform</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a2332;
+      --surface-2: #243044;
+      --border: #2d3a4f;
+      --text: #e7ecf3;
+      --muted: #9aa8bc;
+      --accent: #3b82f6;
+      --accent2: #22c55e;
+      --font: "Segoe UI", "Microsoft JhengHei", "PingFang TC", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem 1.25rem 3rem;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .back {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .back:hover { color: var(--accent); }
+    h1 { margin: 0 0 0.35rem; font-size: 1.75rem; }
+    .subtitle { color: var(--muted); margin: 0 0 2rem; font-size: 0.95rem; }
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    section h2 {
+      margin: 0 0 1rem;
+      font-size: 1.15rem;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+    section h2.python { color: var(--accent2); }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li { margin: 0.35rem 0; }
+    a.link {
+      display: block;
+      padding: 0.55rem 0.75rem;
+      border-radius: 8px;
+      color: var(--text);
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    a.link:hover {
+      background: var(--surface-2);
+    }
+    a.link .title { font-weight: 600; }
+    a.link .note {
+      display: block;
+      margin-top: 0.15rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    footer {
+      margin-top: 2rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="./">← 返回首頁</a>
+    <h1>課程資源連結</h1>
+    <p class="subtitle">課程進度、APCS、Python 練習與相關學習網站</p>
+
+    <section id="main">
+      <h2>主要內容</h2>
+      <ul>
+        <li>
+          <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLScEkGBReQ8VpOT17Uw34zqcD7CHRAd5zIhtskSI7fWWDlw4Ag/viewform" target="_blank" rel="noopener">
+            <span class="title">課程進度紀錄</span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://docs.google.com/spreadsheets/d/1Verdb0Zm7Z61c6HHbnNXRbBa2OfrQMqrlFXZtbvCuaw/edit?usp=sharing" target="_blank" rel="noopener">
+            <span class="title">課程進度紀錄（查詢）</span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSf7cOiKqOec41Q7EEGooboO6Qr44yTvd2dOvbfcd_xTAxsORw/viewform" target="_blank" rel="noopener">
+            <span class="title">模擬與正式考試成績紀錄</span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://snakify.org/en/" target="_blank" rel="noopener">
+            <span class="title">Snakify</span>
+            <span class="note">官方網站</span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="./">
+            <span class="title">Snakify（Java / C++）</span>
+            <span class="note">本平台的互動練習入口</span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://studio.code.org/sections/JLYJEC" target="_blank" rel="noopener">
+            <span class="title">code.org</span>
+            <span class="note">課程代碼：JLYJEC</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="apcs">
+      <h2>APCS</h2>
+      <ul>
+        <li>
+          <a class="link" href="https://zerojudge.tw/Problems?tag=APCS" target="_blank" rel="noopener">
+            <span class="title">APCS 實作題網站</span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://forms.gle/XJru8GQcSdrN694B6" target="_blank" rel="noopener">
+            <span class="title">APCS（官方範例試題）</span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://forms.gle/iKeyyP8vtphAjLzF7" target="_blank" rel="noopener">
+            <span class="title">APCS 觀念題 - 1</span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://forms.gle/EoN93LoNEtnTEsc57" target="_blank" rel="noopener">
+            <span class="title">APCS 觀念題 - 2</span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://forms.gle/4Mi76emeyQLH63dc8" target="_blank" rel="noopener">
+            <span class="title">APCS 觀念題 - 3</span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://forms.gle/Pnv5d5rKAmUVGcJC7" target="_blank" rel="noopener">
+            <span class="title">APCS 觀念題 - 4</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="python">
+      <h2 class="python">Python 練習表單</h2>
+      <ul>
+        <li>
+          <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSdYnQHms8bs_TcmrohYVIl97LqHx1_Kj_tCsd9A8z92GlE8_Q/viewform" target="_blank" rel="noopener">
+            <span class="title">練習表單 - 1</span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSdX5PXbMfDoxrVcXFGnvXtx2gy5AnDiDTkTBtb_0oCZ-NRGCg/viewform" target="_blank" rel="noopener">
+            <span class="title">練習表單 - 2</span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSdFI6UdEk_Pn-UPbeqp8khgeyW8BfUkYwF9JmCV2WiVLJfBeg/viewform" target="_blank" rel="noopener">
+            <span class="title">練習表單 - 3</span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSerJ2FqQyp7aBWCgaMs3FPUvMNwUOdGeHscpnXWGZPlnTcXPg/viewform" target="_blank" rel="noopener">
+            <span class="title">練習表單 - 4</span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSeET3tP54aYZmyUu151gT9Eino2qKOvNJBk54mZKbdbcjSVdQ/viewform" target="_blank" rel="noopener">
+            <span class="title">練習表單 - 5</span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSd6h65SNEDThPU260hsFbFx5ncboayTJtkglI1GZn2fXW7Bqw/viewform" target="_blank" rel="noopener">
+            <span class="title">練習表單 - 6</span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSc2Ozg8YQYQMjQ8CdyOCMvFtsU3BJiLTrsvxFs7dCSkH2rwhQ/viewform" target="_blank" rel="noopener">
+            <span class="title">練習表單 - 7</span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSdeM0X6pPRUO6MZEEOiVxs3nDxUDA9pYV5gEN7feE423IfUeg/viewform" target="_blank" rel="noopener">
+            <span class="title">練習表單 - 8</span>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSeaaUgntLs99bq03_pkrtIvkA7xWb8PezEyQqL2ztNscDDLkQ/viewform" target="_blank" rel="noopener">
+            <span class="title">練習表單 - 9</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>課程資源彙整 · 連結來源：class/index.html</footer>
+  </div>
+</body>
+</html>
