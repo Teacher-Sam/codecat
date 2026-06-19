@@ -1,51 +1,55 @@
 {
+  "id": "java-3-23",
   "title": {
-    "zh": "數字遞增",
-    "en": "Digits in ascending order"
+    "zh": "離群值位置",
+    "en": "Index of outlier"
   },
   "description": {
-    "zh": "<p>讀入三位整數，若各位數字由左到右嚴格遞增輸出 YES，否則 NO。</p>",
-    "en": "<p>Given a three-digit integer, print <code>YES</code> if its digits are strictly ascending left to right, otherwise <code>NO</code>.</p>"
+    "zh": "<p>三個相異整數中恰有一個與另兩個不同，輸出它的位置（1、2 或 3）。</p>",
+    "en": "<p>Index of outlier.</p>"
   },
   "hint": {
-    "zh": "百位 &lt; 十位 &lt; 個位。",
-    "en": "Hundreds &lt; tens &lt; units digit."
+    "zh": "找出與另外兩個都不相等的數。",
+    "en": "Find the value unlike the other two."
   },
   "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
   "tests": [
     {
-      "input": "123",
-      "output": "YES"
+      "input": "10\n5\n10",
+      "output": "2"
     },
     {
-      "input": "321",
-      "output": "NO"
+      "input": "10\n10\n5",
+      "output": "3"
     },
     {
-      "input": "159",
-      "output": "YES"
+      "input": "4\n-82\n-82",
+      "output": "1"
     },
     {
-      "input": "135",
-      "output": "YES"
+      "input": "5\n2\n5",
+      "output": "2"
     },
     {
-      "input": "132",
-      "output": "NO"
+      "input": "100\n100\n300",
+      "output": "3"
     },
     {
-      "input": "111",
-      "output": "NO"
+      "input": "20\n3\n3",
+      "output": "1"
     },
     {
-      "input": "100",
-      "output": "NO"
+      "input": "4\n8\n8",
+      "output": "1"
     },
     {
-      "input": "579",
-      "output": "YES"
+      "input": "8\n4\n8",
+      "output": "2"
+    },
+    {
+      "input": "8\n8\n4",
+      "output": "3"
     }
   ],
-  "source": "snakify.org Lesson 3 bonus (iT 邦幫忙 Day9)",
-  "id": "java-3-23"
+  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/index_of_outlier/"
 }

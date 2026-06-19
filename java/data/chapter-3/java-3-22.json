@@ -1,51 +1,79 @@
 {
+  "id": "java-3-22",
   "title": {
-    "zh": "最近點距離",
-    "en": "Distance to closest point"
+    "zh": "后的走法",
+    "en": "Queen move"
   },
   "description": {
-    "zh": "<p>讀入直線上三個整數座標 a、b、c，輸出 a 到 b、c 中較近者的距離。</p>",
-    "en": "<p>Given three integers a, b, c on a line, print the distance from a to whichever of b or c is closer.</p>"
+    "zh": "<p>判斷后能否一步走到 (x2,y2)，輸出 YES/NO。</p><p><img src=\"images/problems/queen_move.png\" alt=\"\" width=\"500\"></p>",
+    "en": "<p>Chess queen moves horizontally, vertically or diagonally to any number of cells. Given two different cells of the chessboard, determine whether a queen can go from the first cell to the second in one move.</p><p><p> The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output <code>YES</code> if a queen can go from the first cell to the second in one move, or <code>NO</code> otherwise.</p><p><p><img src=\"images/problems/queen_move.png\" width=\"500\"></p></p>"
   },
   "hint": {
-    "zh": "<code>min(|a-b|, |a-c|)</code>，相等時輸出 <code>|a-b|</code>。",
-    "en": "<code>min(abs(a-b), abs(a-c))</code>; if equal, print <code>abs(a-b)</code>."
+    "zh": "同行、同列或同對角線。",
+    "en": "Rook move or bishop move."
   },
   "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
   "tests": [
     {
-      "input": "1\n5\n3",
-      "output": "2"
+      "input": "1\n1\n2\n2",
+      "output": "YES"
     },
     {
-      "input": "0\n10\n0",
-      "output": "0"
+      "input": "1\n1\n2\n3",
+      "output": "NO"
     },
     {
-      "input": "5\n5\n9",
-      "output": "0"
+      "input": "5\n6\n3\n3",
+      "output": "NO"
     },
     {
-      "input": "-1\n3\n-5",
-      "output": "4"
+      "input": "3\n3\n1\n1",
+      "output": "YES"
     },
     {
-      "input": "10\n2\n15",
-      "output": "5"
+      "input": "6\n5\n2\n5",
+      "output": "YES"
     },
     {
-      "input": "7\n7\n7",
-      "output": "0"
+      "input": "7\n6\n5\n2",
+      "output": "NO"
     },
     {
-      "input": "3\n8\n1",
-      "output": "2"
+      "input": "2\n7\n6\n7",
+      "output": "YES"
     },
     {
-      "input": "-10\n-5\n-20",
-      "output": "5"
+      "input": "2\n7\n4\n6",
+      "output": "NO"
+    },
+    {
+      "input": "7\n4\n2\n5",
+      "output": "NO"
+    },
+    {
+      "input": "7\n5\n1\n1",
+      "output": "NO"
+    },
+    {
+      "input": "2\n4\n5\n7",
+      "output": "YES"
+    },
+    {
+      "input": "3\n5\n7\n1",
+      "output": "YES"
+    },
+    {
+      "input": "5\n2\n5\n8",
+      "output": "YES"
+    },
+    {
+      "input": "1\n2\n3\n1",
+      "output": "NO"
+    },
+    {
+      "input": "2\n1\n1\n3",
+      "output": "NO"
     }
   ],
-  "source": "snakify.org Lesson 3 bonus (iT 邦幫忙 Day9)",
-  "id": "java-3-22"
+  "source": "vpavlenko/content/ifelse/queen_move.txt"
 }

@@ -1,79 +1,83 @@
 {
   "id": "java-3-19",
   "title": {
-    "zh": "后的走法",
-    "en": "Queen move"
+    "zh": "四位回文數",
+    "en": "Four-digit palindrome"
   },
   "description": {
-    "zh": "<p>判斷后能否一步走到 (x2,y2)，輸出 YES/NO。</p><p><img src=\"images/problems/queen_move.png\" alt=\"\" width=\"500\"></p>",
-    "en": "<p>Chess queen moves horizontally, vertically or diagonally to any number of cells. Given two different cells of the chessboard, determine whether a queen can go from the first cell to the second in one move.</p><p><p> The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output <code>YES</code> if a queen can go from the first cell to the second in one move, or <code>NO</code> otherwise.</p><p><p><img src=\"images/problems/queen_move.png\" width=\"500\"></p></p>"
+    "zh": "<p>讀入四位整數，判斷是否回文（正讀反讀相同），輸出 YES/NO。</p>",
+    "en": "<p>Four-digit palindrome.</p>"
   },
   "hint": {
-    "zh": "同行、同列或同對角線。",
-    "en": "Rook move or bishop move."
+    "zh": "比較千位與個位、百位與十位。",
+    "en": "Compare first/last and middle digits."
   },
   "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
   "tests": [
     {
-      "input": "1\n1\n2\n2",
+      "input": "1221",
       "output": "YES"
     },
     {
-      "input": "1\n1\n2\n3",
+      "input": "1231",
       "output": "NO"
     },
     {
-      "input": "5\n6\n3\n3",
-      "output": "NO"
-    },
-    {
-      "input": "3\n3\n1\n1",
+      "input": "5775",
       "output": "YES"
     },
     {
-      "input": "6\n5\n2\n5",
-      "output": "YES"
-    },
-    {
-      "input": "7\n6\n5\n2",
+      "input": "5777",
       "output": "NO"
     },
     {
-      "input": "2\n7\n6\n7",
-      "output": "YES"
-    },
-    {
-      "input": "2\n7\n4\n6",
+      "input": "5776",
       "output": "NO"
     },
     {
-      "input": "7\n4\n2\n5",
-      "output": "NO"
-    },
-    {
-      "input": "7\n5\n1\n1",
-      "output": "NO"
-    },
-    {
-      "input": "2\n4\n5\n7",
+      "input": "9999",
       "output": "YES"
     },
     {
-      "input": "3\n5\n7\n1",
-      "output": "YES"
-    },
-    {
-      "input": "5\n2\n5\n8",
-      "output": "YES"
-    },
-    {
-      "input": "1\n2\n3\n1",
+      "input": "9899",
       "output": "NO"
     },
     {
-      "input": "2\n1\n1\n3",
+      "input": "9992",
+      "output": "NO"
+    },
+    {
+      "input": "9949",
+      "output": "NO"
+    },
+    {
+      "input": "3003",
+      "output": "YES"
+    },
+    {
+      "input": "3006",
+      "output": "NO"
+    },
+    {
+      "input": "6003",
+      "output": "NO"
+    },
+    {
+      "input": "8808",
+      "output": "NO"
+    },
+    {
+      "input": "8888",
+      "output": "YES"
+    },
+    {
+      "input": "8228",
+      "output": "YES"
+    },
+    {
+      "input": "8989",
       "output": "NO"
     }
   ],
-  "source": "vpavlenko/content/ifelse/queen_move.txt"
+  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/four_digit_palindrome/"
 }

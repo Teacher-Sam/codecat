@@ -1,67 +1,239 @@
 {
   "id": "java-3-32",
   "title": {
-    "zh": "三數排序",
-    "en": "Sort three numbers"
+    "zh": "白兵走法",
+    "en": "White pawn move"
   },
   "description": {
-    "zh": "<p>讀入三個整數，由小到大輸出（空格分隔）。</p>",
-    "en": "<p>Sort three numbers.</p>"
+    "zh": "<p>判斷白兵能否從 (x1,y1) 一步走到 (x2,y2)，輸出 YES/NO。</p>",
+    "en": "<p>White pawn move.</p>"
   },
   "hint": {
-    "zh": "可用 <code>if</code> 比較後依序輸出。",
-    "en": "Compare and print in ascending order."
+    "zh": "直走一格、起點 y=2 可直走兩格、斜走吃子。",
+    "en": "Forward 1, from row 2 forward 2, diagonal capture."
   },
   "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
   "tests": [
     {
-      "input": "5\n3\n7",
-      "output": "3\n5\n7"
+      "input": "1\n4\n1\n5",
+      "output": "YES"
     },
     {
-      "input": "8\n9\n1",
-      "output": "1\n8\n9"
+      "input": "4\n2\n4\n4",
+      "output": "YES"
     },
     {
-      "input": "2\n5\n2",
-      "output": "2\n2\n5"
+      "input": "6\n4\n5\n5",
+      "output": "YES"
     },
     {
-      "input": "7\n5\n1",
-      "output": "1\n5\n7"
+      "input": "6\n4\n7\n5",
+      "output": "YES"
     },
     {
-      "input": "10\n20\n40",
-      "output": "10\n20\n40"
+      "input": "1\n2\n1\n3",
+      "output": "YES"
     },
     {
-      "input": "40\n10\n20",
-      "output": "10\n20\n40"
+      "input": "1\n3\n1\n4",
+      "output": "YES"
     },
     {
-      "input": "7\n7\n7",
-      "output": "7\n7\n7"
+      "input": "1\n6\n1\n7",
+      "output": "YES"
     },
     {
-      "input": "6\n6\n4",
-      "output": "4\n6\n6"
+      "input": "1\n7\n1\n8",
+      "output": "YES"
     },
     {
-      "input": "10\n4\n6",
-      "output": "4\n6\n10"
+      "input": "2\n2\n2\n3",
+      "output": "YES"
     },
     {
-      "input": "3\n10\n7",
-      "output": "3\n7\n10"
+      "input": "2\n3\n2\n4",
+      "output": "YES"
     },
     {
-      "input": "5\n7\n20",
-      "output": "5\n7\n20"
+      "input": "2\n4\n2\n5",
+      "output": "YES"
     },
     {
-      "input": "7\n20\n5",
-      "output": "5\n7\n20"
+      "input": "2\n5\n2\n6",
+      "output": "YES"
+    },
+    {
+      "input": "2\n6\n2\n7",
+      "output": "YES"
+    },
+    {
+      "input": "2\n7\n2\n8",
+      "output": "YES"
+    },
+    {
+      "input": "5\n2\n5\n3",
+      "output": "YES"
+    },
+    {
+      "input": "5\n3\n5\n4",
+      "output": "YES"
+    },
+    {
+      "input": "5\n4\n5\n5",
+      "output": "YES"
+    },
+    {
+      "input": "5\n5\n5\n6",
+      "output": "YES"
+    },
+    {
+      "input": "5\n6\n5\n7",
+      "output": "YES"
+    },
+    {
+      "input": "5\n7\n5\n8",
+      "output": "YES"
+    },
+    {
+      "input": "3\n2\n3\n3",
+      "output": "YES"
+    },
+    {
+      "input": "4\n3\n4\n4",
+      "output": "YES"
+    },
+    {
+      "input": "6\n4\n6\n5",
+      "output": "YES"
+    },
+    {
+      "input": "7\n5\n7\n6",
+      "output": "YES"
+    },
+    {
+      "input": "8\n6\n8\n7",
+      "output": "YES"
+    },
+    {
+      "input": "3\n7\n3\n8",
+      "output": "YES"
+    },
+    {
+      "input": "3\n7\n3\n7",
+      "output": "NO"
+    },
+    {
+      "input": "2\n4\n2\n4",
+      "output": "NO"
+    },
+    {
+      "input": "5\n1\n5\n2",
+      "output": "NO"
+    },
+    {
+      "input": "2\n1\n2\n2",
+      "output": "NO"
+    },
+    {
+      "input": "2\n4\n2\n3",
+      "output": "NO"
+    },
+    {
+      "input": "5\n7\n5\n6",
+      "output": "NO"
+    },
+    {
+      "input": "8\n2\n8\n1",
+      "output": "NO"
+    },
+    {
+      "input": "3\n4\n3\n2",
+      "output": "NO"
+    },
+    {
+      "input": "7\n7\n7\n4",
+      "output": "NO"
+    },
+    {
+      "input": "2\n4\n4\n6",
+      "output": "NO"
+    },
+    {
+      "input": "3\n5\n7\n8",
+      "output": "NO"
+    },
+    {
+      "input": "3\n5\n1\n2",
+      "output": "NO"
+    },
+    {
+      "input": "4\n4\n3\n4",
+      "output": "NO"
+    },
+    {
+      "input": "2\n3\n3\n3",
+      "output": "NO"
+    },
+    {
+      "input": "2\n3\n3\n5",
+      "output": "NO"
+    },
+    {
+      "input": "6\n2\n6\n4",
+      "output": "YES"
+    },
+    {
+      "input": "1\n2\n1\n4",
+      "output": "YES"
+    },
+    {
+      "input": "6\n3\n6\n5",
+      "output": "NO"
+    },
+    {
+      "input": "6\n5\n6\n7",
+      "output": "NO"
+    },
+    {
+      "input": "6\n6\n6\n8",
+      "output": "NO"
+    },
+    {
+      "input": "1\n1\n1\n3",
+      "output": "NO"
+    },
+    {
+      "input": "2\n2\n1\n3",
+      "output": "YES"
+    },
+    {
+      "input": "2\n2\n3\n3",
+      "output": "YES"
+    },
+    {
+      "input": "3\n7\n2\n8",
+      "output": "YES"
+    },
+    {
+      "input": "3\n7\n4\n8",
+      "output": "YES"
+    },
+    {
+      "input": "2\n2\n1\n4",
+      "output": "NO"
+    },
+    {
+      "input": "2\n2\n4\n3",
+      "output": "NO"
+    },
+    {
+      "input": "3\n7\n1\n8",
+      "output": "NO"
+    },
+    {
+      "input": "3\n7\n5\n7",
+      "output": "NO"
     }
   ],
-  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/sort_three_numbers/"
+  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/pawn_move/"
 }

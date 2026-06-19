@@ -1,83 +1,71 @@
 {
   "id": "java-3-24",
   "title": {
-    "zh": "四位回文數",
-    "en": "Four-digit palindrome"
+    "zh": "馬的走法",
+    "en": "Knight move"
   },
   "description": {
-    "zh": "<p>讀入四位整數，判斷是否回文（正讀反讀相同），輸出 YES/NO。</p>",
-    "en": "<p>Four-digit palindrome.</p>"
+    "zh": "<p>判斷馬能否一步 L 形走到 (x2,y2)，輸出 YES/NO。</p><p><img src=\"images/problems/knight_move.png\" alt=\"\" width=\"500\"></p>",
+    "en": "<p>Chess knight moves like the letter L. It can move two cells horizontally and one cell vertically, or two cells vertically and one cells horizontally. Given two different cells of the chessboard, determine whether a knight can go from the first cell to the second in one move.</p><p><p> The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output <code>YES</code> if a knight can go from the first cell to the second in one move, or <code>NO</code> otherwise.</p><p><p><img src=\"images/problems/knight_move.png\" width=\"500\"></p></p>"
   },
   "hint": {
-    "zh": "比較千位與個位、百位與十位。",
-    "en": "Compare first/last and middle digits."
+    "zh": "一軸差 2、另一軸差 1。",
+    "en": "One axis diff 2, other diff 1."
   },
   "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
   "tests": [
     {
-      "input": "1221",
+      "input": "1\n1\n1\n4",
+      "output": "NO"
+    },
+    {
+      "input": "1\n1\n8\n8",
+      "output": "NO"
+    },
+    {
+      "input": "2\n4\n3\n2",
       "output": "YES"
     },
     {
-      "input": "1231",
-      "output": "NO"
-    },
-    {
-      "input": "5775",
+      "input": "5\n2\n4\n4",
       "output": "YES"
     },
     {
-      "input": "5777",
+      "input": "2\n8\n3\n7",
       "output": "NO"
     },
     {
-      "input": "5776",
+      "input": "2\n8\n3\n5",
       "output": "NO"
     },
     {
-      "input": "9999",
+      "input": "5\n5\n3\n7",
+      "output": "NO"
+    },
+    {
+      "input": "2\n4\n2\n5",
+      "output": "NO"
+    },
+    {
+      "input": "4\n7\n6\n6",
       "output": "YES"
     },
     {
-      "input": "9899",
-      "output": "NO"
-    },
-    {
-      "input": "9992",
-      "output": "NO"
-    },
-    {
-      "input": "9949",
-      "output": "NO"
-    },
-    {
-      "input": "3003",
+      "input": "4\n5\n2\n4",
       "output": "YES"
     },
     {
-      "input": "3006",
+      "input": "2\n3\n3\n2",
       "output": "NO"
     },
     {
-      "input": "6003",
-      "output": "NO"
-    },
-    {
-      "input": "8808",
-      "output": "NO"
-    },
-    {
-      "input": "8888",
+      "input": "5\n1\n4\n3",
       "output": "YES"
     },
     {
-      "input": "8228",
+      "input": "6\n2\n8\n3",
       "output": "YES"
-    },
-    {
-      "input": "8989",
-      "output": "NO"
     }
   ],
-  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/four_digit_palindrome/"
+  "source": "vpavlenko/content/ifelse/knight_move.txt"
 }

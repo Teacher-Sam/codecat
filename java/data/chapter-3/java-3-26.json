@@ -1,79 +1,55 @@
 {
   "id": "java-3-26",
   "title": {
-    "zh": "巧克力",
-    "en": "Chocolate bar"
+    "zh": "閏年",
+    "en": "Leap year"
   },
   "description": {
-    "zh": "<p>矩形巧克力 N×M 格，一次只能沿格線直向或橫向掰開，問至少掰幾次能分成 1×1。</p>",
-    "en": "<p>Chocolate bar has the form of a rectangle divided into \\(n \\times m\\) portions. Chocolate bar can be split into two rectangular parts by breaking it along a selected straight line on its pattern. Determine whether it is possible to split it so that one of the parts will have exactly k squares.</p><p><p> The program reads three integers: n, m, and k. It should print <code>YES</code> or <code>NO</code>.</p>"
+    "zh": "<p>讀入年份，依格里曆規則輸出 LEAP 或 COMMON（全大寫）。</p>",
+    "en": "<p><p> Given the year number. You need to check if this year is a leap year. If it is, print <code>LEAP</code>, otherwise print <code>COMMON</code>.</p><p><p> The rules in Gregorian calendar are as follows: <ul>     <li>a year is a leap year if its number is exactly divisible by 4 and is not exactly divisible by 100     <li>a year is always a leap year if its number is exactly divisible by 400 </ul></p><p><p> <b>Warning.</b> The words <code>LEAP</code> and <code>COMMON</code> should be printed all caps.</p>"
   },
   "hint": {
-    "zh": "每次掰開只增加一塊，答案為 <code>N*M - 1</code>。",
-    "en": "Each break adds one piece: <code>N*M - 1</code>."
+    "zh": "能被 400 整除 → LEAP；能被 100 整除 → COMMON；能被 4 整除 → LEAP。",
+    "en": "Divisible by 400 → LEAP; by 100 → COMMON; by 4 → LEAP."
   },
   "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
   "tests": [
     {
-      "input": "4\n2\n6",
-      "output": "YES"
+      "input": "2012",
+      "output": "LEAP"
     },
     {
-      "input": "2\n10\n7",
-      "output": "NO"
+      "input": "2011",
+      "output": "COMMON"
     },
     {
-      "input": "5\n7\n1",
-      "output": "NO"
+      "input": "1492",
+      "output": "LEAP"
     },
     {
-      "input": "7\n4\n21",
-      "output": "YES"
+      "input": "1861",
+      "output": "COMMON"
     },
     {
-      "input": "5\n12\n100",
-      "output": "NO"
+      "input": "1600",
+      "output": "LEAP"
     },
     {
-      "input": "6\n6\n6",
-      "output": "YES"
+      "input": "1700",
+      "output": "COMMON"
     },
     {
-      "input": "6\n6\n35",
-      "output": "NO"
+      "input": "1800",
+      "output": "COMMON"
     },
     {
-      "input": "6\n6\n37",
-      "output": "NO"
+      "input": "1900",
+      "output": "COMMON"
     },
     {
-      "input": "7\n1\n99",
-      "output": "NO"
-    },
-    {
-      "input": "300\n100\n3000",
-      "output": "YES"
-    },
-    {
-      "input": "256\n124\n4069",
-      "output": "NO"
-    },
-    {
-      "input": "348\n41\n6183",
-      "output": "NO"
-    },
-    {
-      "input": "387\n13\n2709",
-      "output": "YES"
-    },
-    {
-      "input": "13\n387\n2709",
-      "output": "YES"
-    },
-    {
-      "input": "1\n1\n2",
-      "output": "NO"
+      "input": "2000",
+      "output": "LEAP"
     }
   ],
-  "source": "vpavlenko/content/ifelse/chocolate.txt"
+  "source": "vpavlenko/content/ifelse/leap_year.txt"
 }

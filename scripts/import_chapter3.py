@@ -53,15 +53,14 @@ ORDER: list[tuple[str, str | None]] = [
     ("rook_move", "ifelse/rook_move.txt"),
     ("chess_board_black", "manual"),
     ("chess_board", "ifelse/chess_board.txt"),
-    ("king_move", "ifelse/king_move.txt"),
-    ("bishop_move", "ifelse/bishop_move.txt"),
-    ("queen_move", "ifelse/queen_move.txt"),
-    ("knight_move", "ifelse/knight_move.txt"),
-    ("pawn_move", None),
     ("distance_to_closest_point", "manual"),
     ("digits_in_ascending_order", "manual"),
     ("four_digit_palindrome", None),
+    ("king_move", "ifelse/king_move.txt"),
+    ("bishop_move", "ifelse/bishop_move.txt"),
+    ("queen_move", "ifelse/queen_move.txt"),
     ("index_of_outlier", None),
+    ("knight_move", "ifelse/knight_move.txt"),
     ("chocolate", "ifelse/chocolate.txt"),
     ("leap_year", "ifelse/leap_year.txt"),
     ("days_in_month", None),
@@ -69,6 +68,7 @@ ORDER: list[tuple[str, str | None]] = [
     ("linear_equation", None),
     ("vertices_of_rectangle", None),
     ("sort_three_numbers", None),
+    ("pawn_move", None),
 ]
 
 MANUAL: dict[str, dict] = {
