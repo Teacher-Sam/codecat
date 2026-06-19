@@ -30,6 +30,18 @@ OFFICIAL = {
     "java-2-15": "int_and_float/purchase_price.txt",
     "java-2-18": "int_and_float/watch_1.txt",
     "java-2-19": "int_and_float/watch_2.txt",
+    "java-3-1": "ifelse/minimum.txt",
+    "java-3-2": "ifelse/signum.txt",
+    "java-3-3": "ifelse/minimum3.txt",
+    "java-3-4": "ifelse/num_equal.txt",
+    "java-3-5": "ifelse/rook_move.txt",
+    "java-3-6": "ifelse/chess_board.txt",
+    "java-3-7": "ifelse/king_move.txt",
+    "java-3-8": "ifelse/bishop_move.txt",
+    "java-3-9": "ifelse/queen_move.txt",
+    "java-3-10": "ifelse/knight_move.txt",
+    "java-3-11": "ifelse/chocolate.txt",
+    "java-3-12": "ifelse/leap_year.txt",
 }
 
 
@@ -51,7 +63,7 @@ def main() -> int:
     issues: list[str] = []
     manual: list[str] = []
 
-    for ch in ("1", "2"):
+    for ch in ("1", "2", "3"):
         chdir = JAVA / f"chapter-{ch}"
         chapter = json.loads((chdir / "chapter.json").read_text(encoding="utf-8"))
         for pid in chapter["problemIds"]:

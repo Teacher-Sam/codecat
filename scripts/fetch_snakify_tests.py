@@ -28,6 +28,7 @@ HEADERS = {
 LESSONS = {
     "print_input_numbers": "1",
     "integer_float_numbers": "2",
+    "if_then_else_conditions": "3",
 }
 
 # Snakify problem slug -> bare problem id (chapter-local, e.g. "1-2")
@@ -62,6 +63,19 @@ SNAKIFY_SLUG_TO_ID: dict[str, str] = {
     "snail": "2-17",
     "clock_face_1": "2-18",
     "clock_face_2": "2-19",
+    # Chapter 3
+    "minimum": "3-1",
+    "signum": "3-2",
+    "minimum3": "3-3",
+    "num_equal": "3-4",
+    "rook_move": "3-5",
+    "chess_board": "3-6",
+    "king_move": "3-7",
+    "bishop_move": "3-8",
+    "queen_move": "3-9",
+    "knight_move": "3-10",
+    "chocolate": "3-11",
+    "leap_year": "3-12",
 }
 
 # Problems we already import from vpavlenko/content .txt — skip unless --all
@@ -83,6 +97,18 @@ OFFICIAL_TXT_IDS = frozenset(
         "2-15",
         "2-18",
         "2-19",
+        "3-1",
+        "3-2",
+        "3-3",
+        "3-4",
+        "3-5",
+        "3-6",
+        "3-7",
+        "3-8",
+        "3-9",
+        "3-10",
+        "3-11",
+        "3-12",
     }
 )
 
@@ -153,7 +179,11 @@ def snakify_problem_url(lesson_slug: str, problem_slug: str) -> str:
 
 def urls_for_manual_problems() -> list[tuple[str, str, str]]:
     """Return (bare_id, lesson_slug, problem_slug) for manual-only problems."""
-    lesson_by_chapter = {"1": "print_input_numbers", "2": "integer_float_numbers"}
+    lesson_by_chapter = {
+        "1": "print_input_numbers",
+        "2": "integer_float_numbers",
+        "3": "if_then_else_conditions",
+    }
     slug_by_id = {v: k for k, v in SNAKIFY_SLUG_TO_ID.items()}
     out = []
     for bare_id in sorted(MANUAL_ONLY_IDS, key=lambda x: (int(x.split("-")[0]), int(x.split("-")[1]))):

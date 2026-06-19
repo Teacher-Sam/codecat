@@ -1,0 +1,35 @@
+{
+  "id": "java-3-1",
+  "title": {
+    "zh": "兩數取小",
+    "en": "Minimum of two numbers"
+  },
+  "description": {
+    "zh": "<p>讀入兩個整數，輸出較小的那一個。</p>",
+    "en": "<p>Given two integers, print the smaller value.</p>"
+  },
+  "hint": {
+    "zh": "若 <code>a &lt; b</code> 輸出 a，否則輸出 b。",
+    "en": "Compare with <code>&lt;</code> or use <code>Math.min</code>."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "3\n7",
+      "output": "3"
+    },
+    {
+      "input": "2\n2",
+      "output": "2"
+    },
+    {
+      "input": "15\n-8",
+      "output": "-8"
+    },
+    {
+      "input": "-15\n-8",
+      "output": "-15"
+    }
+  ],
+  "source": "vpavlenko/content/ifelse/minimum.txt"
+}

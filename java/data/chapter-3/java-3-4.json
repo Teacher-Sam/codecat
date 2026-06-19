@@ -1,0 +1,43 @@
+{
+  "id": "java-3-4",
+  "title": {
+    "zh": "相等個數",
+    "en": "Equal numbers"
+  },
+  "description": {
+    "zh": "<p>讀入三個整數，輸出有幾對數字相等（0、1 或 3）。</p>",
+    "en": "<p>Given three integers, determine how many of them are equal to each other. The program must print one of these numbers: 3 (if all are the same), 2 (if two of them are equal to each other and the third is different) or 0 (if all numbers are different).</p>"
+  },
+  "hint": {
+    "zh": "檢查 <code>a==b</code>、<code>a==c</code>、<code>b==c</code>。",
+    "en": "Count how many pairs are equal."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}",
+  "tests": [
+    {
+      "input": "10\n5\n10",
+      "output": "2"
+    },
+    {
+      "input": "17\n17\n-9",
+      "output": "2"
+    },
+    {
+      "input": "4\n-82\n-82",
+      "output": "2"
+    },
+    {
+      "input": "5\n2\n4",
+      "output": "0"
+    },
+    {
+      "input": "-149\n-146\n-142",
+      "output": "0"
+    },
+    {
+      "input": "666\n666\n666",
+      "output": "3"
+    }
+  ],
+  "source": "vpavlenko/content/ifelse/num_equal.txt"
+}

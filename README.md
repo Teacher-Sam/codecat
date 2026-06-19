@@ -13,9 +13,9 @@
 ```text
 snakify_practice_platform/
 ├── index.html                  ← 語言選擇入口
-├── java/                       ← Java 練題（第 1～2 章）
+├── java/                       ← Java 練題（第 1～3 章）
 │   ├── index.html
-│   ├── data/                   ← 題目 id：java-1-1、java-2-3 …
+│   ├── data/                   ← 題目 id：java-1-1、java-2-3、java-3-5 …
 │   └── js/config.js
 ├── cpp/                        ← C++ 練題（第 1～2 章）
 │   ├── index.html
@@ -111,6 +111,7 @@ git push -u origin main
 ```powershell
 python scripts/import_chapter1.py
 python scripts/import_chapter2.py
+python scripts/import_chapter3.py
 python scripts/migrate_problem_ids.py java java
 python scripts/convert_java_to_cpp.py
 ```
