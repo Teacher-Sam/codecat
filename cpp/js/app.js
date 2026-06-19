@@ -298,6 +298,35 @@ const App = {
     });
   },
 
+  fitProblemPanelHeight() {
+    const panel = document.querySelector(".problem-panel");
+    const layout = document.querySelector(".problem-layout");
+    if (!panel || layout?.classList.contains("intro-only")) return;
+
+    panel.style.height = "auto";
+    const maxH = Math.min(Math.floor(window.innerHeight * 0.85), 920);
+    const minH = 220;
+    const needed = panel.scrollHeight;
+    panel.style.height = `${Math.max(minH, Math.min(needed, maxH))}px`;
+    panel.scrollTop = 0;
+  },
+
+  remeasureProblemPanelHeight() {
+    this.fitProblemPanelHeight();
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => this.fitProblemPanelHeight());
+    });
+  },
+
+  bindProblemPanelImages() {
+    const panel = document.querySelector(".problem-panel");
+    if (!panel) return;
+    panel.querySelectorAll("img").forEach((img) => {
+      if (img.complete) return;
+      img.addEventListener("load", () => this.fitProblemPanelHeight(), { once: true });
+    });
+  },
+
   setOutput(text, type) {
     const el = document.getElementById("output-content");
     el.textContent = text;
@@ -546,6 +575,8 @@ const App = {
       location.hash = `#/chapter/${chapterId}`;
     };
     document.getElementById("problem-description").innerHTML = this.bilingualHtml(problem.description);
+    this.remeasureProblemPanelHeight();
+    this.bindProblemPanelImages();
 
     if (isIntro) {
       layout?.classList.add("intro-only");
@@ -573,6 +604,8 @@ const App = {
     introNav?.classList.add("hidden");
 
     document.getElementById("problem-hint").innerHTML = this.bilingualHtml(problem.hint);
+    this.remeasureProblemPanelHeight();
+    this.bindProblemPanelImages();
 
     this.showView("problem");
 

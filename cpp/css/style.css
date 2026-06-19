@@ -19,6 +19,8 @@
   --editor-default-height: 320px;
   --output-min-height: 3rem;
   --output-default-height: 140px;
+  --problem-panel-min-height: 220px;
+  --problem-panel-max-height: min(85vh, 920px);
 }
 
 * {
@@ -214,8 +216,11 @@ body:has(#view-problem:not(.hidden)) .header-inner {
 }
 
 .problem-panel {
-  max-height: calc(100vh - 8rem);
+  min-height: var(--problem-panel-min-height);
+  max-height: var(--problem-panel-max-height);
+  height: auto;
   overflow: auto;
+  resize: vertical;
 }
 
 .editor-wrap {
@@ -288,6 +293,15 @@ body:has(#view-problem:not(.hidden)) .header-inner {
   padding: 0.1rem 0.35rem;
   border-radius: 4px;
   font-size: 0.9em;
+}
+
+.problem-description img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0.75rem 0;
+  border-radius: 6px;
+  border: 1px solid var(--border);
 }
 
 .hint-box {
@@ -792,6 +806,8 @@ body:has(#view-problem:not(.hidden)) .header-inner {
 
 .problem-layout.intro-only .problem-panel {
   max-height: none;
+  height: auto;
+  resize: none;
 }
 
 .card-intro {
