@@ -1,0 +1,51 @@
+{
+  "id": "cpp-3-17",
+  "title": {
+    "zh": "最近點距離",
+    "en": "Distance to closest point"
+  },
+  "description": {
+    "zh": "<p>讀入直線上三個整數座標 a、b、c，輸出 a 到 b、c 中較近者的距離。</p>",
+    "en": "<p>Given three integers a, b, c on a line, print the distance from a to whichever of b or c is closer.</p>"
+  },
+  "hint": {
+    "zh": "<code>min(|a-b|, |a-c|)</code>，相等時輸出 <code>|a-b|</code>。",
+    "en": "<code>min(abs(a-b), abs(a-c))</code>; if equal, print <code>abs(a-b)</code>."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "1\n5\n3",
+      "output": "2"
+    },
+    {
+      "input": "0\n10\n0",
+      "output": "0"
+    },
+    {
+      "input": "5\n5\n9",
+      "output": "0"
+    },
+    {
+      "input": "-1\n3\n-5",
+      "output": "4"
+    },
+    {
+      "input": "10\n2\n15",
+      "output": "5"
+    },
+    {
+      "input": "7\n7\n7",
+      "output": "0"
+    },
+    {
+      "input": "3\n8\n1",
+      "output": "2"
+    },
+    {
+      "input": "-10\n-5\n-20",
+      "output": "5"
+    }
+  ],
+  "source": "snakify.org Lesson 3 bonus (iT 邦幫忙 Day9)"
+}

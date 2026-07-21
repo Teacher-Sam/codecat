@@ -1,0 +1,47 @@
+{
+  "id": "3",
+  "title": {
+    "zh": "條件敘述",
+    "en": "Conditions: if, then, else"
+  },
+  "description": {
+    "zh": "if / else、比較與邏輯運算、西洋棋走法、閏年等（共 32 題）。",
+    "en": "if/else, comparisons, logic, chess moves, leap year, and more (32 problems)."
+  },
+  "problemIds": [
+    "cpp-3-0",
+    "cpp-3-1",
+    "cpp-3-2",
+    "cpp-3-3",
+    "cpp-3-4",
+    "cpp-3-5",
+    "cpp-3-6",
+    "cpp-3-7",
+    "cpp-3-8",
+    "cpp-3-9",
+    "cpp-3-10",
+    "cpp-3-11",
+    "cpp-3-12",
+    "cpp-3-13",
+    "cpp-3-14",
+    "cpp-3-15",
+    "cpp-3-16",
+    "cpp-3-17",
+    "cpp-3-18",
+    "cpp-3-19",
+    "cpp-3-20",
+    "cpp-3-21",
+    "cpp-3-22",
+    "cpp-3-23",
+    "cpp-3-24",
+    "cpp-3-25",
+    "cpp-3-26",
+    "cpp-3-27",
+    "cpp-3-28",
+    "cpp-3-29",
+    "cpp-3-30",
+    "cpp-3-31",
+    "cpp-3-32"
+  ],
+  "source": "https://github.com/vpavlenko/content"
+}

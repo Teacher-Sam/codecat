@@ -1,0 +1,55 @@
+{
+  "id": "cpp-4-14",
+  "title": {
+    "zh": "階梯",
+    "en": "Ladder"
+  },
+  "description": {
+    "zh": "<p>讀入 n（n ≤ 9），輸出 n 階階梯：第 k 階為 1～k 連續數字（無空格），每階一行。</p>",
+    "en": "<p>For given integer n &le; 9 print a ladder of n steps. The k-th step consists of the integers from 1 to k without spaces between them. <p> To do that, you can use the <code>sep</code> and <code>end</code> arguments for the function print().</p>"
+  },
+  "hint": {
+    "zh": "雙層 <code>for</code>：內層 <code>cout &lt;&lt; j;</code>，每階結束 <code>cout &lt;&lt; endl;</code>",
+    "en": "Nested loops; inner <code>cout &lt;&lt; j;</code>, each step ends with <code>endl</code>."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "3",
+      "output": "1\n12\n123"
+    },
+    {
+      "input": "4",
+      "output": "1\n12\n123\n1234"
+    },
+    {
+      "input": "2",
+      "output": "1\n12"
+    },
+    {
+      "input": "5",
+      "output": "1\n12\n123\n1234\n12345"
+    },
+    {
+      "input": "1",
+      "output": "1"
+    },
+    {
+      "input": "7",
+      "output": "1\n12\n123\n1234\n12345\n123456\n1234567"
+    },
+    {
+      "input": "8",
+      "output": "1\n12\n123\n1234\n12345\n123456\n1234567\n12345678"
+    },
+    {
+      "input": "9",
+      "output": "1\n12\n123\n1234\n12345\n123456\n1234567\n12345678\n123456789"
+    },
+    {
+      "input": "6",
+      "output": "1\n12\n123\n1234\n12345\n123456"
+    }
+  ],
+  "source": "vpavlenko/content/for/ladder.txt"
+}

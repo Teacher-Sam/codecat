@@ -7,6 +7,14 @@
     {
       "id": "2",
       "dir": "chapter-2"
+    },
+    {
+      "id": "3",
+      "dir": "chapter-3"
+    },
+    {
+      "id": "4",
+      "dir": "chapter-4"
     }
   ]
 }

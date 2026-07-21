@@ -9,8 +9,8 @@
     "en": "<p>Write a program that greets the user by printing the word \"Hello\", a comma, the name of the user and an exclamation mark after it. See the examples below.</p><p><b>Warning.</b> Your program's output should strictly match the desired one, character by character. There shouldn't be any space between the name and the exclamation mark. In C++, chain output with <code>&lt;&lt;</code>, for example: <code>cout &lt;&lt; \"Hello, \" &lt;&lt; name &lt;&lt; \"!\";</code></p>"
   },
   "hint": {
-    "zh": "使用輸出串接：<code>cout << \"Hello, \" << name << \"!\";</code>",
-    "en": "Chain output: <code>cout << \"Hello, \" << name << \"!\";</code>"
+    "zh": "名字可能含空白，請用 <code>getline(cin, name);</code>。若先前有 <code>cin >></code>，要先處理換行（<code>cin.ignore(...)</code> 或 <code>getline(cin >> ws, name)</code>）。輸出：<code>cout << \"Hello, \" << name << \"!\";</code>",
+    "en": "Use <code>getline</code> because names may include spaces. If a previous <code>cin >></code> was used, consume the pending newline first (e.g. <code>cin.ignore(...)</code> or <code>getline(cin >> ws, name)</code>). Output format: <code>cout << \"Hello, \" << name << \"!\";</code>."
   },
   "starterCode": "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
   "tests": [

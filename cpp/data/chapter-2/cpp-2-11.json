@@ -9,8 +9,8 @@
     "en": "<p>Given a positive real number, print its first digit to the right of the decimal point.</p>"
   },
   "hint": {
-    "zh": "讀成字串，找 <code>'.'</code> 後的第一個字元：<code>s[s.find('.') + 1]</code>",
-    "en": "Read as string and take the character after <code>'.'</code>: <code>s[s.find('.') + 1]</code>"
+    "zh": "讀成字串，找 <code>'.'</code> 後的第一個字元：<code>s[s.find('.') + 1]</code>。 若輸入可能含空白請用 <code>getline</code>。若前面有 <code>cin >></code>，記得先處理殘留換行（如 <code>cin.ignore(...)</code> 或 <code>getline(cin >> ws, s)</code>）。",
+    "en": "Read as string and take the character after <code>'.'</code>: <code>s[s.find('.') + 1]</code>. If input may contain spaces, use <code>getline</code>. After any prior <code>cin >></code>, consume the leftover newline first (e.g. <code>cin.ignore(...)</code> or <code>getline(cin >> ws, s)</code>)."
   },
   "starterCode": "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
   "tests": [

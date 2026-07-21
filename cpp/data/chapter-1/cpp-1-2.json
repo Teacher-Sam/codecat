@@ -9,8 +9,8 @@
     "en": "<p>Read a name and print the word <code>Hi</code> followed by the name, separated by a single space.</p>"
   },
   "hint": {
-    "zh": "整行讀名字：<code>getline(cin, name);</code>，輸出：<code>cout << \"Hi \" << name;</code>",
-    "en": "Read the full line with <code>getline(cin, name);</code>, then <code>cout << \"Hi \" << name;</code>"
+    "zh": "名字可能含空白，請用 <code>getline(cin, name);</code>。若前面曾用過 <code>cin >></code>，先加 <code>cin.ignore(...)</code> 或 <code>getline(cin >> ws, name)</code>，避免讀到空字串。輸出：<code>cout << \"Hi \" << name;</code>",
+    "en": "The name may contain spaces, so use <code>getline(cin, name);</code>. If you used <code>cin >></code> before it, clear the leftover newline first (e.g. <code>cin.ignore(...)</code> or <code>getline(cin >> ws, name)</code>). Then print <code>cout << \"Hi \" << name;</code>."
   },
   "starterCode": "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
   "tests": [

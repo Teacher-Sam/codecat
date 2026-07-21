@@ -1,0 +1,35 @@
+{
+  "id": "cpp-4-2",
+  "title": {
+    "zh": "數列 - 1",
+    "en": "Series - 1"
+  },
+  "description": {
+    "zh": "<p>讀入 A、B（A ≤ B），由小到大輸出 A 到 B 的所有整數，數字間以空格分隔（末尾保留一空格）。</p>",
+    "en": "<p>Given two integers A and B (A &le; B). Print all numbers from A to B inclusively.</p>"
+  },
+  "hint": {
+    "zh": "<code>for (int i = A; i &lt;= B; i++)</code>",
+    "en": "Print from A to B with spaces."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "1\n10",
+      "output": "1 2 3 4 5 6 7 8 9 10 "
+    },
+    {
+      "input": "-3\n14",
+      "output": "-3 -2 -1 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 "
+    },
+    {
+      "input": "0\n0",
+      "output": "0 "
+    },
+    {
+      "input": "20\n20",
+      "output": "20"
+    }
+  ],
+  "source": "vpavlenko/content/for/series_1.txt"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "cpp-4-10",
+  "title": {
+    "zh": "階乘",
+    "en": "Factorial"
+  },
+  "description": {
+    "zh": "<p>讀入 n，計算 n! 並輸出。請勿使用 Math 函式庫捷徑。</p>",
+    "en": "<p>In mathematics, the factorial of an integer \\(n\\), denoted by \\(n!\\) is the following product:  $$n! = 1 \\times 2 \\times \\ldots \\times n$$</p><p><p> For the given integer \\(n\\) calculate the value \\(n!\\). Don't use <code>math</code> module in this exercise.</p>"
+  },
+  "hint": {
+    "zh": "用 <code>for</code> 累乘。",
+    "en": "Multiply in a loop."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "4",
+      "output": "24"
+    },
+    {
+      "input": "1",
+      "output": "1"
+    },
+    {
+      "input": "2",
+      "output": "2"
+    },
+    {
+      "input": "3",
+      "output": "6"
+    },
+    {
+      "input": "5",
+      "output": "120"
+    },
+    {
+      "input": "6",
+      "output": "720"
+    },
+    {
+      "input": "7",
+      "output": "5040"
+    },
+    {
+      "input": "8",
+      "output": "40320"
+    },
+    {
+      "input": "9",
+      "output": "362880"
+    },
+    {
+      "input": "10",
+      "output": "3628800"
+    },
+    {
+      "input": "11",
+      "output": "39916800"
+    },
+    {
+      "input": "12",
+      "output": "479001600"
+    }
+  ],
+  "source": "vpavlenko/content/for/factorial.txt"
+}

@@ -61,7 +61,7 @@ int main() {
 }
 """
 
-FLOAT_PROBLEMS = frozenset({"2-10", "2-11", "2-18", "2-19"})
+FLOAT_PROBLEMS = frozenset({"2-10", "2-11", "2-18", "2-19", "3-29"})
 
 # Per-problem C++ hints and optional description patches (bare id without prefix)
 CPP_META: dict[str, dict] = {
@@ -76,8 +76,8 @@ CPP_META: dict[str, dict] = {
     "1-2": {
         "starterCode": STARTER_STRING,
         "hint": {
-            "zh": "整行讀名字：<code>getline(cin, name);</code>，輸出：<code>cout << \"Hi \" << name;</code>",
-            "en": "Read the full line with <code>getline(cin, name);</code>, then <code>cout << \"Hi \" << name;</code>",
+            "zh": "名字可能含空白，請用 <code>getline(cin, name);</code>。若前面曾用過 <code>cin >></code>，先加 <code>cin.ignore(...)</code> 或 <code>getline(cin >> ws, name)</code>，避免讀到空字串。輸出：<code>cout << \"Hi \" << name;</code>",
+            "en": "The name may contain spaces, so use <code>getline(cin, name);</code>. If you used <code>cin >></code> before it, clear the leftover newline first (e.g. <code>cin.ignore(...)</code> or <code>getline(cin >> ws, name)</code>). Then print <code>cout << \"Hi \" << name;</code>.",
         },
     },
     "1-3": {
@@ -100,8 +100,8 @@ CPP_META: dict[str, dict] = {
             "en": "<p>Write a program that greets the user by printing the word \"Hello\", a comma, the name of the user and an exclamation mark after it. See the examples below.</p><p><b>Warning.</b> Your program's output should strictly match the desired one, character by character. There shouldn't be any space between the name and the exclamation mark. In C++, chain output with <code>&lt;&lt;</code>, for example: <code>cout &lt;&lt; \"Hello, \" &lt;&lt; name &lt;&lt; \"!\";</code></p>",
         },
         "hint": {
-            "zh": "使用輸出串接：<code>cout << \"Hello, \" << name << \"!\";</code>",
-            "en": "Chain output: <code>cout << \"Hello, \" << name << \"!\";</code>",
+            "zh": "名字可能含空白，請用 <code>getline(cin, name);</code>。若先前有 <code>cin >></code>，要先處理換行（<code>cin.ignore(...)</code> 或 <code>getline(cin >> ws, name)</code>）。輸出：<code>cout << \"Hello, \" << name << \"!\";</code>",
+            "en": "Use <code>getline</code> because names may include spaces. If a previous <code>cin >></code> was used, consume the pending newline first (e.g. <code>cin.ignore(...)</code> or <code>getline(cin >> ws, name)</code>). Output format: <code>cout << \"Hello, \" << name << \"!\";</code>.",
         },
     },
     "1-6": {
@@ -274,7 +274,125 @@ int main() {
             "en": "Minute hand angle: <code>fmod(alpha, 30.0) * 12</code> (or equivalent); match decimal output format.",
         },
     },
+    # --- Chapter 3 ---
+    "3-5": {
+        "hint": {
+            "zh": "若 <code>a &lt; b</code> 輸出 a，否則輸出 b；或使用 <code>min(a, b)</code>（<code>#include &lt;algorithm&gt;</code>）。",
+            "en": "Compare with <code>&lt;</code> or use <code>min(a, b)</code> (<code>#include &lt;algorithm&gt;</code>).",
+        },
+    },
+    "3-29": {
+        "starterCode": STARTER_DOUBLE,
+        "hint": {
+            "zh": "<code>x = -1.0 * b / a</code>；輸出用 <code>cout</code>，注意整數除法與浮點。",
+            "en": "<code>x = -1.0 * b / a</code>; use <code>double</code> division.",
+        },
+    },
+    # --- Chapter 4 ---
+    "4-5": {
+        "hint": {
+            "zh": "用 <code>for</code> 搭配 <code>cout &lt;&lt; i &lt;&lt; \" \";</code>，末尾保留一空格。",
+            "en": "Use <code>for</code> with <code>cout &lt;&lt; i &lt;&lt; \" \";</code>; keep trailing space.",
+        },
+    },
+    "4-6": {
+        "hint": {
+            "zh": "依 A、B 大小決定 <code>i++</code> 或 <code>i--</code>，用 <code>cout</code> 輸出空格分隔。",
+            "en": "Choose ascending or descending loop; print with spaces.",
+        },
+    },
+    "4-13": {
+        "hint": {
+            "zh": "外層 <code>for</code> 從 A 到 B，每行 <code>cout &lt;&lt; i &lt;&lt; \"*\" &lt;&lt; i &lt;&lt; \"=\" &lt;&lt; (i*i) &lt;&lt; endl;</code>",
+            "en": "Loop i from A to B; print <code>i*i=...</code> each line with <code>cout</code>.",
+        },
+    },
+    "4-14": {
+        "hint": {
+            "zh": "雙層 <code>for</code>：內層 <code>cout &lt;&lt; j;</code>，每階結束 <code>cout &lt;&lt; endl;</code>",
+            "en": "Nested loops; inner <code>cout &lt;&lt; j;</code>, each step ends with <code>endl</code>.",
+        },
+    },
 }
+
+
+def adapt_cpp_text(text: str) -> str:
+    if not text:
+        return text
+    text = text.replace('src="images/problems/', 'src="../java/images/problems/')
+    replacements = [
+        ("System.out.println", "cout <<"),
+        ("System.out.print", "cout <<"),
+        ("scanner.nextInt()", "cin >> x"),
+        ("Scanner.nextInt()", "cin >> ..."),
+        ("Math.min", "min"),
+        ("Math.max", "max"),
+        ("Math.abs", "abs"),
+        ("boolean", "bool"),
+        ("Java 使用", "C++ 使用"),
+        ("Java uses", "C++ uses"),
+        ("Java 有", "C++ 有"),
+        ("Java's", "C++'s"),
+        ("（不像 Python 靠縮排）", ""),
+        ("(unlike Python's indentation)", ""),
+        (" unlike Python’s indentation", ""),
+    ]
+    for old, new in replacements:
+        text = text.replace(old, new)
+    return text
+
+
+def adapt_bilingual_field(value: dict | str | None) -> dict | str:
+    if value is None:
+        return {}
+    if isinstance(value, str):
+        return adapt_cpp_text(value)
+    return {lang: adapt_cpp_text(text) for lang, text in value.items()}
+
+
+def append_input_pitfall_note(hint: dict | str | None, starter: str) -> dict | str | None:
+    """Add practical C++ input pitfalls to hints when appropriate."""
+    if not isinstance(hint, dict):
+        return hint
+
+    # String-style tasks often need getline and newline handling.
+    if "#include <string>" in starter:
+        zh_note = (
+            "若輸入可能含空白請用 <code>getline</code>。若前面有 <code>cin >></code>，"
+            "記得先處理殘留換行（如 <code>cin.ignore(...)</code> 或 <code>getline(cin >> ws, s)</code>）。"
+        )
+        en_note = (
+            "If input may contain spaces, use <code>getline</code>. "
+            "After any prior <code>cin >></code>, consume the leftover newline first "
+            "(e.g. <code>cin.ignore(...)</code> or <code>getline(cin >> ws, s)</code>)."
+        )
+        out = dict(hint)
+        if "getline" not in (out.get("zh") or "") and "cin >> ws" not in (out.get("zh") or ""):
+            out["zh"] = ((out.get("zh") or "").rstrip("。.") + "。 " + zh_note).strip()
+        if "getline" not in (out.get("en") or "") and "cin >> ws" not in (out.get("en") or ""):
+            out["en"] = ((out.get("en") or "").rstrip(".") + ". " + en_note).strip()
+        return out
+
+    return hint
+
+
+def intro_from_java(chapter_num: str, bare_id: str) -> dict:
+    java_path = JAVA_DIR / f"chapter-{chapter_num}" / f"java-{bare_id}.json"
+    java_intro = json.loads(java_path.read_text(encoding="utf-8"))
+    description = adapt_bilingual_field(java_intro.get("description", {}))
+    source = java_intro.get("source", "")
+    if source:
+        source = f"{source} (adapted for C++)"
+    return {
+        "id": f"{PREFIX}{bare_id}",
+        "type": "intro",
+        "title": java_intro.get("title"),
+        "description": description,
+        "hint": {"zh": "", "en": ""},
+        "starterCode": "",
+        "tests": [],
+        "source": source,
+    }
 
 
 def default_starter(bare_id: str) -> str:
@@ -287,14 +405,16 @@ def convert_problem(java_problem: dict, bare_id: str) -> dict:
     meta = CPP_META.get(bare_id, {})
     cpp_id = f"{PREFIX}{bare_id}"
 
-    description = dict(java_problem.get("description", {}))
-    if "description" in meta:
+    description = adapt_bilingual_field(java_problem.get("description", {}))
+    if isinstance(description, dict) and "description" in meta:
         description.update(meta["description"])
 
-    hint = meta.get("hint", java_problem.get("hint"))
+    raw_hint = meta.get("hint", java_problem.get("hint"))
+    hint = adapt_bilingual_field(raw_hint) if raw_hint else raw_hint
     starter = meta.get("starterCode", default_starter(bare_id))
+    hint = append_input_pitfall_note(hint, starter)
 
-    return {
+    result = {
         "id": cpp_id,
         "title": java_problem.get("title"),
         "description": description,
@@ -303,6 +423,9 @@ def convert_problem(java_problem: dict, bare_id: str) -> dict:
         "tests": java_problem.get("tests", []),
         "source": java_problem.get("source"),
     }
+    if java_problem.get("type"):
+        result["type"] = java_problem["type"]
+    return result
 
 
 def convert_chapter(chapter_num: str) -> None:
@@ -322,10 +445,13 @@ def convert_chapter(chapter_num: str) -> None:
         java_problem = json.loads(java_path.read_text(encoding="utf-8"))
         cpp_path = cpp_ch_dir / f"{cpp_id}.json"
 
-        if java_problem.get("type") == "intro" and cpp_path.exists():
-            continue
+        if java_problem.get("type") == "intro":
+            if cpp_path.exists() and chapter_num in ("1", "2"):
+                continue
+            cpp_problem = intro_from_java(chapter_num, bare)
+        else:
+            cpp_problem = convert_problem(java_problem, bare)
 
-        cpp_problem = convert_problem(java_problem, bare)
         cpp_path.write_text(
             json.dumps(cpp_problem, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
@@ -360,7 +486,7 @@ def write_index() -> None:
 
 def main() -> None:
     CPP_DIR.mkdir(parents=True, exist_ok=True)
-    for chapter_num in ("1", "2"):
+    for chapter_num in ("1", "2", "3", "4"):
         convert_chapter(chapter_num)
     write_index()
     print("C++ chapters regenerated.")

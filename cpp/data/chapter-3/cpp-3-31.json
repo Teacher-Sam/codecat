@@ -1,0 +1,67 @@
+{
+  "id": "cpp-3-31",
+  "title": {
+    "zh": "三數排序",
+    "en": "Sort three numbers"
+  },
+  "description": {
+    "zh": "<p>讀入三個整數，由小到大輸出（空格分隔）。</p>",
+    "en": "<p>Sort three numbers.</p>"
+  },
+  "hint": {
+    "zh": "可用 <code>if</code> 比較後依序輸出。",
+    "en": "Compare and print in ascending order."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "5\n3\n7",
+      "output": "3\n5\n7"
+    },
+    {
+      "input": "8\n9\n1",
+      "output": "1\n8\n9"
+    },
+    {
+      "input": "2\n5\n2",
+      "output": "2\n2\n5"
+    },
+    {
+      "input": "7\n5\n1",
+      "output": "1\n5\n7"
+    },
+    {
+      "input": "10\n20\n40",
+      "output": "10\n20\n40"
+    },
+    {
+      "input": "40\n10\n20",
+      "output": "10\n20\n40"
+    },
+    {
+      "input": "7\n7\n7",
+      "output": "7\n7\n7"
+    },
+    {
+      "input": "6\n6\n4",
+      "output": "4\n6\n6"
+    },
+    {
+      "input": "10\n4\n6",
+      "output": "4\n6\n10"
+    },
+    {
+      "input": "3\n10\n7",
+      "output": "3\n7\n10"
+    },
+    {
+      "input": "5\n7\n20",
+      "output": "5\n7\n20"
+    },
+    {
+      "input": "7\n20\n5",
+      "output": "5\n7\n20"
+    }
+  ],
+  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/sort_three_numbers/"
+}

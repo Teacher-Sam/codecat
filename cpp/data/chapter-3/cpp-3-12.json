@@ -1,0 +1,43 @@
+{
+  "id": "cpp-3-12",
+  "title": {
+    "zh": "三數取小",
+    "en": "Minimum of three numbers"
+  },
+  "description": {
+    "zh": "<p>讀入三個整數，輸出最小值。</p>",
+    "en": "<p>Given three integers, print the smallest value.</p>"
+  },
+  "hint": {
+    "zh": "可先比較兩個，再與第三個比。",
+    "en": "Compare pairs, or use nested <code>if</code>."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "5\n3\n7",
+      "output": "3"
+    },
+    {
+      "input": "10\n30\n4",
+      "output": "4"
+    },
+    {
+      "input": "-5\n-3\n-3",
+      "output": "-5"
+    },
+    {
+      "input": "1\n10\n20",
+      "output": "1"
+    },
+    {
+      "input": "74\n32\n11",
+      "output": "11"
+    },
+    {
+      "input": "50\n80\n25",
+      "output": "25"
+    }
+  ],
+  "source": "vpavlenko/content/ifelse/minimum3.txt"
+}

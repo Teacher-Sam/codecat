@@ -1,0 +1,51 @@
+{
+  "id": "cpp-3-15",
+  "title": {
+    "zh": "棋格顏色",
+    "en": "Chess board - black square"
+  },
+  "description": {
+    "zh": "<p>讀入棋盤一格的欄、列座標（1～8），輸出該格顏色 <code>BLACK</code> 或 <code>WHITE</code>。</p>",
+    "en": "<p>Given a chessboard cell column and row (1–8), print <code>BLACK</code> or <code>WHITE</code>.</p>"
+  },
+  "hint": {
+    "zh": "同色 ⟺ <code>row % 2 == column % 2</code> → BLACK。",
+    "en": "Same parity of row and column → <code>BLACK</code>."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "1\n1",
+      "output": "BLACK"
+    },
+    {
+      "input": "1\n2",
+      "output": "WHITE"
+    },
+    {
+      "input": "2\n1",
+      "output": "WHITE"
+    },
+    {
+      "input": "2\n2",
+      "output": "BLACK"
+    },
+    {
+      "input": "7\n8",
+      "output": "WHITE"
+    },
+    {
+      "input": "8\n8",
+      "output": "BLACK"
+    },
+    {
+      "input": "3\n5",
+      "output": "BLACK"
+    },
+    {
+      "input": "4\n7",
+      "output": "WHITE"
+    }
+  ],
+  "source": "snakify.org Lesson 3 bonus (iT 邦幫忙 Day8)"
+}

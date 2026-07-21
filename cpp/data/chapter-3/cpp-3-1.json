@@ -1,0 +1,43 @@
+{
+  "id": "cpp-3-1",
+  "title": {
+    "zh": "是否為正數",
+    "en": "Is positive"
+  },
+  "description": {
+    "zh": "<p>讀入整數，若為正數輸出 YES，否則輸出 NO。</p>",
+    "en": "<p>Is positive.</p>"
+  },
+  "hint": {
+    "zh": "使用 <code>if (a &gt; 0)</code>。",
+    "en": "Use <code>if (a &gt; 0)</code>."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "12",
+      "output": "YES"
+    },
+    {
+      "input": "-34",
+      "output": "NO"
+    },
+    {
+      "input": "5",
+      "output": "YES"
+    },
+    {
+      "input": "-6",
+      "output": "NO"
+    },
+    {
+      "input": "79",
+      "output": "YES"
+    },
+    {
+      "input": "-1",
+      "output": "NO"
+    }
+  ],
+  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/is_positive/"
+}

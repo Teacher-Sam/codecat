@@ -1,0 +1,75 @@
+{
+  "id": "cpp-3-11",
+  "title": {
+    "zh": "是否三位數",
+    "en": "Is three digit"
+  },
+  "description": {
+    "zh": "<p>讀入整數，若為三位數（100～999）輸出 YES，否則 NO。</p>",
+    "en": "<p>Is three digit.</p>"
+  },
+  "hint": {
+    "zh": "<code>100 &lt;= a &amp;&amp; a &lt;= 999</code>",
+    "en": "Check the range 100–999."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "123",
+      "output": "YES"
+    },
+    {
+      "input": "1233",
+      "output": "NO"
+    },
+    {
+      "input": "5",
+      "output": "NO"
+    },
+    {
+      "input": "360",
+      "output": "YES"
+    },
+    {
+      "input": "79",
+      "output": "NO"
+    },
+    {
+      "input": "900",
+      "output": "YES"
+    },
+    {
+      "input": "1712",
+      "output": "NO"
+    },
+    {
+      "input": "100",
+      "output": "YES"
+    },
+    {
+      "input": "8",
+      "output": "NO"
+    },
+    {
+      "input": "176",
+      "output": "YES"
+    },
+    {
+      "input": "1023",
+      "output": "NO"
+    },
+    {
+      "input": "999",
+      "output": "YES"
+    },
+    {
+      "input": "99",
+      "output": "NO"
+    },
+    {
+      "input": "404",
+      "output": "YES"
+    }
+  ],
+  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/is_three_digit/"
+}

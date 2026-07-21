@@ -1,0 +1,59 @@
+{
+  "id": "cpp-3-8",
+  "title": {
+    "zh": "恰有一奇",
+    "en": "Exactly one odd"
+  },
+  "description": {
+    "zh": "<p>讀入兩個整數，若恰有一個是奇數輸出 YES，否則 NO。</p>",
+    "en": "<p>Exactly one odd.</p>"
+  },
+  "hint": {
+    "zh": "一奇一偶：<code>(a%2)!=(b%2)</code>。",
+    "en": "XOR pattern on parity."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "1\n2",
+      "output": "YES"
+    },
+    {
+      "input": "2\n4",
+      "output": "NO"
+    },
+    {
+      "input": "1\n2",
+      "output": "YES"
+    },
+    {
+      "input": "5\n3",
+      "output": "NO"
+    },
+    {
+      "input": "10\n11",
+      "output": "YES"
+    },
+    {
+      "input": "79\n81",
+      "output": "NO"
+    },
+    {
+      "input": "79\n100",
+      "output": "YES"
+    },
+    {
+      "input": "17\n-5",
+      "output": "NO"
+    },
+    {
+      "input": "100\n200",
+      "output": "NO"
+    },
+    {
+      "input": "40\n20",
+      "output": "NO"
+    }
+  ],
+  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/exactly_one_odd/"
+}

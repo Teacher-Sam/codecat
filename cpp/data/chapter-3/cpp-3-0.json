@@ -1,0 +1,19 @@
+{
+  "id": "cpp-3-0",
+  "type": "intro",
+  "title": {
+    "zh": "章節介紹",
+    "en": "Chapter introduction"
+  },
+  "description": {
+    "zh": "<h3>條件敘述 if / else</h3><p>前兩章的程式多半<strong>逐行依序</strong>執行。本章開始用<strong>條件</strong>決定要執行哪一段程式。C++ 使用大括號 <code>{ }</code> 標示程式區塊：</p><pre><code>int x = cin >> x;\nif (x &gt; 0) {\n    cout <<(x);\n} else {\n    cout <<(-x);\n}</code></pre><p><strong>範例輸入</strong></p><pre class=\"example-io\">-273</pre><p><strong>輸出</strong></p><pre class=\"example-io\">273</pre><p>若條件為真，執行 <code>if</code> 後的大括號區塊；否則執行 <code>else</code> 區塊。若條件為假時不需要做任何事，可省略 <code>else</code>：</p><pre><code>if (x &lt; 0) {\n    x = -x;\n}\ncout <<(x);</code></pre><h3>比較運算子</h3><p>條件常使用比較運算子：</p><ul><li><code>&lt;</code>、<code>&gt;</code>、<code>&lt;=</code>、<code>&gt;=</code></li><li><code>==</code> 相等、<code>!=</code> 不相等</li></ul><pre><code>if (x * x &lt; 1000) { ... }\nif (2 * x != y) { ... }</code></pre><p>注意：判斷相等用 <code>==</code>，不是 <code>=</code>（<code>=</code> 是賦值）。</p><h3>布林值 bool</h3><p>比較運算的結果是 <code>bool</code> 型別，只有 <code>true</code> 或 <code>false</code>：</p><pre><code>cout <<(2 &lt; 5);   // true\ncout <<(2 &gt; 5);   // false</code></pre><h3>邏輯運算子</h3><p>需要同時檢查多個條件時，使用邏輯運算子：</p><ul><li><code>&amp;&amp;</code> — 且（兩邊都為 true 才為 true）</li><li><code>||</code> — 或（至少一邊為 true 即為 true）</li><li><code>!</code> — 非（取反）</li></ul><pre><code>if (a % 10 == 0 || b % 10 == 0) {\n    cout <<(\"YES\");\n} else {\n    cout <<(\"NO\");\n}</code></pre><h3>if - else if - else</h3><p>多個互斥條件可用 <code>else if</code> 串接，依序檢查直到第一個為真：</p><pre><code>int x = cin >> x;\nint y = cin >> x;\nif (x &gt; 0 &amp;&amp; y &gt; 0) {\n    cout <<(\"Quadrant I\");\n} else if (x &gt; 0 &amp;&amp; y &lt; 0) {\n    cout <<(\"Quadrant IV\");\n} else if (y &gt; 0) {\n    cout <<(\"Quadrant II\");\n} else {\n    cout <<(\"Quadrant III\");\n}</code></pre><p>本章題目包含比較、邏輯組合、西洋棋走法判斷與閏年等。閱讀完畢後，點選「下一題」開始練習。</p>",
+    "en": "<h3>Conditional statements: if / else</h3><p>Earlier programs ran <strong>line by line</strong>. This chapter uses <strong>conditions</strong> to choose which code runs. C++ uses braces <code>{ }</code> for blocks (unlike Python’s indentation):</p><pre><code>int x = cin >> x;\nif (x &gt; 0) {\n    cout <<(x);\n} else {\n    cout <<(-x);\n}</code></pre><p><strong>Sample input</strong></p><pre class=\"example-io\">-273</pre><p><strong>Output</strong></p><pre class=\"example-io\">273</pre><p>If the condition is true, the <code>if</code> block runs; otherwise the <code>else</code> block runs. You may omit <code>else</code> when nothing should happen on false:</p><pre><code>if (x &lt; 0) {\n    x = -x;\n}\ncout <<(x);</code></pre><h3>Comparison operators</h3><ul><li><code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code></li><li><code>==</code> equal, <code>!=</code> not equal</li></ul><p>Use <code>==</code> for equality, not <code>=</code> (assignment).</p><h3>Boolean values</h3><pre><code>cout <<(2 &lt; 5);   // true\ncout <<(2 &gt; 5);   // false</code></pre><h3>Logical operators</h3><ul><li><code>&amp;&amp;</code> — AND</li><li><code>||</code> — OR</li><li><code>!</code> — NOT</li></ul><pre><code>if (a % 10 == 0 || b % 10 == 0) {\n    cout <<(\"YES\");\n} else {\n    cout <<(\"NO\");\n}</code></pre><h3>if - else if - else</h3><pre><code>int x = cin >> x;\nint y = cin >> x;\nif (x &gt; 0 &amp;&amp; y &gt; 0) {\n    cout <<(\"Quadrant I\");\n} else if (x &gt; 0 &amp;&amp; y &lt; 0) {\n    cout <<(\"Quadrant IV\");\n} else if (y &gt; 0) {\n    cout <<(\"Quadrant II\");\n} else {\n    cout <<(\"Quadrant III\");\n}</code></pre><p>Problems cover comparisons, logic, chess moves, and leap years. When ready, click <strong>Next</strong> below.</p>"
+  },
+  "hint": {
+    "zh": "",
+    "en": ""
+  },
+  "starterCode": "",
+  "tests": [],
+  "source": "vpavlenko/content/lessons/20_ifelse.html (adapted for Java) (adapted for C++)"
+}

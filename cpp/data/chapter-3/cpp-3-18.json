@@ -1,0 +1,51 @@
+{
+  "id": "cpp-3-18",
+  "title": {
+    "zh": "數字遞增",
+    "en": "Digits in ascending order"
+  },
+  "description": {
+    "zh": "<p>讀入三位整數，若各位數字由左到右嚴格遞增輸出 YES，否則 NO。</p>",
+    "en": "<p>Given a three-digit integer, print <code>YES</code> if its digits are strictly ascending left to right, otherwise <code>NO</code>.</p>"
+  },
+  "hint": {
+    "zh": "百位 &lt; 十位 &lt; 個位。",
+    "en": "Hundreds &lt; tens &lt; units digit."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "123",
+      "output": "YES"
+    },
+    {
+      "input": "321",
+      "output": "NO"
+    },
+    {
+      "input": "159",
+      "output": "YES"
+    },
+    {
+      "input": "135",
+      "output": "YES"
+    },
+    {
+      "input": "132",
+      "output": "NO"
+    },
+    {
+      "input": "111",
+      "output": "NO"
+    },
+    {
+      "input": "100",
+      "output": "NO"
+    },
+    {
+      "input": "579",
+      "output": "YES"
+    }
+  ],
+  "source": "snakify.org Lesson 3 bonus (iT 邦幫忙 Day9)"
+}

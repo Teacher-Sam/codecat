@@ -1,0 +1,63 @@
+{
+  "id": "cpp-3-16",
+  "title": {
+    "zh": "棋盤同色",
+    "en": "Chess board - same color"
+  },
+  "description": {
+    "zh": "<p>讀入兩格座標，判斷是否同色，輸出 YES/NO。</p><p><img src=\"../java/images/problems/chess_board.png\" alt=\"\" width=\"500\"></p>",
+    "en": "<p>Given two cells of a chessboard. If they are painted in one color, print the word <code>YES</code>, and if in a different color - <code>NO</code>.</p><p><p> The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell.</p><p><p><img src=\"../java/images/problems/chess_board.png\" width=\"500\"></p></p>"
+  },
+  "hint": {
+    "zh": "同色 ⟺ 兩格 (x+y) 的奇偶性相同。",
+    "en": "Same color iff <code>(x1+y1)%2 == (x2+y2)%2</code>."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "1\n1\n2\n6",
+      "output": "YES"
+    },
+    {
+      "input": "2\n2\n2\n5",
+      "output": "NO"
+    },
+    {
+      "input": "2\n2\n2\n4",
+      "output": "YES"
+    },
+    {
+      "input": "2\n3\n3\n2",
+      "output": "YES"
+    },
+    {
+      "input": "2\n3\n7\n8",
+      "output": "YES"
+    },
+    {
+      "input": "2\n3\n8\n8",
+      "output": "NO"
+    },
+    {
+      "input": "5\n7\n5\n7",
+      "output": "YES"
+    },
+    {
+      "input": "2\n6\n3\n1",
+      "output": "YES"
+    },
+    {
+      "input": "2\n3\n4\n5",
+      "output": "YES"
+    },
+    {
+      "input": "7\n2\n2\n3",
+      "output": "YES"
+    },
+    {
+      "input": "1\n6\n7\n2",
+      "output": "YES"
+    }
+  ],
+  "source": "vpavlenko/content/ifelse/chess_board.txt"
+}

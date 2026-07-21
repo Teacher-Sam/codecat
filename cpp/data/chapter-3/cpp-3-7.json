@@ -1,0 +1,59 @@
+{
+  "id": "cpp-3-7",
+  "title": {
+    "zh": "至少一奇",
+    "en": "At least one odd"
+  },
+  "description": {
+    "zh": "<p>讀入兩個整數，若至少一個是奇數輸出 YES，否則 NO。</p>",
+    "en": "<p>At least one odd.</p>"
+  },
+  "hint": {
+    "zh": "<code>a % 2 != 0 || b % 2 != 0</code>",
+    "en": "Use logical OR."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "1\n3",
+      "output": "YES"
+    },
+    {
+      "input": "2\n4",
+      "output": "NO"
+    },
+    {
+      "input": "1\n2",
+      "output": "YES"
+    },
+    {
+      "input": "5\n3",
+      "output": "YES"
+    },
+    {
+      "input": "10\n11",
+      "output": "YES"
+    },
+    {
+      "input": "79\n81",
+      "output": "YES"
+    },
+    {
+      "input": "79\n100",
+      "output": "YES"
+    },
+    {
+      "input": "17\n-5",
+      "output": "YES"
+    },
+    {
+      "input": "100\n200",
+      "output": "NO"
+    },
+    {
+      "input": "40\n20",
+      "output": "NO"
+    }
+  ],
+  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/at_least_one_odd/"
+}

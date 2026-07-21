@@ -1,0 +1,51 @@
+{
+  "id": "cpp-4-3",
+  "title": {
+    "zh": "前 N 個奇數（遞增）",
+    "en": "First N odd, ascending"
+  },
+  "description": {
+    "zh": "<p>讀入 n，由小到大輸出前 n 個奇數，每個一行（1, 3, 5, …）。</p>",
+    "en": "<p>First N odd, ascending.</p>"
+  },
+  "hint": {
+    "zh": "步長 2：<code>for (int i = 1; i &lt;= 2*n - 1; i += 2)</code>",
+    "en": "Step by 2 starting at 1."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "5",
+      "output": "1\n3\n5"
+    },
+    {
+      "input": "3",
+      "output": "1\n3"
+    },
+    {
+      "input": "1",
+      "output": "1"
+    },
+    {
+      "input": "2",
+      "output": "1"
+    },
+    {
+      "input": "4",
+      "output": "1\n3"
+    },
+    {
+      "input": "9",
+      "output": "1\n3\n5\n7\n9"
+    },
+    {
+      "input": "7",
+      "output": "1\n3\n5\n7"
+    },
+    {
+      "input": "12",
+      "output": "1\n3\n5\n7\n9\n11"
+    }
+  ],
+  "source": "snakify.org/en/lessons/for_loop_range/problems/first_n_odd_ascending/"
+}

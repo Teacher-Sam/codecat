@@ -1,0 +1,51 @@
+{
+  "id": "cpp-3-3",
+  "title": {
+    "zh": "是否為偶數",
+    "en": "Is even"
+  },
+  "description": {
+    "zh": "<p>讀入整數，若為偶數輸出 YES，否則輸出 NO。</p>",
+    "en": "<p>Is even.</p>"
+  },
+  "hint": {
+    "zh": "偶數：<code>a % 2 == 0</code>。",
+    "en": "Even: <code>a % 2 == 0</code>."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "1",
+      "output": "NO"
+    },
+    {
+      "input": "2",
+      "output": "YES"
+    },
+    {
+      "input": "5",
+      "output": "NO"
+    },
+    {
+      "input": "-6",
+      "output": "YES"
+    },
+    {
+      "input": "79",
+      "output": "NO"
+    },
+    {
+      "input": "-10",
+      "output": "YES"
+    },
+    {
+      "input": "17",
+      "output": "NO"
+    },
+    {
+      "input": "100",
+      "output": "YES"
+    }
+  ],
+  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/is_even/"
+}

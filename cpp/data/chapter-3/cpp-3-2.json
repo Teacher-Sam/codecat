@@ -1,0 +1,51 @@
+{
+  "id": "cpp-3-2",
+  "title": {
+    "zh": "是否為奇數",
+    "en": "Is odd"
+  },
+  "description": {
+    "zh": "<p>讀入整數，若為奇數輸出 YES，否則輸出 NO。</p>",
+    "en": "<p>Is odd.</p>"
+  },
+  "hint": {
+    "zh": "奇數：<code>a % 2 != 0</code>。",
+    "en": "Odd: <code>a % 2 != 0</code>."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "1",
+      "output": "YES"
+    },
+    {
+      "input": "2",
+      "output": "NO"
+    },
+    {
+      "input": "5",
+      "output": "YES"
+    },
+    {
+      "input": "-6",
+      "output": "NO"
+    },
+    {
+      "input": "79",
+      "output": "YES"
+    },
+    {
+      "input": "-10",
+      "output": "NO"
+    },
+    {
+      "input": "17",
+      "output": "YES"
+    },
+    {
+      "input": "100",
+      "output": "NO"
+    }
+  ],
+  "source": "snakify.org/en/lessons/if_then_else_conditions/problems/is_odd/"
+}

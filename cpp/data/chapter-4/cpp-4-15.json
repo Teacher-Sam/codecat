@@ -1,0 +1,155 @@
+{
+  "id": "cpp-4-15",
+  "title": {
+    "zh": "是否質數",
+    "en": "Is prime"
+  },
+  "description": {
+    "zh": "<p>讀入整數 n（n ≥ 2），若為質數輸出 <code>PRIME</code>，否則 <code>COMPOSITE</code>（全大寫）。</p>",
+    "en": "<p>Is prime.</p>"
+  },
+  "hint": {
+    "zh": "用 <code>for</code> 從 2 試除到 √n 或 n−1。",
+    "en": "Trial division from 2 upward."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "2",
+      "output": "PRIME"
+    },
+    {
+      "input": "3",
+      "output": "PRIME"
+    },
+    {
+      "input": "4",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "5",
+      "output": "PRIME"
+    },
+    {
+      "input": "6",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "7",
+      "output": "PRIME"
+    },
+    {
+      "input": "8",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "9",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "10",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "11",
+      "output": "PRIME"
+    },
+    {
+      "input": "12",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "13",
+      "output": "PRIME"
+    },
+    {
+      "input": "14",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "15",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "16",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "17",
+      "output": "PRIME"
+    },
+    {
+      "input": "18",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "19",
+      "output": "PRIME"
+    },
+    {
+      "input": "20",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "21",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "22",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "23",
+      "output": "PRIME"
+    },
+    {
+      "input": "24",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "25",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "53",
+      "output": "PRIME"
+    },
+    {
+      "input": "54",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "67",
+      "output": "PRIME"
+    },
+    {
+      "input": "68",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "97",
+      "output": "PRIME"
+    },
+    {
+      "input": "98",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "113",
+      "output": "PRIME"
+    },
+    {
+      "input": "143",
+      "output": "COMPOSITE"
+    },
+    {
+      "input": "103",
+      "output": "PRIME"
+    },
+    {
+      "input": "247",
+      "output": "COMPOSITE"
+    }
+  ],
+  "source": "snakify.org/en/lessons/for_loop_range/problems/is_prime/"
+}

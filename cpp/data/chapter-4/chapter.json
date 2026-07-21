@@ -1,0 +1,33 @@
+{
+  "id": "4",
+  "title": {
+    "zh": "for 迴圈",
+    "en": "For loop with range"
+  },
+  "description": {
+    "zh": "重複執行、累加、階乘、質數與數列輸出（共 18 題，含加碼題）。",
+    "en": "Repetition, sums, factorials, primes, and sequences (18 problems, incl. bonus)."
+  },
+  "problemIds": [
+    "cpp-4-0",
+    "cpp-4-1",
+    "cpp-4-2",
+    "cpp-4-3",
+    "cpp-4-4",
+    "cpp-4-5",
+    "cpp-4-6",
+    "cpp-4-7",
+    "cpp-4-8",
+    "cpp-4-9",
+    "cpp-4-10",
+    "cpp-4-11",
+    "cpp-4-12",
+    "cpp-4-13",
+    "cpp-4-14",
+    "cpp-4-15",
+    "cpp-4-16",
+    "cpp-4-17",
+    "cpp-4-18"
+  ],
+  "source": "https://github.com/vpavlenko/content"
+}

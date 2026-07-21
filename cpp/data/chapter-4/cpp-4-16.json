@@ -1,0 +1,67 @@
+{
+  "id": "cpp-4-16",
+  "title": {
+    "zh": "列印範圍內質數",
+    "en": "Print primes in range"
+  },
+  "description": {
+    "zh": "<p>讀入 A、B，由小到大輸出 [A, B] 內所有質數，每個一行。</p>",
+    "en": "<p>Print primes in range.</p>"
+  },
+  "hint": {
+    "zh": "對每個 i 檢查是否質數。",
+    "en": "Check primality for each i."
+  },
+  "starterCode": "#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "5\n10",
+      "output": "5\n7"
+    },
+    {
+      "input": "5\n20",
+      "output": "5\n7\n11\n13\n17\n19"
+    },
+    {
+      "input": "10\n19",
+      "output": "11\n13\n17\n19"
+    },
+    {
+      "input": "15\n30",
+      "output": "17\n19\n23\n29"
+    },
+    {
+      "input": "20\n40",
+      "output": "23\n29\n31\n37"
+    },
+    {
+      "input": "40\n61",
+      "output": "41\n43\n47\n53\n59\n61"
+    },
+    {
+      "input": "55\n88",
+      "output": "59\n61\n67\n71\n73\n79\n83"
+    },
+    {
+      "input": "60\n100",
+      "output": "61\n67\n71\n73\n79\n83\n89\n97"
+    },
+    {
+      "input": "200\n240",
+      "output": "211\n223\n227\n229\n233\n239"
+    },
+    {
+      "input": "70\n95",
+      "output": "71\n73\n79\n83\n89"
+    },
+    {
+      "input": "70\n99",
+      "output": "71\n73\n79\n83\n89\n97"
+    },
+    {
+      "input": "60\n65",
+      "output": "61"
+    }
+  ],
+  "source": "snakify.org/en/lessons/for_loop_range/problems/print_primes_in_range/"
+}
