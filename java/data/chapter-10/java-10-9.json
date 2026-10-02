@@ -1,0 +1,31 @@
+{
+  "id": "java-10-9",
+  "title": {
+    "zh": "多語者",
+    "en": "Polyglots"
+  },
+  "description": {
+    "zh": "<p>某所學校的每個學生都會說多種語言。我們需要確定所有學生都使用哪些語言，至少有一位學生使用哪些語言。 </p>\n\n<p>給定學生人數，然後為每個學生給出他們所說的語言數量，然後是所說的每種語言的名稱，查找並輸出所有學生所說的語言數量，然後按名稱列出語言串列，然後輸出至少一名學生所說的語言數量，然後按名稱列出語言串列。按字母順序列印語言。 </p><p><strong>Java 注意：</strong> 使用 HashSet 處理唯一值；需要自然排序輸出時使用 TreeSet。</p>",
+    "en": "<p>Each student at a certain school speaks a number of languages. We need to determine which languges are spoken by all the students, which languages are spoken by at least one student.</p>\n\n<p>Given, the number of students, and then for each student given the number of languages they speak followed by the name of each language spoken, find and print the number of languages spoken by all the students, followed by a list the languages by name, then print the number of languages spoken by at least one student, followed by the list of the languages by name. Print the languages in alphabetical order.</p><p><strong>Java note:</strong> Use HashSet for unique values and TreeSet when naturally sorted output is required.</p>"
+  },
+  "hint": {
+    "zh": "使用 HashSet 處理唯一值；需要自然排序輸出時使用 TreeSet。",
+    "en": "Use HashSet for unique values and TreeSet when naturally sorted output is required."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "3\n3\nRussian\nEnglish\nJapanese\n2\nRussian\nEnglish\n1\nEnglish",
+      "output": "1\nEnglish\n3\nEnglish\nJapanese\nRussian"
+    },
+    {
+      "input": "5\n1\nGerman\n1\nGerman\n1\nGerman\n1\nGerman\n1\nGerman",
+      "output": "1\nGerman\n1\nGerman"
+    },
+    {
+      "input": "4\n3\nRussian\nSpanish\nGerman\n3\nRussian\nGerman\nSpanish\n3\nSpanish\nRussian\nGerman\n3\nGerman\nRussian\nSpanish",
+      "output": "3\nGerman\nRussian\nSpanish\n3\nGerman\nRussian\nSpanish"
+    }
+  ],
+  "source": "vpavlenko/content/problems/sets/polyglotes.txt"
+}

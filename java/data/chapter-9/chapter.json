@@ -1,0 +1,23 @@
+{
+  "id": "9",
+  "title": {
+    "zh": "二維陣列",
+    "en": "Two-dimensional arrays"
+  },
+  "description": {
+    "zh": "使用 Java 二維陣列建立、走訪及轉換矩陣。",
+    "en": "Create, traverse, and transform matrices with Java two-dimensional arrays."
+  },
+  "problemIds": [
+    "java-9-0",
+    "java-9-1",
+    "java-9-2",
+    "java-9-3",
+    "java-9-4",
+    "java-9-5",
+    "java-9-6",
+    "java-9-7",
+    "java-9-8"
+  ],
+  "source": "https://snakify.org/en/"
+}

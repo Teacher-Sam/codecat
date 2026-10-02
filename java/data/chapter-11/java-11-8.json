@@ -1,0 +1,59 @@
+{
+  "id": "java-11-8",
+  "title": {
+    "zh": "英語－拉丁語字典",
+    "en": "English-Latin dictionary"
+  },
+  "description": {
+    "zh": "<p>有一天，一名學生鮑伯在閣樓翻閱舊書時發現了英拉丁字典。\n那時他已經能說流利的英語，他的夢想是學習拉丁文。\n所以找到字典來得正是時候。 </p>\n\n<p>不幸的是，成熟的語言學習過程還需要另一種類型的字典：\n拉丁語-英語。由於缺乏更好的方法，他決定使用第一本字典製作第二本字典。 </p>\n\n<p>如您所知，字典由單字組成，每個單字包含多個翻譯。\n對於字典中任何位置出現的每個拉丁單詞，鮑勃必須找到其所有翻譯\n（也就是說，所有英語單字，我們的拉丁語單字都在其翻譯中），\n並僅將它們作為該拉丁詞的翻譯。 </p>\n\n<p>幫助他建立拉丁英語。 </p>\n\n<p>\n第一行包含一個整數<code>N</code>－字典中英文單字的數量。 \n隨後是 <code>N</code> 字典條目。 \n每個條目都包含在單獨的行中，其中首先包含英語單詞，然後是由空格包圍的連字元，然後是逗號分隔的串列，其中包含該英語單詞的拉丁語翻譯。 \n所有單字僅由小寫英文字母組成。\n翻譯按字典順序排序。 \n字典中英語單字的順序也是按字典順序排列的。\n</p>\n<p>\n以相同的格式列印相應的拉丁語-英語字典。 \n特別是，第一個單字行應該是拉丁單字的字典順序最小翻譯，然後按該順序排列第二個單詞，依此類推。在該行內，英語單字也應該按字典順序排序。\n</p><p><strong>Java 注意：</strong> 使用 HashMap 儲存鍵值對；需要依鍵排序輸出時使用 TreeMap。</p>",
+    "en": "<p>One day, going through old books in the attic, a student Bob found English-Latin dictionary.\nBy that time he spoke English fluently, and his dream was to learn Latin.\nSo finding the dictionary was just in time.</p>\n\n<p>Unfortunately, full-fledged language studying process requires also another type of dictionary:\nLatin-English. For lack of a better way he decided to make a second dictionary using the first one.</p>\n\n<p>As you know, the dictionary consists of words, each of which contains multiple translations.\nFor each Latin word that appears anywhere in the dictionary, Bob has to find all its translations\n(that is, all English words, for which our Latin word is among its translations),\nand take them and only them as the translations of this Latin word.</p>\n\n<p>Help him to create a Latin-English.</p>\n\n<p>\nThe first line contains a single integer <code>N</code> — the number of English words in the dictionary. \nFollowed by <code>N</code> dictionary entries. \nEach entry is contained on a separate line, which contains first the English word, then a hyphen surrounded by spaces and then comma-separated list with the translations of this English word in Latin. \nAll the words consist only of lowercase English letters.\nThe translations are sorted in lexicographical order. \nThe order of English words in the dictionary is also lexicographic.\n</p>\n<p>\nPrint the corresponding Latin-English dictionary in the same format. \nIn particular, the first word line should be the lexicographically minimal translation of the Latin word, then second in that order, etc. Inside the line the English words should be sorted also lexicographically.\n</p><p><strong>Java note:</strong> Use HashMap for key-value data and TreeMap when output must be sorted by key.</p>"
+  },
+  "hint": {
+    "zh": "使用 HashMap 儲存鍵值對；需要依鍵排序輸出時使用 TreeMap。",
+    "en": "Use HashMap for key-value data and TreeMap when output must be sorted by key."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "3\napple - malum, pomum, popula\nfruit - baca, bacca, popum\npunishment - malum, multa",
+      "output": "7\nbaca - fruit\nbacca - fruit\nmalum - apple, punishment\nmulta - punishment\npomum - apple\npopula - apple\npopum - fruit"
+    },
+    {
+      "input": "1\nschool - schola",
+      "output": "1\nschola - school"
+    },
+    {
+      "input": "3\ngreet - empfangen, willkommen\nsilicon - silicon\nwelcome - willkommen",
+      "output": "3\nempfangen - greet\nsilicon - silicon\nwillkommen - greet, welcome"
+    },
+    {
+      "input": "2\nmef - mqax, xkr\nwemu - mqax",
+      "output": "2\nmqax - mef, wemu\nxkr - mef"
+    },
+    {
+      "input": "3\ngfk - whao\nicfx - nil, whao\nutzs - brh",
+      "output": "3\nbrh - utzs\nnil - icfx\nwhao - gfk, icfx"
+    },
+    {
+      "input": "5\ncasy - moxd, oosz, pfh, wfp\ncgsy - pfh\ndlx - fma, lyq\nvja - fma, lyq, moxd, oosz, pfh, wfp, xrwv\nzfq - fma, lyq, tnqq, xrwv",
+      "output": "8\nfma - dlx, vja, zfq\nlyq - dlx, vja, zfq\nmoxd - casy, vja\noosz - casy, vja\npfh - casy, cgsy, vja\ntnqq - zfq\nwfp - casy, vja\nxrwv - vja, zfq"
+    },
+    {
+      "input": "6\ndrxpeycnkp - fgoezltv, fgqedltc, fgqezltc, fsqezltc, tgqehltc\noaxpeycnkp - fgqedltc, pgqezltu, tgqehltc\nyaxpefcnkr - fgqedltc, fgqezljc, fgqezlqc, fgqezltc, tgqehltc\nyaxpeycnkp - fgqedltc, fgqezlqc, fsqezltc\nyaxpeycnks - fgqedltc, fsqezltc, pgqezltu\nyaxteyckp - fgqedltc, fgqezljc, fgqezlqc, fsqezltc, pgqezltu",
+      "output": "8\nfgoezltv - drxpeycnkp\nfgqedltc - drxpeycnkp, oaxpeycnkp, yaxpefcnkr, yaxpeycnkp, yaxpeycnks, yaxteyckp\nfgqezljc - yaxpefcnkr, yaxteyckp\nfgqezlqc - yaxpefcnkr, yaxpeycnkp, yaxteyckp\nfgqezltc - drxpeycnkp, yaxpefcnkr\nfsqezltc - drxpeycnkp, yaxpeycnkp, yaxpeycnks, yaxteyckp\npgqezltu - oaxpeycnkp, yaxpeycnks, yaxteyckp\ntgqehltc - drxpeycnkp, oaxpeycnkp, yaxpefcnkr"
+    },
+    {
+      "input": "5\nfnpa - kbyip\nkbyip - kbyip, ojawe, ysye\nojawe - fnpa, kbyip\nuyjge - kbyip\nysye - ojawe",
+      "output": "4\nfnpa - ojawe\nkbyip - fnpa, kbyip, ojawe, uyjge\nojawe - kbyip, ysye\nysye - kbyip"
+    },
+    {
+      "input": "6\nddf - ngyj, nrbb, nrkh, wryj\ndeds - ngyj, nrbb, nrkh, nryj, wryj\ndpds - ngyj, nrkh, nryj\ndudm - ngyj, nrkh, nrni, nryj, wryj\nduds - ngyj, nrbb, nrkh, nryj\ndujs - ngyj, nrbb, nrkh, wryj",
+      "output": "6\nngyj - ddf, deds, dpds, dudm, duds, dujs\nnrbb - ddf, deds, duds, dujs\nnrkh - ddf, deds, dpds, dudm, duds, dujs\nnrni - dudm\nnryj - deds, dpds, dudm, duds\nwryj - ddf, deds, dudm, dujs"
+    },
+    {
+      "input": "6\ncdb - cdb, crke, meqb, pyk, uel\ncrke - cdb, crke, meqb, pyk, uel\nfvl - crke, meqb\nmeqb - cdb\npyk - crke, meqb, uel\nuel - cdb, crke, fvl",
+      "output": "6\ncdb - cdb, crke, meqb, uel\ncrke - cdb, crke, fvl, pyk, uel\nfvl - uel\nmeqb - cdb, crke, fvl, pyk\npyk - cdb, crke\nuel - cdb, crke, pyk"
+    }
+  ],
+  "source": "vpavlenko/content/problems/dicts/english_latin_dict.txt"
+}

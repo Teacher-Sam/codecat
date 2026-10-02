@@ -1,0 +1,43 @@
+{
+  "id": "java-5-7",
+  "title": {
+    "zh": "移除片段",
+    "en": "Remove the fragment"
+  },
+  "description": {
+    "zh": "<p>給定一個字串，其中字母 <code>h</code> 至少出現兩次。\n從該字串中刪除第一個和最後一個出現的字母 <code>h</code>，\n以及它們之間的所有字元。<p><strong>Java 注意：</strong> Java 字串不可直接修改；請使用 charAt()、substring()、indexOf()、lastIndexOf()，需要大量修改時使用 StringBuilder。</p>",
+    "en": "<p>Given a string in which the letter <code>h</code> occurs at least twice.\nRemove from that string the first and the last occurrence of the letter <code>h</code>,\nas well as all the characters between them.<p><strong>Java note:</strong> Java strings are immutable. Use charAt(), substring(), indexOf(), lastIndexOf(), and StringBuilder for repeated modifications.</p>"
+  },
+  "hint": {
+    "zh": "Java 字串不可直接修改；請使用 charAt()、substring()、indexOf()、lastIndexOf()，需要大量修改時使用 StringBuilder。",
+    "en": "Java strings are immutable. Use charAt(), substring(), indexOf(), lastIndexOf(), and StringBuilder for repeated modifications."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        String s = scanner.nextLine();\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "In the hole in the ground there lived a hobbit",
+      "output": "In tobbit"
+    },
+    {
+      "input": "qwertyhasdfghzxcvb",
+      "output": "qwertyzxcvb"
+    },
+    {
+      "input": "asdfghhzxcvb",
+      "output": "asdfgzxcvb"
+    },
+    {
+      "input": "ahahahahaha",
+      "output": "aa"
+    },
+    {
+      "input": "haaaaaaaaaaaaaaaaaah",
+      "output": "Test:\nhh\n\nAnswer:"
+    },
+    {
+      "input": "ahaha",
+      "output": "aa"
+    }
+  ],
+  "source": "vpavlenko/content/problems/str/delete_chunk.txt"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "java-5-12",
+  "title": {
+    "zh": "刪除每第三個字元",
+    "en": "Delete every third character"
+  },
+  "description": {
+    "zh": "<p>給定一個字串。從中刪除索引可被 3 整除的所有字元。<p><strong>Java 注意：</strong> Java 字串不可直接修改；請使用 charAt()、substring()、indexOf()、lastIndexOf()，需要大量修改時使用 StringBuilder。</p>",
+    "en": "<p>Given a string. Delete from it all the characters whose indices are divisible by 3.<p><strong>Java note:</strong> Java strings are immutable. Use charAt(), substring(), indexOf(), lastIndexOf(), and StringBuilder for repeated modifications.</p>"
+  },
+  "hint": {
+    "zh": "Java 字串不可直接修改；請使用 charAt()、substring()、indexOf()、lastIndexOf()，需要大量修改時使用 StringBuilder。",
+    "en": "Java strings are immutable. Use charAt(), substring(), indexOf(), lastIndexOf(), and StringBuilder for repeated modifications."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        String s = scanner.nextLine();\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "Python",
+      "output": "yton"
+    },
+    {
+      "input": "Hello",
+      "output": "elo"
+    },
+    {
+      "input": "qwer",
+      "output": "we"
+    },
+    {
+      "input": "a",
+      "output": "Test:\nab\n\nAnswer:\nb"
+    },
+    {
+      "input": "abc",
+      "output": "bc"
+    },
+    {
+      "input": "abcdefg",
+      "output": "bcef"
+    },
+    {
+      "input": "abcdefgh",
+      "output": "bcefh"
+    },
+    {
+      "input": "abcdefghi",
+      "output": "bcefhi"
+    },
+    {
+      "input": "abcdefghij",
+      "output": "bcefhi"
+    },
+    {
+      "input": "abcdefghijk",
+      "output": "bcefhik"
+    },
+    {
+      "input": "abcdefghijkl",
+      "output": "bcefhikl"
+    },
+    {
+      "input": "qwertyuiopasdfghjklzxcvbnm",
+      "output": "wetyioasfgjkzxvbm"
+    }
+  ],
+  "source": "vpavlenko/content/problems/str/delete_every_third_char.txt"
+}

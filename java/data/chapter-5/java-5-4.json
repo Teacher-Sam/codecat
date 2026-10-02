@@ -1,0 +1,39 @@
+{
+  "id": "java-5-4",
+  "title": {
+    "zh": "交換兩個單字",
+    "en": "To swap the two words"
+  },
+  "description": {
+    "zh": "<p>給定一個由兩個單字組成的字串，並用空格分隔。 \n列印一個新字串，交換第一個和第二個單字的位置（先列印第二個單字）。\n\n<p>此任務不應使用迴圈和 <code>if</code>。<p><strong>Java 注意：</strong> Java 字串不可直接修改；請使用 charAt()、substring()、indexOf()、lastIndexOf()，需要大量修改時使用 StringBuilder。</p>",
+    "en": "<p>Given a string consisting of exactly two words separated by a space. \nPrint a new string with the first and second word positions swapped (the second word is printed first).\n\n<p>This task should not use loops and <code>if</code>.<p><strong>Java note:</strong> Java strings are immutable. Use charAt(), substring(), indexOf(), lastIndexOf(), and StringBuilder for repeated modifications.</p>"
+  },
+  "hint": {
+    "zh": "Java 字串不可直接修改；請使用 charAt()、substring()、indexOf()、lastIndexOf()，需要大量修改時使用 StringBuilder。",
+    "en": "Java strings are immutable. Use charAt(), substring(), indexOf(), lastIndexOf(), and StringBuilder for repeated modifications."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        String s = scanner.nextLine();\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "Hello, world!",
+      "output": "world! Hello,"
+    },
+    {
+      "input": "A B",
+      "output": "B A"
+    },
+    {
+      "input": "Q WERRTYUIOP",
+      "output": "WERRTYUIOP Q"
+    },
+    {
+      "input": "QWERTYUIOP M",
+      "output": "M QWERTYUIOP"
+    },
+    {
+      "input": "sadfahsjkldfhasjkdfhaklsjdfhjkl asdlkfhasdjklfhaslkdfjhalskdfgalsdf",
+      "output": "asdlkfhasdjklfhaslkdfjhalskdfgalsdf sadfahsjkldfhasjkdfhaklsjdfhjkl"
+    }
+  ],
+  "source": "vpavlenko/content/problems/str/swap_two_words.txt"
+}

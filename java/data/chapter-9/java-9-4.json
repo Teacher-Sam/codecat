@@ -1,0 +1,47 @@
+{
+  "id": "java-9-4",
+  "title": {
+    "zh": "主對角線距離",
+    "en": "The diagonal parallel to the main"
+  },
+  "description": {
+    "zh": "<p>給定一個整數 \\( n \\)，產生一個大小為 \\( \\left ( n \\times n \\right ) \\) 的二維數組，並根據以下規則完成它，並在字元之間使用單個空格進行列印：\n<ul>\n  <li>在主對角線上寫下<code>0</code>。\n  <li>在主線附近的對角線上寫下<code> 1 </code>。 \n  <li>在下一個相鄰的對角線上寫下<code>2</code>等等。\n</ul>\n\n<p>列印結果陣列的元素。<p><strong>Java 注意：</strong> Java 二維陣列使用 int[][]；第一個索引是列，第二個索引是欄。</p>",
+    "en": "<p>Given an integer \\( n \\), produce a two-dimensional array of size \\( \\left ( n \\times n \\right ) \\) and complete it according to the following rules, and print with a single space between characters:\n<ul>\n  <li>On the main diagonal write <code> 0 </code>.\n  <li>On the diagonals adjacent to the main, write <code> 1 </code>. \n  <li>On the next adjacent diagonals write <code> 2 </code> and so forth.\n</ul>\n\n<p>Print the elements of the resulting array.<p><strong>Java note:</strong> Use int[][] for a Java matrix. The first index is the row and the second is the column.</p>"
+  },
+  "hint": {
+    "zh": "Java 二維陣列使用 int[][]；第一個索引是列，第二個索引是欄。",
+    "en": "Use int[][] for a Java matrix. The first index is the row and the second is the column."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "5",
+      "output": "0 1 2 3 4\n1 0 1 2 3\n2 1 0 1 2\n3 2 1 0 1\n4 3 2 1 0"
+    },
+    {
+      "input": "6",
+      "output": "0 1 2 3 4 5\n1 0 1 2 3 4\n2 1 0 1 2 3\n3 2 1 0 1 2\n4 3 2 1 0 1\n5 4 3 2 1 0"
+    },
+    {
+      "input": "7",
+      "output": "0 1 2 3 4 5 6\n1 0 1 2 3 4 5\n2 1 0 1 2 3 4\n3 2 1 0 1 2 3\n4 3 2 1 0 1 2\n5 4 3 2 1 0 1\n6 5 4 3 2 1 0"
+    },
+    {
+      "input": "4",
+      "output": "0 1 2 3\n1 0 1 2\n2 1 0 1\n3 2 1 0"
+    },
+    {
+      "input": "3",
+      "output": "0 1 2\n1 0 1\n2 1 0"
+    },
+    {
+      "input": "2",
+      "output": "0 1\n1 0"
+    },
+    {
+      "input": "1",
+      "output": "0"
+    }
+  ],
+  "source": "vpavlenko/content/problems/2d_arrays/diagonals.txt"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "java-8-3",
+  "title": {
+    "zh": "首字母大寫",
+    "en": "Uppercase"
+  },
+  "description": {
+    "zh": "<p>寫一個函式<code>capitalize(lower_case_word)</code>，它接受小寫單字並傳回第一個字母大寫的單字。例如，<code>print(capitalize('word'))</code> 應列印單字 <code>Word</code>。\n\n<p>然後，給定一行小寫 ASCII 單字（由一個空格分隔的文字），使用您自己的函式 <code>capitalize()</code> 列印該行，其中每個單字的第一個字母大寫。\n\n<p>在Python中，有一個函式<code>ord(character)</code>，它回傳<a href=\"http://en.wikipedia.org/wiki/ASCII\">ASCII圖表</a>中的字元代碼，還有一個函式<code>chr(code)</code>，它從ASCII代碼回傳字元本身。例如，<code>ord('a') == 97</code>、<code>chr(97) == 'a'</code>。<p><strong>Java 注意：</strong> 請在 Main 類別中撰寫 static 方法，由 main 讀取輸入、呼叫方法並輸出結果；遞迴題不得以迴圈取代。</p>",
+    "en": "<p>Write a function <code>capitalize(lower_case_word)</code> that takes the lower case word and returns the word with the first letter capitalized. Eg., <code>print(capitalize('word'))</code> should print the word <code>Word</code>.\n\n<p>Then, given a line of lowercase ASCII words (text separated by a single space), print it with the first letter of each word capitalized using the your own function <code>capitalize()</code>.\n\n<p>In Python there is a function <code>ord(character)</code>, which returns character code in <a href=\"http://en.wikipedia.org/wiki/ASCII\">the ASCII chart</a>, and the function <code>chr(code)</code>, which returns the character itself from the ASCII code. For example, <code>ord('a') == 97</code>, <code>chr(97) == 'a'</code>.<p><strong>Java note:</strong> Write a static method in Main and call it from main. Do not replace recursion with a loop in recursion exercises.</p>"
+  },
+  "hint": {
+    "zh": "請在 Main 類別中撰寫 static 方法，由 main 讀取輸入、呼叫方法並輸出結果；遞迴題不得以迴圈取代。",
+    "en": "Write a static method in Main and call it from main. Do not replace recursion with a loop in recursion exercises."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    // 在這裡撰寫題目指定的 static 方法\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "harry potter",
+      "output": "Harry Potter"
+    },
+    {
+      "input": "procrastination",
+      "output": "Procrastination"
+    },
+    {
+      "input": "we danced the mamushka at waterloo",
+      "output": "We Danced The Mamushka At Waterloo"
+    },
+    {
+      "input": "de noche todos los gatos son pardos",
+      "output": "De Noche Todos Los Gatos Son Pardos"
+    },
+    {
+      "input": "all i see turns to brown",
+      "output": "All I See Turns To Brown"
+    }
+  ],
+  "source": "vpavlenko/content/problems/functions/capitalize.txt"
+}

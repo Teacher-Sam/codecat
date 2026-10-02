@@ -1,0 +1,43 @@
+{
+  "id": "java-9-2",
+  "title": {
+    "zh": "雪花",
+    "en": "Snowflake"
+  },
+  "description": {
+    "zh": "<p>給定奇數整數 \\( n \\)，產生一個大小為 \\( \\left ( n \\times n \\right ) \\) 的二維陣列。用<code>“.”的單一字串填入每個元素。 </code>。然後用單一字串<code>“*”</code>（雪花的圖片）填滿中間行、中間列和對角線。列印 \\( \\left ( n \\times n \\right ) \\) 行和列中的陣列元素，並以單一空格分隔字元。<p><strong>Java 注意：</strong> Java 二維陣列使用 int[][]；第一個索引是列，第二個索引是欄。</p>",
+    "en": "<p>Given an odd number integer \\( n \\), produce a two-dimensional array of size \\( \\left ( n \\times n \\right ) \\). Fill each element with a single character string of <code> \".\" </code>. Then fill the middle row, the middle column and the diagnals with the single character string of <code> \"*\" </code> (an image of a snow flake). Print the array elements in \\( \\left ( n \\times n \\right ) \\) rows and columns and separate the characters with a single space.<p><strong>Java note:</strong> Use int[][] for a Java matrix. The first index is the row and the second is the column.</p>"
+  },
+  "hint": {
+    "zh": "Java 二維陣列使用 int[][]；第一個索引是列，第二個索引是欄。",
+    "en": "Use int[][] for a Java matrix. The first index is the row and the second is the column."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "5",
+      "output": "* . * . *\n. * * * .\n* * * * *\n. * * * .\n* . * . *"
+    },
+    {
+      "input": "7",
+      "output": "* . . * . . *\n. * . * . * .\n. . * * * . .\n* * * * * * *\n. . * * * . .\n. * . * . * .\n* . . * . . *"
+    },
+    {
+      "input": "9",
+      "output": "* . . . * . . . *\n. * . . * . . * .\n. . * . * . * . .\n. . . * * * . . .\n* * * * * * * * *\n. . . * * * . . .\n. . * . * . * . .\n. * . . * . . * .\n* . . . * . . . *"
+    },
+    {
+      "input": "11",
+      "output": "* . . . . * . . . . *\n. * . . . * . . . * .\n. . * . . * . . * . .\n. . . * . * . * . . .\n. . . . * * * . . . .\n* * * * * * * * * * *\n. . . . * * * . . . .\n. . . * . * . * . . .\n. . * . . * . . * . .\n. * . . . * . . . * .\n* . . . . * . . . . *"
+    },
+    {
+      "input": "3",
+      "output": "* * *\n* * *\n* * *"
+    },
+    {
+      "input": "1",
+      "output": "*"
+    }
+  ],
+  "source": "vpavlenko/content/problems/2d_arrays/snowflake.txt"
+}

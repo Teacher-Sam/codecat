@@ -1,0 +1,39 @@
+{
+  "id": "java-5-2",
+  "title": {
+    "zh": "單字數量",
+    "en": "The number of words"
+  },
+  "description": {
+    "zh": "<p>給定一個由空格分隔的單字組成的字串。確定它有多少個單字。\n若要解決該問題，請使用 <code>count</code> 方法。<p><strong>Java 注意：</strong> Java 字串不可直接修改；請使用 charAt()、substring()、indexOf()、lastIndexOf()，需要大量修改時使用 StringBuilder。</p>",
+    "en": "<p>Given a string consisting of words separated by spaces. Determine how many words it has.\nTo solve the problem, use the method <code>count</code>.<p><strong>Java note:</strong> Java strings are immutable. Use charAt(), substring(), indexOf(), lastIndexOf(), and StringBuilder for repeated modifications.</p>"
+  },
+  "hint": {
+    "zh": "Java 字串不可直接修改；請使用 charAt()、substring()、indexOf()、lastIndexOf()，需要大量修改時使用 StringBuilder。",
+    "en": "Java strings are immutable. Use charAt(), substring(), indexOf(), lastIndexOf(), and StringBuilder for repeated modifications."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        String s = scanner.nextLine();\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "Hello world",
+      "output": "2"
+    },
+    {
+      "input": "Hello",
+      "output": "1"
+    },
+    {
+      "input": "q w e",
+      "output": "3"
+    },
+    {
+      "input": "In the hole in the ground there lived a hobbit",
+      "output": "10"
+    },
+    {
+      "input": "One two three four five",
+      "output": "5"
+    }
+  ],
+  "source": "vpavlenko/content/problems/str/num_words.txt"
+}

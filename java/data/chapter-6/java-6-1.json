@@ -1,0 +1,47 @@
+{
+  "id": "java-6-1",
+  "title": {
+    "zh": "平方數列表",
+    "en": "List of squares"
+  },
+  "description": {
+    "zh": "對於給定的整數 N，按升序列印平方小於或等於 N 的所有整數的平方。<p><strong>Java 注意：</strong> 輸入以 0 結束時不要把結尾的 0 納入統計；可能出現小數結果時使用 double。</p>",
+    "en": "For a given integer N, print all the squares of integer numbers where the square is less than or equal to N, in ascending order.<p><strong>Java note:</strong> Do not include a terminating zero in the sequence. Use double when the result may be fractional.</p>"
+  },
+  "hint": {
+    "zh": "輸入以 0 結束時不要把結尾的 0 納入統計；可能出現小數結果時使用 double。",
+    "en": "Do not include a terminating zero in the sequence. Use double when the result may be fractional."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "50",
+      "output": "1 4 9 16 25 36 49 "
+    },
+    {
+      "input": "10",
+      "output": "1 4 9 "
+    },
+    {
+      "input": "9",
+      "output": "1 4 9 "
+    },
+    {
+      "input": "4",
+      "output": "1 4 "
+    },
+    {
+      "input": "1",
+      "output": "1 "
+    },
+    {
+      "input": "100",
+      "output": "1 4 9 16 25 36 49 64 81 100 "
+    },
+    {
+      "input": "99",
+      "output": "1 4 9 16 25 36 49 64 81"
+    }
+  ],
+  "source": "vpavlenko/content/problems/while/list_of_squares.txt"
+}

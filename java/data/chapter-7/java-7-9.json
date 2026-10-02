@@ -1,0 +1,47 @@
+{
+  "id": "java-7-9",
+  "title": {
+    "zh": "只出現一次的元素",
+    "en": "Unique elements"
+  },
+  "description": {
+    "zh": "給定一個數字串列，尋找並列印僅在串列中出現一次的元素。 \n\n元素必須按照它們在原始清單中出現的順序列印。<p><strong>Java 注意：</strong> 本章以陣列或 ArrayList 儲存資料；大小固定時優先使用陣列，需要插入或刪除時使用 ArrayList。</p>",
+    "en": "Given a list of numbers, find and print the elements that appear in the list only once. \n\nThe elements must be printed in the order in which they occur in the original list.<p><strong>Java note:</strong> Use arrays for fixed-size data and ArrayList when insertion or removal is required.</p>"
+  },
+  "hint": {
+    "zh": "本章以陣列或 ArrayList 儲存資料；大小固定時優先使用陣列，需要插入或刪除時使用 ArrayList。",
+    "en": "Use arrays for fixed-size data and ArrayList when insertion or removal is required."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "1 2 2 3 3 3",
+      "output": "1 "
+    },
+    {
+      "input": "4 3 5 2 5 1 3 5",
+      "output": "4 2 1 "
+    },
+    {
+      "input": "6 9 6 23 12 19 14 26 ",
+      "output": "9 23 12 19 14 26 "
+    },
+    {
+      "input": "21 21 16 20 28 28 7 ",
+      "output": "16 20 7 "
+    },
+    {
+      "input": "21 ",
+      "output": "21 "
+    },
+    {
+      "input": "5 2 29 4 28 8 ",
+      "output": "5 2 29 4 28 8 "
+    },
+    {
+      "input": "4 2 9 3 2 9 7 8 4",
+      "output": "3 7 8"
+    }
+  ],
+  "source": "vpavlenko/content/problems/lists/unique_elements.txt"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "java-11-2",
+  "title": {
+    "zh": "同義詞字典",
+    "en": "Dictionary of synonyms"
+  },
+  "description": {
+    "zh": "<p>給你一本由單字對組成的字典。每個單字都是其配對中另一個單字的同義詞。\n字典裡的所有單字都不一樣。 </p>\n\n<p>字典之後又給了一個單字。為他找一個同義詞。 </p><p><strong>Java 注意：</strong> 使用 HashMap 儲存鍵值對；需要依鍵排序輸出時使用 TreeMap。</p>",
+    "en": "<p>You are given a dictionary consisting of word pairs. Every word is a synonym the other word in its pair.\nAll the words in the dictionary are different.</p>\n\n<p>After the dictionary there's one more word given. Find a synonym for him.</p><p><strong>Java note:</strong> Use HashMap for key-value data and TreeMap when output must be sorted by key.</p>"
+  },
+  "hint": {
+    "zh": "使用 HashMap 儲存鍵值對；需要依鍵排序輸出時使用 TreeMap。",
+    "en": "Use HashMap for key-value data and TreeMap when output must be sorted by key."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "3\nHello Hi\nBye Goodbye\nList Array\nGoodbye",
+      "output": "Bye"
+    },
+    {
+      "input": "1\nbeep Car\nCar",
+      "output": "beep"
+    },
+    {
+      "input": "1\n1234 4321\n1234",
+      "output": "4321"
+    },
+    {
+      "input": "10\na 1\nb 2\nc 3\nd 4\ne 5\nf 6\ng 7\nh 8\ni 9\nj 10\ne",
+      "output": "5"
+    },
+    {
+      "input": "10\na 1\nb 2\nc 3\nd 4\ne 5\nf 6\ng 7\nh 8\ni 9\nj 10\n5",
+      "output": "e"
+    },
+    {
+      "input": "10\n95UUSA4P3K 140YAZQF1W2\nJIGCEL82Y3BXJ 277WMID9GFAWGC\nX36U1924TQ GUDPNJ60NR3A\nTR7JOPXQ0JK64CM O6BJSY7MHMAI8S\n17HZOQO20CDQ1UG VVIPAVTVY202R\n8T1A0XRRKKXEV 7L2UKWCJ917G1Q\nWLPOJYRN0G3MC 5QWJPM4FG58\nZ8TN35IQAF GXUPQY7I3AJCX3\n5F382242HD25Q 3IV9JL29DNP64\nKZWNAOSV8H8APVF LDAIALO4YMXE7\nWLPOJYRN0G3MC",
+      "output": "5QWJPM4FG58"
+    }
+  ],
+  "source": "vpavlenko/content/problems/dicts/synonym_dictionary.txt"
+}

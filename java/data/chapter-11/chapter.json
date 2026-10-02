@@ -1,0 +1,31 @@
+{
+  "id": "11",
+  "title": {
+    "zh": "字典（map）",
+    "en": "Dictionaries (maps)"
+  },
+  "description": {
+    "zh": "使用 HashMap 與 TreeMap 儲存鍵值對和統計資料。",
+    "en": "Key-value storage and frequency counting with HashMap and TreeMap."
+  },
+  "problemIds": [
+    "java-11-0",
+    "java-11-1",
+    "java-11-2",
+    "java-11-3",
+    "java-11-4",
+    "java-11-5",
+    "java-11-6",
+    "java-11-7",
+    "java-11-8",
+    "java-11-9",
+    "java-11-10",
+    "java-11-11",
+    "java-11-12",
+    "java-11-13",
+    "java-11-14",
+    "java-11-15",
+    "java-11-16"
+  ],
+  "source": "https://snakify.org/en/"
+}

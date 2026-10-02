@@ -1,0 +1,47 @@
+{
+  "id": "java-6-15",
+  "title": {
+    "zh": "標準差",
+    "en": "Standard deviation"
+  },
+  "description": {
+    "zh": "<p>讀取以 0 結尾的實數序列並列印其樣本標準差。 </p><p><strong>Java 注意：</strong> 輸入以 0 結束時不要把結尾的 0 納入統計；可能出現小數結果時使用 double。</p>",
+    "en": "<p>Read a sequence of real numbers terminated by 0 and print its sample standard deviation.</p><p><strong>Java note:</strong> Do not include a terminating zero in the sequence. Use double when the result may be fractional.</p>"
+  },
+  "hint": {
+    "zh": "輸入以 0 結束時不要把結尾的 0 納入統計；可能出現小數結果時使用 double。",
+    "en": "Do not include a terminating zero in the sequence. Use double when the result may be fractional."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "1\n7\n9\n0",
+      "output": "4.16333199893"
+    },
+    {
+      "input": "1\n2\n3\n0",
+      "output": "1.0"
+    },
+    {
+      "input": "1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n0",
+      "output": "0.0"
+    },
+    {
+      "input": "3\n9\n5\n2\n0",
+      "output": "3.09569593683"
+    },
+    {
+      "input": "10\n1\n1\n1\n1\n1\n0",
+      "output": "3.67423461417"
+    },
+    {
+      "input": "58\n12\n51\n27\n79\n5\n44\n9\n86\n13\n0",
+      "output": "29.7029740374"
+    },
+    {
+      "input": "51\n86\n7\n2\n75\n64\n23\n3\n25\n34\n62\n93\n41\n15\n96\n62\n58\n41\n43\n89\n0",
+      "output": "30.1914940967"
+    }
+  ],
+  "source": "vpavlenko/content/problems/while/std_dev.txt"
+}

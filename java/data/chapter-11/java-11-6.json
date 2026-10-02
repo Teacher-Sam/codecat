@@ -1,0 +1,35 @@
+{
+  "id": "java-11-6",
+  "title": {
+    "zh": "國家與城市",
+    "en": "Countries and cities"
+  },
+  "description": {
+    "zh": "<p>給定國家和每個國家城市的清單。然後給出城市的名稱。對於每個城市\n指定它所在的國家。 </p><p><strong>Java 注意：</strong> 使用 HashMap 儲存鍵值對；需要依鍵排序輸出時使用 TreeMap。</p>",
+    "en": "<p>Given a list of countries and cities of each country. Then given the names of the cities. For each city\nspecify the country in which it is located.</p><p><strong>Java note:</strong> Use HashMap for key-value data and TreeMap when output must be sorted by key.</p>"
+  },
+  "hint": {
+    "zh": "使用 HashMap 儲存鍵值對；需要依鍵排序輸出時使用 TreeMap。",
+    "en": "Use HashMap for key-value data and TreeMap when output must be sorted by key."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "2\nUSA Boston Pittsburgh Washington Seattle\nUK London Edinburgh Cardiff Belfast\n3\nCardiff\nSeattle\nLondon",
+      "output": "UK\nUSA\nUK"
+    },
+    {
+      "input": "2\nRussia Moscow Petersburg Novgorod Kaluga\nUkraine Kiev Donetsk Odessa\n3\nOdessa\nMoscow\nNovgorod",
+      "output": "Ukraine\nRussia\nRussia"
+    },
+    {
+      "input": "5\nA B\nC D\nE F\nG H\nI J\n5\nJ\nH\nF\nD\nB",
+      "output": "I\nG\nE\nC\nA"
+    },
+    {
+      "input": "5\nA B\nC D E\nF G H I\nJ K L M N\nO P Q R S T\n15\nT\nS\nN\nR\nM\nI\nQ\nL\nH\nE\nP\nK\nG\nD\nB",
+      "output": "O\nO\nJ\nO\nJ\nF\nO\nJ\nF\nC\nO\nJ\nF\nC\nA"
+    }
+  ],
+  "source": "vpavlenko/content/problems/dicts/countries_and_cities.txt"
+}

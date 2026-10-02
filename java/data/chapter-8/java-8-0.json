@@ -1,0 +1,19 @@
+{
+  "id": "java-8-0",
+  "type": "intro",
+  "title": {
+    "zh": "函式與遞迴導讀",
+    "en": "Functions and recursion overview"
+  },
+  "description": {
+    "zh": "<h3>1. static 方法</h3><p>線上評測的程式從 <code>Main.main</code> 開始。輔助方法通常宣告為 <code>static</code>，並寫出回傳型別、名稱和參數型別。</p>\n<pre><code>static double distance(double x1, double y1, double x2, double y2) {\n    double dx = x1 - x2;\n    double dy = y1 - y2;\n    return Math.sqrt(dx * dx + dy * dy);\n}</code></pre>\n<h3>2. 參數傳遞</h3><p>Java 一律傳值。基本型別會複製數值；物件參數會複製參考，因此方法可以修改物件內容，但不能藉由重新指定參數來替換呼叫端變數。</p>\n<h3>3. 遞迴</h3><p>遞迴方法會呼叫自己，必須有可直接回答的基底情況，以及讓問題規模縮小的遞迴步驟。</p>\n<pre><code>static long power(long a, int n) {\n    if (n == 0) return 1;\n    return a * power(a, n - 1);\n}</code></pre>\n<h3>4. 呼叫堆疊</h3><p>每次呼叫都有自己的區域變數；遞迴過深會產生 <code>StackOverflowError</code>。</p>\n<p><strong>本章重點：</strong>先定義方法輸入、輸出與基底情況，再寫遞迴關係。</p>",
+    "en": "<h3>1. Static methods</h3><p>Execution starts in <code>Main.main</code>. Helper methods are normally static and declare a return type and typed parameters.</p>\n<h3>2. Parameters</h3><p>Java is pass-by-value. Object references are copied, so object contents can be changed but the caller's variable cannot be replaced by assigning the parameter.</p>\n<h3>3. Recursion</h3><p>A recursive method needs a base case and a step that makes the problem smaller. Excessive depth causes <code>StackOverflowError</code>.</p>"
+  },
+  "hint": {
+    "zh": "",
+    "en": ""
+  },
+  "starterCode": "",
+  "tests": [],
+  "source": "https://snakify.org/en/lessons/functions/"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "java-7-4",
+  "title": {
+    "zh": "相鄰遞增元素",
+    "en": "Greater than previous"
+  },
+  "description": {
+    "zh": "給定一個數字串列，尋找並列印所有大於前一個元素的元素。<p><strong>Java 注意：</strong> 本章以陣列或 ArrayList 儲存資料；大小固定時優先使用陣列，需要插入或刪除時使用 ArrayList。</p>",
+    "en": "Given a list of numbers, find and print all the elements that are greater than the previous element.<p><strong>Java note:</strong> Use arrays for fixed-size data and ArrayList when insertion or removal is required.</p>"
+  },
+  "hint": {
+    "zh": "本章以陣列或 ArrayList 儲存資料；大小固定時優先使用陣列，需要插入或刪除時使用 ArrayList。",
+    "en": "Use arrays for fixed-size data and ArrayList when insertion or removal is required."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "1 5 2 4 3",
+      "output": "5 4 "
+    },
+    {
+      "input": "1 2 3 4 5",
+      "output": "2 3 4 5 "
+    },
+    {
+      "input": "5 4 3 2 1",
+      "output": "Test:\n1 5 1 5 1\n\nAnswer:\n5 5 "
+    },
+    {
+      "input": "5 1 5 1 5",
+      "output": "5 5 "
+    },
+    {
+      "input": "5 5 5 5 5",
+      "output": "Test:\n1 1 1 5 1\n\nAnswer:\n5 "
+    },
+    {
+      "input": "345354",
+      "output": "Test:\n1 465\n\nAnswer:\n465 "
+    },
+    {
+      "input": "4 -54643",
+      "output": "Test:\n2147483647 0 1 2 3\n\nAnswer:\n1 2 3 "
+    },
+    {
+      "input": "1 2 3 4 -2147483648",
+      "output": "2 3 4 "
+    },
+    {
+      "input": "-9 29 -100 64 26 73 -96 28 -92 11 -14 -86 -54 -67",
+      "output": "29 64 73 28 11 -54 "
+    }
+  ],
+  "source": "vpavlenko/content/problems/lists/increasing_neighbours.txt"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "java-9-3",
+  "title": {
+    "zh": "棋盤",
+    "en": "Chess board"
+  },
+  "description": {
+    "zh": "<p>給定兩個數字 \\( n \\) 和 \\( m \\)。建立一個大小為 \\( \\left ( n \\times m \\right ) \\) 的二維數組，並用字元 <code> \".\" 填滿它。 </code> 和 <code> \"*\" </code> 呈現棋盤圖案。左上應有字元 <code>“.” </code>.<p><strong>Java 注意：</strong> Java 二維陣列使用 int[][]；第一個索引是列，第二個索引是欄。</p>",
+    "en": "<p>Given two numbers \\( n \\) and \\( m \\). Create a two-dimensional array of size \\( \\left ( n \\times m \\right ) \\) and populate it with the characters <code> \".\" </code> and <code> \"*\" </code> in a checkerboard pattern. The top left corner should have the character <code> \".\" </code>.<p><strong>Java note:</strong> Use int[][] for a Java matrix. The first index is the row and the second is the column.</p>"
+  },
+  "hint": {
+    "zh": "Java 二維陣列使用 int[][]；第一個索引是列，第二個索引是欄。",
+    "en": "Use int[][] for a Java matrix. The first index is the row and the second is the column."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "3 4",
+      "output": ". * . *\n* . * .\n. * . *"
+    },
+    {
+      "input": "6 8",
+      "output": ". * . * . * . *\n* . * . * . * .\n. * . * . * . *\n* . * . * . * .\n. * . * . * . *\n* . * . * . * ."
+    },
+    {
+      "input": "8 3",
+      "output": ". * .\n* . *\n. * .\n* . *\n. * .\n* . *\n. * .\n* . *"
+    },
+    {
+      "input": "7 5",
+      "output": ". * . * .\n* . * . *\n. * . * .\n* . * . *\n. * . * .\n* . * . *\n. * . * ."
+    },
+    {
+      "input": "1 6",
+      "output": ". * . * . *"
+    },
+    {
+      "input": "8 1",
+      "output": ".\n*\n.\n*\n.\n*\n.\n*"
+    },
+    {
+      "input": "1 1",
+      "output": "."
+    }
+  ],
+  "source": "vpavlenko/content/problems/2d_arrays/chessboard.txt"
+}

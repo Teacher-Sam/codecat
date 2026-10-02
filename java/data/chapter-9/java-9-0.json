@@ -1,0 +1,19 @@
+{
+  "id": "java-9-0",
+  "type": "intro",
+  "title": {
+    "zh": "二維陣列導讀",
+    "en": "Two-dimensional arrays overview"
+  },
+  "description": {
+    "zh": "<h3>1. 二維陣列</h3><p>表格或矩陣可用 <code>int[][]</code> 表示。<code>a[i][j]</code> 是第 i 列、第 j 欄，索引從 0 開始。</p>\n<pre><code>int rows = scanner.nextInt();\nint cols = scanner.nextInt();\nint[][] a = new int[rows][cols];</code></pre>\n<h3>2. 輸入與走訪</h3><p>使用雙層迴圈。列數為 <code>a.length</code>，第 i 列的欄數為 <code>a[i].length</code>。</p>\n<pre><code>for (int i = 0; i &lt; a.length; i++)\n    for (int j = 0; j &lt; a[i].length; j++)\n        a[i][j] = scanner.nextInt();</code></pre>\n<h3>3. 對角線</h3><p>方陣主對角線滿足 <code>i == j</code>，副對角線滿足 <code>i + j == n - 1</code>。</p>\n<h3>4. 矩陣轉換</h3><p>交換兩欄要逐列交換；矩陣乘法用三層迴圈累加共同維度。建立結果陣列前先確認列、欄尺寸。</p>\n<p><strong>本章重點：</strong>第一個索引是列，第二個索引是欄。</p>",
+    "en": "<h3>1. Two-dimensional arrays</h3><p>Use <code>int[][]</code> for a matrix. <code>a[i][j]</code> means row i, column j.</p>\n<h3>2. Traversal</h3><p>Use nested loops. The number of rows is <code>a.length</code>; row i has <code>a[i].length</code> columns.</p>\n<h3>3. Diagonals and transformations</h3><p>The main diagonal has <code>i == j</code>, and the secondary diagonal has <code>i + j == n - 1</code>. Column swaps work row by row.</p>"
+  },
+  "hint": {
+    "zh": "",
+    "en": ""
+  },
+  "starterCode": "",
+  "tests": [],
+  "source": "https://snakify.org/en/lessons/two_dimensional_lists_arrays/"
+}

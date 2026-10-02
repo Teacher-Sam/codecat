@@ -1,0 +1,47 @@
+{
+  "id": "java-7-15",
+  "title": {
+    "zh": "移除元素",
+    "en": "Remove an element"
+  },
+  "description": {
+    "zh": "<p>給定一個陣列和一個索引，刪除該從零開始的索引處的元素並列印剩餘元素。 </p><p><strong>Java 注意：</strong> 本章以陣列或 ArrayList 儲存資料；大小固定時優先使用陣列，需要插入或刪除時使用 ArrayList。</p>",
+    "en": "<p>Given an array and an index, remove the element at that zero-based index and print the remaining elements.</p><p><strong>Java note:</strong> Use arrays for fixed-size data and ArrayList when insertion or removal is required.</p>"
+  },
+  "hint": {
+    "zh": "本章以陣列或 ArrayList 儲存資料；大小固定時優先使用陣列，需要插入或刪除時使用 ArrayList。",
+    "en": "Use arrays for fixed-size data and ArrayList when insertion or removal is required."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "7 6 5 4 3 2 1\n2",
+      "output": "7 6 4 3 2 1 "
+    },
+    {
+      "input": "4 6 2 4 3 5 12 24 3 5\n4",
+      "output": "4 6 2 4 5 12 24 3 5 "
+    },
+    {
+      "input": "4 6 2 4 3 5 12 24 3 5\n0",
+      "output": "6 2 4 3 5 12 24 3 5 "
+    },
+    {
+      "input": "4 6 2 4 3 5 12 24 3 5\n8",
+      "output": "4 6 2 4 3 5 12 24 5 "
+    },
+    {
+      "input": "4 6 2 4 3 5 12 24 3 5\n9",
+      "output": "4 6 2 4 3 5 12 24 3 "
+    },
+    {
+      "input": "1 2\n0",
+      "output": "2 "
+    },
+    {
+      "input": "1 2\n1",
+      "output": "1 "
+    }
+  ],
+  "source": "vpavlenko/content/problems/lists/remove_element.txt"
+}

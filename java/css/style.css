@@ -802,12 +802,26 @@ body:has(#view-problem:not(.hidden)) .header-inner {
 
 .problem-layout.intro-only {
   grid-template-columns: 1fr;
+  width: 100%;
 }
 
 .problem-layout.intro-only .problem-panel {
+  grid-column: 1 / -1;
+  width: 100%;
+  min-height: min(62vh, 680px);
   max-height: none;
   height: auto;
   resize: none;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.problem-layout.intro-only .problem-description,
+.problem-layout.intro-only .bilingual {
+  width: 100%;
+}
+
+.problem-layout.intro-only .lang-block {
+  padding: clamp(1rem, 2vw, 1.75rem);
 }
 
 .card-intro {

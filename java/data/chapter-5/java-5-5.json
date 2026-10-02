@@ -1,0 +1,43 @@
+{
+  "id": "java-5-5",
+  "title": {
+    "zh": "第一次與最後一次出現",
+    "en": "The first and last occurrence"
+  },
+  "description": {
+    "zh": "<p>给定一个可能包含也可能不包含感兴趣字母的字串。 \n輸出 <code>f</code> 第一次和最后一次出现的索引位置。 \n如果字母<code>f</code>只出现一次，则输出它的索引。\n如果字母 <code>f</code> 没有出现，则不輸出任何内容。\n\n<p>請勿在此任務中使用迴圈。<p><strong>Java 注意：</strong> Java 字串不可直接修改；請使用 charAt()、substring()、indexOf()、lastIndexOf()，需要大量修改時使用 StringBuilder。</p>",
+    "en": "<p>Given a string that may or may not contain a letter of interest. \nPrint the index location of the first and last appearance of <code>f</code>. \nIf the letter <code>f</code> occurs only once, then output its index.\nIf the letter <code>f</code> does not occur, then do not print anything.\n\n<p>Don't use loops in this task.<p><strong>Java note:</strong> Java strings are immutable. Use charAt(), substring(), indexOf(), lastIndexOf(), and StringBuilder for repeated modifications.</p>"
+  },
+  "hint": {
+    "zh": "Java 字串不可直接修改；請使用 charAt()、substring()、indexOf()、lastIndexOf()，需要大量修改時使用 StringBuilder。",
+    "en": "Java strings are immutable. Use charAt(), substring(), indexOf(), lastIndexOf(), and StringBuilder for repeated modifications."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        String s = scanner.nextLine();\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "comfort",
+      "output": "3"
+    },
+    {
+      "input": "office",
+      "output": "1 2"
+    },
+    {
+      "input": "hello",
+      "output": "Test:\nfffffffffffffff\n\nAnswer:\n0 14"
+    },
+    {
+      "input": "aaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaa",
+      "output": "21"
+    },
+    {
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaffaaaaaaaaaaaaaaaaaaaa",
+      "output": "24 25"
+    },
+    {
+      "input": "afafafafafafafa",
+      "output": "1 13"
+    }
+  ],
+  "source": "vpavlenko/content/problems/str/first_and_last_occurences.txt"
+}

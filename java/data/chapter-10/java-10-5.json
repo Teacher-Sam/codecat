@@ -1,0 +1,39 @@
+{
+  "id": "java-10-5",
+  "title": {
+    "zh": "立方表示",
+    "en": "Cubes"
+  },
+  "description": {
+    "zh": "<p>愛麗絲和鮑伯喜歡玩彩色方塊。每個孩子都有自己的一組立方體，每個立方體都有不同的顏色，但他們想知道如果將他們的塊組組合起來，存在多少種獨特的顏色。為了確定這一點，孩子們用從 \\( 0 \\) 到 \\( 10^{8} \\) 的隨機數字列舉了每種不同的顏色。此時他們的熱情枯竭了，邀請你幫助他們完成任務。\n\n<p>給定兩個整數，分別表示 Alice 和 Bob 的集合 \\( N \\) 和 \\( M \\) 中的區塊數。以下 \\( N \\) 行包含 Alice 集合中每個立方體的數字顏色值。然後最後 \\( M \\) 行包含 Bob 集合中每個立方體的數字顏色值。 </p>\n\n<p>找到三個集合：兩個集合中立方體的數字顏色、僅在愛麗絲集合中的立方體的數字顏色以及僅在鮑勃集合中的立方體的數字顏色。  對於每個集合，列印集合中的元素數量，後面跟著數字顏色元素，按升序排序。<p><strong>Java 注意：</strong> 使用 HashSet 處理唯一值；需要自然排序輸出時使用 TreeSet。</p>",
+    "en": "<p>Alice and Bob like to play with colored cubes. Each child has its own set of cubes and each cube has a distinct color, but they want to know how many unique colors exist if they combine their block sets. To determine this, the kids enumerated each distinct color with a random number from \\( 0 \\) to \\( 10^{8} \\). At this point their enthusiasm dried up, and you are invited to help them finish the task.\n\n<p>Given two integers that indicate the number of blocks in Alice's and then Bob's sets \\( N \\) and \\( M \\). The following \\( N \\) lines contain the numerical color value for each cube in Alice's set. Then the last \\( M \\) rows contain the numberical color value for each cube in Bob's set.</p>\n\n<p>Find three sets: the numerical colors of cubes in both sets, the numerical colors of cubes only in Alice's set, and the numerical colors of cubes only in Bob's set.  For each set, print the number of elements in the set, followed by the numerical color elements, sorted in ascending order.<p><strong>Java note:</strong> Use HashSet for unique values and TreeSet when naturally sorted output is required.</p>"
+  },
+  "hint": {
+    "zh": "使用 HashSet 處理唯一值；需要自然排序輸出時使用 TreeSet。",
+    "en": "Use HashSet for unique values and TreeSet when naturally sorted output is required."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "4 3\n0\n1\n10\n9\n1\n3\n0",
+      "output": "2\n0\n1\n2\n9\n10\n1\n3"
+    },
+    {
+      "input": "2 2\n1\n2\n2\n3",
+      "output": "1\n2\n1\n1\n1\n3"
+    },
+    {
+      "input": "0 0",
+      "output": "0\n\n0\n\n0"
+    },
+    {
+      "input": "1 1\n0\n1",
+      "output": "0\n\n1\n0\n1\n1"
+    },
+    {
+      "input": "8 5\n1\n10\n100\n1000\n10000\n100000\n1000000\n10000000\n1\n100\n10000\n1000000\n100000000",
+      "output": "4\n1\n100\n10000\n1000000\n4\n10\n1000\n100000\n10000000\n1\n100000000"
+    }
+  ],
+  "source": "vpavlenko/content/problems/sets/cubes.txt"
+}

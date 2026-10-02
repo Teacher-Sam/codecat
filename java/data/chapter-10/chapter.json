@@ -1,0 +1,25 @@
+{
+  "id": "10",
+  "title": {
+    "zh": "集合",
+    "en": "Sets"
+  },
+  "description": {
+    "zh": "使用 HashSet 與 TreeSet 處理唯一值和集合運算。",
+    "en": "Unique values and set operations with HashSet and TreeSet."
+  },
+  "problemIds": [
+    "java-10-0",
+    "java-10-1",
+    "java-10-2",
+    "java-10-3",
+    "java-10-4",
+    "java-10-5",
+    "java-10-6",
+    "java-10-7",
+    "java-10-8",
+    "java-10-9",
+    "java-10-10"
+  ],
+  "source": "https://snakify.org/en/"
+}

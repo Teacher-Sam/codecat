@@ -1,0 +1,39 @@
+{
+  "id": "java-5-10",
+  "title": {
+    "zh": "刪除字元",
+    "en": "Delete a character"
+  },
+  "description": {
+    "zh": "<p>给定一个字串。從此字串中刪除所有字元 <code>@</code>。<p><strong>Java 注意：</strong> Java 字串不可直接修改；請使用 charAt()、substring()、indexOf()、lastIndexOf()，需要大量修改時使用 StringBuilder。</p>",
+    "en": "<p>Given a string. Remove from this string all the characters <code>@</code>.<p><strong>Java note:</strong> Java strings are immutable. Use charAt(), substring(), indexOf(), lastIndexOf(), and StringBuilder for repeated modifications.</p>"
+  },
+  "hint": {
+    "zh": "Java 字串不可直接修改；請使用 charAt()、substring()、indexOf()、lastIndexOf()，需要大量修改時使用 StringBuilder。",
+    "en": "Java strings are immutable. Use charAt(), substring(), indexOf(), lastIndexOf(), and StringBuilder for repeated modifications."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        String s = scanner.nextLine();\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "Bilbo.Baggins@bagend.hobbiton.shire.me",
+      "output": "Bilbo.Bagginsbagend.hobbiton.shire.me"
+    },
+    {
+      "input": "dfa;sdkfj;ajva;bvna'sdasdfasdglJLHJKFHLDKJFh",
+      "output": "dfa;sdkfj;ajva;bvna'sdasdfasdglJLHJKFHLDKJFh"
+    },
+    {
+      "input": "@",
+      "output": "Test:\n@W@E@E@E@R\n\nAnswer:\nWEEER"
+    },
+    {
+      "input": "@@@@@@@@@@",
+      "output": "Test:\nH@K@M@J@M@L\n\nAnswer:\nHKMJML"
+    },
+    {
+      "input": "@@@@@F@@@@KL@@@@@J@J@J@JJJH@JJKK@JJJ@JJ",
+      "output": "FKLJJJJJJHJJKKJJJJJ"
+    }
+  ],
+  "source": "vpavlenko/content/problems/str/delete_char.txt"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "java-5-9",
+  "title": {
+    "zh": "替換子字串",
+    "en": "Replace the substring"
+  },
+  "description": {
+    "zh": "<p>給定一個字串。將此字串中的所有數字 <code>1</code> 替換為單字\n<code>一個</code>。<p><strong>Java 注意：</strong> Java 字串不可直接修改；請使用 charAt()、substring()、indexOf()、lastIndexOf()，需要大量修改時使用 StringBuilder。</p>",
+    "en": "<p>Given a string. Replace in this string all the numbers <code>1</code> by the word\n<code>one</code>.<p><strong>Java note:</strong> Java strings are immutable. Use charAt(), substring(), indexOf(), lastIndexOf(), and StringBuilder for repeated modifications.</p>"
+  },
+  "hint": {
+    "zh": "Java 字串不可直接修改；請使用 charAt()、substring()、indexOf()、lastIndexOf()，需要大量修改時使用 StringBuilder。",
+    "en": "Java strings are immutable. Use charAt(), substring(), indexOf(), lastIndexOf(), and StringBuilder for repeated modifications."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        String s = scanner.nextLine();\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "1+1=2",
+      "output": "one+one=2"
+    },
+    {
+      "input": "Hello, 2345678990",
+      "output": "Hello, 2345678990"
+    },
+    {
+      "input": "1",
+      "output": "one"
+    },
+    {
+      "input": "1111111111111111111111111111111111",
+      "output": "oneoneoneoneoneoneoneoneoneoneoneoneoneoneoneoneoneoneoneoneoneoneoneoneoneoneoneoneoneoneoneoneoneone"
+    },
+    {
+      "input": "1213141516171819101",
+      "output": "one2one3one4one5one6one7one8one9one0one"
+    }
+  ],
+  "source": "vpavlenko/content/problems/str/replace_substring.txt"
+}

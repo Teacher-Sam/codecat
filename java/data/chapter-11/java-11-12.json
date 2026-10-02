@@ -1,0 +1,55 @@
+{
+  "id": "java-11-12",
+  "title": {
+    "zh": "重音檢查",
+    "en": "Stress test"
+  },
+  "description": {
+    "zh": "<p>根據正確重讀單字的字典檢查學生的文字。計算帶有未知或錯誤放置的大寫重音標記的單字。 </p><p><strong>Java 注意：</strong> 使用 HashMap 儲存鍵值對；需要依鍵排序輸出時使用 TreeMap。</p>",
+    "en": "<p>Check a pupil's text against a dictionary of correctly stressed words. Count words with an unknown or incorrectly placed uppercase stress mark.</p><p><strong>Java note:</strong> Use HashMap for key-value data and TreeMap when output must be sorted by key.</p>"
+  },
+  "hint": {
+    "zh": "使用 HashMap 儲存鍵值對；需要依鍵排序輸出時使用 TreeMap。",
+    "en": "Use HashMap for key-value data and TreeMap when output must be sorted by key."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "4\ncAnnot\ncannOt\nfOund\npAge\nthE pAge cAnnot be found",
+      "output": "2"
+    },
+    {
+      "input": "4\ncAnnot\ncannOt\nfOund\npAge\nThe PAGE cannot be found",
+      "output": "4"
+    },
+    {
+      "input": "1\nM\nM",
+      "output": "0"
+    },
+    {
+      "input": "2\nXu\nxU\nNJ xu xU xu",
+      "output": "3"
+    },
+    {
+      "input": "5\ngSn\ngsN\nqY\nrkZ\nrKz\nqy dr DH y Y qy rKz",
+      "output": "5"
+    },
+    {
+      "input": "5\nnPa\nOc\noC\npT\nzjU\nQp Gt oC oG l oc oc",
+      "output": "3"
+    },
+    {
+      "input": "5\naZqz\nAzqz\nlyAi\nlYai\nzN\nxfm Zn frs lyai azqz",
+      "output": "5"
+    },
+    {
+      "input": "10\nchN\nlXp\nLxp\nlxP\nqXe\nQxe\nqxE\nuDb\nudB\nvezV\nchn jkn bz j UDb Qxe udb qxE szk Lxp udb chn qXe cx",
+      "output": "10"
+    },
+    {
+      "input": "10\nDe\niKq\nikQ\nlL\nMea\nmeA\nuDb\nX\nzA\nZa\nIKq H mea qc ln Udb udb lL jr pE X ul Yc ikQ dE dE",
+      "output": "10"
+    }
+  ],
+  "source": "vpavlenko/content/problems/dicts/accent_test.txt"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "java-7-2",
+  "title": {
+    "zh": "偶數元素",
+    "en": "Even elements"
+  },
+  "description": {
+    "zh": "給定一個數字串列，尋找並列印所有偶數元素。 \n\n在本例中，使用 for 迴圈遍歷<u>串列</u>，\n並且不超過其指數！也就是說，不要使用 <code>range()</code><p><strong>Java 注意：</strong> 本章以陣列或 ArrayList 儲存資料；大小固定時優先使用陣列，需要插入或刪除時使用 ArrayList。</p>",
+    "en": "Given a list of numbers, find and print all elements that are an even number. \n\nIn this case use a for-loop that iterates over the <u>list</u>, \nand not over its indices! That is, don't use <code>range()</code><p><strong>Java note:</strong> Use arrays for fixed-size data and ArrayList when insertion or removal is required.</p>"
+  },
+  "hint": {
+    "zh": "本章以陣列或 ArrayList 儲存資料；大小固定時優先使用陣列，需要插入或刪除時使用 ArrayList。",
+    "en": "Use arrays for fixed-size data and ArrayList when insertion or removal is required."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "1 2 2 3 3 3 4",
+      "output": "2 2 4 "
+    },
+    {
+      "input": "1 2 3 4 5",
+      "output": "2 4 "
+    },
+    {
+      "input": "2 4 6 8",
+      "output": "2 4 6 8 "
+    },
+    {
+      "input": "1 1 1 1 1 1 2",
+      "output": "2 "
+    },
+    {
+      "input": "44 -51 32 -60 -7 -67 62 91 26 -14",
+      "output": "44 32 -60 62 26 -14 "
+    },
+    {
+      "input": "32 -95 -78 -15 -71 -73 -83 53 -91 -82 -71 -52 -60 -18 12 8 98 -92 -83 7",
+      "output": "32 -78 -82 -52 -60 -18 12 8 98 -92 "
+    },
+    {
+      "input": "39 55 -88 56 -39 -92 -30 54 15 94 27 -87 -85 -53 -44 -87 33 38 -22 56",
+      "output": "-88 56 -92 -30 54 94 -44 38 -22 56 "
+    }
+  ],
+  "source": "vpavlenko/content/problems/lists/even_elements.txt"
+}

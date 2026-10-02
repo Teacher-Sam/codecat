@@ -13,7 +13,7 @@
 ```text
 snakify_practice_platform/
 ├── index.html                  ← 語言選擇入口
-├── java/                       ← Java 練題（第 1～4 章）
+├── java/                       ← Java 練題（第 1～11 章）
 │   ├── index.html
 │   ├── data/                   ← 題目 id：java-1-1、java-2-3、java-3-5 …
 │   └── js/config.js
@@ -117,6 +117,8 @@ python scripts/convert_java_to_cpp.py
 python scripts/import_cpp_chapters_5_11.py
 python scripts/translate_cpp_chapters_5_11.py
 python scripts/build_cpp_intros_5_11.py
+python scripts/convert_cpp_to_java_chapters_5_11.py
+python scripts/build_java_intros_5_11.py
 ```
 
 ---

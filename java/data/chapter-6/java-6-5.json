@@ -1,0 +1,39 @@
+{
+  "id": "java-6-5",
+  "title": {
+    "zh": "數列長度",
+    "en": "The length of the sequence"
+  },
+  "description": {
+    "zh": "<p>給定一個非負整數序列，其中每個數字都寫在單獨的行中。 \n決定序列的長度，當整數等於0時序列結束。\n列印序列的長度（不包括整數 0）。\n數字 0 後面的數字應省略。<p><strong>Java 注意：</strong> 輸入以 0 結束時不要把結尾的 0 納入統計；可能出現小數結果時使用 double。</p>",
+    "en": "<p>Given a sequence of non-negative integers, where each number is written in a separate line. \nDetermine the length of the sequence, where the sequence ends when the integer is equal to 0.\nPrint the length of the sequence (not counting the integer 0).\nThe numbers following the number 0 should be omitted.<p><strong>Java note:</strong> Do not include a terminating zero in the sequence. Use double when the result may be fractional.</p>"
+  },
+  "hint": {
+    "zh": "輸入以 0 結束時不要把結尾的 0 納入統計；可能出現小數結果時使用 double。",
+    "en": "Do not include a terminating zero in the sequence. Use double when the result may be fractional."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "1\n7\n9\n0\n5",
+      "output": "3"
+    },
+    {
+      "input": "1\n2\n3\n4\n5\n6\n7\n0\n1\n2\n3",
+      "output": "7"
+    },
+    {
+      "input": "100\n0",
+      "output": "1"
+    },
+    {
+      "input": "0",
+      "output": "0"
+    },
+    {
+      "input": "5\n2\n8\n0\n1\n4\n4\n3\n2\n0\n5\n0\n0",
+      "output": "3"
+    }
+  ],
+  "source": "vpavlenko/content/problems/while/seq_len.txt"
+}

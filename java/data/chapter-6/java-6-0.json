@@ -1,0 +1,19 @@
+{
+  "id": "java-6-0",
+  "type": "intro",
+  "title": {
+    "zh": "while 迴圈導讀",
+    "en": "While loop overview"
+  },
+  "description": {
+    "zh": "<h3>1. while 迴圈</h3><p>重複次數無法事先確定時使用 <code>while</code>。每輪開始前先檢查條件；迴圈內必須更新狀態，讓條件最終變成 false。</p>\n<pre><code>int i = 1;\nwhile (i &lt;= 10) {\n    System.out.println(i * i);\n    i++;\n}</code></pre>\n<h3>2. 計數、累加與最大值</h3><p>常見狀態包括計數器、總和、目前最大值及前一個元素。設定初值時要考慮負數及空資料。</p>\n<h3>3. 哨兵值輸入</h3><p>數列可能用 0 表示結束。先讀取資料，再判斷是否處理；結尾的 0 通常不計入統計。</p>\n<pre><code>long sum = 0;\nint x = scanner.nextInt();\nwhile (x != 0) {\n    sum += x;\n    x = scanner.nextInt();\n}</code></pre>\n<h3>4. break 與 continue</h3><p><code>break</code> 離開最內層迴圈；<code>continue</code> 跳到下一輪。若可用清楚的條件表達，通常更容易閱讀。</p>\n<h3>5. 更新多個狀態</h3><p>Java 沒有 Python 的同時指定；計算費氏數列或交換數值時要使用暫存變數。</p>\n<pre><code>long next = a + b;\na = b;\nb = next;</code></pre>\n<p><strong>本章重點：</strong>先確認停止條件，以及每一輪如何讓程式更接近停止。</p>",
+    "en": "<h3>1. The while loop</h3><p>Use <code>while</code> when the number of iterations is unknown. Update state so its condition eventually becomes false.</p>\n<h3>2. Sequence state</h3><p>Typical state includes a counter, sum, maximum, and previous value.</p>\n<h3>3. Sentinel input</h3><p>A value such as 0 may terminate a sequence and is normally not included in calculations.</p>\n<h3>4. Control flow</h3><p><code>break</code> exits the innermost loop and <code>continue</code> proceeds to the next iteration.</p>"
+  },
+  "hint": {
+    "zh": "",
+    "en": ""
+  },
+  "starterCode": "",
+  "tests": [],
+  "source": "https://snakify.org/en/lessons/while_loop/"
+}

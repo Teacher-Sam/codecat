@@ -1,0 +1,35 @@
+{
+  "id": "java-5-1",
+  "title": {
+    "zh": "字串切片",
+    "en": "Slices"
+  },
+  "description": {
+    "zh": "<p>給你一個字串。\n\n<p>在第一行中，列印該字串的第三個字元。\n\n<p>在第二行中，列印該字串的倒數第二個字元。\n\n<p>在第三行中，列印該字串的前五個字元。\n\n<p>在第四行中，列印該字串除最後兩個字元之外的所有字元。\n\n<p>在第五行中，列印該字串中具有偶數索引的所有字元（記住索引從 0 開始，因此字元從第一個開始顯示）。\n\n<p>在第六行中，列印該字串中具有奇數索引的所有字元（即從字串中的第二個字元開始）。\n\n<p>在第七行中，以相反的順序列印字串的所有字元。\n\n<p>在第八行中，從最後一個字元開始，以相反的順序列印字串的每隔一個字元。\n\n<p>在第九行中，列印給定字串的長度。<p><strong>Java 注意：</strong> Java 字串不可直接修改；請使用 charAt()、substring()、indexOf()、lastIndexOf()，需要大量修改時使用 StringBuilder。</p>",
+    "en": "<p>You are given a string.\n\n<p>In the first line, print the third character of this string.\n\n<p>In the second line, print the second to last character of this string.\n\n<p>In the third line, print the first five characters of this string.\n\n<p>In the fourth line, print all but the last two characters of this string.\n\n<p>In the fifth line, print all the characters of this string with even indices (remember indexing starts at 0, so the characters are displayed starting with the first).\n\n<p>In the sixth line, print all the characters of this string with odd indices (i.e. starting with the second character in the string).\n\n<p>In the seventh line, print all the characters of the string in reverse order.\n\n<p>In the eighth line, print every second character of the string in reverse order, starting from the last one.\n\n<p>In the ninth line, print the length of the given string.<p><strong>Java note:</strong> Java strings are immutable. Use charAt(), substring(), indexOf(), lastIndexOf(), and StringBuilder for repeated modifications.</p>"
+  },
+  "hint": {
+    "zh": "Java 字串不可直接修改；請使用 charAt()、substring()、indexOf()、lastIndexOf()，需要大量修改時使用 StringBuilder。",
+    "en": "Java strings are immutable. Use charAt(), substring(), indexOf(), lastIndexOf(), and StringBuilder for repeated modifications."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        String s = scanner.nextLine();\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "Abrakadabra",
+      "output": "r\nr\nAbrak\nAbrakadab\nArkdba\nbaaar\narbadakarbA\nabdkrA\n11"
+    },
+    {
+      "input": "Hello",
+      "output": "l\nl\nHello\nHel\nHlo\nel\nolleH\nolH\n5"
+    },
+    {
+      "input": "qwertyuiop",
+      "output": "e\no\nqwert\nqwertyui\nqetuo\nwryip\npoiuytrewq\npiyrw\n10"
+    },
+    {
+      "input": "asdfghjklzxcv",
+      "output": "d\nc\nasdfg\nasdfghjklzx\nadgjlxv\nsfhkzc\nvcxzlkjhgfdsa\nvxljgda\n13"
+    }
+  ],
+  "source": "vpavlenko/content/problems/str/slices.txt"
+}

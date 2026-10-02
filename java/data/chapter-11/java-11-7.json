@@ -1,0 +1,39 @@
+{
+  "id": "java-11-7",
+  "title": {
+    "zh": "頻率分析",
+    "en": "Frequency analysis"
+  },
+  "description": {
+    "zh": "<p>給定一個數字 \\( n \\)，後面跟著 \\( n \\) 行文本，\n列印文字中遇到的所有單詞，每行一個。\n單字應根據其在文本中出現的次數按降序排序，\n所有出現頻率相同的單字應按字典順序列印。 </p>\n\n<p><b>提示。 </b>建立單字及其頻率的字典後，\n您要根據頻率對其進行排序。如果您建立一個串列，您就可以實作這一點\n其元素是兩個元素的元組：單字出現的頻率\n以及這個字本身。例如，<code>[(2, 'hi'), (1, 'what'), (3, 'is')]</code>。\n然後標準串列排序將對元組串列進行排序，其中\n由第一個元素比較的元組，如果它們相等，\n由第二個元素。這<b>幾乎</b>是問題所需要的。 </p><p><strong>Java 注意：</strong> 使用 HashMap 儲存鍵值對；需要依鍵排序輸出時使用 TreeMap。</p>",
+    "en": "<p>Given a number \\( n \\), followed by \\( n \\) lines of text,\nprint all words encountered in the text, one per line.\nThe words should be sorted in descending order according to their number of occurrences in the text,\nand all words with the same frequency should be printed in lexicographical order.</p>\n\n<p><b>Hint.</b> After you create a dictionary of the words and their frequencies,\nyou would like to sort it according to the frequencies. This can be achieved if you create a list\nwhose elements are tuples of two elements: the frequency of occurrence of a word\nand the word itself. For example, <code>[(2, 'hi'), (1, 'what'), (3, 'is')]</code>.\nThen the standard list sort will sort a list of tuples, with\nthe tuples compared by the first element, and if these are equal,\nby the second element. This is <b>nearly</b> what is required in the problem.</p><p><strong>Java note:</strong> Use HashMap for key-value data and TreeMap when output must be sorted by key.</p>"
+  },
+  "hint": {
+    "zh": "使用 HashMap 儲存鍵值對；需要依鍵排序輸出時使用 TreeMap。",
+    "en": "Use HashMap for key-value data and TreeMap when output must be sorted by key."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "9\nhi\nhi\nwhat is your name\nmy name is bond\njames bond\nmy name is damme\nvan damme\nclaude van damme\njean claude van damme",
+      "output": "damme\nis\nname\nvan\nbond\nclaude\nhi\nmy\njames\njean\nwhat\nyour"
+    },
+    {
+      "input": "1\nai ai ai ai ai ai ai ai ai ai",
+      "output": "ai"
+    },
+    {
+      "input": "2\niovjxotfvt h h iovjxotfvt h iovjxotfvt iovjxotfvt h\nh iovjxotfvt",
+      "output": "h\niovjxotfvt"
+    },
+    {
+      "input": "4\neqlbahbovv pzpumhz mlcgtbbnfr\naxsjbontg emojwajtfi\nbasdu nzyh wpyirkmz xxkmrr blnlqwcpur eqlbahbovv nzyh mlcgtbbnfr\nmlcgtbbnfr axsjbontg mlcgtbbnfr mlcgtbbnfr mlcgtbbnfr blnlqwcpur mlcgtbbnfr",
+      "output": "mlcgtbbnfr\naxsjbontg\nblnlqwcpur\neqlbahbovv\nnzyh\nbasdu\nemojwajtfi\npzpumhz\nwpyirkmz\nxxkmrr"
+    },
+    {
+      "input": "14\nThat thou hast her it is not all my grief,\nAnd yet it may be said I loved her dearly,\nThat she hath thee is of my wailing chief,\nA loss in love that touches me more nearly.\nLoving offenders thus I will excuse ye,\nThou dost love her, because thou know'st I love her,\nAnd for my sake even so doth she abuse me,\nSuff'ring my friend for my sake to approve her.\nIf I lose thee, my loss is my love's gain,\nAnd losing her, my friend hath found that loss,\nBoth find each other, and I lose both twain,\nAnd both for my sake lay on me this cross,\nBut here's the joy, my friend and I are one,\nSweet flattery, then she loves but me alone.",
+      "output": "my\nI\nAnd\nfor\nfriend\nher,\nis\nlove\nme\nsake\nshe\nThat\nand\nboth\nhath\nher\nit\nlose\nloss\nthat\nthou\nA\nBoth\nBut\nIf\nLoving\nSuff'ring\nSweet\nThou\nabuse\nall\nalone.\napprove\nare\nbe\nbecause\nbut\nchief,\ncross,\ndearly,\ndost\ndoth\neach\neven\nexcuse\nfind\nflattery,\nfound\ngain,\ngrief,\nhast\nher.\nhere's\nin\njoy,\nknow'st\nlay\nlosing\nloss,\nlove's\nloved\nloves\nmay\nme,\nmore\nnearly.\nnot\nof\noffenders\non\none,\nother,\nsaid\nso\nthe\nthee\nthee,\nthen\nthis\nthus\nto\ntouches\ntwain,\nwailing\nwill\nye,\nyet"
+    }
+  ],
+  "source": "vpavlenko/content/problems/dicts/frequency_analysis.txt"
+}

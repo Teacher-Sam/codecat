@@ -1,0 +1,39 @@
+{
+  "id": "java-8-6",
+  "title": {
+    "zh": "遞迴反向輸出",
+    "en": "Reverse the sequence"
+  },
+  "description": {
+    "zh": "給定一個以 \\( 0 \\) 結尾的整數序列。以相反的順序列印序列。\n\n<p>不要使用清單或其他資料結構。請改用遞迴的<i>強制</i>。<p><strong>Java 注意：</strong> 請在 Main 類別中撰寫 static 方法，由 main 讀取輸入、呼叫方法並輸出結果；遞迴題不得以迴圈取代。</p>",
+    "en": "Given a sequence of integers that end with a \\( 0 \\). Print the sequence in reverse order.\n\n<p>Don't use lists or other data structures. Use the <i>force</i> of recursion instead.<p><strong>Java note:</strong> Write a static method in Main and call it from main. Do not replace recursion with a loop in recursion exercises.</p>"
+  },
+  "hint": {
+    "zh": "請在 Main 類別中撰寫 static 方法，由 main 讀取輸入、呼叫方法並輸出結果；遞迴題不得以迴圈取代。",
+    "en": "Write a static method in Main and call it from main. Do not replace recursion with a loop in recursion exercises."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    // 在這裡撰寫題目指定的 static 方法\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "1\n2\n3\n0",
+      "output": "0\n3\n2\n1"
+    },
+    {
+      "input": "8\n7\n2\n3\n1\n4\n5\n0",
+      "output": "0\n5\n4\n1\n3\n2\n7\n8"
+    },
+    {
+      "input": "1\n0",
+      "output": "0\n1"
+    },
+    {
+      "input": "0",
+      "output": "0"
+    },
+    {
+      "input": "1\n2\n3\n4\n5\n6\n7\n8\n9\n0",
+      "output": "0\n9\n8\n7\n6\n5\n4\n3\n2\n1"
+    }
+  ],
+  "source": "vpavlenko/content/problems/functions/reverse_rec.txt"
+}

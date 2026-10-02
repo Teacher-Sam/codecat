@@ -1,0 +1,51 @@
+{
+  "id": "java-7-14",
+  "title": {
+    "zh": "保齡球瓶",
+    "en": "The bowling alley"
+  },
+  "description": {
+    "zh": "在保齡球比賽中，選手從球道遠端的 10 個球瓶開始。目標是擊倒所有的針腳。對於此練習，瓶子和球的數量會有所不同。\n\n給定瓶數<i>N</i>，然後要滾動的球數<i>K</i>，後面跟著<i>K</i>對數字（每個滾動的球一個），確定在所有球都滾動後哪些瓶保持站立。  對於這種情況，球的編號為 1 到 <i>N</i>（含）。隨後的數字對（每個 <i>K</i> 一個）代表每個角色被擊倒的球瓶的開始到停止（包括）位置。  列印 <i>N</i> 個字元的序列，其中 <code>\"I\"</code> 代表豎立的大頭針，<code>\".\"</code> 代表被擊倒的大頭針。<p><strong>Java 注意：</strong> 本章以陣列或 ArrayList 儲存資料；大小固定時優先使用陣列，需要插入或刪除時使用 ArrayList。</p>",
+    "en": "In bowling, the player starts wtih 10 pins at the far end of a lane. The object is to knock all the pins down. For this exercise, the number of pins and balls will vary.\n\nGiven the number of pins <i>N</i> and then the number of balls <i>K</i> to be rolled, followed by <i>K</i> pairs of numbers (one for each ball rolled), determine which pins remain standing after all the balls have been rolled.  The balls are numbered from 1 to <i>N</i> (inclusive) for this situation. The subsequent number pairs, one for each <i>K</i> represent the start to stop (inclusive) positions of the pins that were knocked down with each role.  Print a sequence of <i>N</i> characters, where <code>\"I\"</code> represents a pin left standing and <code>\".\"</code> represents a pin knocked down.<p><strong>Java note:</strong> Use arrays for fixed-size data and ArrayList when insertion or removal is required.</p>"
+  },
+  "hint": {
+    "zh": "本章以陣列或 ArrayList 儲存資料；大小固定時優先使用陣列，需要插入或刪除時使用 ArrayList。",
+    "en": "Use arrays for fixed-size data and ArrayList when insertion or removal is required."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "10 3\n8 10\n2 5\n3 6",
+      "output": "I.....I..."
+    },
+    {
+      "input": "5 2\n1 2\n4 4",
+      "output": "..I.I"
+    },
+    {
+      "input": "10 3\n3 5\n4 6\n10 10",
+      "output": "II....III."
+    },
+    {
+      "input": "5 0",
+      "output": "IIIII"
+    },
+    {
+      "input": "5 5\n5 5\n3 3\n1 1\n2 2\n4 4",
+      "output": "....."
+    },
+    {
+      "input": "20 1\n1 20",
+      "output": "...................."
+    },
+    {
+      "input": "20 3\n3 8\n13 17\n6 9",
+      "output": "II.......III.....III"
+    },
+    {
+      "input": "15 4\n1 1\n1 4\n6 8\n7 9",
+      "output": "....I....IIIIII"
+    }
+  ],
+  "source": "vpavlenko/content/problems/lists/kegelbahn.txt"
+}

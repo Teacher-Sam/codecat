@@ -1,0 +1,19 @@
+{
+  "id": "java-10-0",
+  "type": "intro",
+  "title": {
+    "zh": "集合導讀",
+    "en": "Sets overview"
+  },
+  "description": {
+    "zh": "<h3>1. Set</h3><p>集合只保存不重複的元素。<code>HashSet</code> 提供快速查找但不保證順序；<code>TreeSet</code> 會依自然順序排列。</p>\n<pre><code>Set&lt;Integer&gt; values = new HashSet&lt;&gt;();\nvalues.add(3);\nvalues.add(3); // 仍然只有一個 3</code></pre>\n<h3>2. 常用操作</h3><p><code>add()</code> 新增、<code>contains()</code> 查找、<code>remove()</code> 刪除、<code>size()</code> 取得不同元素數。</p>\n<pre><code>if (values.contains(x)) {\n    System.out.println(\"YES\");\n}</code></pre>\n<h3>3. 集合運算</h3><p>複製集合後使用 <code>retainAll()</code> 求交集、<code>addAll()</code> 求聯集、<code>removeAll()</code> 求差集，避免意外修改原集合。</p>\n<pre><code>Set&lt;Integer&gt; intersection = new HashSet&lt;&gt;(a);\nintersection.retainAll(b);</code></pre>\n<h3>4. 選擇集合</h3><p>輸出需要排序時使用 TreeSet；要保存重複次數時則應使用 Map 計數。</p>\n<p><strong>本章重點：</strong>集合回答「有哪些不同值」與「某值是否存在」。</p>",
+    "en": "<h3>1. Sets</h3><p><code>HashSet</code> stores unique values without order. <code>TreeSet</code> keeps values naturally sorted.</p>\n<h3>2. Operations</h3><p>Use <code>add()</code>, <code>contains()</code>, <code>remove()</code>, and <code>size()</code>.</p>\n<h3>3. Set algebra</h3><p>Use <code>retainAll()</code>, <code>addAll()</code>, and <code>removeAll()</code> on a copy for intersection, union, and difference.</p>"
+  },
+  "hint": {
+    "zh": "",
+    "en": ""
+  },
+  "starterCode": "",
+  "tests": [],
+  "source": "https://snakify.org/en/lessons/sets/"
+}

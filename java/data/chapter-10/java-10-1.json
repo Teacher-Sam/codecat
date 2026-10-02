@@ -1,0 +1,35 @@
+{
+  "id": "java-10-1",
+  "title": {
+    "zh": "唯一數量",
+    "en": "The number of distinct numbers"
+  },
+  "description": {
+    "zh": "<p>給定一個整數串列。\n確定有多少個不同的數字。 </p>\n\n<p>這項任務只需一行程式碼即可解決。 </p><p><strong>Java 注意：</strong> 使用 HashSet 處理唯一值；需要自然排序輸出時使用 TreeSet。</p>",
+    "en": "<p>Given a list of integers.\nDetermine how many distinct numbers there are.</p>\n\n<p>This task can be solved in one line of code.</p><p><strong>Java note:</strong> Use HashSet for unique values and TreeSet when naturally sorted output is required.</p>"
+  },
+  "hint": {
+    "zh": "使用 HashSet 處理唯一值；需要自然排序輸出時使用 TreeSet。",
+    "en": "Use HashSet for unique values and TreeSet when naturally sorted output is required."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "1 2 3 2 1",
+      "output": "3"
+    },
+    {
+      "input": "1 2 3 4 5 6 7 8 9 10",
+      "output": "10"
+    },
+    {
+      "input": "1 2 3 4 5 1 2 1 2 7 3",
+      "output": "6"
+    },
+    {
+      "input": "1 1 1 1 1 1 1 1 1 1 1 1",
+      "output": "1"
+    }
+  ],
+  "source": "vpavlenko/content/problems/sets/number_of_unique.txt"
+}

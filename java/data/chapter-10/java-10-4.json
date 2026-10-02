@@ -1,0 +1,35 @@
+{
+  "id": "java-10-4",
+  "title": {
+    "zh": "先前是否出現",
+    "en": "Has the number been encountered before"
+  },
+  "description": {
+    "zh": "<p>給定一個數字序列，確定是否已經遇到下一個數字。對於每個數字，如果已遇到該數字，則列印單字 <code>YES</code>（在單獨的行中）；如果尚未遇到該數字，則列印 <code>NO</code>。 </p><p><strong>Java 注意：</strong> 使用 HashSet 處理唯一值；需要自然排序輸出時使用 TreeSet。</p>",
+    "en": "<p>Given a sequence of numbers, determine if the next number has already been encountered. For each number, print the word <code>YES</code> (in a separate line) if this number has already been encountered, and print <code>NO</code>, if it has not already been encountered.</p><p><strong>Java note:</strong> Use HashSet for unique values and TreeSet when naturally sorted output is required.</p>"
+  },
+  "hint": {
+    "zh": "使用 HashSet 處理唯一值；需要自然排序輸出時使用 TreeSet。",
+    "en": "Use HashSet for unique values and TreeSet when naturally sorted output is required."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "1 2 3 2 3 4",
+      "output": "NO\nNO\nNO\nYES\nYES\nNO"
+    },
+    {
+      "input": "1 1 1 1 1 1 1 1 1 1",
+      "output": "NO\nYES\nYES\nYES\nYES\nYES\nYES\nYES\nYES\nYES"
+    },
+    {
+      "input": "1 2 3 4 5 6 7 8 9 10",
+      "output": "NO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO"
+    },
+    {
+      "input": "10 10 4 2 5 5 10 4 1 10",
+      "output": "NO\nYES\nNO\nNO\nNO\nYES\nYES\nYES\nNO\nYES"
+    }
+  ],
+  "source": "vpavlenko/content/problems/sets/occurs_before.txt"
+}

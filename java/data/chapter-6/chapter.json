@@ -1,0 +1,33 @@
+{
+  "id": "6",
+  "title": {
+    "zh": "while 迴圈",
+    "en": "While loop"
+  },
+  "description": {
+    "zh": "使用 while 迴圈處理未知次數的重複、數列與費氏數列。",
+    "en": "Unknown-length repetition, sequences, and Fibonacci numbers with while loops."
+  },
+  "problemIds": [
+    "java-6-0",
+    "java-6-1",
+    "java-6-2",
+    "java-6-3",
+    "java-6-4",
+    "java-6-5",
+    "java-6-6",
+    "java-6-7",
+    "java-6-8",
+    "java-6-9",
+    "java-6-10",
+    "java-6-11",
+    "java-6-12",
+    "java-6-13",
+    "java-6-14",
+    "java-6-15",
+    "java-6-16",
+    "java-6-17",
+    "java-6-18"
+  ],
+  "source": "https://snakify.org/en/"
+}

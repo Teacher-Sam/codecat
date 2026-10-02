@@ -1,0 +1,31 @@
+{
+  "id": "7",
+  "title": {
+    "zh": "陣列（vector）",
+    "en": "Lists (arrays)"
+  },
+  "description": {
+    "zh": "以陣列與 ArrayList 儲存、走訪及修改一維資料。",
+    "en": "Store, traverse, and modify one-dimensional data with arrays and ArrayList."
+  },
+  "problemIds": [
+    "java-7-0",
+    "java-7-1",
+    "java-7-2",
+    "java-7-3",
+    "java-7-4",
+    "java-7-5",
+    "java-7-6",
+    "java-7-7",
+    "java-7-8",
+    "java-7-9",
+    "java-7-10",
+    "java-7-11",
+    "java-7-12",
+    "java-7-13",
+    "java-7-14",
+    "java-7-15",
+    "java-7-16"
+  ],
+  "source": "https://snakify.org/en/"
+}

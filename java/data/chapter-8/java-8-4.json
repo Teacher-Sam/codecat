@@ -1,0 +1,103 @@
+{
+  "id": "java-8-4",
+  "title": {
+    "zh": "遞迴次方",
+    "en": "Exponentiation"
+  },
+  "description": {
+    "zh": "<p>給定一個正實數\\(a\\)和一個非負整數\\(n\\)。不使用迴圈計算 \\( a^{n} \\)，<code>pow()</code>。相反，請使用遞迴和關係式 \\( a^{n} = a \\cdot a^{n-1} \\)。列印結果。\n\n<p>形成函式<code>power(a, n)</code>。<p><strong>Java 注意：</strong> 請在 Main 類別中撰寫 static 方法，由 main 讀取輸入、呼叫方法並輸出結果；遞迴題不得以迴圈取代。</p>",
+    "en": "<p>Given a positive real number \\( a \\) and a non-negative integer \\( n \\). Calculate \\( a^{n} \\) without using loops, <code>pow()</code>. Instead, use recursion and the relation \\( a^{n} = a \\cdot a^{n-1} \\). Print the result.\n\n<p>Form the function <code>power(a, n)</code>.<p><strong>Java note:</strong> Write a static method in Main and call it from main. Do not replace recursion with a loop in recursion exercises.</p>"
+  },
+  "hint": {
+    "zh": "請在 Main 類別中撰寫 static 方法，由 main 讀取輸入、呼叫方法並輸出結果；遞迴題不得以迴圈取代。",
+    "en": "Write a static method in Main and call it from main. Do not replace recursion with a loop in recursion exercises."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    // 在這裡撰寫題目指定的 static 方法\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "2\n3",
+      "output": "8"
+    },
+    {
+      "input": "2\n2",
+      "output": "4"
+    },
+    {
+      "input": "2\n1",
+      "output": "2"
+    },
+    {
+      "input": "2\n4",
+      "output": "16"
+    },
+    {
+      "input": "2\n5",
+      "output": "32"
+    },
+    {
+      "input": "2\n6",
+      "output": "64"
+    },
+    {
+      "input": "2\n7",
+      "output": "128"
+    },
+    {
+      "input": "2\n8",
+      "output": "256"
+    },
+    {
+      "input": "2\n9",
+      "output": "512"
+    },
+    {
+      "input": "2\n10",
+      "output": "1024"
+    },
+    {
+      "input": "2\n15",
+      "output": "32768"
+    },
+    {
+      "input": "2\n0",
+      "output": "1"
+    },
+    {
+      "input": "3\n1",
+      "output": "3"
+    },
+    {
+      "input": "3\n2",
+      "output": "9"
+    },
+    {
+      "input": "3\n3",
+      "output": "27"
+    },
+    {
+      "input": "3\n4",
+      "output": "81"
+    },
+    {
+      "input": "3\n5",
+      "output": "243"
+    },
+    {
+      "input": "3\n10",
+      "output": "59049"
+    },
+    {
+      "input": "3\n0",
+      "output": "1"
+    },
+    {
+      "input": "1.1414\n2",
+      "output": "1.30279"
+    },
+    {
+      "input": "1.5\n10",
+      "output": "57.665"
+    }
+  ],
+  "source": "vpavlenko/content/problems/functions/power_rec.txt"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "8",
+  "title": {
+    "zh": "函式與遞迴",
+    "en": "Functions and recursion"
+  },
+  "description": {
+    "zh": "撰寫 Java static 方法，並用遞迴分解問題。",
+    "en": "Write Java static methods and decompose problems recursively."
+  },
+  "problemIds": [
+    "java-8-0",
+    "java-8-1",
+    "java-8-2",
+    "java-8-3",
+    "java-8-4",
+    "java-8-5",
+    "java-8-6"
+  ],
+  "source": "https://snakify.org/en/"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "java-5-3",
+  "title": {
+    "zh": "交換前後兩半",
+    "en": "The two halves"
+  },
+  "description": {
+    "zh": "<p>給定一個字串。將其切成兩個“相等”的部分（如果字串的長度是奇數，則將中心字元放在\n在第一個字串中，以便第一個字串比第二個字串多包含一個字元）。現在列印一個新字串\n在單行上，上半場和下半場互換（下半場在前，上半場在後）\n\n<p>請勿在此任務中使用語句 <code>if</code>。<p><strong>Java 注意：</strong> Java 字串不可直接修改；請使用 charAt()、substring()、indexOf()、lastIndexOf()，需要大量修改時使用 StringBuilder。</p>",
+    "en": "<p>Given a string. Cut it into two \"equal\" parts (If the length of the string is odd, place the center character \nin the first string, so that the first string contains one more characther than the second). Now print a new string \non a single row with the first and second halfs interchanged (second half first and the first half second)\n\n<p>Don't use the statement <code>if</code> in this task.<p><strong>Java note:</strong> Java strings are immutable. Use charAt(), substring(), indexOf(), lastIndexOf(), and StringBuilder for repeated modifications.</p>"
+  },
+  "hint": {
+    "zh": "Java 字串不可直接修改；請使用 charAt()、substring()、indexOf()、lastIndexOf()，需要大量修改時使用 StringBuilder。",
+    "en": "Java strings are immutable. Use charAt(), substring(), indexOf(), lastIndexOf(), and StringBuilder for repeated modifications."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        String s = scanner.nextLine();\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "Hi",
+      "output": "iH"
+    },
+    {
+      "input": "Hello",
+      "output": "loHel"
+    },
+    {
+      "input": "Qwerty",
+      "output": "rtyQwe"
+    },
+    {
+      "input": "Z",
+      "output": "Z"
+    },
+    {
+      "input": "asdfghj",
+      "output": "ghjasdf"
+    },
+    {
+      "input": "asdfghjzxc",
+      "output": "hjzxcasdfg"
+    }
+  ],
+  "source": "vpavlenko/content/problems/str/two_halves.txt"
+}

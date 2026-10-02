@@ -1,0 +1,43 @@
+{
+  "id": "java-11-5",
+  "title": {
+    "zh": "存取權限",
+    "en": "Access rights"
+  },
+  "description": {
+    "zh": "<p>病毒攻擊超級電腦的檔案系統並崩潰\n文件存取權限的控制。對於每個文件\n有一組已知的操作可以應用於它：</p>\n\n<ul>\n<li>寫<code>W</code>，\n<li>閱讀<code>R</code>，\n<li>執行<code>X</code>。\n</ul>\n\n<p>\n第一行包含數字<code>N</code>－檔案系統中包含的檔案數量。\n以下 <code>N</code> 行包含檔案名稱和允許使用它們進行的動作，以空格分隔。\n\n下一行包含一個整數 <code>M</code> — 對檔案的操作次數。\n最後 <code>M</code> 行指定對文件請求的操作。 \n一個文件可以被請求多次。\n</p>\n\n<p>您需要恢復對檔案存取權限的控制。\n對於每個請求，您的程式應傳回 <code>OK</code>\n如果請求的操作有效或\n如果操作無效，則<code>拒絕存取</code>。 </p><p><strong>Java 注意：</strong> 使用 HashMap 儲存鍵值對；需要依鍵排序輸出時使用 TreeMap。</p>",
+    "en": "<p>The virus attacked the filesystem of the supercomputer and broke\nthe control of access rights to the files. For each file\nthere is a known set of operations which may be applied to it:</p>\n\n<ul>\n<li>write <code>W</code>,\n<li>read <code>R</code>,\n<li>execute <code>X</code>.\n</ul>\n\n<p>\nThe first line contains the number <code>N</code> — the number of files contained in the filesystem.\nThe following <code>N</code> lines contain the file names and allowed operations with them, separated by spaces.\n\nThe next line contains an integer <code>M</code> — the number of operations to the files.\nIn the last <code>M</code> lines specify the operations that are requested for files. \nOne file can be requested many times.\n</p>\n\n<p>You need to recover the control over the access rights to the files.\nFor each request your program should return <code>OK</code>\nif the requested operation is valid or\n<code>Access denied</code> if the operation is invalid.</p><p><strong>Java note:</strong> Use HashMap for key-value data and TreeMap when output must be sorted by key.</p>"
+  },
+  "hint": {
+    "zh": "使用 HashMap 儲存鍵值對；需要依鍵排序輸出時使用 TreeMap。",
+    "en": "Use HashMap for key-value data and TreeMap when output must be sorted by key."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "4\nhelloworld.exe R X\npinglog W R\nnya R\ngoodluck X W R\n5\nread nya\nwrite helloworld.exe\nexecute nya\nread pinglog\nwrite pinglog",
+      "output": "OK\nAccess denied\nAccess denied\nOK\nOK"
+    },
+    {
+      "input": "1\nabacaba X\n3\nread abacaba\nwrite abacaba\nexecute abacaba",
+      "output": "Access denied\nAccess denied\nOK"
+    },
+    {
+      "input": "1\ntmp_909925047 W X R\n7\nexecute tmp_909925047\nread tmp_909925047\nwrite tmp_909925047\nread tmp_909925047\nexecute tmp_909925047\nexecute tmp_909925047\nread tmp_909925047",
+      "output": "OK\nOK\nOK\nOK\nOK\nOK\nOK"
+    },
+    {
+      "input": "5\ntmp_1017722015 W\ntmp_897110090 X W R\ntmp_651548400 W X\ntmp_422551574 X R W\ntmp_477658548 W\n1\nwrite tmp_897110090",
+      "output": "OK"
+    },
+    {
+      "input": "2\ntmp_584361681 R X\ntmp_70361076 X\n3\nread tmp_70361076\nwrite tmp_70361076\nwrite tmp_70361076",
+      "output": "Access denied\nAccess denied\nAccess denied"
+    },
+    {
+      "input": "4\ntmp_796487715 X R W\ntmp_31144126 X R\ntmp_967334538 R\ntmp_264755563 R W\n3\nread tmp_264755563\nexecute tmp_796487715\nexecute tmp_796487715",
+      "output": "OK\nOK\nOK"
+    }
+  ],
+  "source": "vpavlenko/content/problems/dicts/permissions.txt"
+}

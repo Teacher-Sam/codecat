@@ -1,0 +1,27 @@
+{
+  "id": "5",
+  "title": {
+    "zh": "字串",
+    "en": "Strings"
+  },
+  "description": {
+    "zh": "使用 Java String 處理索引、子字串、搜尋與替換。",
+    "en": "String indexing, substrings, search, and replacement with Java String."
+  },
+  "problemIds": [
+    "java-5-0",
+    "java-5-1",
+    "java-5-2",
+    "java-5-3",
+    "java-5-4",
+    "java-5-5",
+    "java-5-6",
+    "java-5-7",
+    "java-5-8",
+    "java-5-9",
+    "java-5-10",
+    "java-5-11",
+    "java-5-12"
+  ],
+  "source": "https://snakify.org/en/"
+}

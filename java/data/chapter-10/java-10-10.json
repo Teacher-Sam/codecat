@@ -1,0 +1,51 @@
+{
+  "id": "java-10-10",
+  "title": {
+    "zh": "罷工日",
+    "en": "Strikes"
+  },
+  "description": {
+    "zh": "<p>給定日曆和幾個罷工時間表，計算因罷工而損失的工作日；週六和週日不是工作日。 </p><p><strong>Java 注意：</strong> 使用 HashSet 處理唯一值；需要自然排序輸出時使用 TreeSet。</p>",
+    "en": "<p>Given a calendar and several strike schedules, count working weekdays lost to strikes; Saturdays and Sundays are not working days.</p><p><strong>Java note:</strong> Use HashSet for unique values and TreeSet when naturally sorted output is required.</p>"
+  },
+  "hint": {
+    "zh": "使用 HashSet 處理唯一值；需要自然排序輸出時使用 TreeSet。",
+    "en": "Use HashSet for unique values and TreeSet when naturally sorted output is required."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "19 3\n2 3\n3 5\n9 8",
+      "output": "8"
+    },
+    {
+      "input": "5 2\n1 2\n2 2",
+      "output": "5"
+    },
+    {
+      "input": "1000 1\n1 1",
+      "output": "715"
+    },
+    {
+      "input": "1000 1\n179 1000",
+      "output": "1"
+    },
+    {
+      "input": "1000 1\n700 1000",
+      "output": "0"
+    },
+    {
+      "input": "100000 2\n746 23\n9578 12",
+      "output": "8231"
+    },
+    {
+      "input": "100 3\n39 68\n62 17\n7 72",
+      "output": "3"
+    },
+    {
+      "input": "1000 10\n14 81\n79 16\n27 44\n96 91\n6 98\n27 48\n89 29\n30 42\n86 90\n14 19",
+      "output": "163"
+    }
+  ],
+  "source": "vpavlenko/content/problems/sets/strikes.txt"
+}

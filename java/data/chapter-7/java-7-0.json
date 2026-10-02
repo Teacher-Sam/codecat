@@ -1,0 +1,19 @@
+{
+  "id": "java-7-0",
+  "type": "intro",
+  "title": {
+    "zh": "陣列（vector）導讀",
+    "en": "Lists (arrays) overview"
+  },
+  "description": {
+    "zh": "<h3>1. 陣列與 ArrayList</h3><p>Snakify 的 Python list 在 Java 中可對應陣列或 <code>ArrayList</code>。元素數量固定時使用陣列；需要插入、刪除或動態增長時使用 ArrayList。</p>\n<pre><code>int[] a = new int[n];\nArrayList&lt;Integer&gt; list = new ArrayList&lt;&gt;();</code></pre>\n<h3>2. 讀取與索引</h3><p>陣列大小是 <code>a.length</code>，元素是 <code>a[i]</code>；ArrayList 則使用 <code>size()</code>、<code>get(i)</code> 和 <code>set(i, value)</code>。</p>\n<pre><code>for (int i = 0; i &lt; a.length; i++) {\n    a[i] = scanner.nextInt();\n}</code></pre>\n<h3>3. 走訪</h3><p>需要索引時使用一般 for；只需要元素值時可使用 enhanced for。enhanced for 的變數是值的副本，不能用它替換陣列元素。</p>\n<h3>4. 新增、刪除與排序</h3><p>ArrayList 使用 <code>add()</code> 與 <code>remove()</code>。陣列排序使用 <code>Arrays.sort(a)</code>，ArrayList 使用 <code>Collections.sort(list)</code>。</p>\n<pre><code>list.add(index, value);\nlist.remove(index);\nArrays.sort(a);</code></pre>\n<p><strong>本章重點：</strong>分清楚陣列的 <code>length</code>、String 的 <code>length()</code> 與集合的 <code>size()</code>。</p>",
+    "en": "<h3>1. Arrays and ArrayList</h3><p>Use an array for fixed-size data and <code>ArrayList</code> for dynamic insertion and removal.</p>\n<h3>2. Access</h3><p>Arrays use <code>length</code> and <code>a[i]</code>. ArrayList uses <code>size()</code>, <code>get()</code>, and <code>set()</code>.</p>\n<h3>3. Traversal and sorting</h3><p>Use an indexed loop when positions matter. Sort with <code>Arrays.sort()</code> or <code>Collections.sort()</code>.</p>"
+  },
+  "hint": {
+    "zh": "",
+    "en": ""
+  },
+  "starterCode": "",
+  "tests": [],
+  "source": "https://snakify.org/en/lessons/lists/"
+}

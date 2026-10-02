@@ -1,0 +1,19 @@
+{
+  "id": "java-5-0",
+  "type": "intro",
+  "title": {
+    "zh": "字串導讀",
+    "en": "Strings overview"
+  },
+  "description": {
+    "zh": "<h3>1. Java 字串</h3><p><code>String</code> 儲存一串字元。<code>Scanner.next()</code> 只讀一個單字；內容可能包含空白時使用 <code>nextLine()</code>。</p>\n<pre><code>Scanner scanner = new Scanner(System.in);\nString s = scanner.nextLine();</code></pre>\n<h3>2. 長度與索引</h3><p><code>s.length()</code> 回傳字元數，<code>s.charAt(i)</code> 取得索引 i 的字元。索引從 0 開始，最後一個字元位於 <code>s.length()-1</code>。</p>\n<pre><code>String s = \"Hello\";\nSystem.out.println(s.charAt(0));\nSystem.out.println(s.charAt(s.length() - 1));</code></pre>\n<h3>3. 子字串與搜尋</h3><p><code>substring(begin, end)</code> 包含 begin、不包含 end。<code>indexOf()</code> 與 <code>lastIndexOf()</code> 找不到時回傳 -1。</p>\n<pre><code>String part = s.substring(1, 4);\nint first = s.indexOf(\"ll\");\nint last = s.lastIndexOf(\"l\");</code></pre>\n<h3>4. 不可變性與 StringBuilder</h3><p>String 建立後不能原地修改；串接、替換都會產生新字串。需要反轉、刪除或大量修改時，使用 <code>StringBuilder</code>。</p>\n<pre><code>StringBuilder b = new StringBuilder(s);\nb.reverse();\nb.delete(start, end);\nString result = b.toString();</code></pre>\n<p><strong>本章重點：</strong>留意索引邊界、substring 的右界不包含，以及 <code>==</code> 不能比較字串內容；請使用 <code>equals()</code>。</p>",
+    "en": "<h3>1. Java strings</h3><p><code>String</code> stores characters. Use <code>next()</code> for one token and <code>nextLine()</code> when spaces are allowed.</p>\n<h3>2. Length and indexing</h3><p>Use <code>length()</code> and <code>charAt(i)</code>. Indexes start at 0.</p>\n<h3>3. Substrings and search</h3><p><code>substring(begin, end)</code> excludes end. <code>indexOf()</code> and <code>lastIndexOf()</code> return -1 when no match exists.</p>\n<h3>4. Immutability</h3><p>Strings are immutable. Use <code>StringBuilder</code> for reversal, deletion, insertion, or repeated edits. Compare content with <code>equals()</code>, not <code>==</code>.</p>"
+  },
+  "hint": {
+    "zh": "",
+    "en": ""
+  },
+  "starterCode": "",
+  "tests": [],
+  "source": "https://snakify.org/en/lessons/strings_str/"
+}

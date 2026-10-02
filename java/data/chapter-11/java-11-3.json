@@ -1,0 +1,39 @@
+{
+  "id": "java-11-3",
+  "title": {
+    "zh": "美國大選",
+    "en": "Elections in the USA"
+  },
+  "description": {
+    "zh": "<p>眾所周知，美國總統不是透過直接投票選出的，而是透過兩步驟投票選出的。\n每個州都會舉行第一次選舉，並確定該州的選舉獲勝者。\n此後，州選舉正在進行：在這次選舉中，每個州都有一定的票數。\n票數——該州的選舉人數量。實際上，所有選民\n從州內依照州內投票結果進行投票。 </p>\n\n<p>第一行包含記錄數。之後，每個條目都包含候選人的姓名以及他們在某個州獲得的票數。\n統計選舉總結果：將每位候選人的得票數加總。\n按字母順序列印候選者。 </p><p><strong>Java 注意：</strong> 使用 HashMap 儲存鍵值對；需要依鍵排序輸出時使用 TreeMap。</p>",
+    "en": "<p>As you know, the president of USA is elected not by direct vote, but through a two-step voting.\nFirst elections are held in each state and determine the winner of elections in that state.\nThereafter, the state election is going: in this election, every state has a certain\nthe number of votes&nbsp;&mdash; the number of electors from that state. In practice, all the electors\nfrom the state of voted in accordance with the results of the vote within a state.</p>\n\n<p>The first line contains the number of records. After that, each entry contains the name of the candidate and the number of votes they got in one of the states.\nCount the total results of the elections: sum the number of votes for each candidate.\nPrint candidates in the alphabetical order.</p><p><strong>Java note:</strong> Use HashMap for key-value data and TreeMap when output must be sorted by key.</p>"
+  },
+  "hint": {
+    "zh": "使用 HashMap 儲存鍵值對；需要依鍵排序輸出時使用 TreeMap。",
+    "en": "Use HashMap for key-value data and TreeMap when output must be sorted by key."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "5\nMcCain 10\nMcCain 5\nObama 9\nObama 8\nMcCain 1",
+      "output": "McCain 16\nObama 17"
+    },
+    {
+      "input": "13\nMcCain 10\nMcCain 3\nObama 19\nObama 2\nMcCain 7\nMcCain 2\nObama 6\nObama 10\nMcCain 11\nMcCain 5\nObama 3\nObama 12\nMcCain 13",
+      "output": "McCain 51\nObama 52"
+    },
+    {
+      "input": "1\nObama 1",
+      "output": "Obama 1"
+    },
+    {
+      "input": "7\nivan 2\ngena 1\nsergey 100000\nivan 1\nivan 1\nivan 0\ngena 100",
+      "output": "gena 101\nivan 4\nsergey 100000"
+    },
+    {
+      "input": "61\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nMcCain 59",
+      "output": "McCain 59\nObama 60"
+    }
+  ],
+  "source": "vpavlenko/content/problems/dicts/usa_elections.txt"
+}

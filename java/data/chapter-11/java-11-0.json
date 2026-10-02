@@ -1,0 +1,19 @@
+{
+  "id": "java-11-0",
+  "type": "intro",
+  "title": {
+    "zh": "字典（map）導讀",
+    "en": "Dictionaries (maps) overview"
+  },
+  "description": {
+    "zh": "<h3>1. Map 的鍵與值</h3><p>Map 將每個鍵對應到一個值。<code>HashMap</code> 不保證順序；<code>TreeMap</code> 會依鍵的自然順序排列。</p>\n<pre><code>Map&lt;String, String&gt; capital = new HashMap&lt;&gt;();\ncapital.put(\"Taiwan\", \"Taipei\");</code></pre>\n<h3>2. 新增與查找</h3><p>使用 <code>put()</code> 新增或覆蓋，<code>get()</code> 取得值，<code>containsKey()</code> 判斷鍵是否存在。<code>getOrDefault()</code> 很適合計數。</p>\n<pre><code>int count = frequency.getOrDefault(word, 0);\nfrequency.put(word, count + 1);</code></pre>\n<h3>3. merge 計數</h3><p><code>merge()</code> 能把「不存在時設為 1，存在時加 1」寫得更精簡。</p>\n<pre><code>frequency.merge(word, 1, Integer::sum);</code></pre>\n<h3>4. 走訪</h3><p>使用 <code>entrySet()</code> 同時取得鍵和值。若題目要求字典序，使用 TreeMap 或先將鍵排序。</p>\n<pre><code>for (Map.Entry&lt;String, Integer&gt; e : frequency.entrySet()) {\n    System.out.println(e.getKey() + \" \" + e.getValue());\n}</code></pre>\n<h3>5. 一對多資料</h3><p>一個鍵對應多個值時，可使用 <code>Map&lt;String, List&lt;String&gt;&gt;</code> 或 <code>Map&lt;String, Set&lt;String&gt;&gt;</code>。</p>\n<p><strong>本章重點：</strong>先決定鍵和值代表什麼，再確認輸出是否要求排序。</p>",
+    "en": "<h3>1. Keys and values</h3><p><code>HashMap</code> associates keys with values without order. <code>TreeMap</code> keeps keys naturally sorted.</p>\n<h3>2. Operations</h3><p>Use <code>put()</code>, <code>get()</code>, <code>containsKey()</code>, and <code>getOrDefault()</code>. <code>merge()</code> is convenient for frequency counting.</p>\n<h3>3. Iteration</h3><p>Iterate over <code>entrySet()</code> to access keys and values together. Use TreeMap when lexicographic output is required.</p>\n<p>For one-to-many relationships, combine a Map with a List or Set.</p>"
+  },
+  "hint": {
+    "zh": "",
+    "en": ""
+  },
+  "starterCode": "",
+  "tests": [],
+  "source": "https://snakify.org/en/lessons/dictionaries_dicts/"
+}

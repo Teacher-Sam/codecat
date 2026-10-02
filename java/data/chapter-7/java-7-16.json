@@ -1,0 +1,55 @@
+{
+  "id": "java-7-16",
+  "title": {
+    "zh": "插入元素",
+    "en": "Insert an element"
+  },
+  "description": {
+    "zh": "<p>給定一個陣列、一個索引和一個值，將值插入到從零開始的索引處並列印結果陣列。 </p><p><strong>Java 注意：</strong> 本章以陣列或 ArrayList 儲存資料；大小固定時優先使用陣列，需要插入或刪除時使用 ArrayList。</p>",
+    "en": "<p>Given an array, an index, and a value, insert the value at that zero-based index and print the resulting array.</p><p><strong>Java note:</strong> Use arrays for fixed-size data and ArrayList when insertion or removal is required.</p>"
+  },
+  "hint": {
+    "zh": "本章以陣列或 ArrayList 儲存資料；大小固定時優先使用陣列，需要插入或刪除時使用 ArrayList。",
+    "en": "Use arrays for fixed-size data and ArrayList when insertion or removal is required."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "7 6 5 4 3 2 1\n2 0",
+      "output": "7 6 0 5 4 3 2 1 "
+    },
+    {
+      "input": "4 6 2 4 3 5 12 24 3 5\n4 22",
+      "output": "4 6 2 4 22 3 5 12 24 3 5 "
+    },
+    {
+      "input": "4 6 2 4 3 5 12 24 3 5\n0 2",
+      "output": "2 4 6 2 4 3 5 12 24 3 5 "
+    },
+    {
+      "input": "4 6 2 4 3 5 12 24 3 5\n8 22",
+      "output": "4 6 2 4 3 5 12 24 22 3 5 "
+    },
+    {
+      "input": "4 6 2 4 3 5 12 24 3 5\n9 1",
+      "output": "4 6 2 4 3 5 12 24 3 1 5 "
+    },
+    {
+      "input": "1 2\n0 3",
+      "output": "3 1 2 "
+    },
+    {
+      "input": "1 2\n1 3",
+      "output": "1 3 2 "
+    },
+    {
+      "input": "4 6 2 4 3 5 12 24 3 5\n1 22",
+      "output": "4 22 6 2 4 3 5 12 24 3 5 "
+    },
+    {
+      "input": "1 3 5 7 9 11 13 15 17 19\n10 179",
+      "output": "1 3 5 7 9 11 13 15 17 19 179 "
+    }
+  ],
+  "source": "vpavlenko/content/problems/lists/insert_element.txt"
+}

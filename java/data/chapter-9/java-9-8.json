@@ -1,0 +1,35 @@
+{
+  "id": "java-9-8",
+  "title": {
+    "zh": "矩陣乘法",
+    "en": "Multiply two matrices"
+  },
+  "description": {
+    "zh": "<p>給定三個正整數 \\( m \\)、\\( n \\) 和 \\( r \\)，\n\\( m \\) 行 \\( n \\) 個元素，給予一個 \\( m \\times n \\) 矩陣 \\( A \\)，並且\n\\( n \\) 行 \\( r \\) 個元素，給予一個 \\( n \\times r \\) 矩陣 \\( B \\)，\n形成乘積矩陣 \\( A B \\)，即 \\( m \\times r \\) 矩陣\n其中 \\( (i,k) \\) 條目是總和\n\n$$ A[i][1] * B[1][k] + \\cdots + A[i][n] * B[n][k] $$\n\n並列印結果。<p><strong>Java 注意：</strong> Java 二維陣列使用 int[][]；第一個索引是列，第二個索引是欄。</p>",
+    "en": "<p>Given three positive integers \\( m \\), \\( n \\) and \\( r \\),\n\\( m \\) lines of \\( n \\) elements, giving an \\( m \\times n \\) matrix \\( A \\), and\n\\( n \\) lines of \\( r \\) elements, giving an \\( n \\times r \\) matrix \\( B \\),\nform the product matrix \\( A B \\), which is the \\( m \\times r \\) matrix\nwhose \\( (i,k) \\) entry is the sum\n\n$$ A[i][1] * B[1][k] + \\cdots + A[i][n] * B[n][k] $$\n\nand print the result.<p><strong>Java note:</strong> Use int[][] for a Java matrix. The first index is the row and the second is the column.</p>"
+  },
+  "hint": {
+    "zh": "Java 二維陣列使用 int[][]；第一個索引是列，第二個索引是欄。",
+    "en": "Use int[][] for a Java matrix. The first index is the row and the second is the column."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "3 4 2\n0 1 2 3\n4 5 6 7\n8 9 10 11\n2 3\n0 4\n5 -1\n1 1",
+      "output": "13 5\n45 33\n77 61"
+    },
+    {
+      "input": "2 2 2\n1 2\n3 4\n5 4\n3 2",
+      "output": "11 8\n27 20"
+    },
+    {
+      "input": "1 1 1\n5\n7",
+      "output": "35"
+    },
+    {
+      "input": "4 3 1\n1 2 3\n4 5 6\n7 8 9\n10 11 12\n1\n2\n3",
+      "output": "14\n32\n50\n68"
+    }
+  ],
+  "source": "vpavlenko/content/problems/2d_arrays/matrix_multiply.txt"
+}

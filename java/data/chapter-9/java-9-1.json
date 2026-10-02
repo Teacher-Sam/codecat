@@ -1,0 +1,51 @@
+{
+  "id": "java-9-1",
+  "title": {
+    "zh": "二維陣列最大值",
+    "en": "Maximum"
+  },
+  "description": {
+    "zh": "<p>給定表示行和列 \\( \\left ( m \\times n \\right ) \\) 的兩個整數，以及隨後 \\( m \\) 行 \\( n \\) 個元素，找到最大元素的索引位置並列印表示索引 \\( \\left ( i \\times j \\right ) \\) 或兩個行號和列號的表示索引。如果不同行中存在多个这样的元素，则輸出行号较小的元素。如果同一行出现多个这样的元素，则输出最小的列号。<p><strong>Java 注意：</strong> Java 二維陣列使用 int[][]；第一個索引是列，第二個索引是欄。</p>",
+    "en": "<p>Given two integers representing the rows and columns \\( \\left ( m \\times n \\right ) \\), and subsequent \\( m \\) rows of \\( n \\) elements, find the index position of the maximum element and print two numbers representing the index \\( \\left ( i \\times j \\right ) \\) or the row number and the column number. If there exist multiple such elements in different rows, print the one with smaller row number. If there multiple such elements occur on the same row, output the smallest column number.<p><strong>Java note:</strong> Use int[][] for a Java matrix. The first index is the row and the second is the column.</p>"
+  },
+  "hint": {
+    "zh": "Java 二維陣列使用 int[][]；第一個索引是列，第二個索引是欄。",
+    "en": "Use int[][] for a Java matrix. The first index is the row and the second is the column."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "3 4\n0 3 2 4\n2 3 5 5\n5 1 2 3",
+      "output": "1 2"
+    },
+    {
+      "input": "1 1\n1",
+      "output": "0 0"
+    },
+    {
+      "input": "3 5\n1 2 3 4 5\n6 7 8 9 10\n11 12 13 14 15",
+      "output": "2 4"
+    },
+    {
+      "input": "6 1\n1\n2\n3\n2\n1\n2",
+      "output": "2 0"
+    },
+    {
+      "input": "1 6\n1 2 3 3 2 1",
+      "output": "0 2"
+    },
+    {
+      "input": "3 5\n1 4 5 2 7\n3 4 8 0 8\n8 8 8 8 8",
+      "output": "1 2"
+    },
+    {
+      "input": "2 2\n-3 -2\n-2 -1",
+      "output": "1 1"
+    },
+    {
+      "input": "2 2\n-1000000003 -1000000002\n-1000000002 -1000000001",
+      "output": "1 1"
+    }
+  ],
+  "source": "vpavlenko/content/problems/2d_arrays/2d_max.txt"
+}

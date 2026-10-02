@@ -1,0 +1,51 @@
+{
+  "id": "java-7-8",
+  "title": {
+    "zh": "交換最大與最小值",
+    "en": "Swap min and max"
+  },
+  "description": {
+    "zh": "给定一个唯一数字串列，交换该串列的最小和最大元素。列印結果清單。<p><strong>Java 注意：</strong> 本章以陣列或 ArrayList 儲存資料；大小固定時優先使用陣列，需要插入或刪除時使用 ArrayList。</p>",
+    "en": "Given a list of unique numbers, swap the minimal and maximal elements of this list. Print the resulting list.<p><strong>Java note:</strong> Use arrays for fixed-size data and ArrayList when insertion or removal is required.</p>"
+  },
+  "hint": {
+    "zh": "本章以陣列或 ArrayList 儲存資料；大小固定時優先使用陣列，需要插入或刪除時使用 ArrayList。",
+    "en": "Use arrays for fixed-size data and ArrayList when insertion or removal is required."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "3 4 5 2 1",
+      "output": "3 4 1 2 5 "
+    },
+    {
+      "input": "1 5 4 3 2",
+      "output": "5 1 4 3 2 "
+    },
+    {
+      "input": "-30000 30000",
+      "output": "30000 -30000 "
+    },
+    {
+      "input": "1",
+      "output": "1 "
+    },
+    {
+      "input": "2147483647 -2147483648",
+      "output": "-2147483648 2147483647 "
+    },
+    {
+      "input": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 17 16 15 14",
+      "output": "18 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 1 17 16 15 14 "
+    },
+    {
+      "input": "1 2 3 4 5 6 7 8 9 10",
+      "output": "10 2 3 4 5 6 7 8 9 1 "
+    },
+    {
+      "input": "10 9 8 7 6 5 4 3 2 1",
+      "output": "1 9 8 7 6 5 4 3 2 10 "
+    }
+  ],
+  "source": "vpavlenko/content/problems/lists/swap_min_and_max.txt"
+}

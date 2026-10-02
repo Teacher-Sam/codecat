@@ -15,6 +15,34 @@
     {
       "id": "4",
       "dir": "chapter-4"
+    },
+    {
+      "id": "5",
+      "dir": "chapter-5"
+    },
+    {
+      "id": "6",
+      "dir": "chapter-6"
+    },
+    {
+      "id": "7",
+      "dir": "chapter-7"
+    },
+    {
+      "id": "8",
+      "dir": "chapter-8"
+    },
+    {
+      "id": "9",
+      "dir": "chapter-9"
+    },
+    {
+      "id": "10",
+      "dir": "chapter-10"
+    },
+    {
+      "id": "11",
+      "dir": "chapter-11"
     }
   ]
 }

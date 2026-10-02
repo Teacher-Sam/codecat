@@ -1,0 +1,47 @@
+{
+  "id": "java-7-10",
+  "title": {
+    "zh": "不同元素數量",
+    "en": "The number of distinct elements"
+  },
+  "description": {
+    "zh": "給定一個所有元素均按升序排序的數字串列，確定並列印其中不同元素的數量。<p><strong>Java 注意：</strong> 本章以陣列或 ArrayList 儲存資料；大小固定時優先使用陣列，需要插入或刪除時使用 ArrayList。</p>",
+    "en": "Given a list of numbers with all of its elements sorted in ascending order, determine and print the quantity of distinct elements in it.<p><strong>Java note:</strong> Use arrays for fixed-size data and ArrayList when insertion or removal is required.</p>"
+  },
+  "hint": {
+    "zh": "本章以陣列或 ArrayList 儲存資料；大小固定時優先使用陣列，需要插入或刪除時使用 ArrayList。",
+    "en": "Use arrays for fixed-size data and ArrayList when insertion or removal is required."
+  },
+  "starterCode": "import java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "1 2 2 3 3 3",
+      "output": "3"
+    },
+    {
+      "input": "1 2 3 4 5",
+      "output": "5"
+    },
+    {
+      "input": "1 1 1 1 1",
+      "output": "1"
+    },
+    {
+      "input": "1 1 2 2 2 3 4 5 6 7",
+      "output": "7"
+    },
+    {
+      "input": "-100 -99 -98 -97 -96",
+      "output": "5"
+    },
+    {
+      "input": "-100 -100 -98 -50 1",
+      "output": "4"
+    },
+    {
+      "input": "-64 -45 -38 -16 -14 -7 2 53 70 80 80",
+      "output": "10"
+    }
+  ],
+  "source": "vpavlenko/content/problems/lists/num_distinct.txt"
+}

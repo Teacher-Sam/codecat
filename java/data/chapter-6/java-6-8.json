@@ -1,0 +1,63 @@
+{
+  "id": "java-6-8",
+  "title": {
+    "zh": "數列最大值",
+    "en": "The maximum of the sequence"
+  },
+  "description": {
+    "zh": "序列由整數組成，以數字 0 結尾。確定序列的最大元素。<p><strong>Java 注意：</strong> 輸入以 0 結束時不要把結尾的 0 納入統計；可能出現小數結果時使用 double。</p>",
+    "en": "A sequence consists of integer numbers and ends with the number 0. Determine the largest element of the sequence.<p><strong>Java note:</strong> Do not include a terminating zero in the sequence. Use double when the result may be fractional.</p>"
+  },
+  "hint": {
+    "zh": "輸入以 0 結束時不要把結尾的 0 納入統計；可能出現小數結果時使用 double。",
+    "en": "Do not include a terminating zero in the sequence. Use double when the result may be fractional."
+  },
+  "starterCode": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        \n    }\n}\n",
+  "tests": [
+    {
+      "input": "1\n7\n9\n0",
+      "output": "9"
+    },
+    {
+      "input": "1\n2\n3\n2\n1\n0",
+      "output": "3"
+    },
+    {
+      "input": "1\n2\n3\n0",
+      "output": "3"
+    },
+    {
+      "input": "1\n3\n2\n0",
+      "output": "3"
+    },
+    {
+      "input": "2\n1\n3\n0",
+      "output": "3"
+    },
+    {
+      "input": "2\n3\n1\n0",
+      "output": "3"
+    },
+    {
+      "input": "3\n2\n1\n0",
+      "output": "3"
+    },
+    {
+      "input": "3\n1\n2\n0",
+      "output": "3"
+    },
+    {
+      "input": "1\n2\n3\n4\n5\n0",
+      "output": "5"
+    },
+    {
+      "input": "5\n4\n3\n2\n1\n0",
+      "output": "5"
+    },
+    {
+      "input": "80\n94\n78\n67\n24\n4\n22\n73\n26\n38\n7\n90\n37\n56\n95\n37\n96\n77\n51\n43\n25\n91\n71\n89\n99\n95\n29\n87\n64\n10\n0",
+      "output": "99"
+    }
+  ],
+  "source": "vpavlenko/content/problems/while/seq_max.txt"
+}
