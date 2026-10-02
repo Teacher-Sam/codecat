@@ -1,0 +1,103 @@
+{
+  "id": "cpp-8-4",
+  "title": {
+    "zh": "遞迴次方",
+    "en": "Exponentiation"
+  },
+  "description": {
+    "zh": "<p><strong>遞迴次方</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>請實作題目指定的函式並由 main 讀取輸入、呼叫函式及輸出結果；遞迴題不得使用迴圈取代。</p>",
+    "en": "<p>Given a positive real number \\( a \\) and a non-negative integer \\( n \\). Calculate \\( a^{n} \\) without using loops, <code>pow()</code>. Instead, use recursion and the relation \\( a^{n} = a \\cdot a^{n-1} \\). Print the result.\n\n<p>Form the function <code>power(a, n)</code>.<p><strong>C++ note:</strong> Implement the requested function and call it from main. In recursion exercises, do not replace recursion with a loop.</p>"
+  },
+  "hint": {
+    "zh": "請實作題目指定的函式並由 main 讀取輸入、呼叫函式及輸出結果；遞迴題不得使用迴圈取代。",
+    "en": "Implement the requested function and call it from main. In recursion exercises, do not replace recursion with a loop."
+  },
+  "starterCode": "#include <iostream>\n#include <string>\n#include <cmath>\nusing namespace std;\n\n// 在這裡撰寫題目指定的函式\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "2\n3",
+      "output": "8"
+    },
+    {
+      "input": "2\n2",
+      "output": "4"
+    },
+    {
+      "input": "2\n1",
+      "output": "2"
+    },
+    {
+      "input": "2\n4",
+      "output": "16"
+    },
+    {
+      "input": "2\n5",
+      "output": "32"
+    },
+    {
+      "input": "2\n6",
+      "output": "64"
+    },
+    {
+      "input": "2\n7",
+      "output": "128"
+    },
+    {
+      "input": "2\n8",
+      "output": "256"
+    },
+    {
+      "input": "2\n9",
+      "output": "512"
+    },
+    {
+      "input": "2\n10",
+      "output": "1024"
+    },
+    {
+      "input": "2\n15",
+      "output": "32768"
+    },
+    {
+      "input": "2\n0",
+      "output": "1"
+    },
+    {
+      "input": "3\n1",
+      "output": "3"
+    },
+    {
+      "input": "3\n2",
+      "output": "9"
+    },
+    {
+      "input": "3\n3",
+      "output": "27"
+    },
+    {
+      "input": "3\n4",
+      "output": "81"
+    },
+    {
+      "input": "3\n5",
+      "output": "243"
+    },
+    {
+      "input": "3\n10",
+      "output": "59049"
+    },
+    {
+      "input": "3\n0",
+      "output": "1"
+    },
+    {
+      "input": "1.1414\n2",
+      "output": "1.30279"
+    },
+    {
+      "input": "1.5\n10",
+      "output": "57.665"
+    }
+  ],
+  "source": "vpavlenko/content/problems/functions/power_rec.txt"
+}

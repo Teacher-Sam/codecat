@@ -1,0 +1,43 @@
+{
+  "id": "cpp-11-5",
+  "title": {
+    "zh": "存取權限",
+    "en": "Access rights"
+  },
+  "description": {
+    "zh": "<p><strong>存取權限</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "en": "<p>The virus attacked the filesystem of the supercomputer and broke\nthe control of access rights to the files. For each file\nthere is a known set of operations which may be applied to it:</p>\n\n<ul>\n<li>write <code>W</code>,\n<li>read <code>R</code>,\n<li>execute <code>X</code>.\n</ul>\n\n<p>\nThe first line contains the number <code>N</code> — the number of files contained in the filesystem.\nThe following <code>N</code> lines contain the file names and allowed operations with them, separated by spaces.\n\nThe next line contains an integer <code>M</code> — the number of operations to the files.\nIn the last <code>M</code> lines specify the operations that are requested for files. \nOne file can be requested many times.\n</p>\n\n<p>You need to recover the control over the access rights to the files.\nFor each request your program should return <code>OK</code>\nif the requested operation is valid or\n<code>Access denied</code> if the operation is invalid.</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
+  },
+  "hint": {
+    "zh": "Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。",
+    "en": "Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required."
+  },
+  "starterCode": "#include <iostream>\n#include <map>\n#include <unordered_map>\n#include <vector>\n#include <string>\n#include <sstream>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "4\nhelloworld.exe R X\npinglog W R\nnya R\ngoodluck X W R\n5\nread nya\nwrite helloworld.exe\nexecute nya\nread pinglog\nwrite pinglog",
+      "output": "OK\nAccess denied\nAccess denied\nOK\nOK"
+    },
+    {
+      "input": "1\nabacaba X\n3\nread abacaba\nwrite abacaba\nexecute abacaba",
+      "output": "Access denied\nAccess denied\nOK"
+    },
+    {
+      "input": "1\ntmp_909925047 W X R\n7\nexecute tmp_909925047\nread tmp_909925047\nwrite tmp_909925047\nread tmp_909925047\nexecute tmp_909925047\nexecute tmp_909925047\nread tmp_909925047",
+      "output": "OK\nOK\nOK\nOK\nOK\nOK\nOK"
+    },
+    {
+      "input": "5\ntmp_1017722015 W\ntmp_897110090 X W R\ntmp_651548400 W X\ntmp_422551574 X R W\ntmp_477658548 W\n1\nwrite tmp_897110090",
+      "output": "OK"
+    },
+    {
+      "input": "2\ntmp_584361681 R X\ntmp_70361076 X\n3\nread tmp_70361076\nwrite tmp_70361076\nwrite tmp_70361076",
+      "output": "Access denied\nAccess denied\nAccess denied"
+    },
+    {
+      "input": "4\ntmp_796487715 X R W\ntmp_31144126 X R\ntmp_967334538 R\ntmp_264755563 R W\n3\nread tmp_264755563\nexecute tmp_796487715\nexecute tmp_796487715",
+      "output": "OK\nOK\nOK"
+    }
+  ],
+  "source": "vpavlenko/content/problems/dicts/permissions.txt"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "cpp-11-10",
+  "title": {
+    "zh": "銀行帳戶",
+    "en": "Bank accounts"
+  },
+  "description": {
+    "zh": "<p><strong>銀行帳戶</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "en": "<p>Process DEPOSIT, WITHDRAW, BALANCE, TRANSFER, and INCOME operations. Create accounts when required and print ERROR for a BALANCE query on an unknown account.</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
+  },
+  "hint": {
+    "zh": "Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。",
+    "en": "Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required."
+  },
+  "starterCode": "#include <iostream>\n#include <map>\n#include <unordered_map>\n#include <vector>\n#include <string>\n#include <sstream>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "DEPOSIT Ivanov 100\nINCOME 5\nBALANCE Ivanov\nTRANSFER Ivanov Petrov 50\nWITHDRAW Petrov 100\nBALANCE Petrov\nBALANCE Sidorov",
+      "output": "105\n-50\nERROR"
+    },
+    {
+      "input": "BALANCE Ivanov\nBALANCE Petrov\nDEPOSIT Ivanov 100\nBALANCE Ivanov\nBALANCE Petrov\nDEPOSIT Petrov 150\nBALANCE Petrov\nDEPOSIT Ivanov 10\nDEPOSIT Petrov 15\nBALANCE Ivanov\nBALANCE Petrov\nDEPOSIT Ivanov 46\nBALANCE Ivanov\nBALANCE Petrov\nDEPOSIT Petrov 14\nBALANCE Ivanov\nBALANCE Petrov",
+      "output": "ERROR\nERROR\n100\nERROR\n150\n110\n165\n156\n165\n156\n179"
+    },
+    {
+      "input": "BALANCE a\nBALANCE b\nDEPOSIT a 100\nBALANCE a\nBALANCE b\nWITHDRAW a 20\nBALANCE a\nBALANCE b\nWITHDRAW b 78\nBALANCE a\nBALANCE b\nWITHDRAW a 784\nBALANCE a\nBALANCE b\nDEPOSIT b 849\nBALANCE a\nBALANCE b",
+      "output": "ERROR\nERROR\n100\nERROR\n80\nERROR\n80\n-78\n-704\n-78\n-704\n771"
+    }
+  ],
+  "source": "vpavlenko/content/problems/dicts/bank_accounts.txt"
+}

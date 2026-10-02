@@ -1,0 +1,21 @@
+{
+  "id": "8",
+  "title": {
+    "zh": "函式與遞迴",
+    "en": "Functions and recursion"
+  },
+  "description": {
+    "zh": "撰寫 C++ 函式，並用遞迴分解問題。",
+    "en": "Write C++ functions and decompose problems recursively."
+  },
+  "problemIds": [
+    "cpp-8-0",
+    "cpp-8-1",
+    "cpp-8-2",
+    "cpp-8-3",
+    "cpp-8-4",
+    "cpp-8-5",
+    "cpp-8-6"
+  ],
+  "source": "https://snakify.org/en/"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "cpp-5-1",
+  "title": {
+    "zh": "字串切片",
+    "en": "Slices"
+  },
+  "description": {
+    "zh": "<p><strong>字串切片</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>C++ 沒有 Python 切片語法；請使用索引、迴圈、substr()、find()、rfind()、erase() 或 replace()。</p>",
+    "en": "<p>You are given a string.\n\n<p>In the first line, print the third character of this string.\n\n<p>In the second line, print the second to last character of this string.\n\n<p>In the third line, print the first five characters of this string.\n\n<p>In the fourth line, print all but the last two characters of this string.\n\n<p>In the fifth line, print all the characters of this string with even indices (remember indexing starts at 0, so the characters are displayed starting with the first).\n\n<p>In the sixth line, print all the characters of this string with odd indices (i.e. starting with the second character in the string).\n\n<p>In the seventh line, print all the characters of the string in reverse order.\n\n<p>In the eighth line, print every second character of the string in reverse order, starting from the last one.\n\n<p>In the ninth line, print the length of the given string.<p><strong>C++ note:</strong> C++ has no Python slice syntax. Use indexes, loops, substr(), find(), rfind(), erase(), or replace().</p>"
+  },
+  "hint": {
+    "zh": "C++ 沒有 Python 切片語法；請使用索引、迴圈、substr()、find()、rfind()、erase() 或 replace()。",
+    "en": "C++ has no Python slice syntax. Use indexes, loops, substr(), find(), rfind(), erase(), or replace()."
+  },
+  "starterCode": "#include <iostream>\n#include <string>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    string s;\n    getline(cin, s);\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "Abrakadabra",
+      "output": "r\nr\nAbrak\nAbrakadab\nArkdba\nbaaar\narbadakarbA\nabdkrA\n11"
+    },
+    {
+      "input": "Hello",
+      "output": "l\nl\nHello\nHel\nHlo\nel\nolleH\nolH\n5"
+    },
+    {
+      "input": "qwertyuiop",
+      "output": "e\no\nqwert\nqwertyui\nqetuo\nwryip\npoiuytrewq\npiyrw\n10"
+    },
+    {
+      "input": "asdfghjklzxcv",
+      "output": "d\nc\nasdfg\nasdfghjklzx\nadgjlxv\nsfhkzc\nvcxzlkjhgfdsa\nvxljgda\n13"
+    }
+  ],
+  "source": "vpavlenko/content/problems/str/slices.txt"
+}

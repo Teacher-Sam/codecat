@@ -1,0 +1,31 @@
+{
+  "id": "11",
+  "title": {
+    "zh": "字典（map）",
+    "en": "Dictionaries (maps)"
+  },
+  "description": {
+    "zh": "使用 std::map 或 std::unordered_map 儲存鍵值對與統計資料。",
+    "en": "Key-value storage and frequency counting with std::map or std::unordered_map."
+  },
+  "problemIds": [
+    "cpp-11-0",
+    "cpp-11-1",
+    "cpp-11-2",
+    "cpp-11-3",
+    "cpp-11-4",
+    "cpp-11-5",
+    "cpp-11-6",
+    "cpp-11-7",
+    "cpp-11-8",
+    "cpp-11-9",
+    "cpp-11-10",
+    "cpp-11-11",
+    "cpp-11-12",
+    "cpp-11-13",
+    "cpp-11-14",
+    "cpp-11-15",
+    "cpp-11-16"
+  ],
+  "source": "https://snakify.org/en/"
+}

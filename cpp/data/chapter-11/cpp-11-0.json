@@ -1,0 +1,19 @@
+{
+  "id": "cpp-11-0",
+  "type": "intro",
+  "title": {
+    "zh": "字典（map）導讀",
+    "en": "Dictionaries (maps) overview"
+  },
+  "description": {
+    "zh": "<p>使用 std::map 或 std::unordered_map 儲存鍵值對與統計資料。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "en": "<p>Key-value storage and frequency counting with std::map or std::unordered_map.</p><p>Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
+  },
+  "hint": {
+    "zh": "",
+    "en": ""
+  },
+  "starterCode": "",
+  "tests": [],
+  "source": "https://snakify.org/en/"
+}

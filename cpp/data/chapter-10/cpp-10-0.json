@@ -1,0 +1,19 @@
+{
+  "id": "cpp-10-0",
+  "type": "intro",
+  "title": {
+    "zh": "集合導讀",
+    "en": "Sets overview"
+  },
+  "description": {
+    "zh": "<p>使用 std::set 處理唯一值、交集及集合運算。</p><p>使用 set 的 insert、count、find、set_intersection 等操作；輸出集合時依題意保持排序。</p>",
+    "en": "<p>Unique values, intersections, and set operations with std::set.</p><p>Use std::set operations such as insert, count, find, and set_intersection. Preserve the requested output order.</p>"
+  },
+  "hint": {
+    "zh": "",
+    "en": ""
+  },
+  "starterCode": "",
+  "tests": [],
+  "source": "https://snakify.org/en/"
+}

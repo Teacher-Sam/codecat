@@ -1,0 +1,59 @@
+{
+  "id": "cpp-7-11",
+  "title": {
+    "zh": "相等配對數",
+    "en": "The number of pairs of equal"
+  },
+  "description": {
+    "zh": "<p><strong>相等配對數</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "en": "Given a list of numbers, count how many element pairs have the same value (are equal). \n\nAny two elements that are equal to each other should be counted exactly once.<p><strong>C++ note:</strong> Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
+  },
+  "hint": {
+    "zh": "Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。",
+    "en": "Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index."
+  },
+  "starterCode": "#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "1 2 3 2 3",
+      "output": "2"
+    },
+    {
+      "input": "1 1 1 1 1",
+      "output": "10"
+    },
+    {
+      "input": "1 2 3",
+      "output": "0"
+    },
+    {
+      "input": "1 1 1",
+      "output": "3"
+    },
+    {
+      "input": "2 3",
+      "output": "0"
+    },
+    {
+      "input": "2 2",
+      "output": "1"
+    },
+    {
+      "input": "0 0",
+      "output": "1"
+    },
+    {
+      "input": "0 0 6 1 1 4 2 1 2 2 ",
+      "output": "7"
+    },
+    {
+      "input": "0 1 43 10 13 33 15 8 18 21 ",
+      "output": "0"
+    },
+    {
+      "input": "3 2 1 2 2 4 3 2 5 3 2 ",
+      "output": "13"
+    }
+  ],
+  "source": "vpavlenko/content/problems/lists/num_equal_pairs.txt"
+}

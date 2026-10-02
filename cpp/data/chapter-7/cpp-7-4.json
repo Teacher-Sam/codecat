@@ -1,0 +1,55 @@
+{
+  "id": "cpp-7-4",
+  "title": {
+    "zh": "相鄰遞增元素",
+    "en": "Greater than previous"
+  },
+  "description": {
+    "zh": "<p><strong>相鄰遞增元素</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "en": "Given a list of numbers, find and print all the elements that are greater than the previous element.<p><strong>C++ note:</strong> Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
+  },
+  "hint": {
+    "zh": "Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。",
+    "en": "Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index."
+  },
+  "starterCode": "#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "1 5 2 4 3",
+      "output": "5 4 "
+    },
+    {
+      "input": "1 2 3 4 5",
+      "output": "2 3 4 5 "
+    },
+    {
+      "input": "5 4 3 2 1",
+      "output": "Test:\n1 5 1 5 1\n\nAnswer:\n5 5 "
+    },
+    {
+      "input": "5 1 5 1 5",
+      "output": "5 5 "
+    },
+    {
+      "input": "5 5 5 5 5",
+      "output": "Test:\n1 1 1 5 1\n\nAnswer:\n5 "
+    },
+    {
+      "input": "345354",
+      "output": "Test:\n1 465\n\nAnswer:\n465 "
+    },
+    {
+      "input": "4 -54643",
+      "output": "Test:\n2147483647 0 1 2 3\n\nAnswer:\n1 2 3 "
+    },
+    {
+      "input": "1 2 3 4 -2147483648",
+      "output": "2 3 4 "
+    },
+    {
+      "input": "-9 29 -100 64 26 73 -96 28 -92 11 -14 -86 -54 -67",
+      "output": "29 64 73 28 11 -54 "
+    }
+  ],
+  "source": "vpavlenko/content/problems/lists/increasing_neighbours.txt"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "cpp-6-7",
+  "title": {
+    "zh": "數列平均",
+    "en": "The average of the sequence"
+  },
+  "description": {
+    "zh": "<p><strong>數列平均</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>輸入以 0 結束的題目不要把結尾的 0 納入統計；需要小數結果時使用 double。</p>",
+    "en": "Determine the average of all elements of the sequence ending with the number 0.<p><strong>C++ note:</strong> For zero-terminated input, do not include the terminating zero. Use double when the result may be fractional.</p>"
+  },
+  "hint": {
+    "zh": "輸入以 0 結束的題目不要把結尾的 0 納入統計；需要小數結果時使用 double。",
+    "en": "For zero-terminated input, do not include the terminating zero. Use double when the result may be fractional."
+  },
+  "starterCode": "#include <iostream>\n#include <cmath>\n#include <iomanip>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "1\n7\n9\n0",
+      "output": "5.66666666667"
+    },
+    {
+      "input": "1\n1\n1\n1\n1\n1\n1\n1\n1\n0",
+      "output": "1.0"
+    },
+    {
+      "input": "34\n2345\n2345\n2345\n2345\n345\n3\n345\n3\n345\n1\n3\n424\n5\n453\n0",
+      "output": "756.066666667"
+    },
+    {
+      "input": "7883\n0",
+      "output": "7883.0"
+    },
+    {
+      "input": "1\n2\n3\n-6\n0",
+      "output": "0.0"
+    },
+    {
+      "input": "1\n2\n3\n4\n5\n6\n7\n0",
+      "output": "4.0"
+    },
+    {
+      "input": "1\n2\n3\n4\n0\n5\n6\n7\n0\n8\n9\n0\n0",
+      "output": "2.5"
+    },
+    {
+      "input": "5\n3\n6\n7\n4\n2\n4\n5\n6\n7\n4\n3\n4\n6\n7\n4\n5\n7\n8\n4\n4\n3\n6\n3\n7\n5\n5\n4\n3\n5\n0",
+      "output": "4.86666666667"
+    },
+    {
+      "input": "1\n0\n2\n0\n3\n0",
+      "output": "1.0"
+    }
+  ],
+  "source": "vpavlenko/content/problems/while/seq_avg.txt"
+}

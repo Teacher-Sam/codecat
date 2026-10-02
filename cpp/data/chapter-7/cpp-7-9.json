@@ -1,0 +1,47 @@
+{
+  "id": "cpp-7-9",
+  "title": {
+    "zh": "只出現一次的元素",
+    "en": "Unique elements"
+  },
+  "description": {
+    "zh": "<p><strong>只出現一次的元素</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "en": "Given a list of numbers, find and print the elements that appear in the list only once. \n\nThe elements must be printed in the order in which they occur in the original list.<p><strong>C++ note:</strong> Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
+  },
+  "hint": {
+    "zh": "Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。",
+    "en": "Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index."
+  },
+  "starterCode": "#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "1 2 2 3 3 3",
+      "output": "1 "
+    },
+    {
+      "input": "4 3 5 2 5 1 3 5",
+      "output": "4 2 1 "
+    },
+    {
+      "input": "6 9 6 23 12 19 14 26 ",
+      "output": "9 23 12 19 14 26 "
+    },
+    {
+      "input": "21 21 16 20 28 28 7 ",
+      "output": "16 20 7 "
+    },
+    {
+      "input": "21 ",
+      "output": "21 "
+    },
+    {
+      "input": "5 2 29 4 28 8 ",
+      "output": "5 2 29 4 28 8 "
+    },
+    {
+      "input": "4 2 9 3 2 9 7 8 4",
+      "output": "3 7 8"
+    }
+  ],
+  "source": "vpavlenko/content/problems/lists/unique_elements.txt"
+}

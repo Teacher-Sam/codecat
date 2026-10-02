@@ -1,0 +1,31 @@
+{
+  "id": "cpp-10-9",
+  "title": {
+    "zh": "多語者",
+    "en": "Polyglots"
+  },
+  "description": {
+    "zh": "<p><strong>多語者</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>使用 set 的 insert、count、find、set_intersection 等操作；輸出集合時依題意保持排序。</p>",
+    "en": "<p>Each student at a certain school speaks a number of languages. We need to determine which languges are spoken by all the students, which languages are spoken by at least one student.</p>\n\n<p>Given, the number of students, and then for each student given the number of languages they speak followed by the name of each language spoken, find and print the number of languages spoken by all the students, followed by a list the languages by name, then print the number of languages spoken by at least one student, followed by the list of the languages by name. Print the languages in alphabetical order.</p><p><strong>C++ note:</strong> Use std::set operations such as insert, count, find, and set_intersection. Preserve the requested output order.</p>"
+  },
+  "hint": {
+    "zh": "使用 set 的 insert、count、find、set_intersection 等操作；輸出集合時依題意保持排序。",
+    "en": "Use std::set operations such as insert, count, find, and set_intersection. Preserve the requested output order."
+  },
+  "starterCode": "#include <iostream>\n#include <set>\n#include <string>\n#include <sstream>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "3\n3\nRussian\nEnglish\nJapanese\n2\nRussian\nEnglish\n1\nEnglish",
+      "output": "1\nEnglish\n3\nEnglish\nJapanese\nRussian"
+    },
+    {
+      "input": "5\n1\nGerman\n1\nGerman\n1\nGerman\n1\nGerman\n1\nGerman",
+      "output": "1\nGerman\n1\nGerman"
+    },
+    {
+      "input": "4\n3\nRussian\nSpanish\nGerman\n3\nRussian\nGerman\nSpanish\n3\nSpanish\nRussian\nGerman\n3\nGerman\nRussian\nSpanish",
+      "output": "3\nGerman\nRussian\nSpanish\n3\nGerman\nRussian\nSpanish"
+    }
+  ],
+  "source": "vpavlenko/content/problems/sets/polyglotes.txt"
+}

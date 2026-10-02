@@ -1,0 +1,47 @@
+{
+  "id": "cpp-9-3",
+  "title": {
+    "zh": "棋盤",
+    "en": "Chess board"
+  },
+  "description": {
+    "zh": "<p><strong>棋盤</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python 二維 list 在此章對應 vector<vector<int>>；第一個索引是列，第二個索引是欄。</p>",
+    "en": "<p>Given two numbers \\( n \\) and \\( m \\). Create a two-dimensional array of size \\( \\left ( n \\times m \\right ) \\) and populate it with the characters <code> \".\" </code> and <code> \"*\" </code> in a checkerboard pattern. The top left corner should have the character <code> \".\" </code>.<p><strong>C++ note:</strong> Use vector&lt;vector&lt;int&gt;&gt; for a two-dimensional array. The first index is the row and the second is the column.</p>"
+  },
+  "hint": {
+    "zh": "Python 二維 list 在此章對應 vector<vector<int>>；第一個索引是列，第二個索引是欄。",
+    "en": "Use vector<vector<int>> for a two-dimensional array. The first index is the row and the second is the column."
+  },
+  "starterCode": "#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "3 4",
+      "output": ". * . *\n* . * .\n. * . *"
+    },
+    {
+      "input": "6 8",
+      "output": ". * . * . * . *\n* . * . * . * .\n. * . * . * . *\n* . * . * . * .\n. * . * . * . *\n* . * . * . * ."
+    },
+    {
+      "input": "8 3",
+      "output": ". * .\n* . *\n. * .\n* . *\n. * .\n* . *\n. * .\n* . *"
+    },
+    {
+      "input": "7 5",
+      "output": ". * . * .\n* . * . *\n. * . * .\n* . * . *\n. * . * .\n* . * . *\n. * . * ."
+    },
+    {
+      "input": "1 6",
+      "output": ". * . * . *"
+    },
+    {
+      "input": "8 1",
+      "output": ".\n*\n.\n*\n.\n*\n.\n*"
+    },
+    {
+      "input": "1 1",
+      "output": "."
+    }
+  ],
+  "source": "vpavlenko/content/problems/2d_arrays/chessboard.txt"
+}

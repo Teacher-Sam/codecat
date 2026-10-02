@@ -1,0 +1,55 @@
+{
+  "id": "cpp-7-16",
+  "title": {
+    "zh": "插入元素",
+    "en": "Insert an element"
+  },
+  "description": {
+    "zh": "<p><strong>插入元素</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "en": "<p>Given an array, an index, and a value, insert the value at that zero-based index and print the resulting array.</p><p><strong>C++ note:</strong> Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
+  },
+  "hint": {
+    "zh": "Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。",
+    "en": "Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index."
+  },
+  "starterCode": "#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "7 6 5 4 3 2 1\n2 0",
+      "output": "7 6 0 5 4 3 2 1 "
+    },
+    {
+      "input": "4 6 2 4 3 5 12 24 3 5\n4 22",
+      "output": "4 6 2 4 22 3 5 12 24 3 5 "
+    },
+    {
+      "input": "4 6 2 4 3 5 12 24 3 5\n0 2",
+      "output": "2 4 6 2 4 3 5 12 24 3 5 "
+    },
+    {
+      "input": "4 6 2 4 3 5 12 24 3 5\n8 22",
+      "output": "4 6 2 4 3 5 12 24 22 3 5 "
+    },
+    {
+      "input": "4 6 2 4 3 5 12 24 3 5\n9 1",
+      "output": "4 6 2 4 3 5 12 24 3 1 5 "
+    },
+    {
+      "input": "1 2\n0 3",
+      "output": "3 1 2 "
+    },
+    {
+      "input": "1 2\n1 3",
+      "output": "1 3 2 "
+    },
+    {
+      "input": "4 6 2 4 3 5 12 24 3 5\n1 22",
+      "output": "4 22 6 2 4 3 5 12 24 3 5 "
+    },
+    {
+      "input": "1 3 5 7 9 11 13 15 17 19\n10 179",
+      "output": "1 3 5 7 9 11 13 15 17 19 179 "
+    }
+  ],
+  "source": "vpavlenko/content/problems/lists/insert_element.txt"
+}

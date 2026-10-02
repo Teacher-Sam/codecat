@@ -1,0 +1,55 @@
+{
+  "id": "cpp-6-6",
+  "title": {
+    "zh": "數列總和",
+    "en": "The sum of the sequence"
+  },
+  "description": {
+    "zh": "<p><strong>數列總和</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>輸入以 0 結束的題目不要把結尾的 0 納入統計；需要小數結果時使用 double。</p>",
+    "en": "Determine the sum of all elements in the sequence, ending with the number 0.<p><strong>C++ note:</strong> For zero-terminated input, do not include the terminating zero. Use double when the result may be fractional.</p>"
+  },
+  "hint": {
+    "zh": "輸入以 0 結束的題目不要把結尾的 0 納入統計；需要小數結果時使用 double。",
+    "en": "For zero-terminated input, do not include the terminating zero. Use double when the result may be fractional."
+  },
+  "starterCode": "#include <iostream>\n#include <cmath>\n#include <iomanip>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "1\n7\n9\n0",
+      "output": "17"
+    },
+    {
+      "input": "1\n1\n1\n1\n1\n1\n1\n1\n1\n0",
+      "output": "9"
+    },
+    {
+      "input": "34\n2345\n2345\n2345\n2345\n345\n3\n345\n3\n345\n1\n3\n424\n5\n453\n0",
+      "output": "11341"
+    },
+    {
+      "input": "7883\n0",
+      "output": "7883"
+    },
+    {
+      "input": "0",
+      "output": "0"
+    },
+    {
+      "input": "1\n2\n3\n4\n5\n6\n7\n0",
+      "output": "28"
+    },
+    {
+      "input": "1\n2\n3\n4\n0",
+      "output": "10"
+    },
+    {
+      "input": "0",
+      "output": "0"
+    },
+    {
+      "input": "1\n0",
+      "output": "1"
+    }
+  ],
+  "source": "vpavlenko/content/problems/while/seq_sum.txt"
+}

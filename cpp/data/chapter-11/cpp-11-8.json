@@ -1,0 +1,59 @@
+{
+  "id": "cpp-11-8",
+  "title": {
+    "zh": "英語－拉丁語字典",
+    "en": "English-Latin dictionary"
+  },
+  "description": {
+    "zh": "<p><strong>英語－拉丁語字典</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "en": "<p>One day, going through old books in the attic, a student Bob found English-Latin dictionary.\nBy that time he spoke English fluently, and his dream was to learn Latin.\nSo finding the dictionary was just in time.</p>\n\n<p>Unfortunately, full-fledged language studying process requires also another type of dictionary:\nLatin-English. For lack of a better way he decided to make a second dictionary using the first one.</p>\n\n<p>As you know, the dictionary consists of words, each of which contains multiple translations.\nFor each Latin word that appears anywhere in the dictionary, Bob has to find all its translations\n(that is, all English words, for which our Latin word is among its translations),\nand take them and only them as the translations of this Latin word.</p>\n\n<p>Help him to create a Latin-English.</p>\n\n<p>\nThe first line contains a single integer <code>N</code> — the number of English words in the dictionary. \nFollowed by <code>N</code> dictionary entries. \nEach entry is contained on a separate line, which contains first the English word, then a hyphen surrounded by spaces and then comma-separated list with the translations of this English word in Latin. \nAll the words consist only of lowercase English letters.\nThe translations are sorted in lexicographical order. \nThe order of English words in the dictionary is also lexicographic.\n</p>\n<p>\nPrint the corresponding Latin-English dictionary in the same format. \nIn particular, the first word line should be the lexicographically minimal translation of the Latin word, then second in that order, etc. Inside the line the English words should be sorted also lexicographically.\n</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
+  },
+  "hint": {
+    "zh": "Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。",
+    "en": "Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required."
+  },
+  "starterCode": "#include <iostream>\n#include <map>\n#include <unordered_map>\n#include <vector>\n#include <string>\n#include <sstream>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "3\napple - malum, pomum, popula\nfruit - baca, bacca, popum\npunishment - malum, multa",
+      "output": "7\nbaca - fruit\nbacca - fruit\nmalum - apple, punishment\nmulta - punishment\npomum - apple\npopula - apple\npopum - fruit"
+    },
+    {
+      "input": "1\nschool - schola",
+      "output": "1\nschola - school"
+    },
+    {
+      "input": "3\ngreet - empfangen, willkommen\nsilicon - silicon\nwelcome - willkommen",
+      "output": "3\nempfangen - greet\nsilicon - silicon\nwillkommen - greet, welcome"
+    },
+    {
+      "input": "2\nmef - mqax, xkr\nwemu - mqax",
+      "output": "2\nmqax - mef, wemu\nxkr - mef"
+    },
+    {
+      "input": "3\ngfk - whao\nicfx - nil, whao\nutzs - brh",
+      "output": "3\nbrh - utzs\nnil - icfx\nwhao - gfk, icfx"
+    },
+    {
+      "input": "5\ncasy - moxd, oosz, pfh, wfp\ncgsy - pfh\ndlx - fma, lyq\nvja - fma, lyq, moxd, oosz, pfh, wfp, xrwv\nzfq - fma, lyq, tnqq, xrwv",
+      "output": "8\nfma - dlx, vja, zfq\nlyq - dlx, vja, zfq\nmoxd - casy, vja\noosz - casy, vja\npfh - casy, cgsy, vja\ntnqq - zfq\nwfp - casy, vja\nxrwv - vja, zfq"
+    },
+    {
+      "input": "6\ndrxpeycnkp - fgoezltv, fgqedltc, fgqezltc, fsqezltc, tgqehltc\noaxpeycnkp - fgqedltc, pgqezltu, tgqehltc\nyaxpefcnkr - fgqedltc, fgqezljc, fgqezlqc, fgqezltc, tgqehltc\nyaxpeycnkp - fgqedltc, fgqezlqc, fsqezltc\nyaxpeycnks - fgqedltc, fsqezltc, pgqezltu\nyaxteyckp - fgqedltc, fgqezljc, fgqezlqc, fsqezltc, pgqezltu",
+      "output": "8\nfgoezltv - drxpeycnkp\nfgqedltc - drxpeycnkp, oaxpeycnkp, yaxpefcnkr, yaxpeycnkp, yaxpeycnks, yaxteyckp\nfgqezljc - yaxpefcnkr, yaxteyckp\nfgqezlqc - yaxpefcnkr, yaxpeycnkp, yaxteyckp\nfgqezltc - drxpeycnkp, yaxpefcnkr\nfsqezltc - drxpeycnkp, yaxpeycnkp, yaxpeycnks, yaxteyckp\npgqezltu - oaxpeycnkp, yaxpeycnks, yaxteyckp\ntgqehltc - drxpeycnkp, oaxpeycnkp, yaxpefcnkr"
+    },
+    {
+      "input": "5\nfnpa - kbyip\nkbyip - kbyip, ojawe, ysye\nojawe - fnpa, kbyip\nuyjge - kbyip\nysye - ojawe",
+      "output": "4\nfnpa - ojawe\nkbyip - fnpa, kbyip, ojawe, uyjge\nojawe - kbyip, ysye\nysye - kbyip"
+    },
+    {
+      "input": "6\nddf - ngyj, nrbb, nrkh, wryj\ndeds - ngyj, nrbb, nrkh, nryj, wryj\ndpds - ngyj, nrkh, nryj\ndudm - ngyj, nrkh, nrni, nryj, wryj\nduds - ngyj, nrbb, nrkh, nryj\ndujs - ngyj, nrbb, nrkh, wryj",
+      "output": "6\nngyj - ddf, deds, dpds, dudm, duds, dujs\nnrbb - ddf, deds, duds, dujs\nnrkh - ddf, deds, dpds, dudm, duds, dujs\nnrni - dudm\nnryj - deds, dpds, dudm, duds\nwryj - ddf, deds, dudm, dujs"
+    },
+    {
+      "input": "6\ncdb - cdb, crke, meqb, pyk, uel\ncrke - cdb, crke, meqb, pyk, uel\nfvl - crke, meqb\nmeqb - cdb\npyk - crke, meqb, uel\nuel - cdb, crke, fvl",
+      "output": "6\ncdb - cdb, crke, meqb, uel\ncrke - cdb, crke, fvl, pyk, uel\nfvl - uel\nmeqb - cdb, crke, fvl, pyk\npyk - cdb, crke\nuel - cdb, crke, pyk"
+    }
+  ],
+  "source": "vpavlenko/content/problems/dicts/english_latin_dict.txt"
+}

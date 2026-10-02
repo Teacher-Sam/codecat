@@ -1,0 +1,19 @@
+{
+  "id": "cpp-7-0",
+  "type": "intro",
+  "title": {
+    "zh": "陣列（vector）導讀",
+    "en": "Lists (arrays) overview"
+  },
+  "description": {
+    "zh": "<p>以 std::vector 儲存、走訪及修改一維資料。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "en": "<p>Store, traverse, and modify one-dimensional data with std::vector.</p><p>Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
+  },
+  "hint": {
+    "zh": "",
+    "en": ""
+  },
+  "starterCode": "",
+  "tests": [],
+  "source": "https://snakify.org/en/"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "cpp-11-1",
+  "title": {
+    "zh": "出現次序",
+    "en": "Number of occurrences"
+  },
+  "description": {
+    "zh": "<p><strong>出現次序</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "en": "<p>The text is given in a single line.\nFor each word of the text count the number of its occurrences before it.</p>\n\n<p>A word is a sequence of non-whitespace characters.\nTwo consecutive words are separated by one or more spaces.\nPunctiation marks are a part of a word, by this definition.\n</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
+  },
+  "hint": {
+    "zh": "Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。",
+    "en": "Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required."
+  },
+  "starterCode": "#include <iostream>\n#include <map>\n#include <unordered_map>\n#include <vector>\n#include <string>\n#include <sstream>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "one two one tho three",
+      "output": "0 0 1 0 0 "
+    },
+    {
+      "input": "She sells sea shells on the sea shore; The shells that she sells are sea shells I'm sure. So if she sells sea shells on the sea shore, I'm sure that the shells are sea shore shells.",
+      "output": "0 0 0 0 0 0 1 0 0 1 0 0 1 0 2 2 0 0 0 0 1 2 3 3 1 1 4 0 1 0 1 2 4 1 5 0 0 "
+    },
+    {
+      "input": "aba aba; aba @?\"",
+      "output": "0 0 1 0 "
+    },
+    {
+      "input": "AA aa Aa aA",
+      "output": "0 0 0 0 "
+    },
+    {
+      "input": "a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a",
+      "output": "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 "
+    },
+    {
+      "input": "a b a c a b a d a b a c a b a",
+      "output": "0 0 1 0 2 1 3 0 4 2 5 1 6 3 7 "
+    },
+    {
+      "input": "dsgsdf ' sdfg gdf ghgh sdfg sdh ghhfgjgj sdfg fhdh dfh dfh dfh",
+      "output": "0 0 0 0 0 1 0 0 2 0 0 1 2 "
+    },
+    {
+      "input": "word ",
+      "output": "0 "
+    },
+    {
+      "input": "Lady of luck come out of your hiden course bless your light upon me as the light of the moon shines above and in the light of luck will be blessed i, when the moon is next to be full",
+      "output": "0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 2 1 0 0 0 0 0 2 2 3 1 0 0 0 0 0 3 1 0 0 0 1 0 "
+    },
+    {
+      "input": "As I prick this candle, I prick at thee Broken hearts unhappy be May you part another day Soon to go your separate ways",
+      "output": "0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "
+    },
+    {
+      "input": "you will not solve this test. This @problem@ is unsolvable.",
+      "output": "0 0 0 0 0 0 0 0 0 0 "
+    },
+    {
+      "input": "dfs bfs dejkstra bubble sort floid kmp z-function kormen bfs dejkstra bubble sort qsort merge sort heap sort genetic algorythm",
+      "output": "0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 2 0 3 0 0 "
+    }
+  ],
+  "source": "vpavlenko/content/problems/dicts/occurency_index.txt"
+}

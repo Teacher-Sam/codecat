@@ -1,0 +1,39 @@
+{
+  "id": "cpp-10-5",
+  "title": {
+    "zh": "立方表示",
+    "en": "Cubes"
+  },
+  "description": {
+    "zh": "<p><strong>立方表示</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>使用 set 的 insert、count、find、set_intersection 等操作；輸出集合時依題意保持排序。</p>",
+    "en": "<p>Alice and Bob like to play with colored cubes. Each child has its own set of cubes and each cube has a distinct color, but they want to know how many unique colors exist if they combine their block sets. To determine this, the kids enumerated each distinct color with a random number from \\( 0 \\) to \\( 10^{8} \\). At this point their enthusiasm dried up, and you are invited to help them finish the task.\n\n<p>Given two integers that indicate the number of blocks in Alice's and then Bob's sets \\( N \\) and \\( M \\). The following \\( N \\) lines contain the numerical color value for each cube in Alice's set. Then the last \\( M \\) rows contain the numberical color value for each cube in Bob's set.</p>\n\n<p>Find three sets: the numerical colors of cubes in both sets, the numerical colors of cubes only in Alice's set, and the numerical colors of cubes only in Bob's set.  For each set, print the number of elements in the set, followed by the numerical color elements, sorted in ascending order.<p><strong>C++ note:</strong> Use std::set operations such as insert, count, find, and set_intersection. Preserve the requested output order.</p>"
+  },
+  "hint": {
+    "zh": "使用 set 的 insert、count、find、set_intersection 等操作；輸出集合時依題意保持排序。",
+    "en": "Use std::set operations such as insert, count, find, and set_intersection. Preserve the requested output order."
+  },
+  "starterCode": "#include <iostream>\n#include <set>\n#include <string>\n#include <sstream>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "4 3\n0\n1\n10\n9\n1\n3\n0",
+      "output": "2\n0\n1\n2\n9\n10\n1\n3"
+    },
+    {
+      "input": "2 2\n1\n2\n2\n3",
+      "output": "1\n2\n1\n1\n1\n3"
+    },
+    {
+      "input": "0 0",
+      "output": "0\n\n0\n\n0"
+    },
+    {
+      "input": "1 1\n0\n1",
+      "output": "0\n\n1\n0\n1\n1"
+    },
+    {
+      "input": "8 5\n1\n10\n100\n1000\n10000\n100000\n1000000\n10000000\n1\n100\n10000\n1000000\n100000000",
+      "output": "4\n1\n100\n10000\n1000000\n4\n10\n1000\n100000\n10000000\n1\n100000000"
+    }
+  ],
+  "source": "vpavlenko/content/problems/sets/cubes.txt"
+}

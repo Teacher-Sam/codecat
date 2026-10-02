@@ -1,0 +1,43 @@
+{
+  "id": "cpp-5-5",
+  "title": {
+    "zh": "第一次與最後一次出現",
+    "en": "The first and last occurrence"
+  },
+  "description": {
+    "zh": "<p><strong>第一次與最後一次出現</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>C++ 沒有 Python 切片語法；請使用索引、迴圈、substr()、find()、rfind()、erase() 或 replace()。</p>",
+    "en": "<p>Given a string that may or may not contain a letter of interest. \nPrint the index location of the first and last appearance of <code>f</code>. \nIf the letter <code>f</code> occurs only once, then output its index.\nIf the letter <code>f</code> does not occur, then do not print anything.\n\n<p>Don't use loops in this task.<p><strong>C++ note:</strong> C++ has no Python slice syntax. Use indexes, loops, substr(), find(), rfind(), erase(), or replace().</p>"
+  },
+  "hint": {
+    "zh": "C++ 沒有 Python 切片語法；請使用索引、迴圈、substr()、find()、rfind()、erase() 或 replace()。",
+    "en": "C++ has no Python slice syntax. Use indexes, loops, substr(), find(), rfind(), erase(), or replace()."
+  },
+  "starterCode": "#include <iostream>\n#include <string>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    string s;\n    getline(cin, s);\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "comfort",
+      "output": "3"
+    },
+    {
+      "input": "office",
+      "output": "1 2"
+    },
+    {
+      "input": "hello",
+      "output": "Test:\nfffffffffffffff\n\nAnswer:\n0 14"
+    },
+    {
+      "input": "aaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaa",
+      "output": "21"
+    },
+    {
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaffaaaaaaaaaaaaaaaaaaaa",
+      "output": "24 25"
+    },
+    {
+      "input": "afafafafafafafa",
+      "output": "1 13"
+    }
+  ],
+  "source": "vpavlenko/content/problems/str/first_and_last_occurences.txt"
+}

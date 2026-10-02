@@ -1,0 +1,23 @@
+{
+  "id": "9",
+  "title": {
+    "zh": "二維陣列",
+    "en": "Two-dimensional arrays"
+  },
+  "description": {
+    "zh": "使用 vector<vector<T>> 建立、走訪及轉換矩陣。",
+    "en": "Create, traverse, and transform matrices with vector<vector<T>>."
+  },
+  "problemIds": [
+    "cpp-9-0",
+    "cpp-9-1",
+    "cpp-9-2",
+    "cpp-9-3",
+    "cpp-9-4",
+    "cpp-9-5",
+    "cpp-9-6",
+    "cpp-9-7",
+    "cpp-9-8"
+  ],
+  "source": "https://snakify.org/en/"
+}

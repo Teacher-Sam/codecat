@@ -1,0 +1,59 @@
+{
+  "id": "cpp-5-6",
+  "title": {
+    "zh": "第二次出現",
+    "en": "The second occurrence"
+  },
+  "description": {
+    "zh": "<p><strong>第二次出現</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>C++ 沒有 Python 切片語法；請使用索引、迴圈、substr()、find()、rfind()、erase() 或 replace()。</p>",
+    "en": "<p>Given a string that may or may not contain the letter of interest. \nPrint the index location of the <b>second</b> occurrence of the letter <code>f</code>.\nIf the string contains the letter <code>f</code> only once, then print <code>-1</code>, \nand if the string does not contain the letter <code>f</code>, then print <code>-2</code>.<p><strong>C++ note:</strong> C++ has no Python slice syntax. Use indexes, loops, substr(), find(), rfind(), erase(), or replace().</p>"
+  },
+  "hint": {
+    "zh": "C++ 沒有 Python 切片語法；請使用索引、迴圈、substr()、find()、rfind()、erase() 或 replace()。",
+    "en": "C++ has no Python slice syntax. Use indexes, loops, substr(), find(), rfind(), erase(), or replace()."
+  },
+  "starterCode": "#include <iostream>\n#include <string>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    string s;\n    getline(cin, s);\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "comfort",
+      "output": "-1"
+    },
+    {
+      "input": "coffee",
+      "output": "3"
+    },
+    {
+      "input": "qwerty",
+      "output": "-2"
+    },
+    {
+      "input": "f",
+      "output": "-1"
+    },
+    {
+      "input": "oooooooooooooooooof",
+      "output": "-1"
+    },
+    {
+      "input": "ff",
+      "output": "1"
+    },
+    {
+      "input": "ffffffffffffffff",
+      "output": "1"
+    },
+    {
+      "input": "foooooooooooooof",
+      "output": "15"
+    },
+    {
+      "input": "oooooooooooooff",
+      "output": "14"
+    },
+    {
+      "input": "ofofofofofofofofo",
+      "output": "3"
+    }
+  ],
+  "source": "vpavlenko/content/problems/str/second_occurence.txt"
+}

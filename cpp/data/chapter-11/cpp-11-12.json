@@ -1,0 +1,55 @@
+{
+  "id": "cpp-11-12",
+  "title": {
+    "zh": "重音檢查",
+    "en": "Stress test"
+  },
+  "description": {
+    "zh": "<p><strong>重音檢查</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "en": "<p>Check a pupil's text against a dictionary of correctly stressed words. Count words with an unknown or incorrectly placed uppercase stress mark.</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
+  },
+  "hint": {
+    "zh": "Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。",
+    "en": "Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required."
+  },
+  "starterCode": "#include <iostream>\n#include <map>\n#include <unordered_map>\n#include <vector>\n#include <string>\n#include <sstream>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "4\ncAnnot\ncannOt\nfOund\npAge\nthE pAge cAnnot be found",
+      "output": "2"
+    },
+    {
+      "input": "4\ncAnnot\ncannOt\nfOund\npAge\nThe PAGE cannot be found",
+      "output": "4"
+    },
+    {
+      "input": "1\nM\nM",
+      "output": "0"
+    },
+    {
+      "input": "2\nXu\nxU\nNJ xu xU xu",
+      "output": "3"
+    },
+    {
+      "input": "5\ngSn\ngsN\nqY\nrkZ\nrKz\nqy dr DH y Y qy rKz",
+      "output": "5"
+    },
+    {
+      "input": "5\nnPa\nOc\noC\npT\nzjU\nQp Gt oC oG l oc oc",
+      "output": "3"
+    },
+    {
+      "input": "5\naZqz\nAzqz\nlyAi\nlYai\nzN\nxfm Zn frs lyai azqz",
+      "output": "5"
+    },
+    {
+      "input": "10\nchN\nlXp\nLxp\nlxP\nqXe\nQxe\nqxE\nuDb\nudB\nvezV\nchn jkn bz j UDb Qxe udb qxE szk Lxp udb chn qXe cx",
+      "output": "10"
+    },
+    {
+      "input": "10\nDe\niKq\nikQ\nlL\nMea\nmeA\nuDb\nX\nzA\nZa\nIKq H mea qc ln Udb udb lL jr pE X ul Yc ikQ dE dE",
+      "output": "10"
+    }
+  ],
+  "source": "vpavlenko/content/problems/dicts/accent_test.txt"
+}

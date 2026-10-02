@@ -1,0 +1,51 @@
+{
+  "id": "cpp-10-10",
+  "title": {
+    "zh": "罷工日",
+    "en": "Strikes"
+  },
+  "description": {
+    "zh": "<p><strong>罷工日</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>使用 set 的 insert、count、find、set_intersection 等操作；輸出集合時依題意保持排序。</p>",
+    "en": "<p>Given a calendar and several strike schedules, count working weekdays lost to strikes; Saturdays and Sundays are not working days.</p><p><strong>C++ note:</strong> Use std::set operations such as insert, count, find, and set_intersection. Preserve the requested output order.</p>"
+  },
+  "hint": {
+    "zh": "使用 set 的 insert、count、find、set_intersection 等操作；輸出集合時依題意保持排序。",
+    "en": "Use std::set operations such as insert, count, find, and set_intersection. Preserve the requested output order."
+  },
+  "starterCode": "#include <iostream>\n#include <set>\n#include <string>\n#include <sstream>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "19 3\n2 3\n3 5\n9 8",
+      "output": "8"
+    },
+    {
+      "input": "5 2\n1 2\n2 2",
+      "output": "5"
+    },
+    {
+      "input": "1000 1\n1 1",
+      "output": "715"
+    },
+    {
+      "input": "1000 1\n179 1000",
+      "output": "1"
+    },
+    {
+      "input": "1000 1\n700 1000",
+      "output": "0"
+    },
+    {
+      "input": "100000 2\n746 23\n9578 12",
+      "output": "8231"
+    },
+    {
+      "input": "100 3\n39 68\n62 17\n7 72",
+      "output": "3"
+    },
+    {
+      "input": "1000 10\n14 81\n79 16\n27 44\n96 91\n6 98\n27 48\n89 29\n30 42\n86 90\n14 19",
+      "output": "163"
+    }
+  ],
+  "source": "vpavlenko/content/problems/sets/strikes.txt"
+}

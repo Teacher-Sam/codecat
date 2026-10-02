@@ -1,0 +1,47 @@
+{
+  "id": "cpp-6-1",
+  "title": {
+    "zh": "平方數列表",
+    "en": "List of squares"
+  },
+  "description": {
+    "zh": "<p><strong>平方數列表</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>輸入以 0 結束的題目不要把結尾的 0 納入統計；需要小數結果時使用 double。</p>",
+    "en": "For a given integer N, print all the squares of integer numbers where the square is less than or equal to N, in ascending order.<p><strong>C++ note:</strong> For zero-terminated input, do not include the terminating zero. Use double when the result may be fractional.</p>"
+  },
+  "hint": {
+    "zh": "輸入以 0 結束的題目不要把結尾的 0 納入統計；需要小數結果時使用 double。",
+    "en": "For zero-terminated input, do not include the terminating zero. Use double when the result may be fractional."
+  },
+  "starterCode": "#include <iostream>\n#include <cmath>\n#include <iomanip>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "50",
+      "output": "1 4 9 16 25 36 49 "
+    },
+    {
+      "input": "10",
+      "output": "1 4 9 "
+    },
+    {
+      "input": "9",
+      "output": "1 4 9 "
+    },
+    {
+      "input": "4",
+      "output": "1 4 "
+    },
+    {
+      "input": "1",
+      "output": "1 "
+    },
+    {
+      "input": "100",
+      "output": "1 4 9 16 25 36 49 64 81 100 "
+    },
+    {
+      "input": "99",
+      "output": "1 4 9 16 25 36 49 64 81"
+    }
+  ],
+  "source": "vpavlenko/content/problems/while/list_of_squares.txt"
+}

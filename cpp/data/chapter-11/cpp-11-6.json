@@ -1,0 +1,35 @@
+{
+  "id": "cpp-11-6",
+  "title": {
+    "zh": "國家與城市",
+    "en": "Countries and cities"
+  },
+  "description": {
+    "zh": "<p><strong>國家與城市</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "en": "<p>Given a list of countries and cities of each country. Then given the names of the cities. For each city\nspecify the country in which it is located.</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
+  },
+  "hint": {
+    "zh": "Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。",
+    "en": "Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required."
+  },
+  "starterCode": "#include <iostream>\n#include <map>\n#include <unordered_map>\n#include <vector>\n#include <string>\n#include <sstream>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "2\nUSA Boston Pittsburgh Washington Seattle\nUK London Edinburgh Cardiff Belfast\n3\nCardiff\nSeattle\nLondon",
+      "output": "UK\nUSA\nUK"
+    },
+    {
+      "input": "2\nRussia Moscow Petersburg Novgorod Kaluga\nUkraine Kiev Donetsk Odessa\n3\nOdessa\nMoscow\nNovgorod",
+      "output": "Ukraine\nRussia\nRussia"
+    },
+    {
+      "input": "5\nA B\nC D\nE F\nG H\nI J\n5\nJ\nH\nF\nD\nB",
+      "output": "I\nG\nE\nC\nA"
+    },
+    {
+      "input": "5\nA B\nC D E\nF G H I\nJ K L M N\nO P Q R S T\n15\nT\nS\nN\nR\nM\nI\nQ\nL\nH\nE\nP\nK\nG\nD\nB",
+      "output": "O\nO\nJ\nO\nJ\nF\nO\nJ\nF\nC\nO\nJ\nF\nC\nA"
+    }
+  ],
+  "source": "vpavlenko/content/problems/dicts/countries_and_cities.txt"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "cpp-11-2",
+  "title": {
+    "zh": "同義詞字典",
+    "en": "Dictionary of synonyms"
+  },
+  "description": {
+    "zh": "<p><strong>同義詞字典</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "en": "<p>You are given a dictionary consisting of word pairs. Every word is a synonym the other word in its pair.\nAll the words in the dictionary are different.</p>\n\n<p>After the dictionary there's one more word given. Find a synonym for him.</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
+  },
+  "hint": {
+    "zh": "Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。",
+    "en": "Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required."
+  },
+  "starterCode": "#include <iostream>\n#include <map>\n#include <unordered_map>\n#include <vector>\n#include <string>\n#include <sstream>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "3\nHello Hi\nBye Goodbye\nList Array\nGoodbye",
+      "output": "Bye"
+    },
+    {
+      "input": "1\nbeep Car\nCar",
+      "output": "beep"
+    },
+    {
+      "input": "1\n1234 4321\n1234",
+      "output": "4321"
+    },
+    {
+      "input": "10\na 1\nb 2\nc 3\nd 4\ne 5\nf 6\ng 7\nh 8\ni 9\nj 10\ne",
+      "output": "5"
+    },
+    {
+      "input": "10\na 1\nb 2\nc 3\nd 4\ne 5\nf 6\ng 7\nh 8\ni 9\nj 10\n5",
+      "output": "e"
+    },
+    {
+      "input": "10\n95UUSA4P3K 140YAZQF1W2\nJIGCEL82Y3BXJ 277WMID9GFAWGC\nX36U1924TQ GUDPNJ60NR3A\nTR7JOPXQ0JK64CM O6BJSY7MHMAI8S\n17HZOQO20CDQ1UG VVIPAVTVY202R\n8T1A0XRRKKXEV 7L2UKWCJ917G1Q\nWLPOJYRN0G3MC 5QWJPM4FG58\nZ8TN35IQAF GXUPQY7I3AJCX3\n5F382242HD25Q 3IV9JL29DNP64\nKZWNAOSV8H8APVF LDAIALO4YMXE7\nWLPOJYRN0G3MC",
+      "output": "5QWJPM4FG58"
+    }
+  ],
+  "source": "vpavlenko/content/problems/dicts/synonym_dictionary.txt"
+}

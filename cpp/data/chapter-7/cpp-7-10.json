@@ -1,0 +1,47 @@
+{
+  "id": "cpp-7-10",
+  "title": {
+    "zh": "不同元素數量",
+    "en": "The number of distinct elements"
+  },
+  "description": {
+    "zh": "<p><strong>不同元素數量</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "en": "Given a list of numbers with all of its elements sorted in ascending order, determine and print the quantity of distinct elements in it.<p><strong>C++ note:</strong> Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
+  },
+  "hint": {
+    "zh": "Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。",
+    "en": "Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index."
+  },
+  "starterCode": "#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "1 2 2 3 3 3",
+      "output": "3"
+    },
+    {
+      "input": "1 2 3 4 5",
+      "output": "5"
+    },
+    {
+      "input": "1 1 1 1 1",
+      "output": "1"
+    },
+    {
+      "input": "1 1 2 2 2 3 4 5 6 7",
+      "output": "7"
+    },
+    {
+      "input": "-100 -99 -98 -97 -96",
+      "output": "5"
+    },
+    {
+      "input": "-100 -100 -98 -50 1",
+      "output": "4"
+    },
+    {
+      "input": "-64 -45 -38 -16 -14 -7 2 53 70 80 80",
+      "output": "10"
+    }
+  ],
+  "source": "vpavlenko/content/problems/lists/num_distinct.txt"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "10",
+  "title": {
+    "zh": "集合",
+    "en": "Sets"
+  },
+  "description": {
+    "zh": "使用 std::set 處理唯一值、交集及集合運算。",
+    "en": "Unique values, intersections, and set operations with std::set."
+  },
+  "problemIds": [
+    "cpp-10-0",
+    "cpp-10-1",
+    "cpp-10-2",
+    "cpp-10-3",
+    "cpp-10-4",
+    "cpp-10-5",
+    "cpp-10-6",
+    "cpp-10-7",
+    "cpp-10-8",
+    "cpp-10-9",
+    "cpp-10-10"
+  ],
+  "source": "https://snakify.org/en/"
+}

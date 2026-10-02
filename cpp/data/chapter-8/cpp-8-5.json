@@ -1,0 +1,51 @@
+{
+  "id": "cpp-8-5",
+  "title": {
+    "zh": "遞迴費氏數",
+    "en": "Fibonacci numbers"
+  },
+  "description": {
+    "zh": "<p><strong>遞迴費氏數</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>請實作題目指定的函式並由 main 讀取輸入、呼叫函式及輸出結果；遞迴題不得使用迴圈取代。</p>",
+    "en": "Given a non-negative integer \\( n \\), print the \\( n \\)th Fibonacci number.  Do this by writing a function <code>fib(n)</code> which takes the non-negative integer \\( n \\) and returns the \\( n \\)th Fibonacci number.\n\n<p>Don't use loops, use the <i>flair</i> of recursion instead.\nHowever, you should think about why the recursive method is much slower than using loops.<p><strong>C++ note:</strong> Implement the requested function and call it from main. In recursion exercises, do not replace recursion with a loop.</p>"
+  },
+  "hint": {
+    "zh": "請實作題目指定的函式並由 main 讀取輸入、呼叫函式及輸出結果；遞迴題不得使用迴圈取代。",
+    "en": "Implement the requested function and call it from main. In recursion exercises, do not replace recursion with a loop."
+  },
+  "starterCode": "#include <iostream>\n#include <string>\n#include <cmath>\nusing namespace std;\n\n// 在這裡撰寫題目指定的函式\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "6",
+      "output": "8"
+    },
+    {
+      "input": "1",
+      "output": "1"
+    },
+    {
+      "input": "2",
+      "output": "1"
+    },
+    {
+      "input": "3",
+      "output": "2"
+    },
+    {
+      "input": "4",
+      "output": "3"
+    },
+    {
+      "input": "5",
+      "output": "5"
+    },
+    {
+      "input": "7",
+      "output": "13"
+    },
+    {
+      "input": "8",
+      "output": "21"
+    }
+  ],
+  "source": "vpavlenko/content/problems/functions/fibonacci_rec.txt"
+}

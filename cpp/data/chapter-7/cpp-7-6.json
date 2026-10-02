@@ -1,0 +1,103 @@
+{
+  "id": "cpp-7-6",
+  "title": {
+    "zh": "最大元素與索引",
+    "en": "The largest element"
+  },
+  "description": {
+    "zh": "<p><strong>最大元素與索引</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "en": "Given a list of numbers. Determine the element in the list with the largest value. Print the value of the largest element and then the index number. \n\nIf the highest element is not unique, print the index of the first instance.<p><strong>C++ note:</strong> Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
+  },
+  "hint": {
+    "zh": "Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。",
+    "en": "Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index."
+  },
+  "starterCode": "#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "1 2 3 2 1",
+      "output": "3 2"
+    },
+    {
+      "input": "1 2 3",
+      "output": "3 2"
+    },
+    {
+      "input": "1 3 2",
+      "output": "3 1"
+    },
+    {
+      "input": "2 1 3",
+      "output": "3 2"
+    },
+    {
+      "input": "2 3 1",
+      "output": "3 1"
+    },
+    {
+      "input": "3 2 1",
+      "output": "3 0"
+    },
+    {
+      "input": "3 1 2",
+      "output": "3 0"
+    },
+    {
+      "input": "1 2 3 4 5",
+      "output": "5 4"
+    },
+    {
+      "input": "5 4 3 2 1",
+      "output": "5 0"
+    },
+    {
+      "input": "-1 -2 -3 -4 -5",
+      "output": "-1 0"
+    },
+    {
+      "input": "-5 -4 -3 -2 -1",
+      "output": "-1 4"
+    },
+    {
+      "input": "2147483647 2147483646 2147483645",
+      "output": "2147483647 0"
+    },
+    {
+      "input": "-2147483648 -2147483647 -2147483646",
+      "output": "-2147483646 2"
+    },
+    {
+      "input": "-2147483648 -2147483648 -2147483648",
+      "output": "-2147483648 0"
+    },
+    {
+      "input": "-2147483646 -2147483647 -2147483648",
+      "output": "-2147483646 0"
+    },
+    {
+      "input": "-100 -100 -100 -100 -100",
+      "output": "-100 0"
+    },
+    {
+      "input": "-2147483648 0 2147483647",
+      "output": "2147483647 2"
+    },
+    {
+      "input": "2147483647 0 -2147483648",
+      "output": "2147483647 0"
+    },
+    {
+      "input": "-79 92 70 72 28 45 37 -86 -12 0 -27 -14 -69 63 -68 74 45 49 96 -20",
+      "output": "96 18"
+    },
+    {
+      "input": "53 14 53 -77 -31 48 51 49 -73 -23 -19 93 85 -50 -73 59 67 -99 98 11",
+      "output": "98 18"
+    },
+    {
+      "input": "-2147483648",
+      "output": "-2147483648 0"
+    }
+  ],
+  "source": "vpavlenko/content/problems/lists/maximal_element.txt"
+}

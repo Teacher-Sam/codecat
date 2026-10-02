@@ -1,0 +1,35 @@
+{
+  "id": "cpp-11-15",
+  "title": {
+    "zh": "家譜層級",
+    "en": "Genealogy: generation levels"
+  },
+  "description": {
+    "zh": "<p><strong>家譜層級</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "en": "<p>Determine every person's generation level from the root of the family tree and print names in lexicographic order.</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
+  },
+  "hint": {
+    "zh": "Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。",
+    "en": "Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required."
+  },
+  "starterCode": "#include <iostream>\n#include <map>\n#include <unordered_map>\n#include <vector>\n#include <string>\n#include <sstream>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "9\nAlexei Peter_I\nAnna Peter_I\nElizabeth Peter_I\nPeter_II Alexei\nPeter_III Anna\nPaul_I Peter_III\nAlexander_I Paul_I\nNicholaus_I Paul_I",
+      "output": "Alexander_I 4\nAlexei 1\nAnna 1\nElizabeth 1\nNicholaus_I 4\nPaul_I 3\nPeter_I 0\nPeter_II 2\nPeter_III 2"
+    },
+    {
+      "input": "10\nAQHFYP MKFXCLZBT\nAYKOTYQ QIUKGHWCDC\nIWCGKHMFM WPLHJL\nMJVAURUDN QIUKGHWCDC\nMKFXCLZBT IWCGKHMFM\nPUTRIPYHNQ UQNGAXNP\nQIUKGHWCDC WPLHJL\nUQNGAXNP WPLHJL\nYURTPJNR QIUKGHWCDC",
+      "output": "AQHFYP 3\nAYKOTYQ 2\nIWCGKHMFM 1\nMJVAURUDN 2\nMKFXCLZBT 2\nPUTRIPYHNQ 2\nQIUKGHWCDC 1\nUQNGAXNP 1\nWPLHJL 0\nYURTPJNR 2"
+    },
+    {
+      "input": "10\nBFNRMLH CSZMPFXBZ\nCSZMPFXBZ IHWBQDJ\nFMVQTU FUXATQUGIG\nFUXATQUGIG IRVAVMQKN\nGNVIZ IQGIGUJZ\nIHWBQDJ LACXYFQHSQ\nIQGIGUJZ JMUPNYRQD\nIRVAVMQKN GNVIZ\nJMUPNYRQD BFNRMLH",
+      "output": "BFNRMLH 3\nCSZMPFXBZ 2\nFMVQTU 9\nFUXATQUGIG 8\nGNVIZ 6\nIHWBQDJ 1\nIQGIGUJZ 5\nIRVAVMQKN 7\nJMUPNYRQD 4\nLACXYFQHSQ 0"
+    },
+    {
+      "input": "10\nAQYAGCP REWAA\nESWQWYTYC UBRMC\nIAMIHKG REWAA\nICEWDHDNA XETAFXX\nPYDGXBFCOE XETAFXX\nREWAA UBRMC\nUCODPEEGM ESWQWYTYC\nVZHDSSNZ UCODPEEGM\nXETAFXX ESWQWYTYC",
+      "output": "AQYAGCP 2\nESWQWYTYC 1\nIAMIHKG 2\nICEWDHDNA 3\nPYDGXBFCOE 3\nREWAA 1\nUBRMC 0\nUCODPEEGM 2\nVZHDSSNZ 3\nXETAFXX 2"
+    }
+  ],
+  "source": "vpavlenko/content/problems/dicts/genealogy_level_count.txt"
+}

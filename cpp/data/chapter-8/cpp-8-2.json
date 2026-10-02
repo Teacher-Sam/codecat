@@ -1,0 +1,155 @@
+{
+  "id": "cpp-8-2",
+  "title": {
+    "zh": "負次方",
+    "en": "Negative exponent"
+  },
+  "description": {
+    "zh": "<p><strong>負次方</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>請實作題目指定的函式並由 main 讀取輸入、呼叫函式及輸出結果；遞迴題不得使用迴圈取代。</p>",
+    "en": "<p>Given a positive real number \\( a \\) and <b>integer</b> \\( n \\).\n\n<p>Compute \\( a^{n} \\). Write a function <code>power(a, n)</code> to calculate the results using the function and print the result of the expression.\n\n<p>Don't use the same function from the standard library.<p><strong>C++ note:</strong> Implement the requested function and call it from main. In recursion exercises, do not replace recursion with a loop.</p>"
+  },
+  "hint": {
+    "zh": "請實作題目指定的函式並由 main 讀取輸入、呼叫函式及輸出結果；遞迴題不得使用迴圈取代。",
+    "en": "Implement the requested function and call it from main. In recursion exercises, do not replace recursion with a loop."
+  },
+  "starterCode": "#include <iostream>\n#include <string>\n#include <cmath>\nusing namespace std;\n\n// 在這裡撰寫題目指定的函式\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "2\n-3",
+      "output": "0.125"
+    },
+    {
+      "input": "2\n1",
+      "output": "2"
+    },
+    {
+      "input": "2\n2",
+      "output": "4"
+    },
+    {
+      "input": "2\n3",
+      "output": "8"
+    },
+    {
+      "input": "2\n4",
+      "output": "16"
+    },
+    {
+      "input": "2\n9",
+      "output": "512"
+    },
+    {
+      "input": "2\n10",
+      "output": "1024"
+    },
+    {
+      "input": "2\n15",
+      "output": "32768"
+    },
+    {
+      "input": "2\n0",
+      "output": "1"
+    },
+    {
+      "input": "3\n1",
+      "output": "3"
+    },
+    {
+      "input": "3\n2",
+      "output": "9"
+    },
+    {
+      "input": "3\n3",
+      "output": "27"
+    },
+    {
+      "input": "3\n10",
+      "output": "59049"
+    },
+    {
+      "input": "3\n0",
+      "output": "1"
+    },
+    {
+      "input": "1.1414\n2",
+      "output": "1.30279"
+    },
+    {
+      "input": "1.5\n10",
+      "output": "57.665"
+    },
+    {
+      "input": "1\n-1",
+      "output": "1"
+    },
+    {
+      "input": "2\n-1",
+      "output": "0.5"
+    },
+    {
+      "input": "2\n-2",
+      "output": "0.25"
+    },
+    {
+      "input": "2\n-3",
+      "output": "0.125"
+    },
+    {
+      "input": "2\n-4",
+      "output": "0.0625"
+    },
+    {
+      "input": "2\n-8",
+      "output": "0.00390625"
+    },
+    {
+      "input": "2\n-9",
+      "output": "0.00195312"
+    },
+    {
+      "input": "2\n-10",
+      "output": "0.000976562"
+    },
+    {
+      "input": "2\n-15",
+      "output": "3.05176e-05"
+    },
+    {
+      "input": "3\n-1",
+      "output": "0.333333"
+    },
+    {
+      "input": "3\n-2",
+      "output": "0.111111"
+    },
+    {
+      "input": "3\n-3",
+      "output": "0.037037"
+    },
+    {
+      "input": "3\n-4",
+      "output": "0.0123457"
+    },
+    {
+      "input": "3\n-5",
+      "output": "0.00411523"
+    },
+    {
+      "input": "3\n-10",
+      "output": "1.69351e-05"
+    },
+    {
+      "input": "3\n-6",
+      "output": "0.00137174"
+    },
+    {
+      "input": "1.1414\n-2",
+      "output": "0.767581"
+    },
+    {
+      "input": "1.5\n-10",
+      "output": "0.0173415"
+    }
+  ],
+  "source": "vpavlenko/content/problems/functions/negative_power.txt"
+}

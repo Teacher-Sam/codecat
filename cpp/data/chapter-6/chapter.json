@@ -1,0 +1,33 @@
+{
+  "id": "6",
+  "title": {
+    "zh": "while 迴圈",
+    "en": "While loop"
+  },
+  "description": {
+    "zh": "使用 while 迴圈處理未知次數的重複、數列與費氏數列。",
+    "en": "Unknown-length repetition, sequences, and Fibonacci numbers with while loops."
+  },
+  "problemIds": [
+    "cpp-6-0",
+    "cpp-6-1",
+    "cpp-6-2",
+    "cpp-6-3",
+    "cpp-6-4",
+    "cpp-6-5",
+    "cpp-6-6",
+    "cpp-6-7",
+    "cpp-6-8",
+    "cpp-6-9",
+    "cpp-6-10",
+    "cpp-6-11",
+    "cpp-6-12",
+    "cpp-6-13",
+    "cpp-6-14",
+    "cpp-6-15",
+    "cpp-6-16",
+    "cpp-6-17",
+    "cpp-6-18"
+  ],
+  "source": "https://snakify.org/en/"
+}

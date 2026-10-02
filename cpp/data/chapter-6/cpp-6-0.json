@@ -1,0 +1,19 @@
+{
+  "id": "cpp-6-0",
+  "type": "intro",
+  "title": {
+    "zh": "while 迴圈導讀",
+    "en": "While loop overview"
+  },
+  "description": {
+    "zh": "<p>使用 while 迴圈處理未知次數的重複、數列與費氏數列。</p><p>輸入以 0 結束的題目不要把結尾的 0 納入統計；需要小數結果時使用 double。</p>",
+    "en": "<p>Unknown-length repetition, sequences, and Fibonacci numbers with while loops.</p><p>For zero-terminated input, do not include the terminating zero. Use double when the result may be fractional.</p>"
+  },
+  "hint": {
+    "zh": "",
+    "en": ""
+  },
+  "starterCode": "",
+  "tests": [],
+  "source": "https://snakify.org/en/"
+}

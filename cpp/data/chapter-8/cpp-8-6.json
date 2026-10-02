@@ -1,0 +1,39 @@
+{
+  "id": "cpp-8-6",
+  "title": {
+    "zh": "遞迴反向輸出",
+    "en": "Reverse the sequence"
+  },
+  "description": {
+    "zh": "<p><strong>遞迴反向輸出</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>請實作題目指定的函式並由 main 讀取輸入、呼叫函式及輸出結果；遞迴題不得使用迴圈取代。</p>",
+    "en": "Given a sequence of integers that end with a \\( 0 \\). Print the sequence in reverse order.\n\n<p>Don't use lists or other data structures. Use the <i>force</i> of recursion instead.<p><strong>C++ note:</strong> Implement the requested function and call it from main. In recursion exercises, do not replace recursion with a loop.</p>"
+  },
+  "hint": {
+    "zh": "請實作題目指定的函式並由 main 讀取輸入、呼叫函式及輸出結果；遞迴題不得使用迴圈取代。",
+    "en": "Implement the requested function and call it from main. In recursion exercises, do not replace recursion with a loop."
+  },
+  "starterCode": "#include <iostream>\n#include <string>\n#include <cmath>\nusing namespace std;\n\n// 在這裡撰寫題目指定的函式\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "1\n2\n3\n0",
+      "output": "0\n3\n2\n1"
+    },
+    {
+      "input": "8\n7\n2\n3\n1\n4\n5\n0",
+      "output": "0\n5\n4\n1\n3\n2\n7\n8"
+    },
+    {
+      "input": "1\n0",
+      "output": "0\n1"
+    },
+    {
+      "input": "0",
+      "output": "0"
+    },
+    {
+      "input": "1\n2\n3\n4\n5\n6\n7\n8\n9\n0",
+      "output": "0\n9\n8\n7\n6\n5\n4\n3\n2\n1"
+    }
+  ],
+  "source": "vpavlenko/content/problems/functions/reverse_rec.txt"
+}

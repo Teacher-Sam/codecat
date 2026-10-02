@@ -1,0 +1,19 @@
+{
+  "id": "cpp-9-0",
+  "type": "intro",
+  "title": {
+    "zh": "二維陣列導讀",
+    "en": "Two-dimensional arrays overview"
+  },
+  "description": {
+    "zh": "<p>使用 vector<vector<T>> 建立、走訪及轉換矩陣。</p><p>Python 二維 list 在此章對應 vector<vector<int>>；第一個索引是列，第二個索引是欄。</p>",
+    "en": "<p>Create, traverse, and transform matrices with vector<vector<T>>.</p><p>Use vector<vector<int>> for a two-dimensional array. The first index is the row and the second is the column.</p>"
+  },
+  "hint": {
+    "zh": "",
+    "en": ""
+  },
+  "starterCode": "",
+  "tests": [],
+  "source": "https://snakify.org/en/"
+}

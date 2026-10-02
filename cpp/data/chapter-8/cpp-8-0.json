@@ -1,0 +1,19 @@
+{
+  "id": "cpp-8-0",
+  "type": "intro",
+  "title": {
+    "zh": "函式與遞迴導讀",
+    "en": "Functions and recursion overview"
+  },
+  "description": {
+    "zh": "<p>撰寫 C++ 函式，並用遞迴分解問題。</p><p>請實作題目指定的函式並由 main 讀取輸入、呼叫函式及輸出結果；遞迴題不得使用迴圈取代。</p>",
+    "en": "<p>Write C++ functions and decompose problems recursively.</p><p>Implement the requested function and call it from main. In recursion exercises, do not replace recursion with a loop.</p>"
+  },
+  "hint": {
+    "zh": "",
+    "en": ""
+  },
+  "starterCode": "",
+  "tests": [],
+  "source": "https://snakify.org/en/"
+}

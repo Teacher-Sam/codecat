@@ -1,0 +1,31 @@
+{
+  "id": "7",
+  "title": {
+    "zh": "陣列（vector）",
+    "en": "Lists (arrays)"
+  },
+  "description": {
+    "zh": "以 std::vector 儲存、走訪及修改一維資料。",
+    "en": "Store, traverse, and modify one-dimensional data with std::vector."
+  },
+  "problemIds": [
+    "cpp-7-0",
+    "cpp-7-1",
+    "cpp-7-2",
+    "cpp-7-3",
+    "cpp-7-4",
+    "cpp-7-5",
+    "cpp-7-6",
+    "cpp-7-7",
+    "cpp-7-8",
+    "cpp-7-9",
+    "cpp-7-10",
+    "cpp-7-11",
+    "cpp-7-12",
+    "cpp-7-13",
+    "cpp-7-14",
+    "cpp-7-15",
+    "cpp-7-16"
+  ],
+  "source": "https://snakify.org/en/"
+}

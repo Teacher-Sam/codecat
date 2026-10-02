@@ -1,0 +1,35 @@
+{
+  "id": "cpp-9-8",
+  "title": {
+    "zh": "矩陣乘法",
+    "en": "Multiply two matrices"
+  },
+  "description": {
+    "zh": "<p><strong>矩陣乘法</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python 二維 list 在此章對應 vector<vector<int>>；第一個索引是列，第二個索引是欄。</p>",
+    "en": "<p>Given three positive integers \\( m \\), \\( n \\) and \\( r \\),\n\\( m \\) lines of \\( n \\) elements, giving an \\( m \\times n \\) matrix \\( A \\), and\n\\( n \\) lines of \\( r \\) elements, giving an \\( n \\times r \\) matrix \\( B \\),\nform the product matrix \\( A B \\), which is the \\( m \\times r \\) matrix\nwhose \\( (i,k) \\) entry is the sum\n\n$$ A[i][1] * B[1][k] + \\cdots + A[i][n] * B[n][k] $$\n\nand print the result.<p><strong>C++ note:</strong> Use vector&lt;vector&lt;int&gt;&gt; for a two-dimensional array. The first index is the row and the second is the column.</p>"
+  },
+  "hint": {
+    "zh": "Python 二維 list 在此章對應 vector<vector<int>>；第一個索引是列，第二個索引是欄。",
+    "en": "Use vector<vector<int>> for a two-dimensional array. The first index is the row and the second is the column."
+  },
+  "starterCode": "#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "3 4 2\n0 1 2 3\n4 5 6 7\n8 9 10 11\n2 3\n0 4\n5 -1\n1 1",
+      "output": "13 5\n45 33\n77 61"
+    },
+    {
+      "input": "2 2 2\n1 2\n3 4\n5 4\n3 2",
+      "output": "11 8\n27 20"
+    },
+    {
+      "input": "1 1 1\n5\n7",
+      "output": "35"
+    },
+    {
+      "input": "4 3 1\n1 2 3\n4 5 6\n7 8 9\n10 11 12\n1\n2\n3",
+      "output": "14\n32\n50\n68"
+    }
+  ],
+  "source": "vpavlenko/content/problems/2d_arrays/matrix_multiply.txt"
+}

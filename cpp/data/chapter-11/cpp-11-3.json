@@ -1,0 +1,39 @@
+{
+  "id": "cpp-11-3",
+  "title": {
+    "zh": "美國大選",
+    "en": "Elections in the USA"
+  },
+  "description": {
+    "zh": "<p><strong>美國大選</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "en": "<p>As you know, the president of USA is elected not by direct vote, but through a two-step voting.\nFirst elections are held in each state and determine the winner of elections in that state.\nThereafter, the state election is going: in this election, every state has a certain\nthe number of votes&nbsp;&mdash; the number of electors from that state. In practice, all the electors\nfrom the state of voted in accordance with the results of the vote within a state.</p>\n\n<p>The first line contains the number of records. After that, each entry contains the name of the candidate and the number of votes they got in one of the states.\nCount the total results of the elections: sum the number of votes for each candidate.\nPrint candidates in the alphabetical order.</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
+  },
+  "hint": {
+    "zh": "Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。",
+    "en": "Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required."
+  },
+  "starterCode": "#include <iostream>\n#include <map>\n#include <unordered_map>\n#include <vector>\n#include <string>\n#include <sstream>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "5\nMcCain 10\nMcCain 5\nObama 9\nObama 8\nMcCain 1",
+      "output": "McCain 16\nObama 17"
+    },
+    {
+      "input": "13\nMcCain 10\nMcCain 3\nObama 19\nObama 2\nMcCain 7\nMcCain 2\nObama 6\nObama 10\nMcCain 11\nMcCain 5\nObama 3\nObama 12\nMcCain 13",
+      "output": "McCain 51\nObama 52"
+    },
+    {
+      "input": "1\nObama 1",
+      "output": "Obama 1"
+    },
+    {
+      "input": "7\nivan 2\ngena 1\nsergey 100000\nivan 1\nivan 1\nivan 0\ngena 100",
+      "output": "gena 101\nivan 4\nsergey 100000"
+    },
+    {
+      "input": "61\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nObama 1\nMcCain 59",
+      "output": "McCain 59\nObama 60"
+    }
+  ],
+  "source": "vpavlenko/content/problems/dicts/usa_elections.txt"
+}

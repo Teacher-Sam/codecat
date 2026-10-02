@@ -1,0 +1,51 @@
+{
+  "id": "cpp-7-14",
+  "title": {
+    "zh": "保齡球瓶",
+    "en": "The bowling alley"
+  },
+  "description": {
+    "zh": "<p><strong>保齡球瓶</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "en": "In bowling, the player starts wtih 10 pins at the far end of a lane. The object is to knock all the pins down. For this exercise, the number of pins and balls will vary.\n\nGiven the number of pins <i>N</i> and then the number of balls <i>K</i> to be rolled, followed by <i>K</i> pairs of numbers (one for each ball rolled), determine which pins remain standing after all the balls have been rolled.  The balls are numbered from 1 to <i>N</i> (inclusive) for this situation. The subsequent number pairs, one for each <i>K</i> represent the start to stop (inclusive) positions of the pins that were knocked down with each role.  Print a sequence of <i>N</i> characters, where <code>\"I\"</code> represents a pin left standing and <code>\".\"</code> represents a pin knocked down.<p><strong>C++ note:</strong> Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
+  },
+  "hint": {
+    "zh": "Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。",
+    "en": "Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index."
+  },
+  "starterCode": "#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n",
+  "tests": [
+    {
+      "input": "10 3\n8 10\n2 5\n3 6",
+      "output": "I.....I..."
+    },
+    {
+      "input": "5 2\n1 2\n4 4",
+      "output": "..I.I"
+    },
+    {
+      "input": "10 3\n3 5\n4 6\n10 10",
+      "output": "II....III."
+    },
+    {
+      "input": "5 0",
+      "output": "IIIII"
+    },
+    {
+      "input": "5 5\n5 5\n3 3\n1 1\n2 2\n4 4",
+      "output": "....."
+    },
+    {
+      "input": "20 1\n1 20",
+      "output": "...................."
+    },
+    {
+      "input": "20 3\n3 8\n13 17\n6 9",
+      "output": "II.......III.....III"
+    },
+    {
+      "input": "15 4\n1 1\n1 4\n6 8\n7 9",
+      "output": "....I....IIIIII"
+    }
+  ],
+  "source": "vpavlenko/content/problems/lists/kegelbahn.txt"
+}
