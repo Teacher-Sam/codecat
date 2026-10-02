@@ -6,8 +6,8 @@
     "en": "Strings overview"
   },
   "description": {
-    "zh": "<p>使用 std::string 處理索引、子字串、搜尋與替換。</p><p>C++ 沒有 Python 切片語法；請使用索引、迴圈、substr()、find()、rfind()、erase() 或 replace()。</p>",
-    "en": "<p>String indexing, substrings, search, and replacement with std::string.</p><p>C++ has no Python slice syntax. Use indexes, loops, substr(), find(), rfind(), erase(), or replace().</p>"
+    "zh": "<h3>1. C++ 字串</h3>\n<p><code>std::string</code> 用來儲存一串字元。使用前要引入 <code>&lt;string&gt;</code>。<code>cin &gt;&gt; s</code> 只讀到空白前；若內容可能包含空白，請使用 <code>getline(cin, s)</code>。</p>\n<pre><code>#include &lt;iostream&gt;\n#include &lt;string&gt;\nusing namespace std;\n\nstring name;\ngetline(cin, name);\ncout &lt;&lt; \"Hello, \" &lt;&lt; name;</code></pre>\n<h3>2. 長度與索引</h3>\n<p><code>s.size()</code> 或 <code>s.length()</code> 會回傳字元數。索引從 0 開始，因此第一個字元是 <code>s[0]</code>，最後一個是 <code>s[s.size()-1]</code>。C++ 不支援 Python 的負索引，存取前也要確認索引沒有超出範圍。</p>\n<pre><code>string s = \"Hello\";\ncout &lt;&lt; s[0] &lt;&lt; \" \" &lt;&lt; s[s.size() - 1];  // H o</code></pre>\n<h3>3. 子字串與反轉</h3>\n<p><code>s.substr(pos, count)</code> 從 <code>pos</code> 取出最多 <code>count</code> 個字元。C++ 沒有 <code>s[a:b]</code> 或步長切片，間隔取字元要用迴圈；反轉可使用 <code>reverse</code>。</p>\n<pre><code>string part = s.substr(1, 3);\nreverse(s.begin(), s.end());</code></pre>\n<h3>4. 搜尋與修改</h3>\n<p><code>find()</code> 與 <code>rfind()</code> 分別尋找第一次與最後一次出現的位置；找不到時回傳 <code>string::npos</code>。常用修改方法還有 <code>erase()</code>、<code>insert()</code> 與 <code>replace()</code>。</p>\n<pre><code>size_t pos = s.find(\"ll\");\nif (pos != string::npos) {\n    s.replace(pos, 2, \"XX\");\n}</code></pre>\n<p><strong>本章重點：</strong>分清楚「字元索引」與「子字串範圍」，並特別留意 <code>size_t</code>、<code>string::npos</code> 和邊界。</p>",
+    "en": "<h3>1. C++ strings</h3><p><code>std::string</code> stores a sequence of characters. Use <code>cin &gt;&gt; s</code> for one word and <code>getline(cin, s)</code> when spaces are allowed.</p>\n<pre><code>string name;\ngetline(cin, name);\ncout &lt;&lt; \"Hello, \" &lt;&lt; name;</code></pre>\n<h3>2. Length and indexing</h3><p>Use <code>size()</code> or <code>length()</code>. Indexes start at 0. C++ has no negative indexes, so the last character is <code>s[s.size()-1]</code>.</p>\n<h3>3. Substrings</h3><p><code>s.substr(pos, count)</code> extracts a substring. Use loops for stepped slices and <code>reverse()</code> to reverse a range.</p>\n<h3>4. Search and modification</h3><p>Use <code>find()</code>, <code>rfind()</code>, <code>erase()</code>, <code>insert()</code>, and <code>replace()</code>. A failed search returns <code>string::npos</code>.</p>"
   },
   "hint": {
     "zh": "",
@@ -15,5 +15,5 @@
   },
   "starterCode": "",
   "tests": [],
-  "source": "https://snakify.org/en/"
+  "source": "https://snakify.org/en/lessons/strings_str/"
 }

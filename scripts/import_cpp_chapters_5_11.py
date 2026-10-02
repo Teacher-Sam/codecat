@@ -165,7 +165,13 @@ def main() -> None:
     for chapter, (zh_title, en_title, zh_desc, en_desc, folder, slugs) in CHAPTERS.items():
         out = DATA / f"chapter-{chapter}"
         out.mkdir(parents=True, exist_ok=True)
-        problems = [intro(chapter, zh_title, en_title, zh_desc, en_desc)]
+        generated_intro = intro(chapter, zh_title, en_title, zh_desc, en_desc)
+        existing_intro_path = out / f"cpp-{chapter}-0.json"
+        if existing_intro_path.exists():
+            existing_intro = json.loads(existing_intro_path.read_text(encoding="utf-8"))
+            if "<h3>" in existing_intro.get("description", {}).get("zh", ""):
+                generated_intro = existing_intro
+        problems = [generated_intro]
         for number, slug in enumerate(slugs, 1):
             source_path = f"{folder}/{slug}.txt"
             source_title, statement, tests = parse(fetch(source_path))

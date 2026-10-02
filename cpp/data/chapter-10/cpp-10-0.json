@@ -6,8 +6,8 @@
     "en": "Sets overview"
   },
   "description": {
-    "zh": "<p>使用 std::set 處理唯一值、交集及集合運算。</p><p>使用 set 的 insert、count、find、set_intersection 等操作；輸出集合時依題意保持排序。</p>",
-    "en": "<p>Unique values, intersections, and set operations with std::set.</p><p>Use std::set operations such as insert, count, find, and set_intersection. Preserve the requested output order.</p>"
+    "zh": "<h3>1. 集合</h3><p>集合只保存不重複的值。<code>std::set</code> 會自動依遞增順序排列；只要求快速查找而不要求順序時，可考慮 <code>unordered_set</code>。</p>\n<pre><code>#include &lt;set&gt;\nset&lt;int&gt; values = {3, 1, 3, 2};\n// values 內容為 1, 2, 3</code></pre>\n<h3>2. 新增、查找與刪除</h3><p><code>insert(x)</code> 新增元素，<code>count(x)</code> 判斷是否存在，<code>erase(x)</code> 刪除元素，<code>size()</code> 取得不同元素數量。</p>\n<pre><code>values.insert(x);\nif (values.count(x)) cout &lt;&lt; \"YES\";\nvalues.erase(x);</code></pre>\n<h3>3. 走訪與集合運算</h3><p>可以 range-based for 依排序順序走訪。交集、聯集、差集可用兩個 iterator 自行處理，或使用 <code>&lt;algorithm&gt;</code> 中的集合演算法。</p>\n<pre><code>set_intersection(a.begin(), a.end(),\n                 b.begin(), b.end(),\n                 back_inserter(result));</code></pre>\n<h3>4. 選擇資料結構</h3><p>若需要保留重複次數，集合並不合適；請改用 map 計數。若輸出必須排序，<code>set</code> 通常比 <code>unordered_set</code> 方便。</p>\n<p><strong>本章重點：</strong>集合回答的是「有哪些不同的值」以及「某值是否存在」。</p>",
+    "en": "<h3>1. Sets</h3><p>A set stores unique values. <code>std::set</code> keeps them sorted; <code>unordered_set</code> favors lookup speed without ordering.</p>\n<h3>2. Basic operations</h3><p>Use <code>insert()</code>, <code>count()</code>, <code>erase()</code>, and <code>size()</code>.</p>\n<h3>3. Set operations</h3><p>Iterate through a set in order. Intersection, union, and difference can be implemented with two iterators or the algorithms in <code>&lt;algorithm&gt;</code>.</p>\n<p>Use a map instead when duplicate counts matter.</p>"
   },
   "hint": {
     "zh": "",
@@ -15,5 +15,5 @@
   },
   "starterCode": "",
   "tests": [],
-  "source": "https://snakify.org/en/"
+  "source": "https://snakify.org/en/lessons/sets/"
 }

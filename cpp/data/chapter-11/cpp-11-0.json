@@ -6,8 +6,8 @@
     "en": "Dictionaries (maps) overview"
   },
   "description": {
-    "zh": "<p>使用 std::map 或 std::unordered_map 儲存鍵值對與統計資料。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
-    "en": "<p>Key-value storage and frequency counting with std::map or std::unordered_map.</p><p>Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
+    "zh": "<h3>1. 鍵與值</h3><p>字典會把一個鍵對應到一個值。C++ 的 <code>std::map&lt;Key, Value&gt;</code> 依鍵排序；<code>unordered_map</code> 不保證順序，但平均查找速度較快。</p>\n<pre><code>#include &lt;map&gt;\nmap&lt;string, string&gt; capital;\ncapital[\"Taiwan\"] = \"Taipei\";</code></pre>\n<h3>2. 新增與查找</h3><p><code>m[key]</code> 在鍵不存在時會建立預設值，因此只想查找時應使用 <code>find()</code> 或 <code>count()</code>，避免意外新增資料。</p>\n<pre><code>auto it = capital.find(country);\nif (it != capital.end())\n    cout &lt;&lt; it-&gt;second;</code></pre>\n<h3>3. 頻率統計</h3><p>map 最常見的用途是計數。整數的預設值為 0，所以可以直接遞增。</p>\n<pre><code>map&lt;string, int&gt; frequency;\nstring word;\nwhile (cin &gt;&gt; word) frequency[word]++;</code></pre>\n<h3>4. 走訪與排序</h3><p>走訪 map 時，每個元素是 <code>pair&lt;const Key, Value&gt;</code>。使用結構化綁定可同時取得鍵和值；<code>map</code> 會自然依鍵的字典序輸出。</p>\n<pre><code>for (const auto&amp; [key, value] : frequency) {\n    cout &lt;&lt; key &lt;&lt; \" \" &lt;&lt; value &lt;&lt; \"\\n\";\n}</code></pre>\n<h3>5. 一對多資料</h3><p>一個鍵需要保存多個值時，可以使用 <code>map&lt;string, vector&lt;string&gt;&gt;</code> 或 <code>map&lt;string, set&lt;string&gt;&gt;</code>。選擇 vector 或 set 取決於是否允許重複、是否要求排序。</p>\n<p><strong>本章重點：</strong>先決定鍵和值各代表什麼，再確認輸出是否要求字典序。</p>",
+    "en": "<h3>1. Keys and values</h3><p><code>std::map&lt;Key, Value&gt;</code> associates each key with a value and keeps keys sorted. <code>unordered_map</code> provides average constant-time lookup without ordering.</p>\n<h3>2. Lookup</h3><p><code>m[key]</code> creates a default value when the key is absent. Use <code>find()</code> or <code>count()</code> for lookup without insertion.</p>\n<h3>3. Frequency counting</h3>\n<pre><code>map&lt;string, int&gt; frequency;\nstring word;\nwhile (cin &gt;&gt; word) frequency[word]++;</code></pre>\n<h3>4. Iteration</h3><p>A map iterates in key order. Structured bindings make the key and value easy to access.</p>\n<pre><code>for (const auto&amp; [key, value] : frequency)\n    cout &lt;&lt; key &lt;&lt; \" \" &lt;&lt; value &lt;&lt; \"\\n\";</code></pre>\n<p>For one-to-many relationships, combine a map with a vector or set.</p>"
   },
   "hint": {
     "zh": "",
@@ -15,5 +15,5 @@
   },
   "starterCode": "",
   "tests": [],
-  "source": "https://snakify.org/en/"
+  "source": "https://snakify.org/en/lessons/dictionaries_dicts/"
 }

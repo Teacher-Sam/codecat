@@ -6,8 +6,8 @@
     "en": "While loop overview"
   },
   "description": {
-    "zh": "<p>使用 while 迴圈處理未知次數的重複、數列與費氏數列。</p><p>輸入以 0 結束的題目不要把結尾的 0 納入統計；需要小數結果時使用 double。</p>",
-    "en": "<p>Unknown-length repetition, sequences, and Fibonacci numbers with while loops.</p><p>For zero-terminated input, do not include the terminating zero. Use double when the result may be fractional.</p>"
+    "zh": "<h3>1. while 迴圈</h3><p>當重複次數無法事先確定時，使用 <code>while</code>。每輪開始前會先檢查條件；條件為 false 時離開迴圈。</p>\n<pre><code>int i = 1;\nwhile (i &lt;= 10) {\n    cout &lt;&lt; i * i &lt;&lt; \"\\n\";\n    i++;\n}</code></pre>\n<h3>2. 計數器與狀態更新</h3><p>迴圈內必須讓條件逐漸走向結束，否則會形成無限迴圈。常見狀態包括計數、累加、目前最大值及前一個數字。</p>\n<h3>3. 哨兵值輸入</h3><p>有些數列沒有先給長度，而是用 0 表示結束。先讀取，再於條件中判斷；結尾的 0 通常不計入資料。</p>\n<pre><code>long long sum = 0;\nint x;\ncin &gt;&gt; x;\nwhile (x != 0) {\n    sum += x;\n    cin &gt;&gt; x;\n}</code></pre>\n<h3>4. break 與 continue</h3><p><code>break</code> 立即離開最內層迴圈；<code>continue</code> 跳過本輪剩餘程式。可以用清楚的迴圈條件表達時，通常比過度使用它們更容易閱讀。</p>\n<h3>5. 同時更新兩個值</h3><p>計算費氏數列時，新值依賴兩個舊值。先存暫存值，或使用 <code>std::tie</code>；交換兩值則可使用 <code>swap(a, b)</code>。</p>\n<pre><code>long long a = 0, b = 1;\nwhile (b &lt; limit) {\n    long long next = a + b;\n    a = b;\n    b = next;\n}</code></pre>\n<p><strong>本章重點：</strong>先寫出「維持什麼狀態、何時停止、每輪如何更新」三件事。</p>",
+    "en": "<h3>1. The while loop</h3><p>Use <code>while</code> when the number of repetitions is not known in advance. Its condition is checked before every iteration.</p>\n<pre><code>int i = 1;\nwhile (i &lt;= 10) {\n    cout &lt;&lt; i * i &lt;&lt; \"\\n\";\n    i++;\n}</code></pre>\n<h3>2. State and termination</h3><p>Update the counter or state so the loop eventually stops. Typical state includes a count, sum, maximum, or previous value.</p>\n<h3>3. Sentinel input</h3><p>A value such as 0 can mark the end of an unknown-length sequence. Do not include the sentinel unless the statement says so.</p>\n<h3>4. Loop control</h3><p><code>break</code> exits the innermost loop and <code>continue</code> starts its next iteration. Prefer a clear condition when possible.</p>"
   },
   "hint": {
     "zh": "",
@@ -15,5 +15,5 @@
   },
   "starterCode": "",
   "tests": [],
-  "source": "https://snakify.org/en/"
+  "source": "https://snakify.org/en/lessons/while_loop/"
 }

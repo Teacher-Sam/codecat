@@ -6,8 +6,8 @@
     "en": "Two-dimensional arrays overview"
   },
   "description": {
-    "zh": "<p>使用 vector<vector<T>> 建立、走訪及轉換矩陣。</p><p>Python 二維 list 在此章對應 vector<vector<int>>；第一個索引是列，第二個索引是欄。</p>",
-    "en": "<p>Create, traverse, and transform matrices with vector<vector<T>>.</p><p>Use vector<vector<int>> for a two-dimensional array. The first index is the row and the second is the column.</p>"
+    "zh": "<h3>1. 二維資料</h3><p>表格或矩陣具有列與欄。C++ 可用 <code>vector&lt;vector&lt;int&gt;&gt;</code> 表示；<code>a[i][j]</code> 是第 i 列、第 j 欄，索引都從 0 開始。</p>\n<pre><code>int rows, cols;\ncin &gt;&gt; rows &gt;&gt; cols;\nvector&lt;vector&lt;int&gt;&gt; a(rows, vector&lt;int&gt;(cols));</code></pre>\n<h3>2. 輸入與走訪</h3><p>使用雙層迴圈：外層處理列，內層處理欄。列數是 <code>a.size()</code>，非空矩陣的欄數是 <code>a[0].size()</code>。</p>\n<pre><code>for (int i = 0; i &lt; rows; i++) {\n    for (int j = 0; j &lt; cols; j++) {\n        cin &gt;&gt; a[i][j];\n    }\n}</code></pre>\n<h3>3. 對角線</h3><p>方陣主對角線滿足 <code>i == j</code>；副對角線滿足 <code>i + j == n - 1</code>。比較 i、j 還可以判斷元素位於對角線上方或下方。</p>\n<h3>4. 建構與轉換矩陣</h3><p>先建立正確尺寸再填值。交換兩欄時要逐列交換；矩陣乘法則以三層迴圈累加共同維度。</p>\n<pre><code>for (int i = 0; i &lt; rows; i++)\n    swap(a[i][c1], a[i][c2]);</code></pre>\n<p><strong>本章重點：</strong>畫出列、欄與索引的對應，避免把 <code>a[row][column]</code> 的順序寫反。</p>",
+    "en": "<h3>1. Two-dimensional data</h3><p>Use <code>vector&lt;vector&lt;int&gt;&gt;</code> for a runtime-sized table or matrix. <code>a[i][j]</code> means row i, column j.</p>\n<pre><code>vector&lt;vector&lt;int&gt;&gt; a(rows, vector&lt;int&gt;(cols));</code></pre>\n<h3>2. Traversal</h3><p>Use nested loops: rows outside and columns inside. The main diagonal has <code>i == j</code>; the secondary diagonal has <code>i + j == n - 1</code>.</p>\n<h3>3. Transformations</h3><p>Create the required dimensions first. Column swaps work row by row, while matrix multiplication uses three nested loops.</p>"
   },
   "hint": {
     "zh": "",
@@ -15,5 +15,5 @@
   },
   "starterCode": "",
   "tests": [],
-  "source": "https://snakify.org/en/"
+  "source": "https://snakify.org/en/lessons/two_dimensional_lists_arrays/"
 }

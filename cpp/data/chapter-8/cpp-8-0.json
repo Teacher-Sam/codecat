@@ -6,8 +6,8 @@
     "en": "Functions and recursion overview"
   },
   "description": {
-    "zh": "<p>撰寫 C++ 函式，並用遞迴分解問題。</p><p>請實作題目指定的函式並由 main 讀取輸入、呼叫函式及輸出結果；遞迴題不得使用迴圈取代。</p>",
-    "en": "<p>Write C++ functions and decompose problems recursively.</p><p>Implement the requested function and call it from main. In recursion exercises, do not replace recursion with a loop.</p>"
+    "zh": "<h3>1. 函式</h3><p>函式把一段工作命名並重複使用。宣告要寫出回傳型別、名稱與參數型別；不回傳值時使用 <code>void</code>。</p>\n<pre><code>double distance(double x1, double y1, double x2, double y2) {\n    double dx = x1 - x2;\n    double dy = y1 - y2;\n    return sqrt(dx * dx + dy * dy);\n}</code></pre>\n<h3>2. 傳值與傳參考</h3><p>一般參數會複製值，函式內修改不影響呼叫端。需要修改原物件或避免大型物件複製時使用參考；唯讀參數通常寫成 <code>const T&amp;</code>。</p>\n<pre><code>void normalize(vector&lt;int&gt;&amp; a);\nint sum(const vector&lt;int&gt;&amp; a);</code></pre>\n<h3>3. 遞迴</h3><p>遞迴函式會呼叫自己。每個遞迴解法都需要：</p><ul><li>可直接回答的基底情況；</li><li>把問題縮小的遞迴步驟；</li><li>確保每次呼叫都更接近基底情況。</li></ul>\n<pre><code>long long power(long long a, int n) {\n    if (n == 0) return 1;      // 基底情況\n    return a * power(a, n-1); // 規模縮小\n}</code></pre>\n<h3>4. 呼叫堆疊</h3><p>每次遞迴呼叫都有自己的區域變數，完成後依相反順序返回。遞迴太深會耗盡堆疊，因此只在題目適合且深度合理時使用。</p>\n<p><strong>本章重點：</strong>先定義函式的輸入、輸出與基底情況，再寫遞迴關係。</p>",
+    "en": "<h3>1. Functions</h3><p>A function names a reusable operation. Its declaration specifies a return type, name, and typed parameters. Use <code>void</code> when no value is returned.</p>\n<h3>2. Values and references</h3><p>Ordinary parameters are copied. Use <code>T&amp;</code> to modify the caller's object and <code>const T&amp;</code> for efficient read-only access.</p>\n<h3>3. Recursion</h3><p>A recursive function needs a base case and a recursive step that always makes the problem smaller.</p>\n<pre><code>long long power(long long a, int n) {\n    if (n == 0) return 1;\n    return a * power(a, n - 1);\n}</code></pre>\n<h3>4. The call stack</h3><p>Every call has its own local variables. Excessive recursion depth can overflow the stack.</p>"
   },
   "hint": {
     "zh": "",
@@ -15,5 +15,5 @@
   },
   "starterCode": "",
   "tests": [],
-  "source": "https://snakify.org/en/"
+  "source": "https://snakify.org/en/lessons/functions/"
 }

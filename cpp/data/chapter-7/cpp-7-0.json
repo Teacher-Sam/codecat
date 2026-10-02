@@ -6,8 +6,8 @@
     "en": "Lists (arrays) overview"
   },
   "description": {
-    "zh": "<p>以 std::vector 儲存、走訪及修改一維資料。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
-    "en": "<p>Store, traverse, and modify one-dimensional data with std::vector.</p><p>Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
+    "zh": "<h3>1. 使用 vector 儲存數列</h3><p>Snakify 的 Python <em>list</em> 在 C++ 中最接近 <code>std::vector</code>。它能在執行時決定大小，元素索引從 0 開始，而且可以修改。</p>\n<pre><code>#include &lt;vector&gt;\nvector&lt;int&gt; a = {2, 3, 5, 7};\ncout &lt;&lt; a[0] &lt;&lt; \" \" &lt;&lt; a.size();</code></pre>\n<h3>2. 建立與讀取</h3><p>已知元素個數時可先建立大小為 n 的 vector；未知長度時可用 <code>push_back()</code> 加到尾端。</p>\n<pre><code>int n;\ncin &gt;&gt; n;\nvector&lt;int&gt; a(n);\nfor (int &amp;x : a) cin &gt;&gt; x;</code></pre>\n<h3>3. 走訪元素</h3><p>需要索引時使用一般 for 迴圈；只需要值時可使用 range-based for。若要修改元素，迴圈變數必須是參考 <code>int&amp;</code>。</p>\n<pre><code>for (int i = 0; i &lt; (int)a.size(); i++)\n    cout &lt;&lt; i &lt;&lt; \": \" &lt;&lt; a[i] &lt;&lt; \"\\n\";\n\nfor (int &amp;x : a) x *= 2;</code></pre>\n<h3>4. 插入、刪除與排序</h3><p><code>insert()</code>、<code>erase()</code> 會使後方元素移動；操作後原本的索引可能失效。排序使用 <code>sort(a.begin(), a.end())</code>。</p>\n<pre><code>a.insert(a.begin() + pos, value);\na.erase(a.begin() + pos);\nsort(a.begin(), a.end());</code></pre>\n<p><strong>本章重點：</strong>先判斷題目要的是元素值還是索引，並小心相鄰元素、首尾元素及修改後的大小。</p>",
+    "en": "<h3>1. Storing a sequence</h3><p>C++ <code>std::vector</code> is the closest counterpart of a Python list. It has zero-based indexes, a runtime size, and mutable elements.</p>\n<pre><code>int n;\ncin &gt;&gt; n;\nvector&lt;int&gt; a(n);\nfor (int &amp;x : a) cin &gt;&gt; x;</code></pre>\n<h3>2. Traversal</h3><p>Use an indexed loop when positions matter and a range-based loop when only values matter. Use a reference to modify elements.</p>\n<h3>3. Operations</h3><p><code>push_back()</code>, <code>insert()</code>, <code>erase()</code>, and <code>sort()</code> cover the main operations used in this lesson.</p>"
   },
   "hint": {
     "zh": "",
@@ -15,5 +15,5 @@
   },
   "starterCode": "",
   "tests": [],
-  "source": "https://snakify.org/en/"
+  "source": "https://snakify.org/en/lessons/lists/"
 }
