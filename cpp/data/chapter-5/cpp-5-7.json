@@ -5,7 +5,7 @@
     "en": "Remove the fragment"
   },
   "description": {
-    "zh": "<p><strong>移除片段</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>C++ 沒有 Python 切片語法；請使用索引、迴圈、substr()、find()、rfind()、erase() 或 replace()。</p>",
+    "zh": "<p>給定一個字串，其中字母 <code>h</code> 至少出現兩次。\n從該字串中刪除第一個和最後一個出現的字母 <code>h</code>，\n以及它們之間的所有字元。 <p><strong>C++ 注意：</strong>C++ 沒有 Python 切片語法。使用索引、迴圈、substr()、find()、rfind()、erase() 或replace()。 </p>",
     "en": "<p>Given a string in which the letter <code>h</code> occurs at least twice.\nRemove from that string the first and the last occurrence of the letter <code>h</code>,\nas well as all the characters between them.<p><strong>C++ note:</strong> C++ has no Python slice syntax. Use indexes, loops, substr(), find(), rfind(), erase(), or replace().</p>"
   },
   "hint": {

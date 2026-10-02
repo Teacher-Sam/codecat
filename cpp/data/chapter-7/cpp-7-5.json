@@ -5,7 +5,7 @@
     "en": "Neighbors of the same sign"
   },
   "description": {
-    "zh": "<p><strong>同號相鄰元素</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "zh": "給定一個數字串列，找到並列印具有相同符號的第一個相鄰元素。\n如果不存在這樣的對，則將輸出留空。 <p><strong>C++ 注意：</strong>Python 清單對應於 C++ 中的 std::vector。讀取大小或整行，然後按索引遍歷。 </p>",
     "en": "Given a list of numbers, find and print the first adjacent elements which have the same sign.\nIf there is no such pair, leave the output blank.<p><strong>C++ note:</strong> Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
   },
   "hint": {

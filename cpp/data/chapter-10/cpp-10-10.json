@@ -5,7 +5,7 @@
     "en": "Strikes"
   },
   "description": {
-    "zh": "<p><strong>罷工日</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>使用 set 的 insert、count、find、set_intersection 等操作；輸出集合時依題意保持排序。</p>",
+    "zh": "<p>給定日曆和幾個罷工時間表，計算因罷工而損失的工作日；週六和週日不是工作日。 </p><p><strong>C++ 注意：</strong>使用 std::set 操作，例如 insert、count、find 和 set_intersection。保留請求的輸出順序。 </p>",
     "en": "<p>Given a calendar and several strike schedules, count working weekdays lost to strikes; Saturdays and Sundays are not working days.</p><p><strong>C++ note:</strong> Use std::set operations such as insert, count, find, and set_intersection. Preserve the requested output order.</p>"
   },
   "hint": {

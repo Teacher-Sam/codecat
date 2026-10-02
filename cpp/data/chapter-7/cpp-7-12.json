@@ -5,7 +5,7 @@
     "en": "Queens"
   },
   "description": {
-    "zh": "<p><strong>八皇后攻擊判斷</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "zh": "在西洋棋中，眾所周知，可以在 8×8 的棋盤上放置 8 個皇后，使得它們中的任何一個都無法攻擊另一個。在給定棋盤上 8 個皇后的位置，確定是否有一對\n可以在下一步中相互連接的皇后。如果沒有皇后可以攻擊另一個皇后，則列印單字 <code>NO</code>，否則列印 <code>YES</code>。\n\n輸入由八個座標對組成，每行一對，每對給出標準棋盤上皇后的位置，行和列從 1 開始編號。 <p><strong>C++ 注意：</strong>Python 清單對應於 C++ 中的 std::vector。讀取大小或整行，然後按索引遍歷。 </p>",
     "en": "In chess it is known that it is possible to place 8 queens on an 8&times;8 chess board such that none of them can attack another. Given a placement of 8 queens on the board, determine if there is a pair\nof queens that can attach each other on the next move. Print the word <code>NO</code> if no queen can attack another, otherwise print <code>YES</code>.\n\nThe input consists of eight coordinate pairs, one pair per line, with each pair giving the position of a queen on a standard chess board with rows and columns numbered starting at 1.<p><strong>C++ note:</strong> Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
   },
   "hint": {

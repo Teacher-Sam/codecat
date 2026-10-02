@@ -5,7 +5,7 @@
     "en": "Number of occurrences"
   },
   "description": {
-    "zh": "<p><strong>出現次序</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "zh": "<p>文字在一行中給出。\n對於文本中的每個單詞，計算其在其之前出現的次數。 </p>\n\n<p>單字是非空白字元的序列。\n兩個連續的單字由一個或多個空格分隔。\n根據這個定義，標點符號是單字的一部分。\n</p><p><strong>C++ 注意：</strong>使用 std::map 或 std::unordered_map。當需要字典順序輸出時，選擇 map，或單獨對鍵進行排序。 </p>",
     "en": "<p>The text is given in a single line.\nFor each word of the text count the number of its occurrences before it.</p>\n\n<p>A word is a sequence of non-whitespace characters.\nTwo consecutive words are separated by one or more spaces.\nPunctiation marks are a part of a word, by this definition.\n</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
   },
   "hint": {

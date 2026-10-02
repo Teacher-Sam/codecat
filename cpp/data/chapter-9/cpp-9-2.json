@@ -5,7 +5,7 @@
     "en": "Snowflake"
   },
   "description": {
-    "zh": "<p><strong>雪花</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python 二維 list 在此章對應 vector<vector<int>>；第一個索引是列，第二個索引是欄。</p>",
+    "zh": "<p>給定奇數整數 \\( n \\)，產生一個大小為 \\( \\left ( n \\times n \\right ) \\) 的二維陣列。用<code>“.”的單一字串填入每個元素。 </code>。然後用單一字串<code>“*”</code>（雪花的圖片）填滿中間行、中間列和對角線。列印 \\( \\left ( n \\times n \\right ) \\) 行和列中的陣列元素，並以單一空格分隔字元。 <p><strong>C++ 注意：</strong> 對於二維數組，請使用 vector<vector<int>>。第一個索引是行，第二個索引是列。 </p>",
     "en": "<p>Given an odd number integer \\( n \\), produce a two-dimensional array of size \\( \\left ( n \\times n \\right ) \\). Fill each element with a single character string of <code> \".\" </code>. Then fill the middle row, the middle column and the diagnals with the single character string of <code> \"*\" </code> (an image of a snow flake). Print the array elements in \\( \\left ( n \\times n \\right ) \\) rows and columns and separate the characters with a single space.<p><strong>C++ note:</strong> Use vector&lt;vector&lt;int&gt;&gt; for a two-dimensional array. The first index is the row and the second is the column.</p>"
   },
   "hint": {

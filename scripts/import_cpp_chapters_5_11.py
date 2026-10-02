@@ -173,11 +173,18 @@ def main() -> None:
                 source_title, english_summary = EN_OVERRIDES[slug]
                 statement = f"<p>{english_summary}</p>"
             pid = f"cpp-{chapter}-{number}"
+            existing_path = out / f"{pid}.json"
+            existing_zh = ""
+            if existing_path.exists():
+                existing = json.loads(existing_path.read_text(encoding="utf-8"))
+                candidate = existing.get("description", {}).get("zh", "")
+                if candidate and "請依照下方英文原題" not in candidate:
+                    existing_zh = candidate
             problem = {
                 "id": pid,
                 "title": {"zh": ZH_TITLES[slug], "en": source_title},
                 "description": {
-                    "zh": f"<p><strong>{ZH_TITLES[slug]}</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>{CPP_NOTES[chapter]}</p>",
+                    "zh": existing_zh or f"<p><strong>{ZH_TITLES[slug]}</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>{CPP_NOTES[chapter]}</p>",
                     "en": clean_statement(statement, chapter),
                 },
                 "hint": {"zh": CPP_NOTES[chapter], "en": CPP_NOTES_EN[chapter]},

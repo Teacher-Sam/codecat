@@ -5,7 +5,7 @@
     "en": "Has the number been encountered before"
   },
   "description": {
-    "zh": "<p><strong>先前是否出現</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>使用 set 的 insert、count、find、set_intersection 等操作；輸出集合時依題意保持排序。</p>",
+    "zh": "<p>給定一個數字序列，確定是否已經遇到下一個數字。對於每個數字，如果已遇到該數字，則列印單字 <code>YES</code>（在單獨的行中）；如果尚未遇到該數字，則列印 <code>NO</code>。 </p><p><strong>C++ 注意：</strong> 使用 std::set 操作，例如 insert、count、find 和 set_intersection。保留請求的輸出順序。 </p>",
     "en": "<p>Given a sequence of numbers, determine if the next number has already been encountered. For each number, print the word <code>YES</code> (in a separate line) if this number has already been encountered, and print <code>NO</code>, if it has not already been encountered.</p><p><strong>C++ note:</strong> Use std::set operations such as insert, count, find, and set_intersection. Preserve the requested output order.</p>"
   },
   "hint": {

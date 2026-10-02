@@ -5,7 +5,7 @@
     "en": "Insert an element"
   },
   "description": {
-    "zh": "<p><strong>插入元素</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "zh": "<p>給定一個陣列、一個索引和一個值，將值插入到從零開始的索引處並列印結果陣列。 </p><p><strong>C++ 注意：</strong>Python 清單對應於 C++ 中的 std::vector。讀取大小或整行，然後按索引遍歷。 </p>",
     "en": "<p>Given an array, an index, and a value, insert the value at that zero-based index and print the resulting array.</p><p><strong>C++ note:</strong> Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
   },
   "hint": {

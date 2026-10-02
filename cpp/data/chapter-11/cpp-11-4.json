@@ -5,7 +5,7 @@
     "en": "The most frequent word"
   },
   "description": {
-    "zh": "<p><strong>最高頻單字</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "zh": "<p>給定文字：第一行包含行數，然後給出單字的行數。\n列印出文中出現次數最多的單字。\n如果這樣的單字較多，則列印字母順序中較少的一個\n</p><p><strong>C++ 注意：</strong>使用 std::map 或 std::unordered_map。當需要字典順序輸出時，選擇 map，或單獨對鍵進行排序。 </p>",
     "en": "<p>Given the text: the first line contains the number of lines, then given the lines of words.\nPrint the word in the text that occurs most often.\nIf there are many such words, print the one that is less in the alphabetical\norder.</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
   },
   "hint": {

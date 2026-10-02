@@ -5,7 +5,7 @@
     "en": "The second occurrence"
   },
   "description": {
-    "zh": "<p><strong>第二次出現</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>C++ 沒有 Python 切片語法；請使用索引、迴圈、substr()、find()、rfind()、erase() 或 replace()。</p>",
+    "zh": "<p>給定一個可能包含或不包含感興趣字母的字串。 \n列印<b>第二次</b>出現字母<code>f</code>的索引位置。\n如果字串僅包含字母 <code>f</code> 一次，則列印 <code>-1</code>，\n如果字串不包含字母 <code>f</code>，則列印 <code>-2</code>。 <p><strong>C++ 注意：</strong> C++ 沒有 Python 切片語法。使用索引、迴圈、substr()、find()、rfind()、erase() 或replace()。 </p>",
     "en": "<p>Given a string that may or may not contain the letter of interest. \nPrint the index location of the <b>second</b> occurrence of the letter <code>f</code>.\nIf the string contains the letter <code>f</code> only once, then print <code>-1</code>, \nand if the string does not contain the letter <code>f</code>, then print <code>-2</code>.<p><strong>C++ note:</strong> C++ has no Python slice syntax. Use indexes, loops, substr(), find(), rfind(), erase(), or replace().</p>"
   },
   "hint": {

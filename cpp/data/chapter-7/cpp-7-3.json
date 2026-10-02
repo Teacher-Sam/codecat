@@ -5,7 +5,7 @@
     "en": "Greater than neighbours"
   },
   "description": {
-    "zh": "<p><strong>大於相鄰元素</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "zh": "給定一個數字串列，確定並列印大於其相鄰元素的數量。\n\n<p>\n不應考慮清單的第一項和最後一項，因為它們沒有兩個鄰居。 <p><strong>C++ 注意：</strong>Python 清單對應於 C++ 中的 std::vector。讀取大小或整行，然後按索引遍歷。 </p>",
     "en": "Given a list of numbers, determine and print the quantity of elements that are greater than both of their neighbors.\n\n<p>\nThe first and the last items of the list shouldn't be considered because they don't have two neighbors.<p><strong>C++ note:</strong> Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
   },
   "hint": {

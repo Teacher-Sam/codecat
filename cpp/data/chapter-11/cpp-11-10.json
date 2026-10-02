@@ -5,7 +5,7 @@
     "en": "Bank accounts"
   },
   "description": {
-    "zh": "<p><strong>銀行帳戶</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "zh": "<p>處理存款、提款、餘額、轉帳和收入作業。需要時建立帳戶，並在未知帳戶上列印 BALANCE 查詢的 ERROR。 </p><p><strong>C++ 注意：</strong> 使用 std::map 或 std::unordered_map。當需要字典順序輸出時，選擇 map，或單獨對鍵進行排序。 </p>",
     "en": "<p>Process DEPOSIT, WITHDRAW, BALANCE, TRANSFER, and INCOME operations. Create accounts when required and print ERROR for a BALANCE query on an unknown account.</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
   },
   "hint": {

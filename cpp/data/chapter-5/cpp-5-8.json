@@ -5,7 +5,7 @@
     "en": "Reverse the fragment"
   },
   "description": {
-    "zh": "<p><strong>反轉片段</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>C++ 沒有 Python 切片語法；請使用索引、迴圈、substr()、find()、rfind()、erase() 或 replace()。</p>",
+    "zh": "<p>給定一個包含字母 <code>h</code> 的字串\n至少兩次，顛倒字元順序\n包含在第一次出現和最後一次出現之間。 <p><strong>C++ 注意：</strong>C++ 沒有 Python 切片語法。使用索引、迴圈、substr()、find()、rfind()、erase() 或replace()。 </p>",
     "en": "<p>Given a string in which the letter <code>h</code> occurs\nat least two times, reverse the sequence of characters\nenclosed between the first and last appearances.<p><strong>C++ note:</strong> C++ has no Python slice syntax. Use indexes, loops, substr(), find(), rfind(), erase(), or replace().</p>"
   },
   "hint": {

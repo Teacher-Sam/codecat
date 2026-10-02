@@ -5,7 +5,7 @@
     "en": "Sales"
   },
   "description": {
-    "zh": "<p><strong>銷售統計</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "zh": "<p>總結每位客戶的產品數量，然後依字典順序列印客戶及其產品。 </p><p><strong>C++ 注意：</strong>使用 std::map 或 std::unordered_map。當需要字典順序輸出時，選擇 map，或單獨對鍵進行排序。 </p>",
     "en": "<p>Aggregate product quantities for every customer, then print customers and their products in lexicographic order.</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
   },
   "hint": {

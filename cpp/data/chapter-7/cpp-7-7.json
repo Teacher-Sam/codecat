@@ -5,7 +5,7 @@
     "en": "Swap neighbours"
   },
   "description": {
-    "zh": "<p><strong>交換相鄰元素</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "zh": "给定一个数字串列，成对交换相邻项（<code>A[0]</code> 与 <code>A[1]</code>、<code>A[2]</code> 与 <code>A[3]</code> 等）。列印結果清單。 \n\n如果串列有奇数个元素，则保留最后一个元素。 <p><strong>C++ 注意：</strong>Python 清單對應於 C++ 中的 std::vector。讀取大小或整行，然後按索引遍歷。 </p>",
     "en": "Given a list of numbers, swap adjacent items in pairs (<code>A[0]</code> with <code>A[1]</code>, <code>A[2]</code> with <code>A[3]</code>,&nbsp;etc.). Print the resulting list. \n\nIf a list has an odd number of elements, leave the last element in place.<p><strong>C++ note:</strong> Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
   },
   "hint": {

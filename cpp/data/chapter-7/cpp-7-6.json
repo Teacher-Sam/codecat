@@ -5,7 +5,7 @@
     "en": "The largest element"
   },
   "description": {
-    "zh": "<p><strong>最大元素與索引</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "zh": "給定一個數字串列。確定清單中具有最大值的元素。列印最大元素的值，然後列印索引號。 \n\n如果最高元素不唯一，則列印第一個實例的索引。 <p><strong>C++ 注意：</strong>Python 清單對應於 C++ 中的 std::vector。讀取大小或整行，然後按索引遍歷。 </p>",
     "en": "Given a list of numbers. Determine the element in the list with the largest value. Print the value of the largest element and then the index number. \n\nIf the highest element is not unique, print the index of the first instance.<p><strong>C++ note:</strong> Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
   },
   "hint": {

@@ -5,7 +5,7 @@
     "en": "Stress test"
   },
   "description": {
-    "zh": "<p><strong>重音檢查</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "zh": "<p>根據正確重讀單字的字典檢查學生的文字。計算帶有未知或錯誤放置的大寫重音標記的單字。 </p><p><strong>C++ 注意：</strong>使用 std::map 或 std::unordered_map。當需要字典順序輸出時，選擇 map，或單獨對鍵進行排序。 </p>",
     "en": "<p>Check a pupil's text against a dictionary of correctly stressed words. Count words with an unknown or incorrectly placed uppercase stress mark.</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
   },
   "hint": {

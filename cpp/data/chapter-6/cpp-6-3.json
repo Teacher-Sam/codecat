@@ -5,7 +5,7 @@
     "en": "The power of two"
   },
   "description": {
-    "zh": "<p><strong>2 的冪</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>輸入以 0 結束的題目不要把結尾的 0 納入統計；需要小數結果時使用 double。</p>",
+    "zh": "<p>對於給定的整數<b>N</b>，求最大的整數<b>x</b>，其中\\( 2^x \\)小於或等於<b>N</b>。 \n列印指數值和表達式 \\( 2^x \\) 的結果。 </p>\n\n<p>不要使用操作<code>**</code>。 </p><p><strong>C++ 注意：</strong>對於以零結尾的輸入，請勿包含終止零。當結果可能是小數時，請使用 double。 </p>",
     "en": "<p>For a given integer <b>N</b>, find the greatest integer <b>x</b> where \\( 2^x \\) is less than or equal to <b>N</b>. \nPrint the exponent value and the result of the expression  \\( 2^x \\).</p>\n\n<p>Don't use the operation <code>**</code>.</p><p><strong>C++ note:</strong> For zero-terminated input, do not include the terminating zero. Use double when the result may be fractional.</p>"
   },
   "hint": {

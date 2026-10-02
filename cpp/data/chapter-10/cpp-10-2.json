@@ -5,7 +5,7 @@
     "en": "The intersection of sets"
   },
   "description": {
-    "zh": "<p><strong>集合交集</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>使用 set 的 insert、count、find、set_intersection 等操作；輸出集合時依題意保持排序。</p>",
+    "zh": "<p>給定兩個數字串列。\n找到第一個和第二個清單中出現的所有數字並按升序列印它們。 </p>\n\n<p>即使這個任務也可以用一行程式碼來解決。 </p><p><strong>C++ 注意：</strong>使用 std::set 操作，例如 insert、count、find 和 set_intersection。保留請求的輸出順序。 </p>",
     "en": "<p>Given two lists of numbers.\nFind all the numbers that occur in both the first and the second list and print them in ascending order.</p>\n\n<p>Even this task can be solved in one line of code.</p><p><strong>C++ note:</strong> Use std::set operations such as insert, count, find, and set_intersection. Preserve the requested output order.</p>"
   },
   "hint": {

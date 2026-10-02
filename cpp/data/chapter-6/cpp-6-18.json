@@ -5,7 +5,7 @@
     "en": "The index of a Fibonacci number"
   },
   "description": {
-    "zh": "<p><strong>判斷費氏數</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>輸入以 0 結束的題目不要把結尾的 0 納入統計；需要小數結果時使用 double。</p>",
+    "zh": "斐波那契數列定義如下：\n$$ \\phi_0 = 0, \\ \\phi_1 = 1, \\ \\phi_n = \\phi_{n-1} + \\phi_{n-2} 。 $$\n給定一個整數 \\( a \\)，確定它在斐波那契數列中的索引，即印出數字 \\( n \\) 使得 \\( \\phi_n = a \\) 。如果 \\( a \\) 不是斐波那契數，則輸出 -1。 <p><strong>C++ 注意：</strong>對於以零結尾的輸入，請勿包含結尾零。當結果可能是小數時，請使用 double。 </p>",
     "en": "The Fibonacci sequence is defined as follows:\n$$ \\phi_0 = 0, \\ \\phi_1 = 1, \\ \\phi_n = \\phi_{n-1} + \\phi_{n-2} . $$\nGiven an integer \\( a \\), determine its index among the Fibonacci numbers, that is, print the number \\( n \\) such that \\( \\phi_n = a \\). If \\( a \\) is not a Fibonacci number, print -1.<p><strong>C++ note:</strong> For zero-terminated input, do not include the terminating zero. Use double when the result may be fractional.</p>"
   },
   "hint": {

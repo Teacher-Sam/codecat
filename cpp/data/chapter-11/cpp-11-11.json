@@ -5,7 +5,7 @@
     "en": "Elections in the USA II"
   },
   "description": {
-    "zh": "<p><strong>美國大選（二）</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "zh": "<p>將每個州的選舉人票分配給該州得票最多的候選人，然後按字典順序列印每個候選人的總數。 </p><p><strong>C++ 注意：</strong> 使用 std::map 或 std::unordered_map。當需要字典順序輸出時，選擇 map，或單獨對鍵進行排序。 </p>",
     "en": "<p>Allocate each state's electoral votes to the candidate with the most votes in that state, then print every candidate's total in lexicographic order.</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
   },
   "hint": {

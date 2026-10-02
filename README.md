@@ -115,6 +115,7 @@ python scripts/import_chapter3.py
 python scripts/migrate_problem_ids.py java java
 python scripts/convert_java_to_cpp.py
 python scripts/import_cpp_chapters_5_11.py
+python scripts/translate_cpp_chapters_5_11.py
 ```
 
 ---

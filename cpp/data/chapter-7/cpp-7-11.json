@@ -5,7 +5,7 @@
     "en": "The number of pairs of equal"
   },
   "description": {
-    "zh": "<p><strong>相等配對數</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "zh": "給定一個數字串列，計算有多少個元素對具有相同的值（相等）。 \n\n任何兩個彼此相等的元素都應該只計算一次。 <p><strong>C++ 注意：</strong>Python 清單對應於 C++ 中的 std::vector。讀取大小或整行，然後按索引遍歷。 </p>",
     "en": "Given a list of numbers, count how many element pairs have the same value (are equal). \n\nAny two elements that are equal to each other should be counted exactly once.<p><strong>C++ note:</strong> Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
   },
   "hint": {

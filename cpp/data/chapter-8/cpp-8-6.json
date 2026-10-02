@@ -5,7 +5,7 @@
     "en": "Reverse the sequence"
   },
   "description": {
-    "zh": "<p><strong>遞迴反向輸出</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>請實作題目指定的函式並由 main 讀取輸入、呼叫函式及輸出結果；遞迴題不得使用迴圈取代。</p>",
+    "zh": "給定一個以 \\( 0 \\) 結尾的整數序列。以相反的順序列印序列。\n\n<p>不要使用清單或其他資料結構。請改用遞迴的<i>強制</i>。 <p><strong>C++ 注意：</strong>實作請求的函式並從 main 呼叫它。在遞迴練習中，不要用迴圈代替遞迴。 </p>",
     "en": "Given a sequence of integers that end with a \\( 0 \\). Print the sequence in reverse order.\n\n<p>Don't use lists or other data structures. Use the <i>force</i> of recursion instead.<p><strong>C++ note:</strong> Implement the requested function and call it from main. In recursion exercises, do not replace recursion with a loop.</p>"
   },
   "hint": {

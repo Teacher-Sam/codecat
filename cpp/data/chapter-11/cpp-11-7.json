@@ -5,7 +5,7 @@
     "en": "Frequency analysis"
   },
   "description": {
-    "zh": "<p><strong>頻率分析</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "zh": "<p>給定一個數字 \\( n \\)，後面跟著 \\( n \\) 行文本，\n列印文字中遇到的所有單詞，每行一個。\n單字應根據其在文本中出現的次數按降序排序，\n所有出現頻率相同的單字應按字典順序列印。 </p>\n\n<p><b>提示。 </b>建立單字及其頻率的字典後，\n您要根據頻率對其進行排序。如果您建立一個串列，您就可以實作這一點\n其元素是兩個元素的元組：單字出現的頻率\n以及這個字本身。例如，<code>[(2, 'hi'), (1, 'what'), (3, 'is')]</code>。\n然後標準串列排序將對元組串列進行排序，其中\n由第一個元素比較的元組，如果它們相等，\n由第二個元素。這<b>幾乎</b>是問題所需要的。 </p><p><strong>C++ 注意：</strong>使用 std::map 或 std::unordered_map。當需要字典順序輸出時，選擇 map，或單獨對鍵進行排序。 </p>",
     "en": "<p>Given a number \\( n \\), followed by \\( n \\) lines of text,\nprint all words encountered in the text, one per line.\nThe words should be sorted in descending order according to their number of occurrences in the text,\nand all words with the same frequency should be printed in lexicographical order.</p>\n\n<p><b>Hint.</b> After you create a dictionary of the words and their frequencies,\nyou would like to sort it according to the frequencies. This can be achieved if you create a list\nwhose elements are tuples of two elements: the frequency of occurrence of a word\nand the word itself. For example, <code>[(2, 'hi'), (1, 'what'), (3, 'is')]</code>.\nThen the standard list sort will sort a list of tuples, with\nthe tuples compared by the first element, and if these are equal,\nby the second element. This is <b>nearly</b> what is required in the problem.</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
   },
   "hint": {

@@ -5,7 +5,7 @@
     "en": "Dictionary of synonyms"
   },
   "description": {
-    "zh": "<p><strong>同義詞字典</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "zh": "<p>給你一本由單字對組成的字典。每個單字都是其配對中另一個單字的同義詞。\n字典裡的所有單字都不一樣。 </p>\n\n<p>字典之後又給了一個單字。為他找一個同義詞。 </p><p><strong>C++ 注意：</strong>使用 std::map 或 std::unordered_map。當需要字典順序輸出時，選擇 map，或單獨對鍵進行排序。 </p>",
     "en": "<p>You are given a dictionary consisting of word pairs. Every word is a synonym the other word in its pair.\nAll the words in the dictionary are different.</p>\n\n<p>After the dictionary there's one more word given. Find a synonym for him.</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
   },
   "hint": {

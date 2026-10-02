@@ -5,7 +5,7 @@
     "en": "Chess board"
   },
   "description": {
-    "zh": "<p><strong>棋盤</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python 二維 list 在此章對應 vector<vector<int>>；第一個索引是列，第二個索引是欄。</p>",
+    "zh": "<p>給定兩個數字 \\( n \\) 和 \\( m \\)。建立一個大小為 \\( \\left ( n \\times m \\right ) \\) 的二維數組，並用字元 <code> \".\" 填滿它。 </code> 和 <code> \"*\" </code> 呈現棋盤圖案。左上應有字元 <code>“.” </code>.<p><strong>C++ 注意：</strong>對於二維陣列使用 vector<vector<int>>。第一個索引是行，第二個索引是列。 </p>",
     "en": "<p>Given two numbers \\( n \\) and \\( m \\). Create a two-dimensional array of size \\( \\left ( n \\times m \\right ) \\) and populate it with the characters <code> \".\" </code> and <code> \"*\" </code> in a checkerboard pattern. The top left corner should have the character <code> \".\" </code>.<p><strong>C++ note:</strong> Use vector&lt;vector&lt;int&gt;&gt; for a two-dimensional array. The first index is the row and the second is the column.</p>"
   },
   "hint": {

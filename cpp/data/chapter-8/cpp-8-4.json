@@ -5,7 +5,7 @@
     "en": "Exponentiation"
   },
   "description": {
-    "zh": "<p><strong>遞迴次方</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>請實作題目指定的函式並由 main 讀取輸入、呼叫函式及輸出結果；遞迴題不得使用迴圈取代。</p>",
+    "zh": "<p>給定一個正實數\\(a\\)和一個非負整數\\(n\\)。不使用迴圈計算 \\( a^{n} \\)，<code>pow()</code>。相反，請使用遞迴和關係式 \\( a^{n} = a \\cdot a^{n-1} \\)。列印結果。\n\n<p>形成函式<code>power(a, n)</code>。 <p><strong>C++ 注意：</strong>實作請求的函式並從 main 呼叫它。在遞迴練習中，不要用迴圈代替遞迴。 </p>",
     "en": "<p>Given a positive real number \\( a \\) and a non-negative integer \\( n \\). Calculate \\( a^{n} \\) without using loops, <code>pow()</code>. Instead, use recursion and the relation \\( a^{n} = a \\cdot a^{n-1} \\). Print the result.\n\n<p>Form the function <code>power(a, n)</code>.<p><strong>C++ note:</strong> Implement the requested function and call it from main. In recursion exercises, do not replace recursion with a loop.</p>"
   },
   "hint": {

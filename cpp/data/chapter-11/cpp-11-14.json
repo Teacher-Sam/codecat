@@ -5,7 +5,7 @@
     "en": "Genealogy: ancestors and descendants"
   },
   "description": {
-    "zh": "<p><strong>祖先與後代</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "zh": "<p>對於每一對人，輸出第一個是第二個的祖先，第二個是第一個的祖先，還是兩者都不是。 </p><p><strong>C++ 注意：</strong> 使用 std::map 或 std::unordered_map。當需要字典順序輸出時，選擇 map，或單獨對鍵進行排序。 </p>",
     "en": "<p>For each pair of people, print whether the first is an ancestor of the second, the second is an ancestor of the first, or neither.</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
   },
   "hint": {

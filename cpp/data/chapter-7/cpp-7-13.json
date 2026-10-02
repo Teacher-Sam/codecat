@@ -5,7 +5,7 @@
     "en": "The lineup"
   },
   "description": {
-    "zh": "<p><strong>隊伍排序</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "zh": "<p>非遞增序列包含學生的身高。给定新学生的身高，輸出从 1 开始的位置，在该位置之后应插入该学生。 </p><p><strong>C++ 注意：</strong>Python 串列对应于 C++ 中的 std::vector。讀取大小或整行，然後按索引遍歷。 </p>",
     "en": "<p>A non-increasing sequence contains students' heights. Given a new student's height, print the 1-based position after which the student should be inserted.</p><p><strong>C++ note:</strong> Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
   },
   "hint": {

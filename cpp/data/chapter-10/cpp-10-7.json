@@ -5,7 +5,7 @@
     "en": "Guess the number"
   },
   "description": {
-    "zh": "<p><strong>猜數字</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>使用 set 的 insert、count、find、set_intersection 等操作；輸出集合時依題意保持排序。</p>",
+    "zh": "<p>奧古斯都和比阿特麗斯玩以下遊戲。奧古斯都想到了一個從 \\( 1 \\) 到 \\( n \\) 的秘密整數。比阿特麗斯嘗試透過提供一組整數來猜測數字。  如果奧古斯都的秘密號碼存在於所提供的號碼中，則回答<code>YES</code>；如果他的號碼不存在於所提供的號碼中，則回答<code>NO</code>。然後，在問了幾個問題之後，完全困惑的比阿特麗斯要求你幫她確定奧古斯都的秘密號碼。 </p>\n\n<p>給定第一行中 \\( n \\) 的值，後面跟著 Beatrice 的猜測序列、由空格分隔的一系列數字和 Agustus 的回應，或是 Beatrice 對 <code>HELP</code> 的請求。  當 Beatrice 尋求幫助時，請提供所有剩餘可能的秘密數字的串列，按升序排列，並用空格分隔。 </p><p><strong>C++ 注意：</strong>使用 std::set 操作，例如 insert、count、find 和 set_intersection。保留請求的輸出順序。 </p>",
     "en": "<p>Augustus and Beatrice play the following game. Augustus thinks of a secret integer number from \\( 1 \\) to \\( n \\). Beatrice tries to guess the number by providing a set of integers.  Augustus answers <code>YES</code> if his secret number exists in the provided set, or <code>NO</code>, if his number does not exist in the provided numbers. Then after a few questions Beatrice, totally confused, asks you to help her determine Augustus's secret number.</p>\n\n<p>Given the value of \\( n \\) in the first line, followed by the a sequence Beatrice's guesses, series of numbers seperated by spaces and Agustus's responses, or Beatrice's plea for <code>HELP</code>.  When Beatrice calls for help, provide a list of all the remaining possible secret numbers, in ascending order, separated by a space.</p><p><strong>C++ note:</strong> Use std::set operations such as insert, count, find, and set_intersection. Preserve the requested output order.</p>"
   },
   "hint": {

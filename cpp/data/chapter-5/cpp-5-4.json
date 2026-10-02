@@ -5,7 +5,7 @@
     "en": "To swap the two words"
   },
   "description": {
-    "zh": "<p><strong>交換兩個單字</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>C++ 沒有 Python 切片語法；請使用索引、迴圈、substr()、find()、rfind()、erase() 或 replace()。</p>",
+    "zh": "<p>給定一個由兩個單字組成的字串，並用空格分隔。 \n列印一個新字串，交換第一個和第二個單字的位置（先列印第二個單字）。\n\n<p>此任務不應使用迴圈和 <code>if</code>。 <p><strong>C++ 注意：</strong>C++ 沒有 Python 切片語法。使用索引、迴圈、substr()、find()、rfind()、erase() 或replace()。 </p>",
     "en": "<p>Given a string consisting of exactly two words separated by a space. \nPrint a new string with the first and second word positions swapped (the second word is printed first).\n\n<p>This task should not use loops and <code>if</code>.<p><strong>C++ note:</strong> C++ has no Python slice syntax. Use indexes, loops, substr(), find(), rfind(), erase(), or replace().</p>"
   },
   "hint": {

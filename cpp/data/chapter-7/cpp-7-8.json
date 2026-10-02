@@ -5,7 +5,7 @@
     "en": "Swap min and max"
   },
   "description": {
-    "zh": "<p><strong>交換最大與最小值</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "zh": "给定一个唯一数字串列，交换该串列的最小和最大元素。列印結果清單。 <p><strong>C++ 注意：</strong>Python 清單對應於 C++ 中的 std::vector。讀取大小或整行，然後按索引遍歷。 </p>",
     "en": "Given a list of unique numbers, swap the minimal and maximal elements of this list. Print the resulting list.<p><strong>C++ note:</strong> Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
   },
   "hint": {

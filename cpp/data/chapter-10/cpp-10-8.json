@@ -5,7 +5,7 @@
     "en": "Guess the number II"
   },
   "description": {
-    "zh": "<p><strong>猜數字（二）</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>使用 set 的 insert、count、find、set_intersection 等操作；輸出集合時依題意保持排序。</p>",
+    "zh": "<p>維護從 1 到 N 的可能數字。對於每個猜測集和是/否答案，將該集相交或相減。在幫助中，列印所有剩餘的可能性。 </p><p><strong>C++ 注意：</strong>使用 std::set 操作，例如 insert、count、find 和 set_intersection。保留請求的輸出順序。 </p>",
     "en": "<p>Maintain the possible numbers from 1 to N. For each guess set and YES/NO answer, intersect or subtract that set. On HELP, print all remaining possibilities.</p><p><strong>C++ note:</strong> Use std::set operations such as insert, count, find, and set_intersection. Preserve the requested output order.</p>"
   },
   "hint": {

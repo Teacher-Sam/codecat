@@ -5,7 +5,7 @@
     "en": "The first and last occurrence"
   },
   "description": {
-    "zh": "<p><strong>第一次與最後一次出現</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>C++ 沒有 Python 切片語法；請使用索引、迴圈、substr()、find()、rfind()、erase() 或 replace()。</p>",
+    "zh": "<p>给定一个可能包含也可能不包含感兴趣字母的字串。 \n輸出 <code>f</code> 第一次和最后一次出现的索引位置。 \n如果字母<code>f</code>只出现一次，则输出它的索引。\n如果字母 <code>f</code> 没有出现，则不輸出任何内容。\n\n<p>請勿在此任務中使用迴圈。 <p><strong>C++ 注意：</strong>C++ 沒有 Python 切片語法。使用索引、迴圈、substr()、find()、rfind()、erase() 或replace()。 </p>",
     "en": "<p>Given a string that may or may not contain a letter of interest. \nPrint the index location of the first and last appearance of <code>f</code>. \nIf the letter <code>f</code> occurs only once, then output its index.\nIf the letter <code>f</code> does not occur, then do not print anything.\n\n<p>Don't use loops in this task.<p><strong>C++ note:</strong> C++ has no Python slice syntax. Use indexes, loops, substr(), find(), rfind(), erase(), or replace().</p>"
   },
   "hint": {

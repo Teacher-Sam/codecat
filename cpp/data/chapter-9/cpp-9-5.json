@@ -5,7 +5,7 @@
     "en": "Side diagonal"
   },
   "description": {
-    "zh": "<p><strong>副對角線</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python 二維 list 在此章對應 vector<vector<int>>；第一個索引是列，第二個索引是欄。</p>",
+    "zh": "<p>給定一個整數 \\( n \\)，建立一個大小為 \\( \\left ( n \\times n \\right ) \\) 的二維數組並按如下方式填充它，每個字元之間有空格：\n<ul>\n  <li><a href=https://en.wikipedia.org/wiki/Main_diagonal>小對角線</a>上的位置（從右上角到左下角）接收<code> 1 </code>。 \n  <li>該對角線上方的位置接收 <code> 0 </code>。 \n  <li>對角線下方的位置接收 <code> 2 </code>。 \n</ul>\n\n<p>列印結果陣列的元素。 <p><strong>C++ 注意：</strong>對於二維陣列使用 vector<vector<int>>。第一個索引是行，第二個索引是列。 </p>",
     "en": "<p>Given an integer \\( n \\), create a two-dimensional array of size \\( \\left ( n \\times n \\right ) \\) and populate it as follows, with spaces between each character: \n<ul>\n  <li>The positions on the <a href=https://en.wikipedia.org/wiki/Main_diagonal> minor diagonal </a> (from the upper right to the lower left corner) receive <code> 1 </code>. \n  <li>The positions above this diagonal recieve <code> 0 </code>. \n  <li>The positions below the diagonal receive <code> 2 </code>. \n</ul>\n\n<p>Print the elements of the resulting array.<p><strong>C++ note:</strong> Use vector&lt;vector&lt;int&gt;&gt; for a two-dimensional array. The first index is the row and the second is the column.</p>"
   },
   "hint": {

@@ -5,7 +5,7 @@
     "en": "Bank interest"
   },
   "description": {
-    "zh": "<p><strong>銀行利息</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>輸入以 0 結束的題目不要把結尾的 0 納入統計；需要小數結果時使用 double。</p>",
+    "zh": "<p>初始整數存款每年以 P% 的速度成長，並剔除小數美分。列印至少達到 Y 所需的年數。 </p><p><strong>C++ 注意：</strong>對於以零結尾的輸入，請勿包含結尾零。當結果可能是小數時，請使用 double。 </p>",
     "en": "<p>An initial integer deposit grows by P percent each year, discarding fractional cents. Print the number of years needed to reach at least Y.</p><p><strong>C++ note:</strong> For zero-terminated input, do not include the terminating zero. Use double when the result may be fractional.</p>"
   },
   "hint": {

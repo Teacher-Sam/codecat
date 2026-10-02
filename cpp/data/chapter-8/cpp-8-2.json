@@ -5,7 +5,7 @@
     "en": "Negative exponent"
   },
   "description": {
-    "zh": "<p><strong>負次方</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>請實作題目指定的函式並由 main 讀取輸入、呼叫函式及輸出結果；遞迴題不得使用迴圈取代。</p>",
+    "zh": "<p>給定一個正實數 \\( a \\) 和 <b>整數</b> \\( n \\)。\n\n<p>計算\\(a^{n}\\)。寫一個函式<code>power(a, n)</code>，使用該函式計算結果並列印表達式的結果。\n\n<p>不要使用標準函式庫中的相同函式。 <p><strong>C++ 注意：</strong>實作請求的函式並從 main 呼叫它。在遞迴練習中，不要用迴圈代替遞迴。 </p>",
     "en": "<p>Given a positive real number \\( a \\) and <b>integer</b> \\( n \\).\n\n<p>Compute \\( a^{n} \\). Write a function <code>power(a, n)</code> to calculate the results using the function and print the result of the expression.\n\n<p>Don't use the same function from the standard library.<p><strong>C++ note:</strong> Implement the requested function and call it from main. In recursion exercises, do not replace recursion with a loop.</p>"
   },
   "hint": {

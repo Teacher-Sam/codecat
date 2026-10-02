@@ -5,7 +5,7 @@
     "en": "List of squares"
   },
   "description": {
-    "zh": "<p><strong>平方數列表</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>輸入以 0 結束的題目不要把結尾的 0 納入統計；需要小數結果時使用 double。</p>",
+    "zh": "對於給定的整數 N，按升序列印平方小於或等於 N 的所有整數的平方。 <p><strong>C++ 注意：</strong>對於以零結尾的輸入，不包括結尾零。當結果可能是小數時，請使用 double。 </p>",
     "en": "For a given integer N, print all the squares of integer numbers where the square is less than or equal to N, in ascending order.<p><strong>C++ note:</strong> For zero-terminated input, do not include the terminating zero. Use double when the result may be fractional.</p>"
   },
   "hint": {

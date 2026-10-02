@@ -5,7 +5,7 @@
     "en": "Even indices"
   },
   "description": {
-    "zh": "<p><strong>偶數索引元素</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "zh": "給定一個數字串列，尋找並列印具有偶數索引號碼的所有串列元素。\n（即 <code>A[0]</code>、<code>A[2]</code>、<code>A[4]</code>，...）。 <p><strong>C++ 注意：</strong>Python 清單對應於 C++ 中的 std::vector。讀取大小或整行，然後按索引遍歷。 </p>",
     "en": "Given a list of numbers, find and print all the list elements with an even index number.\n(i.e. <code>A[0]</code>, <code>A[2]</code>, <code>A[4]</code>, ...).<p><strong>C++ note:</strong> Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
   },
   "hint": {

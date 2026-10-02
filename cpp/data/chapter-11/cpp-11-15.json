@@ -5,7 +5,7 @@
     "en": "Genealogy: generation levels"
   },
   "description": {
-    "zh": "<p><strong>家譜層級</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "zh": "<p>從家譜的根部確定每個人的世代級別，並按字典順序列印姓名。 </p><p><strong>C++ 注意：</strong>使用 std::map 或 std::unordered_map。當需要字典順序輸出時，選擇 map，或單獨對鍵進行排序。 </p>",
     "en": "<p>Determine every person's generation level from the root of the family tree and print names in lexicographic order.</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
   },
   "hint": {

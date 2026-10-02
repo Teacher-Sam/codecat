@@ -5,7 +5,7 @@
     "en": "The sum of the sequence"
   },
   "description": {
-    "zh": "<p><strong>數列總和</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>輸入以 0 結束的題目不要把結尾的 0 納入統計；需要小數結果時使用 double。</p>",
+    "zh": "確定數列中以數字 0 結尾的所有元素的總和。 <p><strong>C++ 注意：</strong>對於以零結尾的輸入，請勿包含結尾零。當結果可能是小數時，請使用 double。 </p>",
     "en": "Determine the sum of all elements in the sequence, ending with the number 0.<p><strong>C++ note:</strong> For zero-terminated input, do not include the terminating zero. Use double when the result may be fractional.</p>"
   },
   "hint": {

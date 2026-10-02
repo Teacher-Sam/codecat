@@ -5,7 +5,7 @@
     "en": "The number of distinct words in some text"
   },
   "description": {
-    "zh": "<p><strong>不同單字數</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>使用 set 的 insert、count、find、set_intersection 等操作；輸出集合時依題意保持排序。</p>",
+    "zh": "<p>給定一個數字 \\( n \\)，後面跟著 \\( n \\) 行文本，印出文本中出現的不同單字的數量。 </p>\n\n<p>為此，我們將單字定義為一系列非空白字元，並由一個或多個空白或換行符號分隔。在這個定義中，標點符號是單字的一部分。 </p><p><strong>C++ 注意：</strong> 使用 std::set 操作，例如 insert、count、find 和 set_intersection。保留請求的輸出順序。 </p>",
     "en": "<p>Given a number \\( n \\), followed by \\( n \\) lines of text, print the number of distinct words that appear in the text.</p>\n\n<p>For this, we define a word to be a sequence of non-whitespace characters, seperated by one or more whitespace or newline characters. Punctuation marks are part of a word, in this definition.</p><p><strong>C++ note:</strong> Use std::set operations such as insert, count, find, and set_intersection. Preserve the requested output order.</p>"
   },
   "hint": {

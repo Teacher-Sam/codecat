@@ -5,7 +5,7 @@
     "en": "The length of the segment"
   },
   "description": {
-    "zh": "<p><strong>線段長度</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>請實作題目指定的函式並由 main 讀取輸入、呼叫函式及輸出結果；遞迴題不得使用迴圈取代。</p>",
+    "zh": "給定四個代表笛卡爾座標的實數：\\(\\left(x_{1},y_{1}\\right),\\left(x_{2},y_{2}\\right)\\)。寫一個函式 <code>distance(x1, y1, x2, y2)</code> 來計算點 \\( \\left ( x_{1}, y_{1} \\right ) \\) 和 \\( \\left ( x_{2}, y_{2} \\right ) \\) 之間的距離。讀取四個實數並列印函式計算出的距離結果。\n\n<p>兩點之間距離的公式可以在 <a href=\"http://mathworld.wolfram.com/Distance.html\">Wolfram</a> 中找到。 <p><strong>C++ 注意：</strong> 實作請求的函式並從 main 呼叫它。在遞迴練習中，不要用迴圈代替遞迴。 </p>",
     "en": "Given four real numbers representing cartesian coordinates: \\( \\left (  x_{1}, y_{1} \\right ), \\left ( x_{2}, y_{2} \\right ) \\). Write a function <code>distance(x1, y1, x2, y2)</code> to compute the distance between the points \\( \\left (  x_{1}, y_{1} \\right ) \\) and \\( \\left ( x_{2}, y_{2} \\right ) \\). Read four real numbers and print the resulting distance calculated by the function.\n\n<p>The formula for distance between two points can be found at <a href=\"http://mathworld.wolfram.com/Distance.html\">Wolfram</a>.<p><strong>C++ note:</strong> Implement the requested function and call it from main. In recursion exercises, do not replace recursion with a loop.</p>"
   },
   "hint": {

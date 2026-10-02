@@ -5,7 +5,7 @@
     "en": "Countries and cities"
   },
   "description": {
-    "zh": "<p><strong>國家與城市</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "zh": "<p>給定國家和每個國家城市的清單。然後給出城市的名稱。對於每個城市\n指定它所在的國家。 </p><p><strong>C++ 注意：</strong>使用 std::map 或 std::unordered_map。當需要字典順序輸出時，選擇 map，或單獨對鍵進行排序。 </p>",
     "en": "<p>Given a list of countries and cities of each country. Then given the names of the cities. For each city\nspecify the country in which it is located.</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
   },
   "hint": {

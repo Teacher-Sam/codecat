@@ -5,7 +5,7 @@
     "en": "The number of distinct numbers"
   },
   "description": {
-    "zh": "<p><strong>唯一數量</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>使用 set 的 insert、count、find、set_intersection 等操作；輸出集合時依題意保持排序。</p>",
+    "zh": "<p>給定一個整數串列。\n確定有多少個不同的數字。 </p>\n\n<p>這項任務只需一行程式碼即可解決。 </p><p><strong>C++ 注意：</strong>使用 std::set 操作，例如 insert、count、find 和 set_intersection。保留請求的輸出順序。 </p>",
     "en": "<p>Given a list of integers.\nDetermine how many distinct numbers there are.</p>\n\n<p>This task can be solved in one line of code.</p><p><strong>C++ note:</strong> Use std::set operations such as insert, count, find, and set_intersection. Preserve the requested output order.</p>"
   },
   "hint": {

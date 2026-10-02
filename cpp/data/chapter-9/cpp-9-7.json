@@ -5,7 +5,7 @@
     "en": "Scale a matrix"
   },
   "description": {
-    "zh": "<p><strong>矩陣縮放</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python 二維 list 在此章對應 vector<vector<int>>；第一個索引是列，第二個索引是欄。</p>",
+    "zh": "<p>給定兩個正整數 \\( m \\) 和 \\( n \\)，\n\\( m \\) 行 \\( n \\) 個元素，給予一個 \\( m \\times n \\) 矩陣 \\( A \\)，\n後面跟著一個整數\\(c\\)，\n將矩陣的每個條目乘以 \\( c \\) 並列印結果。 <p><strong>C++ 注意：</strong> 對於二維數組，請使用 vector<vector<int>>。第一個索引是行，第二個索引是列。 </p>",
     "en": "<p>Given two positive integers \\( m \\) and \\( n \\),\n\\( m \\) lines of \\( n \\) elements, giving an \\( m \\times n \\) matrix \\( A \\),\nfollowed by one integer \\( c \\),\nmultiply every entry of the matrix by \\( c \\) and print the result.<p><strong>C++ note:</strong> Use vector&lt;vector&lt;int&gt;&gt; for a two-dimensional array. The first index is the row and the second is the column.</p>"
   },
   "hint": {

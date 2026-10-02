@@ -5,7 +5,7 @@
     "en": "Maximum"
   },
   "description": {
-    "zh": "<p><strong>二維陣列最大值</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python 二維 list 在此章對應 vector<vector<int>>；第一個索引是列，第二個索引是欄。</p>",
+    "zh": "<p>給定表示行和列 \\( \\left ( m \\times n \\right ) \\) 的兩個整數，以及隨後 \\( m \\) 行 \\( n \\) 個元素，找到最大元素的索引位置並列印表示索引 \\( \\left ( i \\times j \\right ) \\) 或兩個行號和列號的表示索引。如果不同行中存在多个这样的元素，则輸出行号较小的元素。如果同一行出现多个这样的元素，则输出最小的列号。 <p><strong>C++注意：</strong>对于二维数组，使用vector<vector<int>>。第一個索引是行，第二個索引是列。 </p>",
     "en": "<p>Given two integers representing the rows and columns \\( \\left ( m \\times n \\right ) \\), and subsequent \\( m \\) rows of \\( n \\) elements, find the index position of the maximum element and print two numbers representing the index \\( \\left ( i \\times j \\right ) \\) or the row number and the column number. If there exist multiple such elements in different rows, print the one with smaller row number. If there multiple such elements occur on the same row, output the smallest column number.<p><strong>C++ note:</strong> Use vector&lt;vector&lt;int&gt;&gt; for a two-dimensional array. The first index is the row and the second is the column.</p>"
   },
   "hint": {

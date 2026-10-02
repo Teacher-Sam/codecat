@@ -5,7 +5,7 @@
     "en": "Morning jog"
   },
   "description": {
-    "zh": "<p><strong>晨跑計畫</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>輸入以 0 結束的題目不要把結尾的 0 納入統計；需要小數結果時使用 double。</p>",
+    "zh": "<p>作為一名未來的運動員，您剛開始為即將舉行的賽事進行練習。\n鑑於您在第一天跑了 <i>x</i> 英里，到了比賽時您必須能夠跑 <i>y</i> 英里。\n<p>計算您最終達到活動所需距離所需的天數（如果您\n每天將您的距離比前一天增加 10%。\n<p>列印一個整數，表示達到所需距離的天數。 <p><strong>C++ 注意：</strong>對於以零結尾的輸入，請勿包含結尾零。當結果可能是小數時，請使用 double。 </p>",
     "en": "<p>As a future athlete you just started your practice for an upcoming event.\nGiven that on the first day you run <i>x</i> miles, and by the event you must be able to run <i>y</i> miles.\n<p>Calculate the number of days required for you to finally reach the required distance for the event, if you \nincreases your distance each day by 10% from the previous day.\n<p>Print one integer representing the number of days to reach the required distance.<p><strong>C++ note:</strong> For zero-terminated input, do not include the terminating zero. Use double when the result may be fractional.</p>"
   },
   "hint": {

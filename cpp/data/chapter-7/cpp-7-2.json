@@ -5,7 +5,7 @@
     "en": "Even elements"
   },
   "description": {
-    "zh": "<p><strong>偶數元素</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python list 在此章對應 C++ 的 vector；先讀取數量或整行資料，再用索引走訪。</p>",
+    "zh": "給定一個數字串列，尋找並列印所有偶數元素。 \n\n在本例中，使用 for 迴圈遍歷<u>串列</u>，\n並且不超過其指數！也就是說，不要使用 <code>range()</code><p><strong>C++ 注意：</strong>Python 清單對應於 C++ 中的 std::vector。讀取大小或整行，然後按索引遍歷。 </p>",
     "en": "Given a list of numbers, find and print all elements that are an even number. \n\nIn this case use a for-loop that iterates over the <u>list</u>, \nand not over its indices! That is, don't use <code>range()</code><p><strong>C++ note:</strong> Python lists correspond to std::vector in C++. Read the size or the complete line, then traverse by index.</p>"
   },
   "hint": {

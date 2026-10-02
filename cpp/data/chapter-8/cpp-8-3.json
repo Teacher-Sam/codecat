@@ -5,7 +5,7 @@
     "en": "Uppercase"
   },
   "description": {
-    "zh": "<p><strong>首字母大寫</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>請實作題目指定的函式並由 main 讀取輸入、呼叫函式及輸出結果；遞迴題不得使用迴圈取代。</p>",
+    "zh": "<p>寫一個函式<code>capitalize(lower_case_word)</code>，它接受小寫單字並傳回第一個字母大寫的單字。例如，<code>print(capitalize('word'))</code> 應列印單字 <code>Word</code>。\n\n<p>然後，給定一行小寫 ASCII 單字（由一個空格分隔的文字），使用您自己的函式 <code>capitalize()</code> 列印該行，其中每個單字的第一個字母大寫。\n\n<p>在Python中，有一個函式<code>ord(character)</code>，它回傳<a href=\"http://en.wikipedia.org/wiki/ASCII\">ASCII圖表</a>中的字元代碼，還有一個函式<code>chr(code)</code>，它從ASCII代碼回傳字元本身。例如，<code>ord('a') == 97</code>、<code>chr(97) == 'a'</code>。 <p><strong>C++ 注意：</strong>實作請求的函式並從 main 呼叫它。在遞迴練習中，不要用迴圈代替遞迴。 </p>",
     "en": "<p>Write a function <code>capitalize(lower_case_word)</code> that takes the lower case word and returns the word with the first letter capitalized. Eg., <code>print(capitalize('word'))</code> should print the word <code>Word</code>.\n\n<p>Then, given a line of lowercase ASCII words (text separated by a single space), print it with the first letter of each word capitalized using the your own function <code>capitalize()</code>.\n\n<p>In Python there is a function <code>ord(character)</code>, which returns character code in <a href=\"http://en.wikipedia.org/wiki/ASCII\">the ASCII chart</a>, and the function <code>chr(code)</code>, which returns the character itself from the ASCII code. For example, <code>ord('a') == 97</code>, <code>chr(97) == 'a'</code>.<p><strong>C++ note:</strong> Implement the requested function and call it from main. In recursion exercises, do not replace recursion with a loop.</p>"
   },
   "hint": {

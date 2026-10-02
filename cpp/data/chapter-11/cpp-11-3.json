@@ -5,7 +5,7 @@
     "en": "Elections in the USA"
   },
   "description": {
-    "zh": "<p><strong>美國大選</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>Python dictionary 在此章對應 map 或 unordered_map；需要字典序輸出時應選用 map 或另外排序鍵。</p>",
+    "zh": "<p>眾所周知，美國總統不是透過直接投票選出的，而是透過兩步驟投票選出的。\n每個州都會舉行第一次選舉，並確定該州的選舉獲勝者。\n此後，州選舉正在進行：在這次選舉中，每個州都有一定的票數。\n票數——該州的選舉人數量。實際上，所有選民\n從州內依照州內投票結果進行投票。 </p>\n\n<p>第一行包含記錄數。之後，每個條目都包含候選人的姓名以及他們在某個州獲得的票數。\n統計選舉總結果：將每位候選人的得票數加總。\n按字母順序列印候選者。 </p><p><strong>C++ 注意：</strong>使用 std::map 或 std::unordered_map。當需要字典順序輸出時，選擇 map，或單獨對鍵進行排序。 </p>",
     "en": "<p>As you know, the president of USA is elected not by direct vote, but through a two-step voting.\nFirst elections are held in each state and determine the winner of elections in that state.\nThereafter, the state election is going: in this election, every state has a certain\nthe number of votes&nbsp;&mdash; the number of electors from that state. In practice, all the electors\nfrom the state of voted in accordance with the results of the vote within a state.</p>\n\n<p>The first line contains the number of records. After that, each entry contains the name of the candidate and the number of votes they got in one of the states.\nCount the total results of the elections: sum the number of votes for each candidate.\nPrint candidates in the alphabetical order.</p><p><strong>C++ note:</strong> Use std::map or std::unordered_map. Choose map, or sort the keys separately, when lexicographic output is required.</p>"
   },
   "hint": {

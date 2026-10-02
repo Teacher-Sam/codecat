@@ -5,7 +5,7 @@
     "en": "The two halves"
   },
   "description": {
-    "zh": "<p><strong>交換前後兩半</strong>：請依照下方英文原題的輸入、輸出規格完成程式。</p><p>C++ 沒有 Python 切片語法；請使用索引、迴圈、substr()、find()、rfind()、erase() 或 replace()。</p>",
+    "zh": "<p>給定一個字串。將其切成兩個“相等”的部分（如果字串的長度是奇數，則將中心字元放在\n在第一個字串中，以便第一個字串比第二個字串多包含一個字元）。現在列印一個新字串\n在單行上，上半場和下半場互換（下半場在前，上半場在後）\n\n<p>請勿在此任務中使用語句 <code>if</code>。 <p><strong>C++ 注意：</strong>C++ 沒有 Python 切片語法。使用索引、迴圈、substr()、find()、rfind()、erase() 或replace()。 </p>",
     "en": "<p>Given a string. Cut it into two \"equal\" parts (If the length of the string is odd, place the center character \nin the first string, so that the first string contains one more characther than the second). Now print a new string \non a single row with the first and second halfs interchanged (second half first and the first half second)\n\n<p>Don't use the statement <code>if</code> in this task.<p><strong>C++ note:</strong> C++ has no Python slice syntax. Use indexes, loops, substr(), find(), rfind(), erase(), or replace().</p>"
   },
   "hint": {
